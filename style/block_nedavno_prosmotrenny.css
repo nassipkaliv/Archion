@@ -1,0 +1,20 @@
+.style_heading_text.title-mobile {
+  display: none;
+}
+
+
+@media (min-width: 319px) {
+  .wrapper-nedavno-prosmotrenny {
+    padding: 40px 16px;
+  }
+
+  .wrapper-nedavno-prosmotrenny .container-fluid {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1005px) {
+  .wrapper-nedavno-prosmotrenny {
+    padding: 40px 80px;
+  }
+}

@@ -1,0 +1,60 @@
+/* Блок "Нужна консультация" */
+.wrapper-need-consultation {
+  padding: 40px 80px;
+  background-color: #F1EBE6;
+}
+
+.wrapper-need-consultation .b-content {
+  padding: 0;
+}
+
+.wrapper-need-consultation .send-form {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #343536;
+  position: relative;
+}
+
+.send-form .button_podbor_two.position-absolute {
+  left: 237px;
+  transition: all ease .3s;
+}
+
+.send-form .position-absolute {
+  left: 16px;
+}
+
+.send-form:hover .button_podbor_two.position-absolute {
+  background-color: #A78B73;
+}
+
+.ref-consultation:hover .button_podbor_square {
+  background-color: #A78B73;
+}
+
+.ref-consultation .button_podbor_two {
+  right: 21px;
+  top: 12px;
+}
+
+.ref-consultation .button_podbor_two .button_podbor_square {
+  transition: all ease .3s;
+}
+
+.kontak_text.input {
+  background-color: transparent;
+}
+
+/* Медиазапросы */
+@media (min-width: 319px) {
+  .wrapper-need-consultation {
+    display: none;
+  }
+}
+
+@media (min-width: 1005px) {
+  .wrapper-need-consultation {
+    display: block;
+    padding: 40px 80px;
+  }
+}

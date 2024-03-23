@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="p:domain_verify" content="dbe6652f1c910280b93a7de8e87fa900" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../portfolio/css/normalize.css">
+    <link rel="stylesheet" href="../portfolio/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../portfolio/css/slick.css">
+    <link rel="stylesheet" href="../portfolio/css/forms.css">
+    <link rel="stylesheet" href="../portfolio/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="../portfolio/css/success.min.css">
+    <link type="text/css" rel="stylesheet" href="../style/catalog.css@2.css">
+    <!-- <link type="text/css" rel="stylesheet" href="../styles.css?2"> -->
+    <link type="text/css" rel="stylesheet" href="../style.css@2.css">
+    <link type="text/css" rel="stylesheet" href="../style/forms.css@2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../portfolio/css/catalog.css">
+    <!-- <link rel="stylesheet" href="../templates/navbarn.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../proects.css">
+    <link rel="stylesheet" href="../templates/new_hmkmos.css">
+    <link rel="stylesheet" href="../proects.css@2.css">
+    <link rel="stylesheet" href="../style/progressive-image.min.css">
+    <link rel="stylesheet" type="text/css" href="../library/Pagination/dist/pagination.min.css">
+    <link rel="stylesheet" type="text/css" href="../library/slick-1.8.1/slick/slick.css"><!--Вертикальный слайдер!-->
+    <link rel="stylesheet" type="text/css" href="../library/slick-1.8.1/slick/slick-theme.css" /><!--Вертикальный слайдер!-->
+    <link rel="stylesheet" href="../style/new_footer.css">
+    <link rel='stylesheet' href="../form/css/form_project.css">
+    <link rel="stylesheet" href="../style/block_need_consultation.css">
+    <link rel="stylesheet" href="../style/block_nedavno_prosmotrenny.css">
+
+
+    <title>Project</title> <!--backend -->
+    <meta name="description" content=""> <!--backend -->
+    <meta name="keywords" content=""> <!--backend -->
+    <script src="../form/scripts/feedback_form.js" defer></script>
+    <script src="../portfolio/js/hidden_social_header.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="../jquery-2.2.4.min.js"></script>
+    <script src="../jquery.formstyler.min.js@2"></script>
+    <script src="../script/filtr-new.js@2"></script>
+    <script src="../library/slick-1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body class="catalog-page">
+    <link rel="stylesheet" href="../templates/navbarn.css">
+<header class="b-header topbar">
+    <nav class="navbar navbar-light row ">
+        <div class="col-12 container-fluid flex-nowrap">
+            <a class="navbar-brand navbar-link" href="https://www.hmkmos.ru/">
+                <img class="navbar-logo-img-gold" src="../img/header/arhion-logo-header.svg" alt="arhion-logo-heeader">
+            </a>
+
+            <div class="pl hidden-mobile">
+                <input type="button" onclick="fu()" id="btn-project" value="Подобрать проект" class="btn_project12 ppp" data-bs-toggle="modal" data-bs-target="#cons-project" aria-current="page">
+            </div>
+            <div class="modal fade" id="cons-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 style="font-weight: bold;" class="modal-title consult_form">Подобрать проект</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body form_order_modal card clearfix">
+                            <div class="card-body">
+                                <form id='consultform' method="post" class="consultform" enctype="multipart/form-data" novalidate="novalidate">
+                                    <input type="hidden" name="Formname" value="constop">
+                                    <input type="hidden" name="project_name" value="hmkmos.ru">
+                                    <input type="hidden" name="admin_email" value="msk@hmkmos.ru">
+                                    <input type="hidden" name="form_subject" value="Получить консультацию">
+                                    <input type="hidden" name="Page" value="https://www.hmkmos.ru/">
+                                    <div class="row">
+                                        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                            <div class="z-form">
+                                                <div class="info"></div>
+                                                <a rel="nofollow" class="anchor_tags" name="form-zakaz-uslugi"></a>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <div class="form-group mt-3">
+                                                            <label for="ConsName" class="form-label">Ваше имя<sup>*</sup></label>
+                                                            <input type="text" class="form-control" name="ConsName" id="ConsName" placeholder="Ваше имя" value="" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6">
+                                                        <div class="form-group mt-3">
+                                                            <label for="ConsEmail" class="form-label">Ваш Email<sup>*</sup></label>
+                                                            <input type="email" class="form-control" name="ConsMail" id="ConsEmail" placeholder="Ваш Email" value="" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label for="ConsPhone" class="form-label">Ваш телефон<sup>*</sup></label>
+                                                    <input type="text" class="form-control" name="ConsPhone" id="ConsPhone" placeholder="Ваш телефон" value="" required>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="InputText" class="form-label">Комментарий<sup>*</sup></label>
+                                                            <textarea class="form-control" name="Text" placeholder="Сообщение" rows="4"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center my-2">
+                                                    <input class="btn btn-gold text-light text-uppercase px-5" id="topcons" type="submit" name="web_form_submit" value="Отправить" style="font-size: 24px; line-height: 42px; font-weight: 700; box-shadow: 0px 0px 6px 2px rgb(41 41 42 / 26%); border: none !important;">
+                                                </div>
+                                                <div class="text-center">
+                                                    <small>
+                                                        <label for="agree_individual">
+                                                            <input style="position: relative; top: 3px;" id="agree_individual" type="checkbox" value="146" name="AGREEMENT" checked="">
+                                                            Отправляя форму вы соглашаетесь с
+                                                            <a href="../termsofuse.html">правилами обработки персональных данных</a>
+                                                        </label>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer clearfix"></div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+            </div>
+            <script>
+                // function fu(){
+
+                // 	var consult_form = document.querySelector('.consult_form');
+
+
+                // 	if (document.getElementById('ButtonProject')) {
+                // 		consult_form.innerHTML = 'Подобрать проект';
+                // 	}else{
+                // 		consult_form.innerHTML = 'Получить консультацию';
+                // 	}
+
+                // };
+
+                //  event.preventDefault();
+
+                function fu() {
+                    var consult_form = document.querySelector('.consult_form');
+
+                    document.getElementById('btn-project').onclick = function() {
+                        consult_form.innerHTML = 'Подобрать проект';
+                        event.preventDefault();
+                    };
+
+                    let btnSendDataUser = document.querySelector('#topcons');
+                    let wrapperModal = document.querySelector('#cons-project');
+                    btnSendDataUser.addEventListener('click', () => {
+                        wrapperModal.style.display = 'none';
+                    })
+                };
+            </script>
+            <ul class="d-flex nav nav-mod justify-content-end" style="flex-grow: 1;">
+                <div>
+                    <li class="nav-item nav-item--phone">
+                        <a class="nav-link nav-link--mod nav-link--phone" href="tel:+74957997529" tabindex="-1">+7 (495) 799-75-29</a>
+
+                    </li>
+                </div>
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--mod nav-link__icon-phone-link " href="tel:+74957997529" tabindex="-1">
+                            <img class="nav-link nav-link__icon-phone" src="../templates/images/header/phone-icon.svg" width="32px" height="32px">
+                        </a>
+                    </li>
+                </div>
+
+                <div class="d-flex wrapper-social-header">
+                    <a class="m-auto nav-link pt-0 logo-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                        <img class="nav-icon-whatsapp" src="../img/ph_whatsapp-logo-thin.png" width="32" height="32">
+                    </a>
+                    <a class="m-auto nav-link  d-sm-block" id="social-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                        <img class="nav-icon-telegram" src="../img/uit_telegram-alt.png" width="32" height="32">
+                    </a>
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div style="margin-top:4px; margin-bottom:4px; margin-left: 5px; background-color: transparent;padding-right: 3px;" class="ya-share2 d-sm-block" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,viber,whatsapp">
+                    </div>
+                </div>
+            </ul>
+            <ul class="nav justify-content-around">
+                <li class="nav-item">
+                    <button class="navbar-toggler navbar-button-menu" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+                <a class="navnar-arhion-link" href="../index.html">
+                    <img class="navnar-arhion-logo" src="../img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+                </a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <ul class="nav justify-content-around nav-social ">
+
+                        <li class="nav-item social">
+                            <img class="nav-icon-whatsapp" src="../images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+                            <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                WHATSAPP
+                                <hr />
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <img class="nav-icon-telegram" src="../images/catalog_new_hmkmos/telega.png" width="32" height="32">
+                            <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                TELEGRAM
+                                <hr />
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+                                <img src="../images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                +7 (495) 799-75-29</a>
+                        </li>
+                    </ul>
+
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" aria-current="page" href="../proektyi.html">Каталог домов</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="../zakazat-proekt-doma/index.html">Индивидуальное проектирование</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="proekt_ml-607.html#">Дизайн интерьеров</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Строительство домов</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="proekt_ml-607.html#">Полезная информация</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="../kontaktyi.html">Контакты</a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="links2">
+                            <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+                                <img class="social__zen" width="32" height="32" src="../img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+                            </a>
+                            <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+                                <img src="../img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+                            </a>
+                            <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+                                <img src="../img/header/icon-gold-youtube.svg" alt="Ютуб">
+                            </a>
+                            <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+                                <img src="../img/header/icon-gold-vk.svg" alt="Вконтакте">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+</header> <!--backend -->
+    <main class="main">
+
+
+        <section class="catalog">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="carousel-inner catalog__list-main">
+                        <!--backend img -->
+                        <div class="catalog-photo-main">
+                            <!-- <img src="" alt=""> -->
+                            <img src="../portfolio/img/main_img/image-background.png" class="img-project active" alt="image-background">
+                            <img src="../portfolio/img/main_img/image-2-background.png" class="img-project" alt="image-2-background">
+                            <img src="../portfolio/img/main_img/image-3-background.png" class="img-project" alt="image-3-background">
+                            <span class="slider-arrow">&#8249;</span>
+                            <span class="slider-arrow">&#8250;</span>
+                        </div>
+                        <a href="proekt_ml-607.html#" class="btn-play">
+                            <img src="../portfolio/img/button_play/button_play.svg" alt="button-play">
+                            <svg>
+                                <circle cx='78' cy='78' r='77' fill='transparent'></circle>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Создаются кнопки, в зависимости от картинок -->
+                    <div class="wrapper-slider-img">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Хлебные крошки -->
+            <div class="wrapper-bread-crumbs">
+                <a class="bread-crumbs-project" href="../index.html">Главная </a>
+                <a class="bread-crumbs-project" href="proekt_ml-607.html">Каталог </a>
+                <a class="bread-crumbs-project mobile" href="proekt_ml-607.html">Проекты</a>
+                <span class="bread-crumbs-project">ZX76</span> <!--backend -->
+            </div>
+
+            <!-- Блок с инфой о проекте -->
+            <div class="wrapper-info-project">
+                <div class="wrapper-for-border">
+                    <div class="wrapper-name-content-cost">
+                        <h1 class="title-project">Проект № ZX76</h1> <!--backend -->
+                        <div class="wrapper-content">
+                            <span id="bed">4</span>
+                            <span id="bath">2</span>
+                            <span id="room-space">20x15 м</span>
+                            <span id="project-space">744 м&sup2;</span>
+                        </div>
+                        <p id="price-project">Стоимость проекта от: <b>45 000₽</b></p><!--backend цена -->
+                    </div>
+                    <div>
+                        <button id="btn-project-order" class="btn-circle btn-call-form">
+                            Заказать
+                            <hr class="static-line" />
+                            проект
+                            <hr class="animation-line" />
+                        </button>
+                        <button id="btn-project-order-mobile" class="btn-square btn-call-form">
+                            Заказать
+                            <hr class="static-line" />
+                            <hr class="animation-line" />
+                        </button>
+                        <!-- Подключаем модальное окно для "Заказать проект" -->
+                        <section class="form-order-project form-project">
+  <div class="wrapper-form-project">
+    <img src="../img/form-icon/icon-close.svg" class="close-form-krest"></img>
+    <h3 class="title-form-project">Заказать проект</h3>
+    <p class="text-to-go-chat text-form">Оставьте контакты и мы с вами свяжемся для обсуждения деталей проекта</p>
+    <form action="proekt_ml-607.html" class="feedback-form-project">
+      <label for="" class="label-input-form-project">
+        <input type="text" placeholder="Иван">
+      </label>
+      <label for="" class="label-input-form-project">
+        <input type="tel" placeholder="+7 964 775-86-97">
+      </label>
+      <label for="" class="label-input-form-project">
+        <input type="email" name="" id="" placeholder="pochta.86@gmail.com">
+      </label>
+      <button type="submit" class="btn-square form">ЗАКАЗАТЬ
+        <hr />
+      </button>
+    </form>
+  </div>
+</section>                    </div>
+                    <div class="wrapper-text-add-favorite-n-numbers-view">
+                        <p id="text-add-favorite">Добавить в избранное</p>
+                        <p id="numbers-view">13 750</p> <!--backend кол-во просмотров -->
+                    </div>
+                </div>
+                <!-- Раздел со стоимостью строительства и со сметой -->
+            </div>
+
+            <!-- Блок "Планы Фасад Описание" -->
+            <div class="wrapper-plan-facade-desc-project">
+                <div class="wrapper-title-plan-facade-desc-project">
+                    <p class="title-plan-facade-desc-project active-title">Планы</p>
+                    <p class="title-plan-facade-desc-project">Фасады</p>
+                    <p class="title-plan-facade-desc-project">Описание</p>
+                </div>
+                <div class="wrapper-content-plan-facade-desc-project">
+                    <div class="wrapper-plan-project active">
+                        <img class="content-plan-project active" src="../portfolio/img/block_add_change_project/img-plan.png" alt="">
+                        <img class="content-plan-project" src="../portfolio/img/block_add_change_project/img-plan.png" alt="">
+                        <section class="wrapper-slider-img-plan"></section>
+                    </div>
+                    <div class="wrapper-facade-project">
+                        <img src="../portfolio/img/block_add_change_project/facade1.png" alt="facade1">
+                        <img src="../portfolio/img/block_add_change_project/facade2.png" alt="facade2">
+                        <img src="../portfolio/img/block_add_change_project/facade3.png" alt="facade3">
+                        <img src="../portfolio/img/block_add_change_project/facade4.png" alt="facade4">
+                        <section class="wrapper-img-facade-project">
+                            <img class="img-facade-project" src="../portfolio/img/block_add_change_project/facade4.png" alt="">
+                        </section>
+                    </div>
+                    <div class="wrapper-desc-project">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Общая площадь:</td>
+                                    <td>103 м²</td>
+                                </tr>
+                                <tr>
+                                    <td>Жилая площадь:</td>
+                                    <td>65 м²</td>
+                                </tr>
+                                <tr>
+                                    <td>Спальни:</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Ванные комнаты:</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Количество этажей:</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Размеры дома:</td>
+                                    <td>15×11м</td>
+                                </tr>
+                                <tr>
+                                    <td>Тип кровли:</td>
+                                    <td>Полоская</td>
+                                </tr>
+                                <tr>
+                                    <td>Архитектурный стиль:</td>
+                                    <td>Минимализм</td>
+                                </tr>
+                                <tr>
+                                    <td>Дополнительно:</td>
+                                    <td>Терраса</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            Прежде всего, реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Кстати, реплицированные с зарубежных источников, современные исследования и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы.
+                            <br /><br />
+                            Ясность нашей позиции очевидна: перспективное планирование в значительной степени обусловливает важность направлений прогрессивного развития. А ещё некоторые особенности внутренней политики ограничены исключительно образом мышления. Кстати, активно развивающиеся страны третьего мира призваны к ответу.
+                            <br /><br />
+                            Картельные сговоры не допускают ситуации, при которой некоторые особенности внутренней политики, превозмогая сложившуюся непростую экономическую ситуацию, преданы социально-демократической анафеме. Безусловно, консультация с широким активом не оставляет шанса для распределения внутренних резервов и ресурсов.
+
+
+                        </p>
+                    </div>
+                </div>
+                <button id="btn-change-project-mobile" class="btn-square btn-call-form">
+                    ВНЕСТИ ИЗМЕНЕНИЯ
+                    <hr class="static-line" />
+                </button>
+            </div>
+
+            <!-- Блок с поэтапным строительством -->
+            <div class="wrapper-stage-building">
+                <div class="wrapper-text-price-building-n-get-outlay">
+                    <p class="text-price-building">Стоимость строительства от: <br /> <b>10 800 000₽</b></p>
+                </div>
+                <button id="btn-get-outlay-mobile" class="btn-square btn-call-form">
+                    ПОЛУЧИТЬ СМЕТУ
+                    <hr class="static-line" />
+                </button>
+                <p class="title-stage-building">Возможно поэтапное строительство</p>
+                <div class="wrapper-sections-building">
+                    <div class="left-sections-building">
+                        <p class="name-sections-building active-gold" id="first-name">Фундамент</p>
+                        <p class="name-sections-building" id="second-name">Коробка</p>
+                        <p class="name-sections-building" id="third-name">Фасад</p>
+                        <p class="name-sections-building" id="four-name">Отделка</p>
+                        <p class="name-sections-building" id="five-name">Декор и мебель</p>
+                    </div>
+                    <div class="right-sections-building">
+                        <p class="description-sections-building" id="first-desc">Земляные работы</p>
+                        <p class="description-sections-building" id="second-desc">Фундамент</p>
+                        <p class="description-sections-building third-description" id="third-desc">Перекрытия 1 этажа</p>
+                        <p class="description-sections-building four-description" id="four-desc"></p>
+                    </div>
+                    <button id="btn-get-outlay" class="btn-circle btn-call-form">
+                        ПОЛУЧИТЬ
+                        <hr class="static-line" />
+                        СМЕТУ
+                        <hr class="animation-line" />
+                    </button>
+                    <!-- Подключаем модальное окно для "Получить смету" -->
+                    <section class="form-get-smeta form-project">
+  <div class="wrapper-form-project">
+    <img src="../img/form-icon/icon-close.svg" class="close-form-krest"></img>
+    <h3 class="title-form-project">Получить смету</h3>
+    <form action="proekt_ml-607.html" class="feedback-form-project feedback-form-get-smeta">
+      <label for="" class="label-input-form-project">Имя
+        <input type="text">
+      </label>
+      <p class="text-form">Выберите способ связи:</p>
+      <div class="wrapper-social-form-project">
+        <!-- <img class="icon-social-form-project icon-tg" src="../img/uit_telegram-alt.png" alt="telegramm">
+        <img class="icon-social-form-project icon-wa" src="../img/ph_whatsapp-logo-thin.png" alt="whatsap"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" id="icon-phone-svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+          <path d="M44.846 32.9327L35.2544 28.6407C34.8826 28.4797 34.4765 28.414 34.0729 28.4495C33.6693 28.485 33.2809 28.6205 32.9428 28.8438C32.9158 28.8609 32.89 28.8799 32.8656 28.9007L27.8281 33.1947C27.716 33.2631 27.5888 33.3028 27.4577 33.3102C27.3266 33.3176 27.1957 33.2926 27.0766 33.2374C23.7778 31.6449 20.3633 28.2567 18.7708 24.9966C18.7145 24.8784 18.6883 24.748 18.6947 24.6172C18.7011 24.4864 18.7398 24.3592 18.8074 24.2471L23.1136 19.1263C23.1339 19.1019 23.1522 19.0755 23.1705 19.0491C23.3931 18.7115 23.5282 18.3238 23.5637 17.921C23.5991 17.5182 23.5338 17.1129 23.3736 16.7416L19.0735 7.16628C18.8659 6.68131 18.5065 6.27678 18.0494 6.01343C17.5923 5.75009 17.0621 5.64214 16.5385 5.70581C13.9823 6.04283 11.6362 7.29884 9.93838 9.23924C8.24058 11.1796 7.30718 13.6717 7.31252 16.25C7.31252 31.9313 20.0688 44.6875 35.75 44.6875C38.3283 44.6929 40.8204 43.7595 42.7608 42.0617C44.7012 40.3639 45.9572 38.0178 46.2942 35.4616C46.3574 34.9403 46.2506 34.4125 45.9897 33.9569C45.7287 33.5012 45.3276 33.142 44.846 32.9327ZM44.6875 35.2585C44.4007 37.4233 43.3352 39.4095 41.6903 40.8458C40.0454 42.2821 37.9337 43.0701 35.75 43.0625C20.9666 43.0625 8.93752 31.0335 8.93752 16.25C8.92996 14.0663 9.71799 11.9546 11.1543 10.3097C12.5906 8.66483 14.5768 7.59936 16.7416 7.31253C16.7741 7.31051 16.8066 7.31051 16.8391 7.31253C16.9994 7.31389 17.1557 7.36264 17.2883 7.45264C17.421 7.54264 17.524 7.66987 17.5846 7.81831L21.8725 17.3936C21.9226 17.5106 21.9444 17.6378 21.9363 17.7648C21.9282 17.8918 21.8903 18.0152 21.8258 18.1249L17.5216 23.2436C17.5013 23.27 17.481 23.2944 17.4627 23.3228C17.2334 23.6735 17.0983 24.0774 17.0706 24.4954C17.0428 24.9135 17.1233 25.3317 17.3042 25.7096C19.0694 29.3232 22.7094 32.9367 26.3636 34.7019C26.7441 34.8817 27.1646 34.9599 27.5843 34.9289C28.004 34.898 28.4085 34.7589 28.7585 34.5252L28.8336 34.4683L33.8772 30.1783C33.9851 30.1124 34.1071 30.0731 34.2332 30.0635C34.3593 30.054 34.4858 30.0745 34.6024 30.1235L44.1919 34.4216C44.3537 34.489 44.4894 34.6068 44.5788 34.7577C44.6681 34.9085 44.7062 35.0842 44.6875 35.2585Z" fill="#14010C" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="icon-wa-svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+          <path d="M37.7385 30.1478L31.2385 26.8978C31.1105 26.8341 30.968 26.8052 30.8254 26.8141C30.6827 26.823 30.545 26.8694 30.426 26.9486L27.046 29.2033C25.188 28.3122 23.6897 26.8139 22.7986 24.9559L25.0533 21.5759C25.1325 21.4569 25.1789 21.3192 25.1878 21.1765C25.1967 21.0339 25.1678 20.8914 25.1041 20.7634L21.8541 14.2634C21.7867 14.1278 21.6827 14.0136 21.5538 13.934C21.4249 13.8543 21.2764 13.8122 21.1249 13.8125C19.1855 13.8125 17.3255 14.5829 15.9542 15.9543C14.5828 17.3256 13.8124 19.1856 13.8124 21.125C13.8172 25.6488 15.6164 29.9859 18.8152 33.1847C22.014 36.3835 26.3511 38.1827 30.8749 38.1875C32.8143 38.1875 34.6742 37.4171 36.0456 36.0457C37.4169 34.6744 38.1874 32.8144 38.1874 30.875C38.1875 30.7241 38.1455 30.5761 38.0662 30.4476C37.9869 30.3192 37.8734 30.2154 37.7385 30.1478ZM30.8749 36.5625C26.7819 36.5582 22.8578 34.9304 19.9637 32.0362C17.0695 29.142 15.4417 25.218 15.4374 21.125C15.4371 19.7015 15.9707 18.3297 16.9327 17.2804C17.8947 16.2312 19.2151 15.5808 20.6333 15.4578L23.4364 21.0661L21.2021 24.4258C21.1276 24.5366 21.0816 24.6641 21.0681 24.797C21.0547 24.9298 21.0741 25.064 21.1249 25.1875C22.2044 27.7539 24.246 29.7955 26.8124 30.875C26.936 30.9264 27.0704 30.9464 27.2037 30.9333C27.3369 30.9202 27.4649 30.8743 27.5761 30.7998L30.9358 28.5655L36.5441 31.3686C36.4205 32.7867 35.7697 34.107 34.7201 35.0686C33.6705 36.0302 32.2984 36.5633 30.8749 36.5625ZM25.9999 5.6875C22.4636 5.68684 18.9885 6.60938 15.9182 8.36385C12.8479 10.1183 10.2888 12.644 8.49409 15.6909C6.69936 18.7379 5.73118 22.2006 5.6853 25.7365C5.63943 29.2724 6.51745 32.7591 8.23253 35.8516L5.81534 43.1011C5.67211 43.5306 5.65133 43.9915 5.75531 44.4321C5.8593 44.8727 6.08394 45.2757 6.40407 45.5958C6.7242 45.9159 7.12716 46.1406 7.56779 46.2446C8.00842 46.3485 8.4693 46.3278 8.89878 46.1845L16.1483 43.7673C18.8601 45.2699 21.8799 46.1319 24.9763 46.287C28.0727 46.4422 31.1636 45.8866 34.012 44.6626C36.8605 43.4387 39.391 41.579 41.4097 39.2259C43.4284 36.8729 44.8816 34.089 45.6581 31.0875C46.4346 28.086 46.5138 24.9466 45.8895 21.9099C45.2652 18.8731 43.9541 16.0195 42.0565 13.5677C40.159 11.1159 37.7254 9.13107 34.9423 7.76516C32.1591 6.39924 29.1002 5.68854 25.9999 5.6875ZM25.9999 44.6875C22.7143 44.6885 19.4865 43.8232 16.6419 42.1789C16.5183 42.1077 16.3783 42.0699 16.2356 42.0692C16.1479 42.0692 16.0607 42.0836 15.9777 42.1119L8.38487 44.6428C8.24171 44.6906 8.08808 44.6975 7.94121 44.6628C7.79433 44.6282 7.66001 44.5533 7.5533 44.4466C7.44659 44.3399 7.37171 44.2055 7.33705 44.0587C7.30239 43.9118 7.30931 43.7582 7.35706 43.615L9.88799 36.0222C9.9245 35.913 9.9374 35.7974 9.92585 35.6829C9.91429 35.5684 9.87854 35.4576 9.82096 35.358C7.76067 31.7967 6.93325 27.655 7.46705 23.5754C8.00085 19.4959 9.86603 15.7065 12.7733 12.7952C15.6805 9.88393 19.4672 8.01341 23.546 7.47388C27.6248 6.93434 31.7676 7.75595 35.3318 9.81123C38.896 11.8665 41.6823 15.0406 43.2584 18.841C44.8346 22.6415 45.1125 26.8558 44.049 30.8303C42.9856 34.8048 40.6402 38.3173 37.3767 40.8228C34.1133 43.3283 30.1142 44.6868 25.9999 44.6875Z" fill="#969696" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="icon-tg-svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+          <path d="M47.5467 5.99087C47.0795 5.60363 46.5162 5.35003 45.9165 5.25695C45.3169 5.16388 44.7033 5.2348 44.1407 5.4622L5.32049 21.1337C4.69317 21.3915 4.1591 21.834 3.78917 22.4024C3.41923 22.9709 3.23093 23.6384 3.24927 24.3163C3.26761 24.9943 3.49171 25.6507 3.89183 26.1983C4.29195 26.7459 4.84916 27.1589 5.48949 27.3824L13.8658 30.29L18.405 45.2964C18.4137 45.3267 18.4418 45.3462 18.4548 45.3744C18.5016 45.4941 18.5699 45.6042 18.6563 45.6994C18.7877 45.8461 18.9572 45.9533 19.146 46.0092C19.1677 46.0179 19.1828 46.0374 19.2045 46.0417H19.2175L19.224 46.0439C19.3916 46.0799 19.5658 46.071 19.7288 46.0179C19.7462 46.0135 19.7635 46.0135 19.783 46.007C19.9395 45.9521 20.0812 45.8616 20.1968 45.7427C20.2098 45.7275 20.2315 45.7254 20.2445 45.7124L26.7727 38.506L36.2995 45.8835C36.878 46.3364 37.5908 46.5812 38.3253 46.5812C39.9157 46.5812 41.2872 45.4675 41.6143 43.914L48.682 9.20837C48.8019 8.61919 48.7596 8.00853 48.5596 7.4415C48.3597 6.87448 48.0096 6.37236 47.5467 5.9887V5.99087ZM20.7732 33.1392L19.2413 40.586L16.0455 30.017L31.8947 21.762L21.0678 32.591C20.9179 32.7409 20.8154 32.9315 20.7732 33.1392ZM39.491 43.4785C39.4503 43.675 39.3598 43.8577 39.2281 44.0091C39.0965 44.1605 38.9281 44.2755 38.7392 44.343C38.5548 44.414 38.3552 44.4357 38.1599 44.4061C37.9647 44.3764 37.7805 44.2965 37.6255 44.174L27.3057 36.1812C27.0899 36.0147 26.8194 35.9356 26.5479 35.9597C26.2764 35.9837 26.024 36.1093 25.841 36.3112L21.2975 41.3184L22.8272 33.8932L38.4033 18.3149C38.5857 18.1319 38.6967 17.8897 38.7163 17.632C38.7358 17.3744 38.6626 17.1182 38.5099 16.9098C38.3572 16.7014 38.135 16.5544 37.8834 16.4954C37.6318 16.4364 37.3675 16.4692 37.138 16.588L14.6848 28.2837L6.19799 25.3327C5.97297 25.2584 5.77671 25.1158 5.63652 24.9247C5.49633 24.7337 5.41918 24.5037 5.41582 24.2667C5.40502 24.0277 5.46889 23.7912 5.59857 23.5901C5.72824 23.389 5.91729 23.2332 6.13949 23.1444L44.9532 7.47287C45.1521 7.38836 45.3706 7.36103 45.5842 7.39395C45.7978 7.42687 45.9979 7.51873 46.1622 7.6592C46.3255 7.79134 46.4488 7.96627 46.5184 8.16446C46.5881 8.36265 46.6012 8.57629 46.5565 8.78153L39.491 43.4807V43.4785Z" fill="#969696" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="icon-mail-svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
+          <path d="M10.834 10.8334H39.0007C40.7246 10.8334 42.3779 11.5182 43.5968 12.7372C44.8158 13.9562 45.5007 15.6095 45.5007 17.3334V36.8334C45.5007 38.5573 44.8158 40.2106 43.5968 41.4296C42.3779 42.6486 40.7246 43.3334 39.0007 43.3334H10.834C9.11008 43.3334 7.45678 42.6486 6.23779 41.4296C5.0188 40.2106 4.33398 38.5573 4.33398 36.8334V17.3334C4.33398 15.6095 5.0188 13.9562 6.23779 12.7372C7.45678 11.5182 9.11008 10.8334 10.834 10.8334ZM10.834 13C9.75065 13 8.79732 13.3684 8.06065 14.0184L24.9173 24.9167L41.774 14.0184C41.0373 13.3684 40.084 13 39.0007 13H10.834ZM24.9173 27.5384L6.78232 15.7734C6.60898 16.25 6.50065 16.7917 6.50065 17.3334V36.8334C6.50065 37.9826 6.9572 39.0848 7.76986 39.8975C8.58251 40.7102 9.68471 41.1667 10.834 41.1667H39.0007C40.1499 41.1667 41.2521 40.7102 42.0648 39.8975C42.8774 39.0848 43.334 37.9826 43.334 36.8334V17.3334C43.334 16.7917 43.2257 16.25 43.0523 15.7734L24.9173 27.5384Z" fill="#969696" />
+        </svg>
+      </div>
+      <label for="" class="label-input-form-project" id="label-phone">Телефон
+        <input type="tel" name="" id="">
+      </label>
+      <label for="" class="label-input-form-project" id="label-wa">WhatsApp
+        <input type="text">
+      </label>
+      <label for="" class="label-input-form-project" id="label-tg">Telegram
+        <input type="text">
+      </label>
+      <label for="" class="label-input-form-project" id="label-mail">Email
+        <input type="email" name="" id="">
+      </label>
+      <button type="submit" class="btn-square form">ЗАКАЗАТЬ
+        <hr />
+      </button>
+    </form>
+  </div>
+</section>                </div>
+            </div>
+
+            <!-- Блок "Внесем изменения в проект -->
+            <div class="container-fluid wrapper-add-change-project">
+                <div class="pb-0 pt-0 pt-md-5 pb-md-5 text-start">
+                    <span class="style_heading_text title-add-change-project">
+                        Внесем изменения в проект
+                    </span>
+                </div>
+                <div class="row pt-3 mx-0">
+                    <div class="col-lg-6 col-12 px-0 first-block">
+                        <div class="pb-3">
+                            <a href="proekt_ml-607.html#" class="change_block d-flex wrap-img-n-name-project" style="color:#435061;">
+                                <img src="../images/catalog_new_hmkmos/galka.png" style="width:47px;height:34px;">
+                                <span class="text_change_project text-start pt-2 pt-sm-2 name-add-change-project" style="font-weight: 300;">
+                                    Адаптируем под любую технологию
+                                </span>
+                            </a>
+                        </div>
+                        <div class="pb-3">
+                            <a href="proekt_ml-607.html#" class="change_block d-flex wrap-img-n-name-project" style="color:#435061;">
+                                <img src="../images/catalog_new_hmkmos/galka.png" style="width:47px;height:34px;">
+                                <span class="text_change_project text-start pt-2 pt-sm-2 name-add-change-project" style="font-weight: 300;">
+                                    Изменение планировочного решения
+                                </span>
+                            </a>
+                        </div>
+                        <div class=" pb-3 ">
+                            <a href="proekt_ml-607.html#" class="change_block d-flex wrap-img-n-name-project" style="color:#435061;">
+                                <img src="../images/catalog_new_hmkmos/galka.png" style="width:47px;height:34px;">
+                                <span class="text_change_project text-start pt-2 pt-sm-2 name-add-change-project" style="font-weight: 300;">
+                                    Изменение габаритов дома
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 px-0 second-block">
+                        <div class="pb-3">
+                            <a href="proekt_ml-607.html#" class="change_block d-flex wrap-img-n-name-project" style="color:#435061;">
+                                <img src="../images/catalog_new_hmkmos/galka.png" style="width:47px; height:34px;">
+                                <span class="text_change_project text-start pt-2 pt-sm-2 name-add-change-project" style="font-weight: 300;">
+                                    Изменение фасадного решения, материала отделки
+
+                                </span>
+                            </a>
+                        </div>
+                        <div class=" pb-3">
+                            <a href="proekt_ml-607.html#" class="change_block d-flex wrap-img-n-name-project" style="color:#435061;">
+                                <img src="../images/catalog_new_hmkmos/galka.png" style="width:47px; height:34px;">
+                                <span class="text_change_project text-start pt-2 pt-sm-2 name-add-change-project" style="font-weight: 300;">
+                                    Разработка фундамента под геологию
+
+                                </span>
+                            </a>
+                        </div>
+                        <div class="pb-3">
+                            <a href="proekt_ml-607.html#" class="change_block d-flex wrap-img-n-name-project" style="color:#435061;">
+                                <img src="../images/catalog_new_hmkmos/galka.png" style="width:47px; height:34px;">
+                                <span class="text_change_project text-start pt-2 pt-sm-2 name-add-change-project" style="font-weight: 300;">
+                                    Адаптация под регион
+
+                                </span>
+                            </a>
+                        </div>
+                        <button id="btn-change-project" class="btn-square btn-call-form">
+                            Внести изменения в проект
+                            <hr class="static-line" />
+                            <hr class="animation-line" />
+                        </button>
+                        <!-- Подключаем модальное окно для "внести изменения в проект" -->
+                        <section class="form-change-project form-project">
+  <div class="wrapper-form-project">
+    <img src="../img/form-icon/icon-close.svg" class="close-form-krest"></img>
+    <h3 class="title-form-project">Внести изменения в проект zx76</h3>
+    <p class="text-to-go-chat text-form">Оставьте контакты для связи</p>
+    <!-- <div class="wrapper-social-form-project">
+      <img class="icon-social-form-project icon-tg" src="../img/uit_telegram-alt.png" alt="telegramm">
+      <img class="icon-social-form-project icon-wa" src="../img/ph_whatsapp-logo-thin.png" alt="whatsap">
+    </div> -->
+    <!-- <p class="text-to-go-phone text-form">Свяжитесь по телефону</p>
+    <a class="phone-form-project icon-phone text-form" href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a> -->
+    <!-- <p class="text-to-feedback text-form">Или оставьте заявку и архитектор свяжется с вами</p> -->
+    <form action="proekt_ml-607.html" class="feedback-form-project">
+      <label for="" class="label-input-form-project">
+        <input type="text" placeholder="Имя">
+      </label>
+      <label for="" class="label-input-form-project">
+        <input type="text" placeholder="Фамилия">
+      </label>
+      <label for="" class="label-input-form-project">
+        <input type="email" name="" id="" placeholder="Email">
+      </label>
+
+      <p class="text-form text-add-change">Какие изменения вы хотите внести?</p>
+      <label for="" class="label-checkbox">Изменение перегородок
+        <input type="checkbox" name="" id=""> <span></span>
+      </label>
+      <label for="" class="label-checkbox">Изменение несущих стен
+        <input type="checkbox" name="" id=""><span></span>
+      </label>
+      <label for="" class="label-checkbox">Изменение габаритов дома
+        <input type="checkbox" name="" id=""><span></span>
+      </label>
+      <label for="" class="label-checkbox">Изменения размеров окон и дверей
+        <input type="checkbox" name="" id=""><span></span>
+      </label>
+      <label for="" class="label-checkbox">Изменение фасадного решения, материала отделки
+        <input type="checkbox" name="" id=""><span></span>
+      </label>
+      <label for="" class="label-checkbox">Адаптация под регион, геологию, геодезию
+        <input type="checkbox" name="" id=""><span></span>
+      </label>
+
+      <label for="" class="label-input-form-project">
+        <input type="text" placeholder="Комментарий">
+      </label>
+      <button type="submit" class="btn-square form">Внести изменения
+        <hr />
+      </button>
+    </form>
+  </div>
+</section>                    </div>
+                </div>
+            </div>
+
+            <!-- Блок "Пример проектной документации" -->
+            <div class="wrapper-example-docum">
+                <p class="title-example-docum">Пример проектной документации</p>
+                <div class="wrapper-content-example-docum">
+                    <button id="btn-view-example-docum" class="btn-circle btn-call-form">
+                        СМОТРЕТЬ
+                        <hr class="static-line" />
+                        <hr class="animation-line" />
+                    </button>
+                    <div class="vertical-line-example-docum"></div>
+                    <img src="../portfolio/img/block_example_docum/group-list.png" class="img-group-house" alt="group-list">
+                    <img src="../portfolio/img/block_example_docum/group-house.png" class="img-group-house-mobile" alt="group-list">
+                    <button id="btn-view-example-docum-mobile" class="btn-square btn-call-form">
+                        СМОТРЕТЬ
+                        <hr class="static-line" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Блок с материалами -->
+            <div class="wrapper-block-materials">
+                	<div class="b-content ">
+		<div class="container-fluid pt-0 pb-3">
+			<div class="pt-3 pt-md-5 pb-2 pb-md-4 text-start">
+				<span class="style_heading_text ">
+					Реализуем проект из любого материала
+				</span>
+			</div>
+			<div class="pb-3 col-12">
+				<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+					Реализуем вашу мечту о прекрасном жилье из любого материала.
+				</span>
+			</div>
+			<div class="col-12">
+				<div class="home-demo">
+					<div class="owl-carousel position-relative pt-md-3 my_owl_material owl-theme my_owl list-group slide-one" id="list-tab" role="tablist">
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-gazobeton-list" data-bs-toggle="list" href="proekt_ml-607.html#list-gazobeton" role="tab" aria-controls="list-gazobeton">
+							<div>
+								<img src="../images/catalog_new_hmkmos/gazobeton.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Газобетон
+								</span>
+							</div>	
+						</a>	
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text" id="list-teplaya_keramica-list" data-bs-toggle="list" href="proekt_ml-607.html#list-teplaya_keramica" role="tab" aria-controls="list-teplaya_keramica">
+							<div>
+								<img src="../images/catalog_new_hmkmos/teplaya_keramica.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Теплая керамика
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-monolit-list" data-bs-toggle="list" href="proekt_ml-607.html#list-monolit" role="tab" aria-controls="list-monolit">
+							<div>
+								<img src="../images/catalog_new_hmkmos/monolit.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Монолит
+								</span>
+							</div>	
+						</a>						
+						<a class="list-group-item px-0 list-group-item list-group-item-action text-center item active color_gray_text item active" id="list-kirpich-list" data-bs-toggle="list"  href="proekt_ml-607.html#list-kirpich" role="tab" aria-controls="list-kirpich">
+							<div>
+								<img src="../images/catalog_new_hmkmos/kirpich.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Кирпич
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-penoblock-list" data-bs-toggle="list" href="proekt_ml-607.html#list-penoblock" role="tab" aria-controls="list-penoblock">
+							<div>	
+								<img src="../images/catalog_new_hmkmos/penoblock.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Пеноблок
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-keramzibeton-list" data-bs-toggle="list" href="proekt_ml-607.html#list-keramzibeton" role="tab" aria-controls="list-keramzibeton">
+							<div>
+								<img src="../images/catalog_new_hmkmos/keramzibeton.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Керамзибетон
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-derevo-list" data-bs-toggle="list" href="proekt_ml-607.html#list-derevo" role="tab" aria-controls="list-derevo">
+							<div>
+								<img src="../images/catalog_new_hmkmos/derevo.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Дерево
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-karkas-list" data-bs-toggle="list" href="proekt_ml-607.html#list-karkas" role="tab" aria-controls="list-karkas">
+							<div>
+								<img src="../images/catalog_new_hmkmos/karkas.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Каркас
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-arbolit-list" data-bs-toggle="list" href="proekt_ml-607.html#list-arbolit" role="tab" aria-controls="list-arbolit">
+							<div>
+								<img src="../images/catalog_new_hmkmos/arbolit.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Арболит
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-polisterolbeton-list" data-bs-toggle="list" href="proekt_ml-607.html#list-polisterolbeton" role="tab" aria-controls="list-polisterolbeton">
+							<div>
+								<img src="../images/catalog_new_hmkmos/polisterolbeton.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Полистерол-</br>бетон
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-teplosten-list" data-bs-toggle="list" href="proekt_ml-607.html#list-teplosten" role="tab" aria-controls="list-teplosten">
+							<div>
+								<img src="../images/catalog_new_hmkmos/teplosten.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Теплостен
+								</span>
+							</div>	
+						</a>
+						<a class="list-group-item px-0 list-group-item list-group-item-action item text-center color_gray_text " id="list-teploblock-list" href="proekt_ml-607.html#list-teploblock" role="tab" aria-controls="list-teploblock">
+							<div>	
+								<img src="../images/catalog_new_hmkmos/teploblock.png">
+							</div>
+							<div class="pt-3">
+								<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);text-align: center;font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
+									Теплоблок
+								</span>
+							</div>	
+						</a>
+						
+					</div>
+				</div>
+				<div class="col-12 px-1 pt-md-5">
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade custom-carousel" id="list-kirpich" role="tabpanel" aria-labelledby="list-kirpich-list">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/kirpich.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											Кирпичный дом
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											Первые упоминания о кирпичных кладках, уходят своими корням еще в древний Египет и Рим, где из него, помимо стандартных построек, возводили строения, довольно замысловатой формы — арочные проемы, своды и многое другое.
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-teplaya_keramica" role="tabpanel" aria-labelledby="list-teplaya_keramica-list">
+							<div class="row  pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/teplaya_keramica.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											Теплая керамика
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											Блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade show active custom-carousel" id="list-gazobeton" role="tabpanel" aria-labelledby="list-gazobeton-list">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/gazobeton.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											Дом из газобетона
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											Газобетон – это искусственно созданный материал, широко используемый в строительной индустрии. Он относится к категории легких ячеистых бетонов. Наряду с другими строительными материалами, газобетонные блоки часто используются при возведении несущих конструкций, заполнения стен, а так же внутренних перегородок. Название «блок» этот материал получил из-за своих размерных характеристик. Согласно стандартам, блоком называется элемент, который превышает размером обычный одинарный кирпич. Размер блоков различен и в зависимости от сферы применения, эти параметры могут меняться.
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-penoblock" role="tabpanel" aria-labelledby="list-penoblock-list">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/penoblock.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											Пеноблок
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											Блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-keramzibeton" role="tabpanel" aria-labelledby="list-keramzibeton">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/keramzibeton.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											Керамзибетон
+										</span>
+									</div>
+									<div class="px-md-1 pt-3">
+										<span class="font_size_text_catalog text_materials_style">
+											Блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-arbolit" role="tabpanel" aria-labelledby="list-arbolit">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/arbolit.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											Арболит
+										</span>
+									</div>
+									<div class="px-md-1 pt-3">
+										<span class="font_size_text_catalog text_materials_style">
+											Блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-teploblock" role="tabpanel" aria-labelledby="list-teploblock">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img  class="w-75" src="../images/catalog_new_hmkmos/teploblock.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											Теплоблок
+										</span>
+									</div>
+									<div class="px-md-1 pt-3">
+										<span class="font_size_text_catalog text_materials_style">
+											Блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-derevo" role="tabpanel" aria-labelledby="list-derevo-list">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/derevo.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											 Дерево
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-karkas" role="tabpanel" aria-labelledby="list-karkas-list">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/karkas.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											 Каркас
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-teplosten" role="tabpanel" aria-labelledby="list-teplosten-list">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/teplosten.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											 Теплостен
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-monolit" role="tabpanel" aria-labelledby="list-monolit-list">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/monolit.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											 Монолит
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade custom-carousel" id="list-polisterolbeton" role="tabpanel" aria-labelledby="list-polisterolbeton-list">
+							<div class="row pt-md-3 mx-0">
+								<div class="col-12 d-none d-md-block col-md-6 px-0 text-center">
+									<img class="w-75" src="../images/catalog_new_hmkmos/polisterolbeton.png">
+								</div>
+								<div class="col-12 col-md-6 px-0">
+									<div class="px-md-1 text-center">
+										<span class="style_under_heading_text">
+											 Полистеролбетон
+										</span>
+									</div>
+									<div class="pt-3 px-md-1">
+										<span class="font_size_text_catalog text_materials_style">
+											блаблабла
+										</span>
+									</div>
+									<div class="col-6 col-lg-4 col-sm-6 pt-5">
+										<a href="proekt_ml-607.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+											<span class="font-size-20px-style" style="font-family:Montserrat">
+												Подробнее
+											</span>		
+											<img style="height: 8px;width: 32px;" class="mt-3" src="../images/catalog_new_hmkmos/arrow_right_sliders.png">
+										</a>
+									</div>		
+
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!--Скрипт карусели !-->
+	<script>
+		$(function() {
+			// Owl Carousel
+			
+			$(".slide-one").owlCarousel({
+				items: 5,
+				margin: 10,
+				loop: true,
+				nav:true, 
+				navText: ["<img style='width:40px;' src='../images/catalog_new_hmkmos/arrow_left_sliders.png'>", "<img style='width:40px;' src='../images/catalog_new_hmkmos/arrow_right_sliders.png'>"],
+				autoplay: false,
+				dots: false,
+				responsive:{
+				0:{
+					items:2
+				},
+				600:{
+					items:4
+				},
+				992:{
+					items:6
+				},
+				1200:{
+					items:8
+				}
+			}
+			});
+		});
+		$test = 'hi';
+		console.log($test);;
+	</script>
+	<script>
+		window.addEventListener('load', () => {
+			let arrItem = document.querySelectorAll('#list-tab .list-group-item');
+			arrItem.forEach(el => {
+				el.addEventListener('click', () => {
+					console.log(el.id);
+					switch (el.id) {
+						case 'list-kirpich-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-kirpich') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+
+						case 'list-teplaya_keramica-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-teplaya_keramica') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+
+						case 'list-gazobeton-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-gazobeton') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+
+						case 'list-penoblock-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-penoblock') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+
+						case 'list-keramzibeton-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-keramzibeton') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+
+						case 'list-arbolit-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-arbolit') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+						
+						case 'list-teploblock-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-teploblock') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+						
+						case 'list-derevo-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-derevo') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+						
+						case 'list-karkas-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-karkas') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+						
+						case 'list-teplosten-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-teplosten') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+						
+						case 'list-monolit-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-monolit') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+						
+						case 'list-polisterolbeton-list': {
+							document.querySelectorAll('.custom-carousel').forEach(el => {
+								if (el.id === 'list-polisterolbeton') {
+									if (el.classList.contains('active')) {
+										el.classList.remove('active');
+									}
+									if (el.classList.contains('show')) {
+										el.classList.remove('show');
+									}
+									el.classList.add('active', 'show');
+								} else if (el.classList.contains('active', 'show')) {
+									el.classList.remove('active', 'show');
+								}
+							})
+						}
+						break;
+						
+					};
+				});
+			});
+		});
+	</script>            </div>
+
+            <!-- Блок "Похожие проекты" -->
+
+            <div class="wrapper-pohozhie-projects">
+                <div class="container-fluid pb-md-3">
+  <div class="pb-3 pb-md-5 pt-5 pt-md-5 text-start px-md-2">
+    <span class="style_heading_text">
+      Похожие проекты
+    </span>
+
+  </div>
+  <div class="mx-0 owl-carousel px-0 slide-two position-relative">
+          <div class="item px-0 px-sm-2  0">
+        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+          <div>
+            <a href="proekt_ml-607.html#" style="background-image: url(../images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+            </a>
+          </div>
+          <div class="py-2 px-4">
+            <div class="py-2 row">
+              <div class="col-12 px-1">
+                <span class="font-size-24px-styles articles_text">
+                  Дома в стиле барн
+                </span>
+              </div>
+            </div>
+            <!-- <div class="py-2 row col-12">
+              <a href="#" class="color_gray_button px-1">
+                <img style="width: 33px; display: inline;" src="/images/catalog_new_hmkmos/arrow_right_new.png">
+                <span class="font-size-20px-style podrobnee" style="padding-left: 3%;">
+                  Подробнее
+                </span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+          <div class="item px-0 px-sm-2  1">
+        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+          <div>
+            <a href="proekt_ml-607.html#" style="background-image: url(../images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+            </a>
+          </div>
+          <div class="py-2 px-4">
+            <div class="py-2 row">
+              <div class="col-12 px-1">
+                <span class="font-size-24px-styles articles_text">
+                  Дома в стиле барн
+                </span>
+              </div>
+            </div>
+            <!-- <div class="py-2 row col-12">
+              <a href="#" class="color_gray_button px-1">
+                <img style="width: 33px; display: inline;" src="/images/catalog_new_hmkmos/arrow_right_new.png">
+                <span class="font-size-20px-style podrobnee" style="padding-left: 3%;">
+                  Подробнее
+                </span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+          <div class="item px-0 px-sm-2  2">
+        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+          <div>
+            <a href="proekt_ml-607.html#" style="background-image: url(../images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+            </a>
+          </div>
+          <div class="py-2 px-4">
+            <div class="py-2 row">
+              <div class="col-12 px-1">
+                <span class="font-size-24px-styles articles_text">
+                  Дома в стиле барн
+                </span>
+              </div>
+            </div>
+            <!-- <div class="py-2 row col-12">
+              <a href="#" class="color_gray_button px-1">
+                <img style="width: 33px; display: inline;" src="/images/catalog_new_hmkmos/arrow_right_new.png">
+                <span class="font-size-20px-style podrobnee" style="padding-left: 3%;">
+                  Подробнее
+                </span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+          <div class="item px-0 px-sm-2  3">
+        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+          <div>
+            <a href="proekt_ml-607.html#" style="background-image: url(../images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+            </a>
+          </div>
+          <div class="py-2 px-4">
+            <div class="py-2 row">
+              <div class="col-12 px-1">
+                <span class="font-size-24px-styles articles_text">
+                  Дома в стиле барн
+                </span>
+              </div>
+            </div>
+            <!-- <div class="py-2 row col-12">
+              <a href="#" class="color_gray_button px-1">
+                <img style="width: 33px; display: inline;" src="/images/catalog_new_hmkmos/arrow_right_new.png">
+                <span class="font-size-20px-style podrobnee" style="padding-left: 3%;">
+                  Подробнее
+                </span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    
+  </div>
+</div>
+
+
+<script>
+  $(function() {
+    $(".slide-two").owlCarousel({
+      loop: true, //Зацикливаем слайдер
+      nav: true,
+      navText: ["<img style='width:42px;' src='../images/catalog_new_hmkmos/arrow_left_sliders.png'>", "<img style='width:42px;' src='../images/catalog_new_hmkmos/arrow_right_sliders.png'>"],
+      autoplay: false, //Автозапуск слайдера
+      smartSpeed: 2000, //Время движения слайда
+      autoplayTimeout: 4000, //Время смены слайда
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        992: {
+          items: 3
+        }
+      }
+    });
+
+
+  });
+</script>            </div>
+
+            <!-- Блок "Недавно просмотренные" -->
+            <div class="wrapper-nedavno-prosmotrenny">
+                <div class="container-fluid">
+	<div class="pt-3 pt-md-5 pb-3 text-start">
+		<span class="style_heading_text title-desctop">
+			Недавно просмотренные проекты
+		</span>
+	</div>
+	<section class="b-section b-section_catalog">
+
+		<div class="catalog_list">
+			<link rel="stylesheet" href="../proects.css">
+			<div class="block_proekts_img">
+				<div class="container-fluid best px-0">
+					<div class="row px-0 mx-0">
+						<div class="mx-0 px-0 owl-carousel owl-theme pt-0 pt-md-4 slide-prosmotrenny position-relative">
+
+															<div class="item px-0 px-sm-2  0">
+									<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+										<div>
+											<a href="proekt_ml-607.html#">
+												<img src="../images/proect_zx76.jpg">
+											</a>
+										</div>
+										<div class="py-3 mb-1 px-3">
+											<div class="row mx-0">
+												<div class="row px-0 pb-2">
+													<div class="col-10 px-0 pb-lg-0">
+														<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 18px;font-style: normal;font-weight: 500;line-height: normal;">
+															ML-607
+														</span>
+													</div>
+													<div class="col-2 text-end">
+														<button style="width:18px;" class="px-0 border-0 back_transpar text-end">
+															<img class="m-auto" src="../images/catalog_new_hmkmos/Vector&#32;(1).png">
+														</button>
+													</div>
+												</div>
+												<div class="row mx-0 px-0">
+													<div class="col-12 d-flex justify-content-start px-0">
+														<div class="d-flex">
+															<div class="pt-1">
+																<img class="m-auto" style="height: 15px; width: 15px;" src="../images/catalog_new_hmkmos/bed-single.png">
+															</div>
+															<div>
+																<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																	4
+																</span>
+															</div>
+														</div>
+														<div class="d-flex px-2">
+															<div class="pt-1">
+																<img class="m-auto" style="height: 15px; width: 15px;" src="../images/catalog_new_hmkmos/bath.png">
+															</div>
+															<div>
+																<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																	2
+																</span>
+															</div>
+														</div>
+														<div class="px-2">
+															<span class="color_black_text_catalog font_famil_catalog" style="font-size:15px;">
+																20×15 м
+															</span>
+														</div>
+														<div class="px-2" style="/* padding-left: 6%; */">
+															<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																744 м²
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+															<div class="item px-0 px-sm-2  1">
+									<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+										<div>
+											<a href="proekt_ml-607.html#">
+												<img src="../images/proect_zx76.jpg">
+											</a>
+										</div>
+										<div class="py-3 mb-1 px-3">
+											<div class="row mx-0">
+												<div class="row px-0 pb-2">
+													<div class="col-10 px-0 pb-lg-0">
+														<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 18px;font-style: normal;font-weight: 500;line-height: normal;">
+															ML-607
+														</span>
+													</div>
+													<div class="col-2 text-end">
+														<button style="width:18px;" class="px-0 border-0 back_transpar text-end">
+															<img class="m-auto" src="../images/catalog_new_hmkmos/Vector&#32;(1).png">
+														</button>
+													</div>
+												</div>
+												<div class="row mx-0 px-0">
+													<div class="col-12 d-flex justify-content-start px-0">
+														<div class="d-flex">
+															<div class="pt-1">
+																<img class="m-auto" style="height: 15px; width: 15px;" src="../images/catalog_new_hmkmos/bed-single.png">
+															</div>
+															<div>
+																<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																	4
+																</span>
+															</div>
+														</div>
+														<div class="d-flex px-2">
+															<div class="pt-1">
+																<img class="m-auto" style="height: 15px; width: 15px;" src="../images/catalog_new_hmkmos/bath.png">
+															</div>
+															<div>
+																<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																	2
+																</span>
+															</div>
+														</div>
+														<div class="px-2">
+															<span class="color_black_text_catalog font_famil_catalog" style="font-size:15px;">
+																20×15 м
+															</span>
+														</div>
+														<div class="px-2" style="/* padding-left: 6%; */">
+															<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																744 м²
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+															<div class="item px-0 px-sm-2  2">
+									<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+										<div>
+											<a href="proekt_ml-607.html#">
+												<img src="../images/proect_zx76.jpg">
+											</a>
+										</div>
+										<div class="py-3 mb-1 px-3">
+											<div class="row mx-0">
+												<div class="row px-0 pb-2">
+													<div class="col-10 px-0 pb-lg-0">
+														<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 18px;font-style: normal;font-weight: 500;line-height: normal;">
+															ML-607
+														</span>
+													</div>
+													<div class="col-2 text-end">
+														<button style="width:18px;" class="px-0 border-0 back_transpar text-end">
+															<img class="m-auto" src="../images/catalog_new_hmkmos/Vector&#32;(1).png">
+														</button>
+													</div>
+												</div>
+												<div class="row mx-0 px-0">
+													<div class="col-12 d-flex justify-content-start px-0">
+														<div class="d-flex">
+															<div class="pt-1">
+																<img class="m-auto" style="height: 15px; width: 15px;" src="../images/catalog_new_hmkmos/bed-single.png">
+															</div>
+															<div>
+																<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																	4
+																</span>
+															</div>
+														</div>
+														<div class="d-flex px-2">
+															<div class="pt-1">
+																<img class="m-auto" style="height: 15px; width: 15px;" src="../images/catalog_new_hmkmos/bath.png">
+															</div>
+															<div>
+																<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																	2
+																</span>
+															</div>
+														</div>
+														<div class="px-2">
+															<span class="color_black_text_catalog font_famil_catalog" style="font-size:15px;">
+																20×15 м
+															</span>
+														</div>
+														<div class="px-2" style="/* padding-left: 6%; */">
+															<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																744 м²
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+															<div class="item px-0 px-sm-2  3">
+									<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+										<div>
+											<a href="proekt_ml-607.html#">
+												<img src="../images/proect_zx76.jpg">
+											</a>
+										</div>
+										<div class="py-3 mb-1 px-3">
+											<div class="row mx-0">
+												<div class="row px-0 pb-2">
+													<div class="col-10 px-0 pb-lg-0">
+														<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 18px;font-style: normal;font-weight: 500;line-height: normal;">
+															ML-607
+														</span>
+													</div>
+													<div class="col-2 text-end">
+														<button style="width:18px;" class="px-0 border-0 back_transpar text-end">
+															<img class="m-auto" src="../images/catalog_new_hmkmos/Vector&#32;(1).png">
+														</button>
+													</div>
+												</div>
+												<div class="row mx-0 px-0">
+													<div class="col-12 d-flex justify-content-start px-0">
+														<div class="d-flex">
+															<div class="pt-1">
+																<img class="m-auto" style="height: 15px; width: 15px;" src="../images/catalog_new_hmkmos/bed-single.png">
+															</div>
+															<div>
+																<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																	4
+																</span>
+															</div>
+														</div>
+														<div class="d-flex px-2">
+															<div class="pt-1">
+																<img class="m-auto" style="height: 15px; width: 15px;" src="../images/catalog_new_hmkmos/bath.png">
+															</div>
+															<div>
+																<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																	2
+																</span>
+															</div>
+														</div>
+														<div class="px-2">
+															<span class="color_black_text_catalog font_famil_catalog" style="font-size:15px;">
+																20×15 м
+															</span>
+														</div>
+														<div class="px-2" style="/* padding-left: 6%; */">
+															<span class="font_famil_catalog color_black_text_catalog" style="font-size:15px;">
+																744 м²
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+<script>
+	$(function() {
+		$(".slide-prosmotrenny").owlCarousel({
+			loop: true, //Зацикливаем слайдер
+			nav: true,
+			dots: false,
+			navText: ["<div class='pt-4'><div class='px-2' aria-label='Previous'><img style='width:42px;' src='../images/catalog_new_hmkmos/arrow_left_sliders.png'></div>", "<div class='px-2' aria-label='Next'><img style='width:42px;' src='../images/catalog_new_hmkmos/arrow_right_sliders.png'></div></div>"],
+			autoplay: false, //Автозапуск слайдера
+			autoplayHoverPause: true, //Пауза при навидении мыши
+			smartSpeed: 1000, //Время движения слайда
+			autoplayTimeout: 2000, //Время смены слайда
+			responsiveBaseElement: 'body',
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 2
+				},
+				800: {
+					items: 3
+				},
+				1000: {
+					items: 4
+				}
+			}
+
+		});
+
+	});
+</script>            </div>
+
+            <!-- Блок "Нужна консультация" -->
+            <form action="proekt_ml-607.html" method="post" class="wrapper-need-consultation">
+  <div class="b-content">
+    <div class="container-fluid mx-0 pt-3 pt-md-5 row">
+      <div class="px-0 col-12 col-md-8">
+        <div class="text-start px-1">
+          <span class="style_heading_text">
+            Нужна консультация?
+          </span>
+        </div>
+        <div class="col-12 pt-3 px-1 pb-md-4">
+          <span class="font_consult" style="color:black;">
+            Оставьте контакты и мы с вами свяжемся для обсуждения деталей
+          </span>
+
+        </div>
+        <div class="d-none d-md-flex row">
+          <div class="col-5">
+            <a href="proekt_ml-607.html#" class="row mx-0 py-3 justify-content-start ref-consultation">
+              <img src="../images/catalog_new_hmkmos/whatsapp.png" class="px-0" style="width: 38px;height: 38px;">
+              <div class="d-flex px-0 col-7 pt-1 mx-2" style="border-bottom: 1px solid #343536; width: 235px; position: relative;">
+                <div class="pt-1">
+                  <span class="px-0 py-1 kontak_text">WHATSAPP</span>
+                </div>
+                <div class="position-absolute  button_podbor_two">
+                  <div class="button_podbor_square position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                    <div class="position-absolute" style="top:0px;">
+                      <img src="../images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="proekt_ml-607.html#" class="row mx-0 py-3 justify-content-start ref-consultation">
+              <img src="../images/catalog_new_hmkmos/telega.png" class="px-0" style="width: 38px;height: 38px;">
+              <div class="d-flex px-0 col-7 pt-1 mx-2" style="border-bottom: 1px solid #343536; width: 235px; position: relative;">
+                <div class="pt-1">
+                  <span class="px-0 py-1 kontak_text">TELEGRAM</span>
+                </div>
+                <div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+                  <div class="button_podbor_square position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                    <div class="position-absolute" style="top:0px;">
+                      <img src="../images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href='tel:+74957997599' class="row mx-0 py-3 justify-content-start">
+              <img src="../images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+              <div class="col-7 px-0 pt-2 mx-2">
+                <span class="font_consult_text">+7 (495) 799-75-29
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-7 row mx-0 justify-content-start">
+            <div class="m-auto px-0">
+              <input class="border-0 w-75 kontak_text input" placeholder="Иван" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important;" type="text" id="uname" name="name" />
+            </div>
+            <div class="m-auto px-0">
+              <input class="border-0 w-75 kontak_text input" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important;" placeholder="+7 964 775-86-97" type="tel" id="telephone" />
+            </div>
+
+            <button type="submit" class="send-form d-flex m-auto px-0 col-7 mx-0">
+              <div class="pt-1">
+                <span class="px-0 py-1 kontak_text btn-submit">Отправить</span>
+              </div>
+              <div class="position-absolute  button_podbor_two">
+                <div class="button_podbor_square position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                  <div class="position-absolute" style="top:0px;">
+                    <img src="../images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+                  </div>
+                </div>
+              </div>
+            </button>
+
+          </div>
+        </div>
+        <div class="d-block d-md-none">
+          <a href="proekt_ml-607.html#" class="row mx-0 py-3 justify-content-start">
+            <img src="../images/catalog_new_hmkmos/whatsapp.png" style="width: 52px;height: 36px; padding-left:0px;">
+            <div class="button_podbor d-flex px-0 w-75" style="border-bottom: 1px solid #000;">
+              <div>
+                <span class="px-0 py-1 kontak_text ">WHATSAPP</span>
+              </div>
+              <div class="position-absolute  button_podbor_two" style=" padding-left: 175px;">
+                <div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                  <div class="position-absolute" style="top:-3px;">
+                    <img class="px-0" src="../images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 40px;height: 7px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="proekt_ml-607.html#" class="row mx-0 py-3 justify-content-start">
+            <img src="../images/catalog_new_hmkmos/telega.png" style="width: 52px;height: 36px; padding-left:0px;">
+            <div class="button_podbor d-flex px-0 w-75" style="border-bottom: 1px solid #000;">
+              <div>
+                <span class="px-0 py-1 kontak_text ">TELEGRAM</span>
+              </div>
+              <div class="position-absolute  button_podbor_two" style=" padding-left: 175px;">
+                <div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                  <div class="position-absolute" style="top:-3px;">
+                    <img class="px-0" src="../images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 40px;height: 7px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="proekt_ml-607.html#" class="row mx-0 py-3 justify-content-start">
+            <img src="../images/catalog_new_hmkmos/telephone.png" style="width: 52px;height: 36px; padding-left:0px;">
+            <div class="button_podbor d-flex px-0 w-75" style="border-bottom: 1px solid #000;">
+              <div>
+                <span class="px-0 py-1 kontak_text ">ПОЗВОНИТЬ</span>
+              </div>
+              <div class="position-absolute  button_podbor_two" style=" padding-left: 175px;">
+                <div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                  <div class="position-absolute" style="top:-3px;">
+                    <img class="px-0" src="../images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 40px;height: 7px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="proekt_ml-607.html#" class="row mx-0 py-3 justify-content-start">
+            <img src="../images/catalog_new_hmkmos/telephone.png" style="width: 52px;height: 36px; padding-left:0px;">
+            <div class="button_podbor d-flex px-0 w-75" style="border-bottom: 1px solid #000;">
+              <div>
+                <span class="px-0 py-1 kontak_text ">МЫ ПЕРЕЗВОНИМ</span>
+              </div>
+              <div class="position-absolute  button_podbor_two" style=" padding-left: 175px;">
+                <div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                  <div class="position-absolute" style="top:-3px;">
+                    <img class="px-0" src="../images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 40px;height: 7px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+
+      </div>
+      <div class=" col-12 col-md-4 px-0 m-auto">
+        <img class="w-100 image-fluid" src="../images/catalog_new_hmkmos/block_consult.png">
+      </div>
+    </div>
+  </div>
+</form>        </section>
+    </main>
+    <footer>
+  <div class="wrapper-footer">
+    <div class="wrapper-logo-desc-politic">
+      <img src="../img/footer-img/logo-footer-gold.svg" alt="arhion-logo-footer">
+      <p>Архитектурно-<br />строительная группа</p>
+      <a href="proekt_ml-607.html#" class="politic-desctop">Политика конфиденциальности</a>
+    </div>
+    <div class="wrapper-list-item">
+      <div>
+        <a href="proekt_ml-607.html#">Проектирование</a>
+      </div>
+      <div>
+        <a href="proekt_ml-607.html#">Каталог проектов</a>
+      </div>
+      <div>
+        <a href="proekt_ml-607.html#">Контакты</a>
+      </div>
+      <div>
+        <a href="proekt_ml-607.html#">Строительство</a>
+      </div>
+      <div>
+        <a href="proekt_ml-607.html#">О компании</a>
+      </div>
+      <div>
+        <a href="proekt_ml-607.html#">Полезные статьи</a>
+      </div>
+    </div>
+    <div class="wrapper-contacts-social">
+      <a href="tel:+7 (495) 799-75-29" class="tel-footer">+7 (495) 799-75-29</a>
+      <p>Рабочее время: Ежедневно 10:00 - 21:00</p>
+      <div class="wrapper-social-footer">
+        <a href="proekt_ml-607.html#"><img src="../img/footer-img/vk-gold.svg" alt=""></a>
+        <a href="proekt_ml-607.html#"><img src="../img/footer-img/instagram-gold.svg" alt=""></a>
+        <a href="proekt_ml-607.html#"><img src="../img/footer-img/whatsapp-gold.svg" alt=""></a>
+      </div>
+      <a href="proekt_ml-607.html#" class="politic-mobile">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>    <!-- <script src="../portfolio/js/jquery.min.js"></script> -->
+    <!-- <script charset="utf-8" src="../portfolio/js/index.js"></script> -->
+    <!--<script async defer src="//assets.pinterest.com/js/pinit.js"></script>-->
+    <script src="../jquery.bxslider.min.js@2"></script>
+    <script src="../script/jquery.mb.browser.js@2"></script>
+    <script src="../script/jquery.cookie.js@2"></script>
+    <script src="../portfolio/js/jquery.validate.js"></script>
+    <script src="../script/index.js@2"></script>
+    <!-- <script src="..portfolio/js/index.js"></script> -->
+
+    <script type="text/javascript" src="../library/Pagination/dist/pagination.min.js"></script>
+    <script src="../owl/owl.carousel.min.js@2"></script>
+    <script src="../placeholder.js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../common.js"></script>
+    <script src="../script/progressive-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1551 @@
+@import '../../fonts/Raleway/font-raleway.css';
+@import 'animation_button.css';
+
+
+/* Раздел слайдера для основных картинок */
+#carouselExampleControls {
+    position: relative;
+}
+
+
+.wrapper-slider-img {
+    position: relative;
+    bottom: 50px;
+    z-index: 10;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.img-project {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    /* display: none; */
+    position: absolute;
+    /* position: fixed; */
+    /* top: 0;
+    left: 0; */
+    height: 90vh;
+    max-height: 90vh;
+    /* max-height: 0vh; */
+    transition: all ease 1s;
+
+}
+
+.img-project.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    /* display: block; */
+}
+
+.button-slider-img {
+    width: 36px;
+    height: 5px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px black;
+    opacity: .5;
+    border: none;
+    outline: none;
+}
+
+.button-slider-img.active {
+    opacity: 1;
+}
+
+.catalog-photo-main {
+    position: relative;
+}
+
+.slider-arrow {
+    color: #fff;
+    font-size: 80px;
+    position: absolute;
+    top: 47%;
+}
+
+.slider-arrow:hover {
+    cursor: pointer;
+}
+
+.slider-arrow:first-of-type {
+    left: 5%;
+}
+
+.slider-arrow:last-of-type {
+    right: 5%;
+}
+
+
+/* Раздел с хлебными крошками */
+.wrapper-bread-crumbs {
+    display: flex;
+    padding: 16px 80px 24px;
+}
+
+.bread-crumbs-project {
+    font-family: 'Montserrat', sans-serif;
+    color: #14010C;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.bread-crumbs-project:not(:last-child)::after {
+    content: url('../img/breadcrumbs/arrow.svg');
+    margin-left: 8px;
+    margin-right: 16px;
+}
+
+.bread-crumbs-project:last-child {
+    text-transform: uppercase;
+    color: rgba(128, 128, 128, 0.8);
+}
+
+.bread-crumbs-project.mobile {
+    display: none;
+    align-items: center;
+}
+
+.bread-crumbs-project.mobile::after {
+    content: '';
+}
+
+.bread-crumbs-project.mobile::before {
+    content: url('../img/breadcrumbs/arrow-left.svg');
+}
+
+
+#carouselExampleControls .carousel-inner {
+    overflow: visible;
+}
+
+#carouselExampleControls .btn-play {
+    position: absolute;
+    bottom: -75px;
+    right: 193px;
+    z-index: 100;
+}
+
+#carouselExampleControls .btn-play svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 156px;
+    height: 156px;
+}
+
+#carouselExampleControls .btn-play svg circle {
+    stroke: #A78B73;
+    stroke-width: 3px;
+    stroke-dasharray: 484;
+    stroke-dashoffset: 484px;
+}
+
+/* Блок с инфой о проекте */
+.wrapper-info-project {
+    padding: 0 80px;
+}
+
+.wrapper-for-border {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.wrapper-name-content-cost {
+    margin-top: 30px;
+}
+
+.title-project {
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    color: #14010C;
+    margin-bottom: 0;
+}
+
+
+.wrapper-info-project .wrapper-content {
+    padding: 26px 0 48px;
+    display: flex;
+    color: #14010C;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.wrapper-content #bed {
+    display: flex;
+    margin-right: 8px;
+}
+
+#bed::before {
+    content: url('../img/block_info_project/icon-bed-single.svg');
+    margin-right: 4px;
+}
+
+.wrapper-content #bath {
+    display: flex;
+    margin-right: 24px;
+}
+
+#bath::before {
+    content: url('../img/block_info_project/icon-bath.svg');
+    margin-right: 4px;
+}
+
+
+#room-space {
+    margin-right: 24px;
+}
+
+
+#price-project {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #14010C;
+}
+
+#price-project b {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+
+/* Кнопка "Заказать проект" */
+.btn-circle {
+    color: #343536;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    border: 1px solid #A78B73;
+    min-width: 241px;
+    min-height: 241px;
+    border-radius: 50%;
+    max-width: 240px;
+    position: relative;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 15%;
+    text-transform: uppercase;
+    transition: all ease-in-out .3s;
+}
+
+.btn-circle:hover {
+    background-color: #A78B73;
+}
+
+.btn-circle:active {
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, .5);
+}
+
+
+.btn-circle .static-line {
+    width: 300px;
+    position: absolute;
+    margin: 0;
+    top: 49%;
+    height: 1px;
+    background-color: #343436;
+    opacity: 1;
+}
+
+.btn-circle .animation-line {
+    position: absolute;
+    margin-top: 0;
+    top: 49%;
+    background-color: #343536;
+    opacity: 1;
+    height: 2px;
+}
+
+.btn-circle .static-line::after {
+    content: url('../img/block_info_project/arrow-black.svg');
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Мобильная версия кнопки "заказать" */
+#btn-project-order-mobile {
+    display: none;
+    text-transform: uppercase;
+}
+
+#btn-project-order-mobile::after {
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    margin-top: 7px;
+}
+
+#btn-project-order-mobile .static-line {
+    top: 28px;
+    background-color: #343536;
+}
+
+#btn-project-order-mobile .animation-line {
+    display: none;
+}
+
+#btn-project-order-mobile .static-line::after {
+    bottom: 0;
+}
+
+/* Добавить в избранное и кол-во просмотров */
+.wrapper-text-add-favorite-n-numbers-view {
+    display: flex;
+    gap: 10px;
+    color: #646464;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 40px;
+}
+
+#text-add-favorite {
+    display: flex;
+    padding-right: 10px;
+    gap: 8px;
+}
+
+#text-add-favorite::before {
+    content: url('../img/info_project/icon-heart.svg');
+    margin-top: 3px;
+}
+
+#numbers-view {
+    display: flex;
+    gap: 8px;
+}
+
+#numbers-view::before {
+    content: url('../img/info_project/icon-eye.svg');
+    margin-top: 3px;
+}
+
+
+
+/* Стоимость строительства и кнопка "заказать смету" */
+.wrapper-text-price-building-n-get-outlay {
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    font-style: normal;
+    line-height: normal;
+}
+
+.text-price-building {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.text-price-building br {
+    display: none;
+}
+
+.text-price-building b {
+    font-weight: 700;
+    font-size: 34px;
+    color: #fff;
+    padding-left: 15px;
+}
+
+.btn-square {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 260px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    position: relative;
+    color: #14010C;
+}
+
+.btn-square::after {
+    content: '';
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    border: 1px solid #A78B73;
+    transition: all ease .3s;
+}
+
+.btn-square:hover::after {
+    background-color: #A78B73;
+}
+
+.btn-square .static-line {
+    position: absolute;
+    width: 280px;
+    margin: 0;
+    background-color: #A78B73;
+    opacity: 1;
+    height: 2px;
+    top: 35px;
+}
+
+.btn-square .animation-line {
+    position: absolute;
+    margin-top: 0;
+    top: 35px;
+    background-color: #A78B73;
+    opacity: 1;
+    height: 4px;
+}
+
+.btn-square .static-line::after {
+    content: url('../img/block_info_project/arrow-btn-order.svg');
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+}
+
+
+
+/* Блок с поэтапным строительством */
+.wrapper-stage-building {
+    padding: 20px 80px;
+    background-color: #343536;
+    position: relative;
+}
+
+.wrapper-sections-building {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+}
+
+.title-stage-building {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.name-sections-building {
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 32px;
+    transition: all ease .3s;
+}
+
+.name-sections-building:hover {
+    cursor: pointer;
+    transform: translateX(15px);
+}
+
+.name-sections-building.active-gold {
+    color: #A78B73;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.name-sections-building.active-gold::before {
+    content: url('../img/block_stage_building/arrow-gold.svg');
+    margin-right: 8px;
+    margin-bottom: 0px;
+}
+
+.name-sections-building::before {
+    content: url('../img/block_stage_building/arrow-gray.svg');
+    margin-right: 8px;
+    margin-bottom: 4px;
+}
+
+.right-sections-building {
+    min-width: 490px;
+}
+
+.description-sections-building {
+    color: #fff;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.third-description {
+    margin-bottom: 32px;
+}
+
+
+.description-sections-building::before {
+    content: url('../img/block_stage_building/point-white.svg');
+    margin-right: 16px;
+}
+
+.four-description {
+    display: none;
+    margin-bottom: 32px;
+}
+
+#btn-get-outlay {
+    right: 17%;
+    position: absolute;
+    top: 27%;
+    background-color: transparent;
+    color: #fff;
+    padding-left: 2%;
+}
+
+#btn-get-outlay:hover {
+    background-color: #A78B73;
+}
+
+#btn-get-outlay .static-line {
+    background-color: #fff;
+}
+
+#btn-get-outlay .animation-line {
+    background-color: #fff;
+}
+
+
+#btn-get-outlay .static-line::after {
+    content: url('../img/block_stage_building/arrow-white.svg');
+}
+
+#btn-get-outlay-mobile {
+    display: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+#btn-get-outlay-mobile::after {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+}
+
+#btn-get-outlay-mobile .static-line {
+    background-color: #343536;
+    top: 30px;
+    height: 1px;
+}
+
+/* Блок "Планы Фасад Описание" */
+.wrapper-plan-facade-desc-project {
+    padding: 0 80px 80px;
+}
+
+.wrapper-title-plan-facade-desc-project {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0 74px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #A78B73;
+}
+
+.wrapper-content-plan-facade-desc-project div {
+    display: none;
+}
+
+.wrapper-content-plan-facade-desc-project div.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-content-plan-facade-desc-project .wrapper-slider-img-plan {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 0 25px;
+}
+
+.wrapper-plan-project {
+    flex-direction: column;
+}
+
+.title-plan-facade-desc-project {
+    color: #646464;
+    min-width: 410px;
+    text-align: center;
+    border-bottom: 2px solid #646464;
+    cursor: pointer;
+}
+
+.title-plan-facade-desc-project.active-title {
+    color: #A78B73;
+    border-bottom: 2px solid #A78B73;
+}
+
+.wrapper-plan-project {
+    justify-content: space-between;
+}
+
+.button-slider-img-plan {
+    width: 36px;
+    height: 5px;
+    border-radius: 16px;
+    background-color: #d8d8d8;
+    border: none;
+    outline: none;
+}
+
+.button-slider-img-plan.active {
+    background-color: #969696;
+}
+
+
+.wrapper-facade-project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper-facade-project img {
+    max-width: 50%;
+}
+
+.wrapper-img-facade-project {
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wrapper-img-facade-project.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper-img-facade-project .img-facade-project {
+    max-width: 100%;
+}
+
+.content-plan-project {
+    display: none;
+}
+
+.content-plan-project.active {
+    display: block;
+}
+
+.wrapper-desc-project {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.wrapper-desc-project table {
+    width: 42%;
+    color: #343536;
+    font-size: 24px;
+}
+
+.wrapper-desc-project table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.wrapper-desc-project table tr {
+    border-bottom: 1px solid #969696;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.wrapper-desc-project table tr td:last-of-type {
+    text-align: right;
+}
+
+.wrapper-desc-project p {
+    width: 50%;
+    font-size: 20px;
+    color: #000;
+}
+
+#btn-change-project-mobile {
+    padding-bottom: 25px;
+    font-size: 16px;
+}
+
+#btn-change-project-mobile::after {
+    content: none;
+}
+
+#btn-change-project-mobile .static-line {
+    top: 24px;
+    background-color: #343536;
+    width: 266px;
+    height: 1px;
+}
+
+#btn-change-project-mobile .static-line::after {
+    bottom: 0;
+}
+
+
+
+/* Блок "Внесем изменения в проект" */
+.wrapper-add-change-project {
+    padding: 0 80px;
+}
+
+.wrapper-add-change-project .first-block {
+    width: 49%;
+}
+
+.wrapper-add-change-project .second-block {
+    width: 51%;
+}
+
+.title-add-change-project {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #14010C;
+}
+
+.wrap-img-n-name-project {
+    align-items: center;
+}
+
+.name-add-change-project {
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #14010C;
+    margin-left: 15px;
+}
+
+#btn-change-project {
+    text-transform: uppercase;
+    min-width: 610px;
+    font-size: 24px;
+}
+
+#btn-change-project .static-line {
+    width: 580px;
+    top: 63px;
+}
+
+#btn-change-project .animation-line {
+    top: 63px;
+}
+
+/* Блок "Пример проектной документации" */
+.wrapper-example-docum {
+    padding: 32px 80px 52px;
+    background-color: #343536;
+    margin-top: 70px;
+}
+
+.title-example-docum {
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.wrapper-content-example-docum {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#btn-view-example-docum {
+    min-width: 250px;
+    min-height: 250px;
+    padding: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    background-color: transparent;
+    text-align: center;
+}
+
+#btn-view-example-docum:hover {
+    background-color: #A78B73;
+}
+
+#btn-view-example-docum .static-line {
+    width: 350px;
+    height: 1px;
+    top: 58%;
+    left: 30px;
+    background-color: #fff;
+}
+
+#btn-view-example-docum .animation-line {
+    background-color: #fff;
+    top: 58%;
+    left: 30px;
+}
+
+#btn-view-example-docum .static-line::after {
+    content: url('../img/block_stage_building/arrow-white.svg');
+    bottom: 0;
+}
+
+#btn-view-example-docum-mobile {
+    display: none;
+    justify-content: flex-start;
+}
+
+#btn-view-example-docum-mobile::after {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 10px;
+    left: 95px;
+}
+
+#btn-view-example-docum-mobile .static-line {
+    width: 248px;
+    height: 1px;
+    background-color: #343536;
+    top: 51px;
+}
+
+#btn-view-example-docum-mobile .static-line::after {
+    right: 45px;
+}
+
+.vertical-line-example-docum {
+    min-height: 290px;
+    width: 5px;
+    background-color: #A78B73;
+    margin-left: 230px;
+    margin-right: 60px;
+    align-self: center;
+}
+
+.img-group-house-mobile {
+    display: none;
+}
+
+
+
+/* Блок с материалами */
+.wrapper-block-materials {
+    padding: 80px;
+    padding-bottom: 20px;
+}
+
+.title-block-materials {
+    color: #14010C;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.wrapper-desc-n-slider-block-materials {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 48px;
+}
+
+.desc-block-materials {
+    color: #14010C;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 816px;
+    margin: 0;
+}
+
+.wrapper-slider-block-materials {
+    display: flex;
+    gap: 20px;
+}
+
+.wrapper-slider-block-materials img:hover {
+    cursor: pointer;
+}
+
+.wrapper-img-block-materials {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all ease .3s;
+}
+
+.img-block-materials {
+    /* flex-basis: 17%; */
+    /* min-width: 15.5%; */
+    min-width: 210px;
+}
+
+
+/* Блок "Похожие проекты */
+.wrapper-pohozhie-projects {
+    padding: 40px 80px;
+}
+
+.wrapper-pohozhie-projects .container-fluid {
+    padding: 0;
+}
+
+
+.owl-carousel.slide-two .owl-nav {
+    gap: 15px;
+}
+
+.owl-carousel.owl-drag .owl-item:hover {
+    transform: scale(1.01);
+    transition: all ease .3s;
+}
+
+
+
+/* Блок "Недавно просмотренные"  */
+.wrapper-nedavno-prosmotrenny {
+    padding: 40px 80px;
+}
+
+
+
+/* Блок "Нужна консультация" в отдельном файле*/
+
+
+
+
+/* Блок Футер в отдельном файле */
+
+
+@media (min-width: 319px) {
+
+    /* Первый блок, с изображениями  */
+    .img-project {
+        max-height: 180px;
+    }
+
+    .btn-play {
+        display: none;
+    }
+
+    .wrapper-slider-img {
+        bottom: 30px;
+    }
+
+
+    /* Хлебные крошки */
+    .wrapper-bread-crumbs {
+        padding: 16px 16px 6px;
+    }
+
+    .bread-crumbs-project {
+        display: none;
+    }
+
+    .bread-crumbs-project.mobile {
+        display: flex;
+        font-size: 14px;
+    }
+
+
+    /* Блок с инфой о проекте  */
+    .wrapper-info-project {
+        padding: 0 16px;
+    }
+
+    .wrapper-for-border {
+        position: relative;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .wrapper-text-add-favorite-n-numbers-view {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        gap: 4px;
+        margin-top: 0;
+    }
+
+    #text-add-favorite {
+        gap: 8px;
+        font-size: 0px;
+        color: transparent;
+        max-height: 24px;
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 4px;
+    }
+
+    #numbers-view {
+        gap: 4px;
+        align-items: center;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    #numbers-view::before {
+        margin-top: 0;
+    }
+
+    .wrapper-name-content-cost {
+        margin-top: 0;
+    }
+
+    .title-project {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+
+    .wrapper-info-project .wrapper-content {
+        display: none;
+    }
+
+    #price-project {
+        font-size: 14px;
+        padding-top: 16px;
+    }
+
+    #price-project b {
+        font-size: 15px;
+        padding-left: 0;
+    }
+
+    #btn-project-order {
+        display: none;
+    }
+
+    #btn-project-order-mobile {
+        display: flex;
+    }
+
+
+    /* Блок "Планы Фасад Описание"  */
+    .wrapper-plan-facade-desc-project {
+        padding: 0 16px;
+    }
+
+    .wrapper-title-plan-facade-desc-project {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .title-plan-facade-desc-project {
+        min-width: 30%;
+    }
+
+    .content-plan-project {
+        width: 280px;
+        height: 270px;
+    }
+
+    /* Блок с поэтапным строительством */
+    .wrapper-stage-building {
+        padding: 25px 16px;
+        background-color: #F1EBE6;
+    }
+
+    .wrapper-text-price-building-n-get-outlay {
+        padding-top: 0;
+    }
+
+    .text-price-building {
+        font-size: 14px;
+        color: #343536;
+    }
+
+    .text-price-building br {
+        display: block;
+    }
+
+    .text-price-building b {
+        font-size: 16px;
+        padding-left: 0;
+        line-height: 24px;
+        color: #343536;
+    }
+
+    #btn-get-outlay {
+        display: none;
+    }
+
+    #btn-get-outlay-mobile {
+        display: flex;
+    }
+
+    .title-stage-building {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 5px;
+        color: #343536;
+    }
+
+    .wrapper-sections-building {
+        flex-direction: column;
+    }
+
+    .name-sections-building {
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #343536;
+    }
+
+    .name-sections-building.active-gold {
+        font-size: 18px;
+    }
+
+    .name-sections-building::before {
+        content: url('../img/block_stage_building/arrow-gray-mobile.svg');
+    }
+
+    .name-sections-building.active-gold::before {
+        content: url('../img/block_stage_building/arrow-gold-mobile.svg');
+    }
+
+    .description-sections-building {
+        font-size: 14px;
+        margin-bottom: 10px;
+        color: #343536;
+    }
+
+    .description-sections-building::before {
+        margin-right: 5px;
+    }
+
+    /* Блок "Внесем изменения в проект  */
+    .wrapper-add-change-project {
+        display: none;
+    }
+
+    /* Блок "Пример проектной документации" */
+    .wrapper-example-docum {
+        margin-top: 0;
+        padding: 16px;
+        background-color: #fff;
+    }
+
+    .title-example-docum {
+        font-size: 20px;
+        line-height: 26px;
+        color: #343536;
+        padding-bottom: 0;
+    }
+
+    .wrapper-content-example-docum {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #btn-view-example-docum {
+        display: none;
+    }
+
+    .vertical-line-example-docum {
+        display: none;
+    }
+
+    #btn-view-example-docum-mobile {
+        display: flex;
+    }
+
+    .img-group-house {
+        display: none;
+    }
+
+    .img-group-house-mobile {
+        display: block;
+    }
+
+    /* Блок с материалами */
+    .wrapper-block-materials {
+        padding: 0;
+    }
+
+    .wrapper-block-materials .container-fluid {
+        padding: 0;
+    }
+
+
+    /* Блок "Похожие проекты" */
+    .wrapper-pohozhie-projects {
+        padding: 0 16px;
+    }
+}
+
+@media (min-width: 1005px) {
+
+    /* Блок с основными картинками */
+    .img-project {
+        max-height: 90vh;
+    }
+
+    .btn-play {
+        display: block;
+    }
+
+    .wrapper-slider-img {
+        bottom: 50px;
+    }
+
+
+    /* Хлебные крошки */
+    .wrapper-bread-crumbs {
+        padding: 16px 80px 24px;
+    }
+
+    .bread-crumbs-project.mobile {
+        display: none;
+    }
+
+    .bread-crumbs-project {
+        display: flex;
+    }
+
+    /* Блок с инфой о проекте */
+    .wrapper-info-project {
+        padding: 0 80px;
+    }
+
+    .wrapper-for-border {
+        padding-bottom: 30px;
+        flex-direction: row;
+    }
+
+    .wrapper-name-content-cost {
+        margin-top: 30px;
+    }
+
+    .title-project {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .wrapper-info-project .wrapper-content {
+        display: flex;
+    }
+
+    #price-project {
+        font-size: 24px;
+        padding-top: 0;
+    }
+
+    #price-project b {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    #btn-project-order {
+        display: block;
+    }
+
+    #btn-project-order-mobile {
+        display: none;
+    }
+
+    .wrapper-text-add-favorite-n-numbers-view {
+        position: static;
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    #text-add-favorite {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    #numbers-view {
+        font-size: 18px;
+    }
+
+
+    /* Блок "Планы Фасад Описание" */
+    .wrapper-plan-facade-desc-project {
+        padding: 0 80px 80px;
+    }
+
+    .wrapper-title-plan-facade-desc-project {
+        font-size: 40px;
+        padding: 23px 0 50px;
+    }
+
+
+    /* .title-plan-facade-desc-project 1440px */
+
+    .content-plan-project {
+        width: auto;
+        height: auto;
+    }
+
+    #btn-change-project-mobile {
+        display: none;
+    }
+
+    /* Блок с поэтапным строительством */
+    .wrapper-stage-building {
+        background-color: #343536;
+        padding: 20px 80px;
+    }
+
+    .wrapper-text-price-building-n-get-outlay {
+        padding-top: 45px;
+    }
+
+    .text-price-building {
+        font-size: 48px;
+        color: #fff;
+    }
+
+    .text-price-building br {
+        display: none;
+    }
+
+    .text-price-building b {
+        font-size: 34px;
+        color: #fff;
+        padding-left: 15px;
+    }
+
+    #btn-get-outlay-mobile {
+        font-size: 20px;
+        color: #fff;
+        display: flex;
+        justify-content: flex-start;
+        margin: 10px 0 20px;
+    }
+
+    #btn-get-outlay-mobile::after {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: relative;
+        top: 10px;
+        left: 95px;
+    }
+
+    #btn-get-outlay-mobile .static-line {
+        width: 330px;
+        height: 2px;
+        background-color: #fff;
+        top: 53px;
+    }
+
+    #btn-get-outlay-mobile .static-line::after {
+        right: 45px;
+        content: url('../img/block_example_docum/arrow-white.svg');
+    }
+
+    .title-stage-building {
+        font-size: 32px;
+        color: #fff;
+        padding-bottom: 30px;
+        padding-top: 0;
+    }
+
+    .wrapper-sections-building {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .name-sections-building {
+        font-size: 28px;
+        margin-bottom: 32px;
+        color: #fff;
+    }
+
+    .name-sections-building.active-gold {
+        font-size: 32px;
+    }
+
+    .description-sections-building {
+        font-size: 24px;
+        margin-bottom: 24px;
+        color: #fff;
+    }
+
+
+    /* Блок "Внесем изменения в проект" */
+    .wrapper-add-change-project {
+        display: block;
+        position: relative;
+        padding-bottom: 100px;
+    }
+
+    #btn-change-project {
+        position: absolute;
+        left: 24%;
+        bottom: 0;
+    }
+
+    /* Блок "Пример проектной документации" */
+    .wrapper-example-docum {
+        padding: 32px 80px 52px;
+        background-color: #343536;
+        margin-top: 70px;
+    }
+
+    .title-example-docum {
+        font-size: 48px;
+        line-height: 48px;
+        color: #fff;
+        padding-bottom: 60px;
+    }
+
+    .wrapper-content-example-docum {
+        /* 1440px */
+        align-items: center;
+    }
+
+    #btn-view-example-docum {
+        display: block;
+    }
+
+    #btn-view-example-docum-mobile {
+        display: none;
+    }
+
+    .img-group-house {
+        display: block;
+    }
+
+    .img-group-house-mobile {
+        display: none;
+    }
+
+
+    /* Блок с материалами */
+    .wrapper-block-materials {
+        padding: 0 80px 20px;
+    }
+
+
+    /* Блок "Похожие проекты" */
+    .wrapper-pohozhie-projects {
+        padding: 40px 80px;
+    }
+
+
+    /* Блок "Недавно просмотренные" в отдельном файле */
+}
+
+@media (min-width: 1400px) {
+    /* Блок с инфой о проекте  */
+    #text-add-favorite {
+        align-items: center;
+        gap: 8px;
+        padding-right: 8px;
+        color: inherit;
+        font-size: 18px;
+        align-items: center;
+    }
+
+
+    /* Блок "Планы Фасад Описание" */
+    .title-plan-facade-desc-project {
+        min-width: 410px;
+    }
+
+
+    .wrapper-content-plan-facade-desc-project div.active {
+        justify-content: space-between;
+    }
+
+    .wrapper-plan-project {
+        flex-direction: row;
+    }
+
+    .wrapper-content-plan-facade-desc-project .wrapper-slider-img-plan {
+        display: none;
+    }
+
+    .content-plan-project {
+        display: block;
+    }
+
+    /* Блок с поэтапным строительством */
+    .wrapper-sections-building {
+        max-width: 70%;
+    }
+
+    #btn-get-outlay-mobile {
+        display: none;
+    }
+
+    #btn-get-outlay {
+        display: block;
+    }
+
+    /* Блок "Внесем изменения в проект" */
+    #btn-change-project {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }
+
+    /* Блок "Пример проектной документации" */
+    .wrapper-example-docum {
+        margin-top: 0;
+        padding: 80px;
+    }
+
+    .wrapper-content-example-docum {
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .vertical-line-example-docum {
+        display: block;
+    }
+}

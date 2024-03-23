@@ -1,0 +1,84 @@
+@keyframes line-btn-circle {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes line-btn-square {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 280px;
+  }
+}
+
+@keyframes line-btn-get-price {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 310px;
+  }
+}
+
+@keyframes line-btn-view-example-docum {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 350px;
+  }
+}
+
+@keyframes line-btn-square-long {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 580px;
+  }
+}
+
+@keyframes btn-play-circle {
+  0% {
+    stroke-dashoffset: 484px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.btn-circle .animation-line {
+  animation: line-btn-circle 2s infinite ;
+}
+
+.btn-square .animation-line {
+  animation: line-btn-square 2s infinite ;
+}
+
+#btn-get-price .animation-line {
+  animation: line-btn-get-price 2s infinite ;
+}
+
+#btn-change-project .animation-line {
+  animation: line-btn-square-long 2s infinite ;
+}
+
+#btn-view-example-docum .animation-line {
+  animation: line-btn-view-example-docum 2s infinite
+}
+
+#carouselExampleControls .btn-play:hover svg circle {
+  animation: btn-play-circle 3s forwards;
+
+}
