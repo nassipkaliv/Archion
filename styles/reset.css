@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+}
+
+body {
+  flex-direction: column;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+input,
+select {
+  border: 0;
+  outline: none;
+}
+
+input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  accent-color: #0A96DC;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 24px;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
