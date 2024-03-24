@@ -1645,6 +1645,17 @@ hr {
 	margin-top: 25px;
 }
 
+.footer-end {
+	padding-bottom: 30px;
+	margin-top: -40px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #f7f7f9;
+}
+
 
 @media screen and (max-width: 557px) {
 	.header-top_desc {
