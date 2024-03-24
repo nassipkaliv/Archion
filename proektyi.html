@@ -2,52 +2,36 @@
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <link rel="manifest" href="manifest.json">
-<meta name="p:domain_verify" content="dbe6652f1c910280b93a7de8e87fa900"/>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<meta name="yandex-verification" content="4df437432d19d7f8" />
-<meta name="google-site-verification" content="nPY2DPJjwCpUqbKHCbZjevSfJojJrg7dWOjjntEDzeQ" />
 <title>Проекты домов | Купить готовые архитектурные проекты домов: фото, цены, каталог</title>
-<meta name="description" content="Быстрый выбор из 1000 готовых проектов загородных домов и коттеджей по каталогу. До 50% дешевле индивидуальных! Адаптация под вкусы покупателя. Скидки и бонусы при заказе строительства!">
-<meta name="keywords" content="Купить проект дома, заказать,подобрать, найти, готовый проект, лучший проект, проекты 2-х, 3-х этажных домов, цена, стоимость">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <meta name="format-detection" content="telephone=no">
 <link href="reset.css@2.css" rel="stylesheet">
-<!--
+
 <link rel="stylesheet" href="/../proects.css?2">
 !-->
 <link rel="stylesheet" href="templates/new_hmkmos.css">
 <link rel="stylesheet" href="style/progressive-image.min.css">
 <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
-<link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick.css"><!--Вертикальный слайдер!-->
-<link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick-theme.css"/><!--Вертикальный слайдер!-->
+<link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick-theme.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<!-- <script src="js/script.js"></script> -->
-<script src="zakazat-proekt-doma/js/script.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" defer></script> -->
 <link rel="stylesheet" href="style/filtr-new.css@2.css">
 <link rel="stylesheet" href="style/new_footer.css">
-<meta property="og:title" content="Купить готовые проекты домов и коттеджей с фото ценами под ключ | АРХИОН" />
-<meta property="og:description" content="Каталог лучших и интересных готовых проектов домов и коттеджей с ценами на строительство под ключ и фото. Купить с возможностью внесения любых изменений и адаптации под любой участок." />
-<meta property="og:url" content="https://test.rddp.ru/projects/proekt_.html" />
-<meta property="og:type" content="website" />
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
     <script src="js/respond.min.js"></script>
 <![endif]-->
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="templates/navbarn.css">
+<link rel="stylesheet" href="templates/catalog_banner.css">
 <script src="jquery-2.2.4.min.js"></script>
 <script src="jquery.formstyler.min.js@2"></script>  
 <script src="script/filtr-new.js@2" ></script>
@@ -55,9 +39,12 @@
 <script src="library/slick-1.8.1/slick/slick.min.js"></script>
 
 </head>
+
+
 <body class="projects">
 <div class="l-layout">
-<link rel="stylesheet" href="templates/navbarn.css">
+
+
 <header class="b-header topbar">
     <nav class="navbar navbar-light row ">
         <div class="col-12 container-fluid flex-nowrap">
@@ -68,6 +55,7 @@
             <div class="pl hidden-mobile">
                 <input type="button" onclick="fu()" id="btn-project" value="Подобрать проект" class="btn_project12 ppp" data-bs-toggle="modal" data-bs-target="#cons-project" aria-current="page">
             </div>
+
             <div class="modal fade" id="cons-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
@@ -275,13 +263,11 @@
                 </ul>
             </div>
         </div>
-        </div>
     </nav>
-</header><input type="hidden" name="query" value="SELECT * FROM proect_new WHERE proect_flag1='1'  AND (proect_type = 1) ORDER BY rating DESC" >
+</header>
+
 <div class="b-content pb-0">
-<!--
-<div class="catalog-header catalog-header1"><h1 class="built-houses-title houses-title_big element-animation">Готовые проекты домов и коттеджей</h1></div>
-!-->
+
 	<div class="text-center container-fluid">
 		<span class="style_heading_text_cat" style="font-weight: 600; color:#343536 !important;">
 			Готовые проекты домов и коттеджей
@@ -296,50 +282,21 @@
 <p class="collapse mute" style="color:black;font-family:'Montserrat' !important;text-align: justify;text-indent: 25px; padding-top:5px;">Желаем и надеемся, что вы найдете у нас лучшие и современные проекты домов и коттеджей для застройки и обустройства вашей загородной мечты.</p>
 <p id="readtxt" class="pb-3">
   <a data-bs-toggle="collapse" class="color_gray_text border-0" href="https://test.rddp.ru/.mute" role="button" aria-expanded="false" aria-controls="collapseExample">									
-											<span class="font_size_text_catalog butt_bord_gray but_project_font" style="font-weight: 400;">
-												Подробнее
-											</span>		
+		<span class="font_size_text_catalog butt_bord_gray but_project_font" style="font-weight: 400;">
+			Подробнее
+		</span>		
  </a>
 </p>
 <p id="hidetxt" class="pb-3">
   <a data-bs-toggle="collapse" class="color_gray_text border-0" href="https://test.rddp.ru/.mute" role="button" aria-expanded="false" aria-controls="collapseExample">									
-											<span class="font_size_text_catalog butt_bord_gray but_project_font" style="font-weight: 400;">
-												Скрыть
-											</span>		
+		<span class="font_size_text_catalog butt_bord_gray but_project_font" style="font-weight: 400;">
+			Скрыть
+		</span>		
  </a>
 </p>
 </section>
 
-<!--
-<div>
-		<span class="show-text font-size-24px-styles">
-				В каталоге мы собрали лучшие готовые проекты частных загородных домов и коттеджей. Каждый проект дома по-своему очень интересный, красивый и индивидуальный. Проекты жилых домов и коттеджей представлены с поэтажной планировкой (планами), с фото реалистичной визуализации, фасадами с четырех сторон, по некоторым проектам подготовили видео облет модели дома. В каталоге представлена цена за проект дома, а также ориентировочная стоимость строительства за метр кв.
 
-		По проектам и по всем другим вопросам вы можете обратиться и проконсультироваться у ведущих специалистов по телефону или оставить заявку на нашем сайте.Купить готовый проект дома для строительства можно посетив наш офис в Москве или приобрести его удаленно. Мы работаем со всеми регионами! Для того, чтобы построить коробку с внешней отделкой, нужно приобрести Архитектурный проект частного дома (разделы: ЭП – эскизный проект, АР- Архитектурное решение) и проект для строительства дома (КР – конструктивное решение). А также понадобится ПП - Паспорт проекта со схемой посадки дома на участок для уведомления о разрешении строительства, а также для предоставления администрации, газовым службам и т.д.
-		Проект дома мы можем адаптировать под каждый город солгано нормам и особенностям вашего региона. Наше архитектурное бюро ARHION, в составе высоко квалифицированных архитекторов, может внести корректировки в проект дома под все ваши пожелания. Обращаем ваше внимание, что фундамент — это основа вашего дома, и целостность конструкции дома зависит от него. Поэтому нужно обязательно подобрать правильный тип, рассчитать нагрузки и адаптировать фундамент согласно геологическому отчету. Состав грунтов и несущая способности грунтов очень разная, и важно это учесть. Данные работы мы выполняем при заказе проекта дома.
-
-		В случае, если вам понравился проект дома, но площадь дома велика или вы желаете внести другие изменения, например, в планировочное решение, фасадное решение, то вы можете купить проект дома, индивидуально проработанный под вас. Мы возьмем за основу то, что вам понравилось в проектах домов, например, планировочное решение или фасадное решение, а возможно и отдельный элемент, обсудим все ваши пожелания по изменениям и переделаем его полностью под вас, учитывая все ваши потребности. Зачастую сложно найти проект дома, идеально подходящий вам и это идеальное решение! Стройте для себя и создайте свой комфорт!
-
-		Желаем и надеемся, что вы найдете у нас лучшие и современные проекты домов и коттеджей для застройки и обустройства вашей загородной мечты.
-		</span>
-</div>
-!-->
-<script>
-	// let testDB = [{"proect_id":"2185","proect_num":"31-24","proect_name":"\u041f\u0440\u043e\u0435\u043a\u0442 \u043a\u0438\u0440\u043f\u0438\u0447\u043d\u043e\u0433\u043e \u0434\u043e\u043c\u0430","proect_s0":"422","proect_s1":"0","price_id":"44","proect_kom":"7","proect_san":"3","proect_k0":"89555","proect_k1":"0","proect_desc":"\u041a\u043e\u0442\u0442\u0435\u0434\u0436 \u0441 \u0432\u0435\u043b\u0438\u043a\u043e\u043b\u0435\u043f\u043d\u043e\u0439 \u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u043e\u0439, \u0431\u043e\u043b\u044c\u0448\u0438\u0435 \u0442\u0435\u0445\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043f\u043e\u043c\u0435\u0449\u0435\u043d\u0438\u044f \u043d\u0430 \u0446\u043e\u043a\u043e\u043b\u044c\u043d\u043e\u043c \u044d\u0442\u0430\u0436\u0435, \u0441\u0442\u043e\u043b\u043e\u0432\u0430\u044f, \u043a\u0443\u0445\u043d\u044f \u0438 \u0441\u043f\u0430\u043b\u044c\u043d\u044f \u0432\u044b\u0445\u043e\u0434\u044f\u0442 \u043d\u0430 \u043f\u0440\u043e\u0441\u0442\u043e\u0440\u043d\u0443\u044e \u043f\u043e\u043b\u0443\u043a\u0440\u0443\u0433\u043b\u0443\u044e \u0432\u0435\u0440\u0430\u043d\u0434\u0443.","floor_gr":"","floor_1":"","floor_2":"","floor_3":"","proect_type":"1","proect_et":"2","proect_flag1":"1","pr_visible":"0","x1":"0","x2":"1","x3":"0","x4":"1","x5":"1","x6":"0","x7":"3","x8":"6","proect_x":"19","proect_y":"13","x9":"0","rating":"1100","x10":"108","addition":"","x11":"5","x12":"1","x13":"0","x14":"0","x15":"0","x16":"0","source":"4","proect_flag2":"0","adding_date":"2019-04-03 20:45:35","is_done":"0","main":"0","sale":"0","chng_price":"1"},{"proect_id":"2190","proect_num":"32-72","proect_name":"\u041f\u0440\u043e\u0435\u043a\u0442 \u0437\u0430\u0433\u043e\u0440\u043e\u0434\u043d\u043e\u0433\u043e \u0434\u043e\u043c\u0430 \u0438\u0437 \u043a\u0438\u0440\u043f\u0438\u0447\u0430","proect_s0":"438","proect_s1":"0","price_id":"42","proect_kom":"7","proect_san":"2","proect_k0":"89555","proect_k1":"0","proect_desc":"\u041f\u0440\u043e\u0441\u0442\u043e\u0440\u043d\u044b\u0439 \u0437\u0430\u0433\u043e\u0440\u043e\u0434\u043d\u044b\u0439 \u0434\u043e\u043c \u0441 \u0431\u0430\u0441\u0441\u0435\u0439\u043d\u043e\u043c. \u0410\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u0430 \u0432 \u0441\u0442\u0438\u043b\u0435 hi-tek. \u0415\u0441\u0442\u044c \u0431\u0430\u0441\u0441\u0435\u0439\u043d.","floor_gr":null,"floor_1":null,"floor_2":null,"floor_3":null,"proect_type":"1","proect_et":"2","proect_flag1":"0","pr_visible":"0","x1":"1","x2":"0","x3":"1","x4":"1","x5":"1","x6":"1","x7":"3","x8":"6","proect_x":"26","proect_y":"17","x9":"0","rating":"696","x10":"101","addition":"","x11":"5","x12":"1","x13":"1","x14":"0","x15":"0","x16":"0","source":"4","proect_flag2":"0","adding_date":"2019-04-03 20:45:35","is_done":"0","main":"0","sale":"0","chng_price":"1"},{"proect_id":"2191","proect_num":"32-77","proect_name":"\u041f\u0440\u043e\u0435\u043a\u0442 \u0437\u0430\u0433\u043e\u0440\u043e\u0434\u043d\u043e\u0433\u043e \u0434\u043e\u043c\u0430 \u0438\u0437 \u043a\u0438\u0440\u043f\u0438\u0447\u0430","proect_s0":"466","proect_s1":"0","price_id":"44","proect_kom":"8","proect_san":"3","proect_k0":"89555","proect_k1":"0","proect_desc":"\u041f\u0440\u043e\u0441\u0442\u043e\u0440\u043d\u044b\u0439 \u0437\u0430\u0433\u043e\u0440\u043e\u0434\u043d\u044b\u0439 \u0434\u043e\u043c \u0441 \u043a\u0430\u043c\u0438\u043d\u043e\u043c, \u0442\u0435\u0440\u0440\u0430\u0441\u043e\u0439, \u0431\u0430\u0441\u0441\u0435\u0439\u043d\u043e\u043c \u0438 \u0441\u0430\u0443\u043d\u043e\u0439","floor_gr":null,"floor_1":null,"floor_2":null,"floor_3":null,"proect_type":"1","proect_et":"2","proect_flag1":"1","pr_visible":"0","x1":"1","x2":"1","x3":"1","x4":"1","x5":"0","x6":"0","x7":"3","x8":"6","proect_x":"26","proect_y":"20","x9":"0","rating":"890","x10":"108","addition":null,"x11":"5","x12":"0","x13":"1","x14":"0","x15":"0","x16":"0","source":"4","proect_flag2":"0","adding_date":"2019-04-03 20:45:35","is_done":"0","main":"0","sale":"0","chng_price":"1"},{"proect_id":"2193","proect_num":"33-48","proect_name":"\u041f\u0440\u043e\u0435\u043a\u0442 \u0437\u0430\u0433\u043e\u0440\u043e\u0434\u043d\u043e\u0433\u043e \u0434\u043e\u043c\u0430 \u0438\u0437 \u043a\u0438\u0440\u043f\u0438\u0447\u0430","proect_s0":"489","proect_s1":"0","price_id":"44","proect_kom":"9","proect_san":"2","proect_k0":"89555","proect_k1":"0","proect_desc":"\u041f\u0440\u043e\u0435\u043a\u0442\u0430 \u043a\u0438\u0440\u043f\u0438\u0447\u043d\u043e\u0433\u043e \u043a\u043e\u0442\u0442\u0435\u0434\u0436\u0430 \u0441 \u043d\u0435\u0431\u043e\u043b\u044c\u0448\u0438\u043c \u0431\u0430\u0441\u0441\u0435\u0439\u043d\u043e\u043c \u043d\u0430 \u043f\u0435\u0440\u0432\u043e\u043c \u044d\u0442\u0430\u0436\u0435.","floor_gr":null,"floor_1":null,"floor_2":null,"floor_3":null,"proect_type":"1","proect_et":"2","proect_flag1":"1","pr_visible":"0","x1":"1","x2":"1","x3":"1","x4":"1","x5":"1","x6":"1","x7":"3","x8":"6","proect_x":"26","proect_y":"24","x9":"0","rating":"1242","x10":"204","addition":"","x11":"5","x12":"1","x13":"1","x14":"0","x15":"0","x16":"0","source":"4","proect_flag2":"0","adding_date":"2019-04-03 20:45:35","is_done":"0","main":"0","sale":"0","chng_price":"1"},{"proect_id":"2195","proect_num":"33-79","proect_name":"\u041f\u043b\u0430\u043d \u043a\u043e\u0442\u0442\u0435\u0434\u0436\u0430 \u0438\u0437 \u043f\u0435\u043d\u043e\u0431\u0435\u0442\u043e\u043d\u0430, \u043f\u043e\u0440\u0438\u0437\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0431\u043b\u043e\u043a\u043e\u0432","proect_s0":"458","proect_s1":"0","price_id":"42","proect_kom":"8","proect_san":"4","proect_k0":"89555","proect_k1":"0","proect_desc":"\u0423\u044e\u0442\u043d\u044b\u0439 \u0437\u0430\u0433\u043e\u0440\u043e\u0434\u043d\u044b\u0439 \u0434\u043e\u043c. \u0412\u043d\u0435\u0448\u043d\u043e\u0441\u0442\u044c \u0435\u0433\u043e \u0433\u043e\u0432\u043e\u0440\u0438\u0442 \u0441\u0430\u043c\u0430 \u0437\u0430 \u0441\u0435\u0431\u044f.","floor_gr":null,"floor_1":null,"floor_2":null,"floor_3":null,"proect_type":"1","proect_et":"2","proect_flag1":"1","pr_visible":"0","x1":"1","x2":"0","x3":"1","x4":"1","x5":"1","x6":"0","x7":"3","x8":"6","proect_x":"27","proect_y":"19","x9":"0","rating":"664","x10":"415","addition":"","x11":"5","x12":"1","x13":"0","x14":"0","x15":"0","x16":"0","source":"4","proect_flag2":"0","adding_date":"2019-04-03 20:45:35","is_done":"0","main":"0","sale":"0","chng_price":"1"},{"proect_id":"2198","proect_num":"33-92","proect_name":"\u041f\u0440\u043e\u0435\u043a\u0442 \u043a\u0438\u0440\u043f\u0438\u0447\u043d\u043e\u0433\u043e \u043a\u043e\u0442\u0442\u0435\u0434\u0436\u0430","proect_s0":"487","proect_s1":"0","price_id":"44","proect_kom":"9","proect_san":"4","proect_k0":"89555","proect_k1":"0","proect_desc":"\u041a\u0440\u0430\u0441\u0438\u0432\u044b\u0439 \u0437\u0430\u0433\u043e\u0440\u043e\u0434\u043d\u044b\u0439 \u0434\u043e\u043c \u0432 \u0441\u0442\u0438\u043b\u0435 hi-tek, \u0441 \u0431\u043e\u043b\u044c\u0448\u0438\u043c \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e\u043c \u043f\u0440\u043e\u0441\u0442\u043e\u0440\u043d\u044b\u0445 \u043a\u043e\u043c\u043d\u0430\u0442, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043c\u043e\u0436\u043d\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u043a\u0430\u043a \u0433\u043e\u0441\u0442\u0438\u043d\u044b\u0435, \u0442\u0440\u0435\u043d\u0430\u0436\u0435\u0440\u043d\u044b\u0435 \u0437\u0430\u043b\u044b \u0438 \u0442\u0432\u043e\u0440\u0447\u0435\u0441\u043a\u0438\u0435 \u0441\u0442\u0443\u0434\u0438\u0438.","floor_gr":null,"floor_1":null,"floor_2":null,"floor_3":null,"proect_type":"1","proect_et":"2","proect_flag1":"1","pr_visible":"0","x1":"1","x2":"1","x3":"1","x4":"1","x5":"0","x6":"0","x7":"4","x8":"21","proect_x":"17","proect_y":"13","x9":"0","rating":"682","x10":"105","addition":null,"x11":"2","x12":"1","x13":"1","x14":"0","x15":"0","x16":"0","source":"4","proect_flag2":"0","adding_date":"2019-04-03 20:45:35","is_done":"0","main":"0","sale":"0","chng_price":"1"}];
-// 	// console.log(testDB);
-// 	let newArr = [];
-// 	testDB.map(el => {
-// 		// if(el.proect_id < 2190) 
-// 		// { console.log(el)};
-// 		if (el.proect_flag1 === '1' && el.proect_type === '1' && el.proect_et === '1' && el.x2 === '0' &&
-// 			el.x3 === '0') {
-// 			newArr.push(el);
-// 			// console.log(el);
-// 		}
-// 	});
-// 	console.log(newArr);
-</script>
-<link rel="stylesheet" href="templates/catalog_banner.css">
 
 <section class="b-section b-section_catalog">
 	<div class="catalog_list">
@@ -1571,160 +1528,10 @@
 <!--Кнопки "Больше параметров/Скрыть параметры"!-->
 <!--Больше параметров!-->
 
-<script>
-	function action() {
-		document.getElementById('btn-show-more-param').style.display = 'block';
-	};
-</script>
-
-<script>
-	document.getElementById('selectCount').style.display = 'none';
-	$('.toggler').click(function(e) {
-		$(this).hide();
-		$('.selectCount').show();
-	})
-	$('.selectCount').click(function(e) {
-		$(this).hide();
-		$('.toggler').show();
-	})
-</script>
-
-<!--Кнопка открытия!-->
-<script>
-	function openDiv() {
-		document.getElementById('myCard').style.display = 'block';
-	};
-</script>
 
 
 
-<!--Кнопка закрытия!-->
-<script>
-	function closeDiv() {
-		document.getElementById('myCard').style.display = 'none';
-	};
-</script>
-
-<script>
-/*
-const myCarouselElement = document.querySelector('.my_carousel')
-
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  touch: true
-})
-*/
-</script>
-
-
-<!--Меняю бэкграунд в зависимости от выбранного селекта!-->
-<script>
-	function check() {
-
-		var val = document.getElementById('Sone').value;
-		var val2 = document.getElementById('Sone2').value;
-		var val3 = document.getElementById('Sone3').value;
-		var val4 = document.getElementById('Sone4').value;
-		var val5 = document.getElementById('Sone5').value;
-		var val6 = document.getElementById('Sone6').value;
-		var val7 = document.getElementById('Sone7').value;
-		var val8 = document.getElementById('Sone8').value;
-		var val9 = document.getElementById('Sone9').value;
-		var val10 = document.getElementById('Sone10').value;
-
-		if (val == 'yes') {
-			Sone.style.color = "#a78b73b0";
-			Sone.style.fontWeight = "bold";
-		} else {
-			Sone.style.color = "#646464";
-			Sone.style.fontWeight = "500";
-		};
-
-		if (val2 == 'yes') {
-			Sone2.style.color = "#a78b73b0";
-			Sone2.style.fontWeight = "bold";
-		} else {
-			Sone2.style.color = "#646464";
-			Sone2.style.fontWeight = "500";
-		}
-
-
-
-		if (val3 == 'yes') {
-			Sone3.style.color = "#a78b73b0";
-			Sone3.style.fontWeight = "bold";
-		} else {
-			Sone3.style.color = "#646464";
-			Sone3.style.fontWeight = "500";
-		}
-
-
-
-		if (val4 == 'yes') {
-			Sone4.style.color = "#a78b73b0";
-			Sone4.style.fontWeight = "bold";
-		} else {
-			Sone4.style.color = "#646464";
-			Sone4.style.fontWeight = "500";
-		}
-
-
-		if (val5 == 'yes') {
-			Sone5.style.color = "#a78b73b0";
-			Sone5.style.fontWeight = "bold";
-		} else {
-			Sone5.style.color = "#646464";
-			Sone5.style.fontWeight = "500";
-		}
-
-
-		if (val6 == 'yes') {
-			Sone6.style.color = "#a78b73b0";
-			Sone6.style.fontWeight = "bold";
-		} else {
-			Sone6.style.color = "#646464";
-			Sone6.style.fontWeight = "500";
-		}
-
-
-		if (val7 == 'yes') {
-			Sone7.style.color = "#a78b73b0";
-			Sone7.style.fontWeight = "bold";
-		} else {
-			Sone7.style.color = "#646464";
-			Sone7.style.fontWeight = "500";
-		}
-
-
-
-		if (val8 == 'yes') {
-			Sone8.style.color = "#a78b73b0";
-			Sone8.style.fontWeight = "bold";
-		} else {
-			Sone8.style.color = "#646464";
-			Sone8.style.fontWeight = "500";
-		}
-
-
-
-		if (val9 == 'yes') {
-			Sone9.style.color = "#a78b73b0";
-			Sone9.style.fontWeight = "bold";
-		} else {
-			Sone9.style.color = "#646464";
-			Sone9.style.fontWeight = "500";
-		}
-
-
-		if (val10 == 'yes') {
-			Sone10.style.color = "#a78b73b0";
-			Sone10.style.fontWeight = "bold";
-		} else {
-			Sone10.style.color = "#646464";
-			Sone10.style.fontWeight = "500";
-		}
-
-	}
-</script><div class="d-none d-md-block">
+<div class="d-none d-md-block">
 <div class="container-fluid">
 	<div class="pt-3 pt-md-5 pb-3 text-start">
 		<span class="style_heading_text title-desctop">
@@ -1734,13 +1541,11 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 	<section class="b-section b-section_catalog">
 
 		<div class="catalog_list">
-			<link rel="stylesheet" href="proects.css">
 			<div class="block_proekts_img">
 				<div class="container-fluid best px-0">
 					<div class="row px-0 mx-0">
 						<div class="mx-0 px-0 owl-carousel owl-theme pt-0 pt-md-4 slide-prosmotrenny position-relative">
-
-															<div class="item px-0 px-sm-2  0">
+								<div class="item px-0 px-sm-2  0">
 									<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
 										<div>
 											<a href="proektyi.html#">
