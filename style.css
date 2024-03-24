@@ -1658,6 +1658,23 @@ hr {
 
 
 @media screen and (max-width: 557px) {
+
+	.title_arhion {
+    color: var(--gold, #A78B73);
+    text-align: center;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+    font-family: Stick No Bills;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    font-family: 'StickNoBills';
+}
+
+
+
+
 	.header-top_desc {
 		font-size: 14px;
 		margin: 0 0 12px 0;
@@ -1806,6 +1823,9 @@ body {
 	.banner_text-img{
     min-width:550px;
   }
+
+
+
 }
 @media (max-width: 628px) {
 	.banner_text-img{

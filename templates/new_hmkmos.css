@@ -207,7 +207,75 @@ border-bottom: 2px solid #969696 !important;
 }
 
 @media (min-width: 360px) and (max-width: 575px){
-	
+
+
+	.title_arhion {
+    color: var(--gold, #A78B73);
+    text-align: center;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+    font-family: Stick No Bills;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 25px;
+    text-transform: uppercase;
+    font-family: 'StickNoBills';
+		font-size: 42px;
+}
+
+
+	.text_slide_main {
+		font-weight: 400 !important;
+		font-size: 14px !important;
+		color: #fff;
+		letter-spacing: normal !important;
+		line-height: normal !important;
+	}
+
+	.text-slide {
+		right: 0%;
+		left: 40px;
+		top: 55%;
+	}
+
+	.btn-circle-project {
+    color: #14010C;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400 !important;
+		font-size: 8px !important;
+		line-height: 125% !important;
+    border: 1px solid #A78B73;
+    border-radius: 100%;
+    max-height: 60px !important;
+		max-width: 60px !important;
+		min-height: 60px !important;
+		min-width: 60px !important;
+    position: relative;
+    background-color: #fff;
+		padding-left: 2% !important;
+    text-transform: uppercase;
+    transition: all ease-in-out .3s;
+}
+
+.btn-circle-project .static-line-project {
+	display: none !important;
+}
+
+.btn-circle-project .animation-line-project {
+	display: none !important;
+}
+
+.arrowImg {
+	display: none !important;
+}
+
+.buttonOrder {
+	right: 0 !important;
+	left: 70% !important;
+	top: 60% !important;
+}
+
 	.font_title_main{
 		font-size:40px
 	}
