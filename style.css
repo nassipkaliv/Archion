@@ -283,6 +283,25 @@ text-transform: uppercase;
 white-space: nowrap;
 }
 
+.text-behind {
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+	font-size: 70px;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(167, 139, 115, 0.1);
+	position: absolute;
+	top: 40px;
+}
+
+.description-title {
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	text-align: center;
+	color: #fff;
+}
+
 
 @media screen and (max-width: 557px) {
 	.header-top_desc {
