@@ -163,3 +163,6 @@ $(filebtn).change(function() {
 		$(preview).text(curFiles[i].name);
 	}
 });
+
+
+

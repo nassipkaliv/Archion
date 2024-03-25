@@ -582,7 +582,23 @@
 
     </div>
 
-    <script src="js/main.js"></script>
+    <script>
+        const yearItems = document.querySelectorAll('.year_selector__container p');
+
+// Для каждого элемента добавляем обработчик события при клике
+yearItems.forEach(item => {
+    item.addEventListener('click', function() {
+        // Убираем класс 'active' у всех элементов
+        yearItems.forEach(item => {
+            item.classList.remove('active');
+        });
+        // Добавляем класс 'active' к элементу, по которому произошло событие
+        this.classList.add('active');
+    });
+});
+    </script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
