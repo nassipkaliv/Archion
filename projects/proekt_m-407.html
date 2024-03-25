@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../library/slick-1.8.1/slick/slick.css"><!--Вертикальный слайдер!-->
     <link rel="stylesheet" type="text/css" href="../library/slick-1.8.1/slick/slick-theme.css" /><!--Вертикальный слайдер!-->
     <link rel="stylesheet" href="../style/new_footer.css">
-    <link rel='stylesheet' href="../form/css/form_project.css">
+    <link rel="stylesheet" href="../form/css/form_project.css">
     <link rel="stylesheet" href="../style/block_need_consultation.css">
     <link rel="stylesheet" href="../style/block_nedavno_prosmotrenny.css">
 
@@ -272,11 +272,11 @@
         </div>
         </div>
     </nav>
-</header> <!--backend -->
+</header>
     <main class="main">
 
 
-        <section class="catalog">
+    <section class="catalog">
             <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="carousel-inner catalog__list-main">
@@ -358,7 +358,8 @@
       </button>
     </form>
   </div>
-</section>                    </div>
+												</section>                    
+										</div>
                     <div class="wrapper-text-add-favorite-n-numbers-view">
                         <p id="text-add-favorite">Добавить в избранное</p>
                         <p id="numbers-view">13 750</p> <!--backend кол-во просмотров -->
@@ -448,81 +449,198 @@
                 </button>
             </div>
 
-            <!-- Блок с поэтапным строительством -->
-            <div class="wrapper-stage-building">
-                <div class="wrapper-text-price-building-n-get-outlay">
-                    <p class="text-price-building">Стоимость строительства от: <br /> <b>10 800 000₽</b></p>
-                </div>
-                <button id="btn-get-outlay-mobile" class="btn-square btn-call-form">
-                    ПОЛУЧИТЬ СМЕТУ
-                    <hr class="static-line" />
-                </button>
-                <p class="title-stage-building">Возможно поэтапное строительство</p>
-                <div class="wrapper-sections-building">
-                    <div class="left-sections-building">
-                        <p class="name-sections-building active-gold" id="first-name">Фундамент</p>
-                        <p class="name-sections-building" id="second-name">Коробка</p>
-                        <p class="name-sections-building" id="third-name">Фасад</p>
-                        <p class="name-sections-building" id="four-name">Отделка</p>
-                        <p class="name-sections-building" id="five-name">Декор и мебель</p>
-                    </div>
-                    <div class="right-sections-building">
-                        <p class="description-sections-building" id="first-desc">Земляные работы</p>
-                        <p class="description-sections-building" id="second-desc">Фундамент</p>
-                        <p class="description-sections-building third-description" id="third-desc">Перекрытия 1 этажа</p>
-                        <p class="description-sections-building four-description" id="four-desc"></p>
-                    </div>
-                    <button id="btn-get-outlay" class="btn-circle btn-call-form">
-                        ПОЛУЧИТЬ
-                        <hr class="static-line" />
-                        СМЕТУ
-                        <hr class="animation-line" />
-                    </button>
-                    <!-- Подключаем модальное окно для "Получить смету" -->
-                    <section class="form-get-smeta form-project">
-  <div class="wrapper-form-project">
-    <img src="../img/form-icon/icon-close.svg" class="close-form-krest"></img>
-    <h3 class="title-form-project">Получить смету</h3>
-    <form action="proekt_m-407.html" class="feedback-form-project feedback-form-get-smeta">
-      <label for="" class="label-input-form-project">Имя
-        <input type="text">
-      </label>
-      <p class="text-form">Выберите способ связи:</p>
-      <div class="wrapper-social-form-project">
-        <!-- <img class="icon-social-form-project icon-tg" src="../img/uit_telegram-alt.png" alt="telegramm">
-        <img class="icon-social-form-project icon-wa" src="../img/ph_whatsapp-logo-thin.png" alt="whatsap"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" id="icon-phone-svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-          <path d="M44.846 32.9327L35.2544 28.6407C34.8826 28.4797 34.4765 28.414 34.0729 28.4495C33.6693 28.485 33.2809 28.6205 32.9428 28.8438C32.9158 28.8609 32.89 28.8799 32.8656 28.9007L27.8281 33.1947C27.716 33.2631 27.5888 33.3028 27.4577 33.3102C27.3266 33.3176 27.1957 33.2926 27.0766 33.2374C23.7778 31.6449 20.3633 28.2567 18.7708 24.9966C18.7145 24.8784 18.6883 24.748 18.6947 24.6172C18.7011 24.4864 18.7398 24.3592 18.8074 24.2471L23.1136 19.1263C23.1339 19.1019 23.1522 19.0755 23.1705 19.0491C23.3931 18.7115 23.5282 18.3238 23.5637 17.921C23.5991 17.5182 23.5338 17.1129 23.3736 16.7416L19.0735 7.16628C18.8659 6.68131 18.5065 6.27678 18.0494 6.01343C17.5923 5.75009 17.0621 5.64214 16.5385 5.70581C13.9823 6.04283 11.6362 7.29884 9.93838 9.23924C8.24058 11.1796 7.30718 13.6717 7.31252 16.25C7.31252 31.9313 20.0688 44.6875 35.75 44.6875C38.3283 44.6929 40.8204 43.7595 42.7608 42.0617C44.7012 40.3639 45.9572 38.0178 46.2942 35.4616C46.3574 34.9403 46.2506 34.4125 45.9897 33.9569C45.7287 33.5012 45.3276 33.142 44.846 32.9327ZM44.6875 35.2585C44.4007 37.4233 43.3352 39.4095 41.6903 40.8458C40.0454 42.2821 37.9337 43.0701 35.75 43.0625C20.9666 43.0625 8.93752 31.0335 8.93752 16.25C8.92996 14.0663 9.71799 11.9546 11.1543 10.3097C12.5906 8.66483 14.5768 7.59936 16.7416 7.31253C16.7741 7.31051 16.8066 7.31051 16.8391 7.31253C16.9994 7.31389 17.1557 7.36264 17.2883 7.45264C17.421 7.54264 17.524 7.66987 17.5846 7.81831L21.8725 17.3936C21.9226 17.5106 21.9444 17.6378 21.9363 17.7648C21.9282 17.8918 21.8903 18.0152 21.8258 18.1249L17.5216 23.2436C17.5013 23.27 17.481 23.2944 17.4627 23.3228C17.2334 23.6735 17.0983 24.0774 17.0706 24.4954C17.0428 24.9135 17.1233 25.3317 17.3042 25.7096C19.0694 29.3232 22.7094 32.9367 26.3636 34.7019C26.7441 34.8817 27.1646 34.9599 27.5843 34.9289C28.004 34.898 28.4085 34.7589 28.7585 34.5252L28.8336 34.4683L33.8772 30.1783C33.9851 30.1124 34.1071 30.0731 34.2332 30.0635C34.3593 30.054 34.4858 30.0745 34.6024 30.1235L44.1919 34.4216C44.3537 34.489 44.4894 34.6068 44.5788 34.7577C44.6681 34.9085 44.7062 35.0842 44.6875 35.2585Z" fill="#14010C" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" id="icon-wa-svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-          <path d="M37.7385 30.1478L31.2385 26.8978C31.1105 26.8341 30.968 26.8052 30.8254 26.8141C30.6827 26.823 30.545 26.8694 30.426 26.9486L27.046 29.2033C25.188 28.3122 23.6897 26.8139 22.7986 24.9559L25.0533 21.5759C25.1325 21.4569 25.1789 21.3192 25.1878 21.1765C25.1967 21.0339 25.1678 20.8914 25.1041 20.7634L21.8541 14.2634C21.7867 14.1278 21.6827 14.0136 21.5538 13.934C21.4249 13.8543 21.2764 13.8122 21.1249 13.8125C19.1855 13.8125 17.3255 14.5829 15.9542 15.9543C14.5828 17.3256 13.8124 19.1856 13.8124 21.125C13.8172 25.6488 15.6164 29.9859 18.8152 33.1847C22.014 36.3835 26.3511 38.1827 30.8749 38.1875C32.8143 38.1875 34.6742 37.4171 36.0456 36.0457C37.4169 34.6744 38.1874 32.8144 38.1874 30.875C38.1875 30.7241 38.1455 30.5761 38.0662 30.4476C37.9869 30.3192 37.8734 30.2154 37.7385 30.1478ZM30.8749 36.5625C26.7819 36.5582 22.8578 34.9304 19.9637 32.0362C17.0695 29.142 15.4417 25.218 15.4374 21.125C15.4371 19.7015 15.9707 18.3297 16.9327 17.2804C17.8947 16.2312 19.2151 15.5808 20.6333 15.4578L23.4364 21.0661L21.2021 24.4258C21.1276 24.5366 21.0816 24.6641 21.0681 24.797C21.0547 24.9298 21.0741 25.064 21.1249 25.1875C22.2044 27.7539 24.246 29.7955 26.8124 30.875C26.936 30.9264 27.0704 30.9464 27.2037 30.9333C27.3369 30.9202 27.4649 30.8743 27.5761 30.7998L30.9358 28.5655L36.5441 31.3686C36.4205 32.7867 35.7697 34.107 34.7201 35.0686C33.6705 36.0302 32.2984 36.5633 30.8749 36.5625ZM25.9999 5.6875C22.4636 5.68684 18.9885 6.60938 15.9182 8.36385C12.8479 10.1183 10.2888 12.644 8.49409 15.6909C6.69936 18.7379 5.73118 22.2006 5.6853 25.7365C5.63943 29.2724 6.51745 32.7591 8.23253 35.8516L5.81534 43.1011C5.67211 43.5306 5.65133 43.9915 5.75531 44.4321C5.8593 44.8727 6.08394 45.2757 6.40407 45.5958C6.7242 45.9159 7.12716 46.1406 7.56779 46.2446C8.00842 46.3485 8.4693 46.3278 8.89878 46.1845L16.1483 43.7673C18.8601 45.2699 21.8799 46.1319 24.9763 46.287C28.0727 46.4422 31.1636 45.8866 34.012 44.6626C36.8605 43.4387 39.391 41.579 41.4097 39.2259C43.4284 36.8729 44.8816 34.089 45.6581 31.0875C46.4346 28.086 46.5138 24.9466 45.8895 21.9099C45.2652 18.8731 43.9541 16.0195 42.0565 13.5677C40.159 11.1159 37.7254 9.13107 34.9423 7.76516C32.1591 6.39924 29.1002 5.68854 25.9999 5.6875ZM25.9999 44.6875C22.7143 44.6885 19.4865 43.8232 16.6419 42.1789C16.5183 42.1077 16.3783 42.0699 16.2356 42.0692C16.1479 42.0692 16.0607 42.0836 15.9777 42.1119L8.38487 44.6428C8.24171 44.6906 8.08808 44.6975 7.94121 44.6628C7.79433 44.6282 7.66001 44.5533 7.5533 44.4466C7.44659 44.3399 7.37171 44.2055 7.33705 44.0587C7.30239 43.9118 7.30931 43.7582 7.35706 43.615L9.88799 36.0222C9.9245 35.913 9.9374 35.7974 9.92585 35.6829C9.91429 35.5684 9.87854 35.4576 9.82096 35.358C7.76067 31.7967 6.93325 27.655 7.46705 23.5754C8.00085 19.4959 9.86603 15.7065 12.7733 12.7952C15.6805 9.88393 19.4672 8.01341 23.546 7.47388C27.6248 6.93434 31.7676 7.75595 35.3318 9.81123C38.896 11.8665 41.6823 15.0406 43.2584 18.841C44.8346 22.6415 45.1125 26.8558 44.049 30.8303C42.9856 34.8048 40.6402 38.3173 37.3767 40.8228C34.1133 43.3283 30.1142 44.6868 25.9999 44.6875Z" fill="#969696" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" id="icon-tg-svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-          <path d="M47.5467 5.99087C47.0795 5.60363 46.5162 5.35003 45.9165 5.25695C45.3169 5.16388 44.7033 5.2348 44.1407 5.4622L5.32049 21.1337C4.69317 21.3915 4.1591 21.834 3.78917 22.4024C3.41923 22.9709 3.23093 23.6384 3.24927 24.3163C3.26761 24.9943 3.49171 25.6507 3.89183 26.1983C4.29195 26.7459 4.84916 27.1589 5.48949 27.3824L13.8658 30.29L18.405 45.2964C18.4137 45.3267 18.4418 45.3462 18.4548 45.3744C18.5016 45.4941 18.5699 45.6042 18.6563 45.6994C18.7877 45.8461 18.9572 45.9533 19.146 46.0092C19.1677 46.0179 19.1828 46.0374 19.2045 46.0417H19.2175L19.224 46.0439C19.3916 46.0799 19.5658 46.071 19.7288 46.0179C19.7462 46.0135 19.7635 46.0135 19.783 46.007C19.9395 45.9521 20.0812 45.8616 20.1968 45.7427C20.2098 45.7275 20.2315 45.7254 20.2445 45.7124L26.7727 38.506L36.2995 45.8835C36.878 46.3364 37.5908 46.5812 38.3253 46.5812C39.9157 46.5812 41.2872 45.4675 41.6143 43.914L48.682 9.20837C48.8019 8.61919 48.7596 8.00853 48.5596 7.4415C48.3597 6.87448 48.0096 6.37236 47.5467 5.9887V5.99087ZM20.7732 33.1392L19.2413 40.586L16.0455 30.017L31.8947 21.762L21.0678 32.591C20.9179 32.7409 20.8154 32.9315 20.7732 33.1392ZM39.491 43.4785C39.4503 43.675 39.3598 43.8577 39.2281 44.0091C39.0965 44.1605 38.9281 44.2755 38.7392 44.343C38.5548 44.414 38.3552 44.4357 38.1599 44.4061C37.9647 44.3764 37.7805 44.2965 37.6255 44.174L27.3057 36.1812C27.0899 36.0147 26.8194 35.9356 26.5479 35.9597C26.2764 35.9837 26.024 36.1093 25.841 36.3112L21.2975 41.3184L22.8272 33.8932L38.4033 18.3149C38.5857 18.1319 38.6967 17.8897 38.7163 17.632C38.7358 17.3744 38.6626 17.1182 38.5099 16.9098C38.3572 16.7014 38.135 16.5544 37.8834 16.4954C37.6318 16.4364 37.3675 16.4692 37.138 16.588L14.6848 28.2837L6.19799 25.3327C5.97297 25.2584 5.77671 25.1158 5.63652 24.9247C5.49633 24.7337 5.41918 24.5037 5.41582 24.2667C5.40502 24.0277 5.46889 23.7912 5.59857 23.5901C5.72824 23.389 5.91729 23.2332 6.13949 23.1444L44.9532 7.47287C45.1521 7.38836 45.3706 7.36103 45.5842 7.39395C45.7978 7.42687 45.9979 7.51873 46.1622 7.6592C46.3255 7.79134 46.4488 7.96627 46.5184 8.16446C46.5881 8.36265 46.6012 8.57629 46.5565 8.78153L39.491 43.4807V43.4785Z" fill="#969696" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" id="icon-mail-svg" width="52" height="52" viewBox="0 0 52 52" fill="none">
-          <path d="M10.834 10.8334H39.0007C40.7246 10.8334 42.3779 11.5182 43.5968 12.7372C44.8158 13.9562 45.5007 15.6095 45.5007 17.3334V36.8334C45.5007 38.5573 44.8158 40.2106 43.5968 41.4296C42.3779 42.6486 40.7246 43.3334 39.0007 43.3334H10.834C9.11008 43.3334 7.45678 42.6486 6.23779 41.4296C5.0188 40.2106 4.33398 38.5573 4.33398 36.8334V17.3334C4.33398 15.6095 5.0188 13.9562 6.23779 12.7372C7.45678 11.5182 9.11008 10.8334 10.834 10.8334ZM10.834 13C9.75065 13 8.79732 13.3684 8.06065 14.0184L24.9173 24.9167L41.774 14.0184C41.0373 13.3684 40.084 13 39.0007 13H10.834ZM24.9173 27.5384L6.78232 15.7734C6.60898 16.25 6.50065 16.7917 6.50065 17.3334V36.8334C6.50065 37.9826 6.9572 39.0848 7.76986 39.8975C8.58251 40.7102 9.68471 41.1667 10.834 41.1667H39.0007C40.1499 41.1667 41.2521 40.7102 42.0648 39.8975C42.8774 39.0848 43.334 37.9826 43.334 36.8334V17.3334C43.334 16.7917 43.2257 16.25 43.0523 15.7734L24.9173 27.5384Z" fill="#969696" />
-        </svg>
-      </div>
-      <label for="" class="label-input-form-project" id="label-phone">Телефон
-        <input type="tel" name="" id="">
-      </label>
-      <label for="" class="label-input-form-project" id="label-wa">WhatsApp
-        <input type="text">
-      </label>
-      <label for="" class="label-input-form-project" id="label-tg">Telegram
-        <input type="text">
-      </label>
-      <label for="" class="label-input-form-project" id="label-mail">Email
-        <input type="email" name="" id="">
-      </label>
-      <button type="submit" class="btn-square form">ЗАКАЗАТЬ
-        <hr />
-      </button>
-    </form>
-  </div>
-</section>                </div>
-            </div>
+        
+
+
+						<div class="wrapper-stage-building">
+							<div class="wrapper-text-price-building-n-get-outlay">
+								<p class="text-price-building">Стоимость строительства от: <br /> <b>10 800 000₽</b></p>
+						</div>
+
+							<div class="row mx-0 px-0 mb-lg-5">
+								<div class="col-6 px-0">
+									<p class="text-price-building-desc my-4 mb-4">Возможно поэтапное строительство:</p>
+								<div class="d-block list-group" id="list-tab" role="tablist">
+									<a class="d-flex name-sections-building active-gold px-0" id="list-home-list" data-bs-toggle="list" href="index.html#list-home" role="tab" aria-controls="home">
+									<div class="m-auto mx-2">
+										Коробка дома
+									</div>	
+									</a>
+									<a class="d-flex name-sections-building px-0" id="list-profile-list" data-bs-toggle="list" href="index.html#list-profile" role="tab" aria-controls="profile">
+									<div class="m-auto mx-2">
+										Дом с внешней отделкой
+									</div>
+								 </a>
+									<a class="d-flex name-sections-building px-0" id="list-messages-list" data-bs-toggle="list" href="index.html#list-messages" role="tab" aria-controls="messages">
+									<div class="m-auto mx-2">
+										Дом под чистовую
+									</div>
+								 </a>
+									<a class="d-flex name-sections-building px-0" id="list-settings-list" data-bs-toggle="list" href="index.html#list-settings" role="tab" aria-controls="settings">
+									<div class="m-auto mx-2">
+										Дом под ключ
+									</div>	
+									</a>					
+								</div>
+								</div>
+								<div class="col-6 d-flex flex-column justify-content-end">
+								<div class="tab-content" id="nav-tabContent">
+									<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> 
+										<div class="priceTitle mb-4">
+										от 33 000 ₽ за м2 
+										</div>
+										<div class="mt-4">
+										<div class="timeSection d-flex gap-2">
+											<div>
+												<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z" fill="#343536"/>
+													<path d="M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z" fill="#A78B73"/>
+												</svg>													
+											</div>
+											<div class="timeText">До 4 месяцев</div>
+										</div>
+										<div class="section">
+											<p class="description-sections-building">Фундамент</p>
+											<p class="description-sections-building">Перекрытия</p>
+											<p class="description-sections-building">Стены</p>
+											<p class="description-sections-building">Кровля</p>
+										</div>
+										</div>
+										<a href="index.html#" class="d-flex but_hover_square position-relative w-50 pt-4" style="border-bottom: 1px solid black;">
+										<span class="pt-4 but_podrobnee_srvices" style="color: #121212;">
+											ПОЛУЧИТЬ СМЕТУ
+										</span>
+											<div class="position-absolute square_block_services_pdl">
+												<div class="button_podbor_square_services  position-relative px-5 py-5" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%;">
+													<div class="position-absolute" style="left: -35px; top: 25px;">
+														<svg width="29" height="8" viewBox="0 0 29 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M1 3.5H0.5V4.5H1V3.5ZM28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM1 4.5H28V3.5H1V4.5Z" fill="#14010C" />
+														</svg>
+													</div>
+												</div>
+											</div>
+					
+										</a>
+									</div>
+									<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+										<div class="priceTitle mb-4">
+											от 43 000 ₽ за м2 
+										</div>
+										<div class="mt-4">
+											<div class="timeSection d-flex gap-2">
+												<div>
+													<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z" fill="#343536"/>
+														<path d="M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z" fill="#A78B73"/>
+													</svg>													
+												</div>
+												<div class="timeText">до 6 месяцев</div>
+											</div>
+											<div class="section">
+												<p class="description-sections-building">Фундамент</p>
+												<p class="description-sections-building">Коробка дома (стены, перекрытия, кровля)</p>
+												<p class="description-sections-building">Утепление стен кровли</p>
+												<p class="description-sections-building">Отделка фасадов дома</p>
+											</div>
+										</div>
+											<a href="index.html#" class="d-flex but_hover_square position-relative w-50 pt-4" style="border-bottom: 1px solid black;">
+											<span class="pt-4 but_podrobnee_srvices" style="color: #121212;">
+												ПОЛУЧИТЬ СМЕТУ
+											</span>
+												<div class="position-absolute square_block_services_pdl">
+													<div class="button_podbor_square_services  position-relative px-5 py-5" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%;">
+														<div class="position-absolute" style="left: -35px; top: 25px;">
+															<svg width="29" height="8" viewBox="0 0 29 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1 3.5H0.5V4.5H1V3.5ZM28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM1 4.5H28V3.5H1V4.5Z" fill="#14010C" />
+															</svg>
+														</div>
+													</div>
+												</div>
+						
+											</a>
+									</div>
+									<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+										<div class="priceTitle mb-4">
+											от 69 000 ₽ за м2 
+										</div>
+										<div class="mt-4">
+											<div class="timeSection d-flex gap-2">
+												<div>
+													<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z" fill="#343536"/>
+														<path d="M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z" fill="#A78B73"/>
+													</svg>													
+												</div>
+												<div class="timeText">До 9 месяцев</div>
+											</div>
+											<div class="section">
+												<p class="description-sections-building">Коробка дома (стены, перекрытия, кровля)</p>
+												<p class="description-sections-building">Утепление стен кровли и отделка фасадов дома</p>
+												<p class="description-sections-building">Установка окон и дверей</p>
+												<p class="description-sections-building">Монтаж коммуникаций (электрика, отопление, водоснобжение)</p>
+												<p class="description-sections-building">Черновая и чистовая внутренняя отделка (white box)</p>
+											</div>
+										</div>
+											<a href="index.html#" class="d-flex but_hover_square position-relative w-50 pt-4" style="border-bottom: 1px solid black;">
+											<span class="pt-4 but_podrobnee_srvices" style="color: #121212;">
+												ПОЛУЧИТЬ СМЕТУ
+											</span>
+												<div class="position-absolute square_block_services_pdl">
+													<div class="button_podbor_square_services  position-relative px-5 py-5" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%;">
+														<div class="position-absolute" style="left: -35px; top: 25px;">
+															<svg width="29" height="8" viewBox="0 0 29 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1 3.5H0.5V4.5H1V3.5ZM28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM1 4.5H28V3.5H1V4.5Z" fill="#14010C" />
+															</svg>
+														</div>
+													</div>
+												</div>
+						
+											</a>					
+									</div>
+									<div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"> 
+										<div class="priceTitle mb-4">
+											от 75 000 ₽ за м2 
+										</div>
+										<div class="mt-4">
+											<div class="timeSection d-flex gap-2">
+												<div>
+													<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z" fill="#343536"/>
+														<path d="M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z" fill="#A78B73"/>
+													</svg>													
+												</div>
+												<div class="timeText">До 11 месяцев</div>
+											</div>
+											<div class="section">
+												<p class="description-sections-building">Коробка дома (стены, перекрытия, кровля)</p>
+												<p class="description-sections-building">Утепление стен кровли и отделка фасадов дома</p>
+												<p class="description-sections-building">Установка окон и дверей</p>
+												<p class="description-sections-building">Монтаж коммуникаций (электрика, отопление, водоснобжение)</p>
+												<p class="description-sections-building">Черновая и чистовая внутренняя отделка (white box)</p>
+												<p class="description-sections-building">Монтаж напольных покрытий, облицовка стен, отделка санузлов</p>
+												<p class="description-sections-building">Установка плинтусов, внутренних дверей, багетов</p>
+											</div>
+										</div>
+											<a href="index.html#" class="d-flex but_hover_square position-relative w-50 pt-4" style="border-bottom: 1px solid black;">
+											<span class="pt-4 but_podrobnee_srvices" style="color: #121212;">
+												ПОЛУЧИТЬ СМЕТУ
+											</span>
+												<div class="position-absolute square_block_services_pdl">
+													<div class="button_podbor_square_services  position-relative px-5 py-5" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%;">
+														<div class="position-absolute" style="left: -35px; top: 25px;">
+															<svg width="29" height="8" viewBox="0 0 29 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1 3.5H0.5V4.5H1V3.5ZM28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM1 4.5H28V3.5H1V4.5Z" fill="#14010C" />
+															</svg>
+														</div>
+													</div>
+												</div>
+						
+											</a>	
+										</div>
+								</div>
+								</div>
+							</div>
+						</div>
 
             <!-- Блок "Внесем изменения в проект -->
             <div class="container-fluid wrapper-add-change-project">
@@ -589,7 +707,6 @@
                         <button id="btn-change-project" class="btn-square btn-call-form">
                             Внести изменения в проект
                             <hr class="static-line" />
-                            <hr class="animation-line" />
                         </button>
                         <!-- Подключаем модальное окно для "внести изменения в проект" -->
                         <section class="form-change-project form-project">
@@ -643,7 +760,8 @@
       </button>
     </form>
   </div>
-</section>                    </div>
+												</section>                    
+									</div>
                 </div>
             </div>
 
@@ -672,12 +790,12 @@
 		<div class="container-fluid pt-0 pb-3">
 			<div class="pt-3 pt-md-5 pb-2 pb-md-4 text-start">
 				<span class="style_heading_text ">
-					Реализуем проект из любого материала
+					Адаптируем проект под любой материал
 				</span>
 			</div>
 			<div class="pb-3 col-12">
 				<span class="font_size_text_project" style="color: var(--well-done-dark, #343536);font-family: Montserrat;font-style: normal;font-weight: 400;line-height: normal;">
-					Реализуем вашу мечту о прекрасном жилье из любого материала.
+					Мы поможем вам реализовать вашу мечту о прекрасном жилье из любого материала, который вы выберете.
 				</span>
 			</div>
 			<div class="col-12">
@@ -1989,47 +2107,53 @@
       </div>
     </div>
   </div>
-</form>        </section>
+						</form>        
+		</section>
     </main>
     <footer>
-  <div class="wrapper-footer">
-    <div class="wrapper-logo-desc-politic">
-      <img src="../img/footer-img/logo-footer-gold.svg" alt="arhion-logo-footer">
-      <p>Архитектурно-<br />строительная группа</p>
-      <a href="proekt_m-407.html#" class="politic-desctop">Политика конфиденциальности</a>
-    </div>
-    <div class="wrapper-list-item">
-      <div>
-        <a href="proekt_m-407.html#">Проектирование</a>
-      </div>
-      <div>
-        <a href="proekt_m-407.html#">Каталог проектов</a>
-      </div>
-      <div>
-        <a href="proekt_m-407.html#">Контакты</a>
-      </div>
-      <div>
-        <a href="proekt_m-407.html#">Строительство</a>
-      </div>
-      <div>
-        <a href="proekt_m-407.html#">О компании</a>
-      </div>
-      <div>
-        <a href="proekt_m-407.html#">Полезные статьи</a>
-      </div>
-    </div>
-    <div class="wrapper-contacts-social">
-      <a href="tel:+7 (495) 799-75-29" class="tel-footer">+7 (495) 799-75-29</a>
-      <p>Рабочее время: Ежедневно 10:00 - 21:00</p>
-      <div class="wrapper-social-footer">
-        <a href="proekt_m-407.html#"><img src="../img/footer-img/vk-gold.svg" alt=""></a>
-        <a href="proekt_m-407.html#"><img src="../img/footer-img/instagram-gold.svg" alt=""></a>
-        <a href="proekt_m-407.html#"><img src="../img/footer-img/whatsapp-gold.svg" alt=""></a>
-      </div>
-      <a href="proekt_m-407.html#" class="politic-mobile">Политика конфиденциальности</a>
-    </div>
-  </div>
-		</footer>   
+			<div class="wrapper-footer">
+				<div class="wrapper-logo-desc-politic">
+					<svg width="67" height="70" viewBox="0 0 67 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M66.9999 69.9995C63.057 69.8506 59.9529 68.8347 57.5293 67.4018C53.3476 64.9412 51.1538 61.2413 50.0494 58.5751C49.2525 56.6477 49.0197 55.2595 49.0197 55.2595H25.5923C27.407 50.1059 32.2841 46.6562 37.7582 46.6562H55.1235C56.9532 46.6562 58.5918 47.7883 59.2395 49.4952L66.9999 69.9995Z" fill="#A78B73"/>
+						<path d="M54.5207 34.8421H48.8109C47.8199 34.8421 46.8588 34.6842 45.9515 34.3804H45.9455L45.8947 34.3655C43.6621 33.6297 41.8892 31.9168 41.0773 29.7153L39.3104 24.934L29.8278 0H38.3433C40.17 0 41.8086 1.12903 42.4563 2.83301L50.8614 24.934L54.5207 34.8421Z" fill="#A78B73"/>
+						<path d="M29.0477 0C27.224 0 25.5884 1.12605 24.9407 2.82705L16.5774 24.8238L12.8822 34.8421L8.86176 45.7541H8.8349L3.36084 60.2141L0 69.0974C0.182071 69.0914 0.364142 69.0854 0.540243 69.0706C13.6523 67.7419 17.9802 54.3574 17.9802 54.3574L21.159 45.7541L26.842 29.6646L27.5344 27.7045L31.0535 17.7309L33.0772 11.9129L33.2921 11.2933L29.0477 0Z" fill="#A78B73"/>
+					</svg>	
+					<p>Архитектурно-<br />строительная группа</p>
+					<a href="proekt_m-407.html#" class="politic-desctop" style="border-bottom: 0;">Политика конфиденциальности</a>
+				</div>
+				<div class="wrapper-list-item">
+					<div>
+						<a href="proekt_m-407.html#">Проектирование</a>
+					</div>
+					<div>
+						<a href="proekt_m-407.html#">Каталог проектов</a>
+					</div>
+					<div>
+						<a href="proekt_m-407.html#">Контакты</a>
+					</div>
+					<div>
+						<a href="proekt_m-407.html#">Строительство</a>
+					</div>
+					<div>
+						<a href="proekt_m-407.html#">О компании</a>
+					</div>
+					<div>
+						<a href="proekt_m-407.html#">Полезные статьи</a>
+					</div>
+				</div>
+				<div class="wrapper-contacts-social">
+					<a href="tel:+7 (495) 799-75-29" class="tel-footer">+7 (495) 799-75-29</a>
+					<p>Рабочее время: Ежедневно 10:00 - 21:00</p>
+					<div class="wrapper-social-footer">
+						<a href="proekt_m-407.html#"><img src="../img/footer-img/vk-gold.svg" alt=""></a>
+						<a href="proekt_m-407.html#"><img src="../img/footer-img/instagram-gold.svg" alt=""></a>
+						<a href="proekt_m-407.html#"><img src="../img/footer-img/whatsapp-gold.svg" alt=""></a>
+					</div>
+					<a href="proekt_m-407.html#" class="politic-mobile">Политика конфиденциальности</a>
+				</div>
+			</div>
+			<div class="footer-end text-center">Архитектурно-строительная группа ARHION © 2001 - 2023</div>
+</footer>   
     <script src="../jquery.bxslider.min.js@2"></script>
     <script src="../script/jquery.mb.browser.js@2"></script>
     <script src="../script/jquery.cookie.js@2"></script>

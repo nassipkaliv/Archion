@@ -139,6 +139,24 @@ border-bottom: 2px solid #969696 !important;
 	line-height: normal;
 }
 
+.priceTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #a78b73;
+}
+
+.footer-end {
+	padding-bottom: 30px;
+	margin-top: -40px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #f7f7f9;
+}
+
 @media (max-width: 359px){
 	
 	.font_title_main{
