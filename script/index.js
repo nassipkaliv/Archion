@@ -1,3 +1,31 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+        const minusButton = counter.querySelector('.minus');
+        const plusButton = counter.querySelector('.plus');
+        const countDisplay = counter.querySelector('.count');
+        let count = parseInt(countDisplay.textContent);
+
+        // Function to increment count
+        function incrementCount() {
+            count++;
+            countDisplay.textContent = count;
+        }
+
+        // Function to decrement count
+        function decrementCount() {
+            if (count > 1) {
+                count--;
+                countDisplay.textContent = count;
+            }
+        }
+
+        // Event listeners for plus and minus buttons
+        minusButton.addEventListener('click', decrementCount);
+        plusButton.addEventListener('click', incrementCount);
+    });
+});
 
 $('.s-feature_arrow').click(function() {
 	var f = $(this).data('feature');

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#ffcc66">
+<title>Строительство домов под ключ проекты и цены </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+<link rel="stylesheet" href="style/progressive-image.min.css">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="../style/new_footer.css">
+<link rel="stylesheet" href="style/main_page_min.css">
+<link href="main1.css" rel="stylesheet">
+<link rel="stylesheet" href="style/corpblog.css">
+<link rel="stylesheet" href="style/progressive-image.min.css">
+<link rel="stylesheet" href="style/pages.css">
+
+<style>
+.windows-form label,input {
+    display: inline-block
+}
+#important_num {
+    text-decoration: underline;
+    font-size: 1.1em;
+    color: #fff;
+    display: inline-block;
+    width: 30px;
+}
+.b-section_content p {
+    text-indent: 35px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+    @media (max-width: 1024px) {
+    .services_scheme{
+        display: none
+    }
+    .services_scheme-mob{
+        display: block
+    }
+}
+    @media (max-width: 1400px) {
+    .b-content {
+        padding: 0;
+        /*margin-left: 0;
+        max-width: 1300px;*/
+        padding-top: 120px;
+    }
+    .b-wrap__main {
+    max-width: 1300px;
+    padding-left: 35px;
+    padding-right: 35px;
+    }
+}
+</style>
+  
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<style>
+    
+    .logoreg:active, .logoreg:focus{
+ outline:none;
+}
+.logoreg option, .logoreg option:active, .logoreg option:focus{
+    outline: none;
+    -moz-border:none;
+    -webkit-border:none;
+}
+.slogan-wrapper{text-align: center;
+    font-size: 26px;
+    padding: 23px 0px;
+    color: #fff;
+    font-weight: bold;background-color:#435061;}
+.slogan{
+ padding-top: 20px;
+ display: inline-flex; 
+ height: 40px;
+ font-weight: bold;
+ margin: 0 20px;}
+.tp{
+ padding-bottom: 30px;
+ vertical-align: bottom;}
+#important_num{
+    text-decoration: underline;
+    font-size: 1.1em;
+    color: #fff;
+    display: inline-block;
+    width: 30px;
+}
+
+	</style>
+	<link rel="stylesheet" href="templates/new_hmkmos.css">
+	<link rel="stylesheet" href="templates/catalog_banner.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="templates/navbarn.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- Шапка основного типа -->
+        <header class="b-header topbar">
+            <nav class="navbar navbar-light row ">
+                <div class="col-12 container-fluid flex-nowrap">
+                    <a class="navbar-brand navbar-link" href="#">
+                        <img class="navbar-logo-img-gold" src="img/header/arhion-logo-header.svg" alt="arhion-logo-heeader">
+                    </a>
+        
+                    <div class="pl hidden-mobile">
+                        <input type="button" onclick="fu()" id="btn-project" value="Подобрать проект" class="btn_project12 ppp" data-bs-toggle="modal" data-bs-target="#cons-project" aria-current="page">
+                    </div>
+                    <div class="modal fade" id="cons-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 style="font-weight: bold;" class="modal-title consult_form">Подобрать проект</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body form_order_modal card clearfix">
+                                    <div class="card-body">
+                                        <form id='consultform' method="post" class="consultform" enctype="multipart/form-data" novalidate="novalidate">
+                                            <input type="hidden" name="Formname" value="constop">
+                                            <input type="hidden" name="project_name" value="hmkmos.ru">
+                                            <input type="hidden" name="admin_email" value="msk@hmkmos.ru">
+                                            <input type="hidden" name="form_subject" value="Получить консультацию">
+                                            <input type="hidden" name="Page" value="https://www.hmkmos.ru/">
+                                            <div class="row">
+                                                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="z-form">
+                                                        <div class="info"></div>
+                                                        <a rel="nofollow" class="anchor_tags" name="form-zakaz-uslugi"></a>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                <div class="form-group mt-3">
+                                                                    <label for="ConsName" class="form-label">Ваше имя<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" name="ConsName" id="ConsName" placeholder="Ваше имя" value="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6">
+                                                                <div class="form-group mt-3">
+                                                                    <label for="ConsEmail" class="form-label">Ваш Email<sup>*</sup></label>
+                                                                    <input type="email" class="form-control" name="ConsMail" id="ConsEmail" placeholder="Ваш Email" value="" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mt-3">
+                                                            <label for="ConsPhone" class="form-label">Ваш телефон<sup>*</sup></label>
+                                                            <input type="text" class="form-control" name="ConsPhone" id="ConsPhone" placeholder="Ваш телефон" value="" required>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="InputText" class="form-label">Комментарий<sup>*</sup></label>
+                                                                    <textarea class="form-control" name="Text" placeholder="Сообщение" rows="4"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center my-2">
+                                                            <input class="btn btn-gold text-light text-uppercase px-5" id="topcons" type="submit" name="web_form_submit" value="Отправить" style="font-size: 24px; line-height: 42px; font-weight: 700; box-shadow: 0px 0px 6px 2px rgb(41 41 42 / 26%); border: none !important;">
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <small>
+                                                                <label for="agree_individual">
+                                                                    <input style="position: relative; top: 3px;" id="agree_individual" type="checkbox" value="146" name="AGREEMENT" checked="">
+                                                                    Отправляя форму вы соглашаетесь с
+                                                                    <a href="termsofuse.html">правилами обработки персональных данных</a>
+                                                                </label>
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer clearfix"></div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                    </div>
+                   
+                    <ul class="d-flex nav nav-mod justify-content-end" style="flex-grow: 1;">
+                        <div>
+                            <li class="nav-item nav-item--phone">
+                                <a class="nav-link nav-link--mod nav-link--phone" href="tel:+74957997529" tabindex="-1">+7 (495) 799-75-29</a>
+        
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link--mod nav-link__icon-phone-link " href="tel:+74957997529" tabindex="-1">
+                                    <img class="nav-link nav-link__icon-phone" src="templates/images/header/phone-icon.svg" width="32px" height="32px">
+                                </a>
+                            </li>
+                        </div>
+        
+                        <div class="d-flex wrapper-social-header">
+                            <a class="m-auto nav-link pt-0 logo-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                <img class="nav-icon-whatsapp" src="img/ph_whatsapp-logo-thin.png" width="32" height="32">
+                            </a>
+                            <a class="m-auto nav-link  d-sm-block" id="social-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                <img class="nav-icon-telegram" src="img/uit_telegram-alt.png" width="32" height="32">
+                            </a>
+                            <script src="https://yastatic.net/share2/share.js"></script>
+                            <div style="margin-top:4px; margin-bottom:4px; margin-left: 5px; background-color: transparent;padding-right: 3px;" class="ya-share2 d-sm-block" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,viber,whatsapp">
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="nav justify-content-around">
+                        <li class="nav-item">
+                            <button class="navbar-toggler navbar-button-menu" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon">
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+                        <a class="navnar-arhion-link" href="index.html">
+                            <img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+                        </a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <ul class="nav justify-content-around nav-social ">
+        
+                                <li class="nav-item social">
+                                    <img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+                                    <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                        WHATSAPP
+                                        <hr />
+                                    </a>
+                                </li>
+                                <li class="nav-item social">
+                                    <img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+                                    <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                        TELEGRAM
+                                        <hr />
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+                                        <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                        +7 (495) 799-75-29</a>
+                                </li>
+                            </ul>
+        
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" href="zakazat-proekt-doma/index.html">Индивидуальное проектирование</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" href="index.html#">Дизайн интерьеров</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" aria-current="page" href="index.html">Строительство домов</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" href="index.html#">Полезная информация</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" href="kontaktyi.html">Контакты</a>
+                            </li>
+                            <li class="nav-item ">
+                                <div class="links2">
+                                    <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+                                        <img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+                                    </a>
+                                    <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+                                        <img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+                                    </a>
+                                    <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+                                        <img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+                                    </a>
+                                    <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+                                        <img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>	
+
+        <section class="intro_solid only-pc">
+            <div class="intro_solid__card-inset justify-content-center">
+                <h1 class="ms-0">Корзина</h1>
+            </div>
+        </section>
+
+        <section class="intro_solid_mobile only-mobile">
+            <h1>Реализованные проекты домов</h1>
+        </section>
+
+
+        <section class="block_container">
+            <div class="projects-container">
+                <div class="editButtons d-flex flex-column gap-2">
+                    <div class="d-flex gap-2 align-items-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label class="labelText" for="flexCheckDefault">
+                              Выбрать все
+                            </label>
+                        </div>
+                    </div>
+                    <div class="deleteButton d-flex gap-2 align-items-center">
+                        <div>
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.47436 0.0369072C5.08397 0.158062 4.65769 0.517036 4.49167 0.871523C4.37051 1.13178 4.30769 1.45037 4.30769 1.81832V2.1055H2.15385H0V2.6664V3.22281L0.547436 3.23627L1.09936 3.24973L1.24295 5.11191C1.32372 6.13498 1.45833 7.89396 1.54808 9.01575C1.63333 10.1375 1.77692 11.9773 1.86218 13.0991C2.07308 15.8318 2.07756 15.8901 2.2391 16.2177C2.4859 16.7202 2.95705 17.0792 3.49551 17.1824C3.84551 17.2497 10.2397 17.2452 10.5538 17.1779C11.0115 17.0792 11.384 16.8279 11.6353 16.451C11.8462 16.1324 11.9224 15.8363 11.9808 15.1183C12.0212 14.5754 12.1872 12.4395 12.6763 6.12152C12.766 4.98627 12.8513 3.87345 12.8692 3.65357L12.9006 3.24973L13.4526 3.23627L14 3.22281V2.6664V2.1055H11.8506H9.70577L9.67885 1.66575C9.65192 1.16319 9.57564 0.925369 9.35577 0.624729C9.17628 0.377934 8.94295 0.20742 8.61987 0.0862675C8.40897 0.00549698 8.27436 -0.0034771 6.98654 0.00101089C6.21923 0.00101089 5.53718 0.018959 5.47436 0.0369072ZM8.3641 1.11383C8.56154 1.24396 8.6109 1.37409 8.61539 1.7555V2.1055H7H5.38462V1.7555C5.38462 1.49075 5.40705 1.37857 5.46987 1.27986C5.63141 1.03755 5.66282 1.03306 7 1.02857C8.14423 1.02857 8.24295 1.03755 8.3641 1.11383ZM11.7564 3.36639C11.7564 3.44268 11.6936 4.28627 11.6218 5.24204C11.5455 6.19332 11.4154 7.87152 11.3301 8.97088C10.8904 14.6427 10.8096 15.6209 10.7692 15.7196C10.7154 15.8632 10.4776 16.0517 10.3071 16.0831C10.2263 16.0965 8.68718 16.1055 6.87885 16.0965C3.62115 16.0831 3.59423 16.0831 3.46859 15.9888C3.19936 15.7869 3.19936 15.7824 3.02885 13.5927C2.94359 12.4709 2.84936 11.2997 2.82692 10.9901C2.55769 7.59781 2.24359 3.46511 2.24359 3.36191V3.22729H7H11.7564V3.36639Z" fill="#828282"/>
+                                <path d="M4.30762 9.66645V13.9966H4.84608H5.38454V9.66645V5.33633H4.84608H4.30762V9.66645Z" fill="#828282"/>
+                                <path d="M6.46155 9.66645V13.9966H7.00001H7.53847V9.66645V5.33633H7.00001H6.46155V9.66645Z" fill="#828282"/>
+                                <path d="M8.61536 9.66645V13.9966H9.15382H9.69228V9.66645V5.33633H9.15382H8.61536V9.66645Z" fill="#828282"/>
+                            </svg>    
+                        </div>
+                        <div class="labelText">
+                            Удалить
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 col-md-12 d-flex flex-column gap-5">
+                    <div class="cartBlockRow d-flex align-items-center gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input bigCheck" type="checkbox" value="" id="flexCheckDefault1" checked>
+                        </div>
+                        <div class="cartImg">
+                            <img class="img-fluid" width="280px" src="img/cartImg.png" alt="cartImg">
+                        </div>
+                        <div class="d-flex flex-grow-1"> 
+                            <div class="cartInfo d-flex flex-column justify-content-between gap-2 flex-grow-1"> 
+                                <div class="cartTitle">Мальта</div>
+                                <div class="cartText">Сосна</div>
+                                <div class="cartText">0000х0000</div>
+                                <div class="cartColor d-flex align-items-end">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="39" height="39" stroke="#BDBDBD" />
+                                        <circle cx="20" cy="20" r="11" fill="#A78B73" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="cartPriceInfo d-flex ">
+                                <div class="d-flex flex-column justify-content-between" id="counter1">
+                                    <div class="cartPrice">от 47 913 <span>₽</span></div>
+                                    <div class="d-flex counter justify-content-start align-items-center gap-2">
+                                        <div class="minus">
+                                            <svg width="23" height="1" viewBox="0 0 23 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line y1="0.5" x2="23" y2="0.5" stroke="#BDBDBD"/>
+                                            </svg>                                            
+                                        </div>
+                                        <div class="count d-flex align-items-center justify-content-center">
+                                            1
+                                        </div>
+                                        <div class="plus">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line y1="11.5" x2="23" y2="11.5" stroke="#BDBDBD"/>
+                                                <line x1="12.5" x2="12.5" y2="23" stroke="#BDBDBD"/>
+                                            </svg>                                           
+                                        </div>
+                                    </div>
+                                    <div class="deleteButton d-flex gap-2 align-items-center">
+                                        <div>
+                                            <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.07692 3.25778H0.25V3.80907V4.36001L0.788147 4.37324L0.788197 4.37325L1.57661 4.39247L1.80241 4.39798L1.81977 4.62318L2.02487 7.28298C2.02487 7.28305 2.02488 7.28312 2.02488 7.28318C2.073 7.89264 2.1344 8.68383 2.19895 9.51545C2.28936 10.6803 2.38593 11.9245 2.46074 12.8596L2.46082 12.8606C2.5217 13.6617 2.60342 14.7192 2.68515 15.777C2.76688 16.8346 2.84862 17.8924 2.90953 18.6939C3.06045 20.6494 3.13686 21.6387 3.20415 22.1991C3.2377 22.4786 3.26774 22.6399 3.3003 22.756C3.33164 22.8677 3.3669 22.9438 3.42294 23.0575L3.42312 23.0578C3.74141 23.706 4.34922 24.1682 5.04065 24.3007L5.04075 24.3007C5.04075 24.3007 5.04169 24.3009 5.04377 24.3012L5.05342 24.3025C5.06186 24.3035 5.07298 24.3047 5.08709 24.3059C5.11536 24.3084 5.1523 24.3109 5.19807 24.3135C5.28949 24.3185 5.41108 24.3232 5.55941 24.3276C5.85579 24.3364 6.25372 24.3436 6.72 24.3493C7.65228 24.3607 8.85386 24.366 10.0543 24.3652C11.2548 24.3644 12.4532 24.3575 13.379 24.3449C13.8421 24.3386 14.236 24.3309 14.5275 24.3218C14.6734 24.3172 14.7923 24.3123 14.8808 24.3072C14.9251 24.3047 14.9604 24.3021 14.9868 24.2997C15.0104 24.2975 15.0214 24.2958 15.024 24.2954C15.0246 24.2954 15.0248 24.2953 15.0246 24.2954C15.6164 24.1676 16.0916 23.8456 16.4134 23.3633C16.6785 22.9628 16.7837 22.5925 16.8661 21.5783C16.9086 21.0076 17.0478 19.2101 17.3953 14.7236C17.521 13.0997 17.6741 11.1235 17.8597 8.72567L17.8598 8.72526C17.9331 7.79729 18.0045 6.87865 18.0569 6.20402C18.0959 5.70144 18.1244 5.33427 18.1354 5.19954C18.1354 5.19935 18.1354 5.19917 18.1354 5.19898L18.1802 4.62301L18.1977 4.39798L18.4234 4.39247L19.2118 4.37325L19.2119 4.37324L19.75 4.36001V3.80907V3.25778H16.9295H13.8654H13.6302L13.6159 3.02306L13.5774 2.39486L13.5773 2.39295C13.5585 2.04264 13.5232 1.80191 13.4609 1.60234C13.3998 1.40665 13.309 1.23878 13.1636 1.03998L13.1632 1.03944C12.9393 0.731602 12.6484 0.515514 12.2263 0.357258L12.2247 0.356632C12.1036 0.310268 12.0069 0.282015 11.7111 0.266245C11.4041 0.249884 10.9044 0.248158 9.98164 0.251373H9.98077C9.43442 0.251373 8.91886 0.257767 8.52937 0.267324C8.33444 0.272108 8.1723 0.277657 8.05416 0.28352C7.99488 0.286461 7.94842 0.289398 7.91517 0.292204C7.89659 0.293772 7.8861 0.295023 7.88147 0.29557C7.64491 0.37151 7.38759 0.521755 7.15999 0.714563C6.92771 0.911341 6.74254 1.13872 6.64316 1.35079C6.48899 1.68213 6.40385 2.09939 6.40385 2.59753V3.00778V3.25778H6.15385H3.07692ZM12.0819 1.37956L12.082 1.37951L12.0863 1.38238C12.2556 1.49396 12.3864 1.62362 12.4645 1.82409C12.536 2.00761 12.5544 2.23028 12.5577 2.50484H12.5577V2.50778V3.00778V3.25778H12.3077H10H7.69231H7.44231V3.00778V2.50778C7.44231 2.12366 7.47224 1.89985 7.60319 1.69408L7.60314 1.69405L7.60609 1.68962C7.66176 1.60611 7.72931 1.50508 7.83534 1.42635C7.94608 1.34413 8.07647 1.30096 8.23683 1.27469C8.54091 1.22489 9.05714 1.22248 9.99916 1.21932H10C10.8137 1.21932 11.2673 1.2224 11.5385 1.23987C11.6746 1.24864 11.7782 1.2617 11.8644 1.28427C11.9581 1.30881 12.0229 1.34238 12.0819 1.37956ZM16.8519 7.50728L16.8518 7.50854C16.7435 8.85894 16.5592 11.2354 16.4374 12.8064L16.4352 12.8348C16.1211 16.8858 15.9351 19.2616 15.8205 20.6423C15.7632 21.3322 15.7235 21.7756 15.6945 22.0558C15.68 22.1956 15.6679 22.2975 15.6572 22.3704C15.6483 22.4307 15.6374 22.4966 15.6178 22.5467C15.5551 22.7115 15.4097 22.8638 15.2718 22.9725C15.1303 23.0841 14.9471 23.1889 14.7697 23.2216L14.7697 23.2216L14.7655 23.2223C14.7296 23.2283 14.6603 23.2306 14.5939 23.2325C14.5159 23.2347 14.4091 23.2368 14.2773 23.2386C14.0134 23.2423 13.6461 23.2454 13.2023 23.2474C12.3143 23.2514 11.118 23.2514 9.82568 23.245L9.79825 23.2448C7.49218 23.2353 6.32105 23.2305 5.70531 23.2112C5.39971 23.2016 5.21434 23.1882 5.09111 23.1649C5.02605 23.1526 4.97001 23.1361 4.91823 23.1116C4.86641 23.0871 4.82901 23.059 4.80521 23.0412L4.80513 23.0411C4.80212 23.0389 4.7991 23.0366 4.79605 23.0343C4.70603 22.9669 4.6016 22.8886 4.51868 22.7597C4.43436 22.6285 4.38349 22.4647 4.34223 22.2395C4.26158 21.7992 4.20009 21.0096 4.08161 19.488L4.07768 19.4374L4.07764 19.437C4.01073 18.5566 3.93979 17.6529 3.88418 16.9444C3.8388 16.3664 3.80363 15.9183 3.78918 15.719C3.59687 13.2959 3.38854 10.6085 3.22829 8.50838C3.14815 7.4582 3.08003 6.55474 3.03193 5.90453C2.98459 5.26455 2.95513 4.85177 2.95513 4.80266V4.61035V4.36035H3.20513H10H16.7949H17.0449V4.61035V4.80907C17.0449 4.87549 17.0212 5.21863 16.9865 5.69576C16.9512 6.1817 16.9031 6.82463 16.8519 7.50728Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M6.40381 13.8091V19.745H6.92304H7.44227V13.8091V7.8732H6.92304H6.40381V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M9.48083 13.8091V19.745H10.0001H10.5193V13.8091V7.8732H10.0001H9.48083V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M12.5577 13.8091V19.745H13.077H13.5962V13.8091V7.8732H13.077H12.5577V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                            </svg>  
+                                        </div>
+                                        <div class="labelText">
+                                            Удалить
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartBlockRow d-flex align-items-center gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input bigCheck" type="checkbox" value="" id="flexCheckDefault3" checked>
+                        </div>
+                        <div class="cartImg">
+                            <img class="img-fluid" width="280px" src="img/cartImg.png" alt="cartImg">
+                        </div>
+                        <div class="d-flex flex-grow-1"> 
+                            <div class="cartInfo d-flex flex-column justify-content-between gap-2 flex-grow-1"> 
+                                <div class="cartTitle">Мальта</div>
+                                <div class="cartText">Сосна</div>
+                                <div class="cartText">0000х0000</div>
+                                <div class="cartColor d-flex align-items-end">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="39" height="39" stroke="#BDBDBD" />
+                                        <circle cx="20" cy="20" r="11" fill="#A78B73" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="cartPriceInfo d-flex ">
+                                <div class="d-flex flex-column justify-content-between">
+                                    <div class="cartPrice">от 47 913 <span>₽</span></div>
+                                    <div class="d-flex counter justify-content-start align-items-center gap-2" id="counter2">
+                                        <div class="minus">
+                                            <svg width="23" height="1" viewBox="0 0 23 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line y1="0.5" x2="23" y2="0.5" stroke="#BDBDBD"/>
+                                            </svg>                                            
+                                        </div>
+                                        <div class="count d-flex align-items-center justify-content-center">
+                                            1
+                                        </div>
+                                        <div class="plus">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line y1="11.5" x2="23" y2="11.5" stroke="#BDBDBD"/>
+                                                <line x1="12.5" x2="12.5" y2="23" stroke="#BDBDBD"/>
+                                            </svg>                                           
+                                        </div>
+                                    </div>
+                                    <div class="deleteButton d-flex gap-2 align-items-center">
+                                        <div>
+                                            <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.07692 3.25778H0.25V3.80907V4.36001L0.788147 4.37324L0.788197 4.37325L1.57661 4.39247L1.80241 4.39798L1.81977 4.62318L2.02487 7.28298C2.02487 7.28305 2.02488 7.28312 2.02488 7.28318C2.073 7.89264 2.1344 8.68383 2.19895 9.51545C2.28936 10.6803 2.38593 11.9245 2.46074 12.8596L2.46082 12.8606C2.5217 13.6617 2.60342 14.7192 2.68515 15.777C2.76688 16.8346 2.84862 17.8924 2.90953 18.6939C3.06045 20.6494 3.13686 21.6387 3.20415 22.1991C3.2377 22.4786 3.26774 22.6399 3.3003 22.756C3.33164 22.8677 3.3669 22.9438 3.42294 23.0575L3.42312 23.0578C3.74141 23.706 4.34922 24.1682 5.04065 24.3007L5.04075 24.3007C5.04075 24.3007 5.04169 24.3009 5.04377 24.3012L5.05342 24.3025C5.06186 24.3035 5.07298 24.3047 5.08709 24.3059C5.11536 24.3084 5.1523 24.3109 5.19807 24.3135C5.28949 24.3185 5.41108 24.3232 5.55941 24.3276C5.85579 24.3364 6.25372 24.3436 6.72 24.3493C7.65228 24.3607 8.85386 24.366 10.0543 24.3652C11.2548 24.3644 12.4532 24.3575 13.379 24.3449C13.8421 24.3386 14.236 24.3309 14.5275 24.3218C14.6734 24.3172 14.7923 24.3123 14.8808 24.3072C14.9251 24.3047 14.9604 24.3021 14.9868 24.2997C15.0104 24.2975 15.0214 24.2958 15.024 24.2954C15.0246 24.2954 15.0248 24.2953 15.0246 24.2954C15.6164 24.1676 16.0916 23.8456 16.4134 23.3633C16.6785 22.9628 16.7837 22.5925 16.8661 21.5783C16.9086 21.0076 17.0478 19.2101 17.3953 14.7236C17.521 13.0997 17.6741 11.1235 17.8597 8.72567L17.8598 8.72526C17.9331 7.79729 18.0045 6.87865 18.0569 6.20402C18.0959 5.70144 18.1244 5.33427 18.1354 5.19954C18.1354 5.19935 18.1354 5.19917 18.1354 5.19898L18.1802 4.62301L18.1977 4.39798L18.4234 4.39247L19.2118 4.37325L19.2119 4.37324L19.75 4.36001V3.80907V3.25778H16.9295H13.8654H13.6302L13.6159 3.02306L13.5774 2.39486L13.5773 2.39295C13.5585 2.04264 13.5232 1.80191 13.4609 1.60234C13.3998 1.40665 13.309 1.23878 13.1636 1.03998L13.1632 1.03944C12.9393 0.731602 12.6484 0.515514 12.2263 0.357258L12.2247 0.356632C12.1036 0.310268 12.0069 0.282015 11.7111 0.266245C11.4041 0.249884 10.9044 0.248158 9.98164 0.251373H9.98077C9.43442 0.251373 8.91886 0.257767 8.52937 0.267324C8.33444 0.272108 8.1723 0.277657 8.05416 0.28352C7.99488 0.286461 7.94842 0.289398 7.91517 0.292204C7.89659 0.293772 7.8861 0.295023 7.88147 0.29557C7.64491 0.37151 7.38759 0.521755 7.15999 0.714563C6.92771 0.911341 6.74254 1.13872 6.64316 1.35079C6.48899 1.68213 6.40385 2.09939 6.40385 2.59753V3.00778V3.25778H6.15385H3.07692ZM12.0819 1.37956L12.082 1.37951L12.0863 1.38238C12.2556 1.49396 12.3864 1.62362 12.4645 1.82409C12.536 2.00761 12.5544 2.23028 12.5577 2.50484H12.5577V2.50778V3.00778V3.25778H12.3077H10H7.69231H7.44231V3.00778V2.50778C7.44231 2.12366 7.47224 1.89985 7.60319 1.69408L7.60314 1.69405L7.60609 1.68962C7.66176 1.60611 7.72931 1.50508 7.83534 1.42635C7.94608 1.34413 8.07647 1.30096 8.23683 1.27469C8.54091 1.22489 9.05714 1.22248 9.99916 1.21932H10C10.8137 1.21932 11.2673 1.2224 11.5385 1.23987C11.6746 1.24864 11.7782 1.2617 11.8644 1.28427C11.9581 1.30881 12.0229 1.34238 12.0819 1.37956ZM16.8519 7.50728L16.8518 7.50854C16.7435 8.85894 16.5592 11.2354 16.4374 12.8064L16.4352 12.8348C16.1211 16.8858 15.9351 19.2616 15.8205 20.6423C15.7632 21.3322 15.7235 21.7756 15.6945 22.0558C15.68 22.1956 15.6679 22.2975 15.6572 22.3704C15.6483 22.4307 15.6374 22.4966 15.6178 22.5467C15.5551 22.7115 15.4097 22.8638 15.2718 22.9725C15.1303 23.0841 14.9471 23.1889 14.7697 23.2216L14.7697 23.2216L14.7655 23.2223C14.7296 23.2283 14.6603 23.2306 14.5939 23.2325C14.5159 23.2347 14.4091 23.2368 14.2773 23.2386C14.0134 23.2423 13.6461 23.2454 13.2023 23.2474C12.3143 23.2514 11.118 23.2514 9.82568 23.245L9.79825 23.2448C7.49218 23.2353 6.32105 23.2305 5.70531 23.2112C5.39971 23.2016 5.21434 23.1882 5.09111 23.1649C5.02605 23.1526 4.97001 23.1361 4.91823 23.1116C4.86641 23.0871 4.82901 23.059 4.80521 23.0412L4.80513 23.0411C4.80212 23.0389 4.7991 23.0366 4.79605 23.0343C4.70603 22.9669 4.6016 22.8886 4.51868 22.7597C4.43436 22.6285 4.38349 22.4647 4.34223 22.2395C4.26158 21.7992 4.20009 21.0096 4.08161 19.488L4.07768 19.4374L4.07764 19.437C4.01073 18.5566 3.93979 17.6529 3.88418 16.9444C3.8388 16.3664 3.80363 15.9183 3.78918 15.719C3.59687 13.2959 3.38854 10.6085 3.22829 8.50838C3.14815 7.4582 3.08003 6.55474 3.03193 5.90453C2.98459 5.26455 2.95513 4.85177 2.95513 4.80266V4.61035V4.36035H3.20513H10H16.7949H17.0449V4.61035V4.80907C17.0449 4.87549 17.0212 5.21863 16.9865 5.69576C16.9512 6.1817 16.9031 6.82463 16.8519 7.50728Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M6.40381 13.8091V19.745H6.92304H7.44227V13.8091V7.8732H6.92304H6.40381V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M9.48083 13.8091V19.745H10.0001H10.5193V13.8091V7.8732H10.0001H9.48083V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M12.5577 13.8091V19.745H13.077H13.5962V13.8091V7.8732H13.077H12.5577V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                            </svg>  
+                                        </div>
+                                        <div class="labelText">
+                                            Удалить
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartBlockRow d-flex align-items-center gap-4">
+                        <div class="form-check">
+                            <input class="form-check-input bigCheck" type="checkbox" value="" id="flexCheckDefault4" checked>
+                        </div>
+                        <div class="cartImg">
+                            <img class="img-fluid" width="280px" src="img/cartImg.png" alt="cartImg">
+                        </div>
+                        <div class="d-flex flex-grow-1"> 
+                            <div class="cartInfo d-flex flex-column justify-content-between gap-2 flex-grow-1"> 
+                                <div class="cartTitle">Мальта</div>
+                                <div class="cartText">Сосна</div>
+                                <div class="cartText">0000х0000</div>
+                                <div class="cartColor d-flex align-items-end">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="0.5" y="0.5" width="39" height="39" stroke="#BDBDBD" />
+                                        <circle cx="20" cy="20" r="11" fill="#A78B73" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="cartPriceInfo d-flex ">
+                                <div class="d-flex flex-column justify-content-between">
+                                    <div class="cartPrice">от 47 913 <span>₽</span></div>
+                                    <div class="d-flex counter justify-content-start align-items-center gap-2" id="counter3">
+                                        <div class="minus">
+                                            <svg width="23" height="1" viewBox="0 0 23 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line y1="0.5" x2="23" y2="0.5" stroke="#BDBDBD"/>
+                                            </svg>                                            
+                                        </div>
+                                        <div class="count d-flex align-items-center justify-content-center">
+                                            1
+                                        </div>
+                                        <div class="plus">
+                                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line y1="11.5" x2="23" y2="11.5" stroke="#BDBDBD"/>
+                                                <line x1="12.5" x2="12.5" y2="23" stroke="#BDBDBD"/>
+                                            </svg>                                           
+                                        </div>
+                                    </div>
+                                    <div class="deleteButton d-flex gap-2 align-items-center">
+                                        <div>
+                                            <svg width="20" height="25" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.07692 3.25778H0.25V3.80907V4.36001L0.788147 4.37324L0.788197 4.37325L1.57661 4.39247L1.80241 4.39798L1.81977 4.62318L2.02487 7.28298C2.02487 7.28305 2.02488 7.28312 2.02488 7.28318C2.073 7.89264 2.1344 8.68383 2.19895 9.51545C2.28936 10.6803 2.38593 11.9245 2.46074 12.8596L2.46082 12.8606C2.5217 13.6617 2.60342 14.7192 2.68515 15.777C2.76688 16.8346 2.84862 17.8924 2.90953 18.6939C3.06045 20.6494 3.13686 21.6387 3.20415 22.1991C3.2377 22.4786 3.26774 22.6399 3.3003 22.756C3.33164 22.8677 3.3669 22.9438 3.42294 23.0575L3.42312 23.0578C3.74141 23.706 4.34922 24.1682 5.04065 24.3007L5.04075 24.3007C5.04075 24.3007 5.04169 24.3009 5.04377 24.3012L5.05342 24.3025C5.06186 24.3035 5.07298 24.3047 5.08709 24.3059C5.11536 24.3084 5.1523 24.3109 5.19807 24.3135C5.28949 24.3185 5.41108 24.3232 5.55941 24.3276C5.85579 24.3364 6.25372 24.3436 6.72 24.3493C7.65228 24.3607 8.85386 24.366 10.0543 24.3652C11.2548 24.3644 12.4532 24.3575 13.379 24.3449C13.8421 24.3386 14.236 24.3309 14.5275 24.3218C14.6734 24.3172 14.7923 24.3123 14.8808 24.3072C14.9251 24.3047 14.9604 24.3021 14.9868 24.2997C15.0104 24.2975 15.0214 24.2958 15.024 24.2954C15.0246 24.2954 15.0248 24.2953 15.0246 24.2954C15.6164 24.1676 16.0916 23.8456 16.4134 23.3633C16.6785 22.9628 16.7837 22.5925 16.8661 21.5783C16.9086 21.0076 17.0478 19.2101 17.3953 14.7236C17.521 13.0997 17.6741 11.1235 17.8597 8.72567L17.8598 8.72526C17.9331 7.79729 18.0045 6.87865 18.0569 6.20402C18.0959 5.70144 18.1244 5.33427 18.1354 5.19954C18.1354 5.19935 18.1354 5.19917 18.1354 5.19898L18.1802 4.62301L18.1977 4.39798L18.4234 4.39247L19.2118 4.37325L19.2119 4.37324L19.75 4.36001V3.80907V3.25778H16.9295H13.8654H13.6302L13.6159 3.02306L13.5774 2.39486L13.5773 2.39295C13.5585 2.04264 13.5232 1.80191 13.4609 1.60234C13.3998 1.40665 13.309 1.23878 13.1636 1.03998L13.1632 1.03944C12.9393 0.731602 12.6484 0.515514 12.2263 0.357258L12.2247 0.356632C12.1036 0.310268 12.0069 0.282015 11.7111 0.266245C11.4041 0.249884 10.9044 0.248158 9.98164 0.251373H9.98077C9.43442 0.251373 8.91886 0.257767 8.52937 0.267324C8.33444 0.272108 8.1723 0.277657 8.05416 0.28352C7.99488 0.286461 7.94842 0.289398 7.91517 0.292204C7.89659 0.293772 7.8861 0.295023 7.88147 0.29557C7.64491 0.37151 7.38759 0.521755 7.15999 0.714563C6.92771 0.911341 6.74254 1.13872 6.64316 1.35079C6.48899 1.68213 6.40385 2.09939 6.40385 2.59753V3.00778V3.25778H6.15385H3.07692ZM12.0819 1.37956L12.082 1.37951L12.0863 1.38238C12.2556 1.49396 12.3864 1.62362 12.4645 1.82409C12.536 2.00761 12.5544 2.23028 12.5577 2.50484H12.5577V2.50778V3.00778V3.25778H12.3077H10H7.69231H7.44231V3.00778V2.50778C7.44231 2.12366 7.47224 1.89985 7.60319 1.69408L7.60314 1.69405L7.60609 1.68962C7.66176 1.60611 7.72931 1.50508 7.83534 1.42635C7.94608 1.34413 8.07647 1.30096 8.23683 1.27469C8.54091 1.22489 9.05714 1.22248 9.99916 1.21932H10C10.8137 1.21932 11.2673 1.2224 11.5385 1.23987C11.6746 1.24864 11.7782 1.2617 11.8644 1.28427C11.9581 1.30881 12.0229 1.34238 12.0819 1.37956ZM16.8519 7.50728L16.8518 7.50854C16.7435 8.85894 16.5592 11.2354 16.4374 12.8064L16.4352 12.8348C16.1211 16.8858 15.9351 19.2616 15.8205 20.6423C15.7632 21.3322 15.7235 21.7756 15.6945 22.0558C15.68 22.1956 15.6679 22.2975 15.6572 22.3704C15.6483 22.4307 15.6374 22.4966 15.6178 22.5467C15.5551 22.7115 15.4097 22.8638 15.2718 22.9725C15.1303 23.0841 14.9471 23.1889 14.7697 23.2216L14.7697 23.2216L14.7655 23.2223C14.7296 23.2283 14.6603 23.2306 14.5939 23.2325C14.5159 23.2347 14.4091 23.2368 14.2773 23.2386C14.0134 23.2423 13.6461 23.2454 13.2023 23.2474C12.3143 23.2514 11.118 23.2514 9.82568 23.245L9.79825 23.2448C7.49218 23.2353 6.32105 23.2305 5.70531 23.2112C5.39971 23.2016 5.21434 23.1882 5.09111 23.1649C5.02605 23.1526 4.97001 23.1361 4.91823 23.1116C4.86641 23.0871 4.82901 23.059 4.80521 23.0412L4.80513 23.0411C4.80212 23.0389 4.7991 23.0366 4.79605 23.0343C4.70603 22.9669 4.6016 22.8886 4.51868 22.7597C4.43436 22.6285 4.38349 22.4647 4.34223 22.2395C4.26158 21.7992 4.20009 21.0096 4.08161 19.488L4.07768 19.4374L4.07764 19.437C4.01073 18.5566 3.93979 17.6529 3.88418 16.9444C3.8388 16.3664 3.80363 15.9183 3.78918 15.719C3.59687 13.2959 3.38854 10.6085 3.22829 8.50838C3.14815 7.4582 3.08003 6.55474 3.03193 5.90453C2.98459 5.26455 2.95513 4.85177 2.95513 4.80266V4.61035V4.36035H3.20513H10H16.7949H17.0449V4.61035V4.80907C17.0449 4.87549 17.0212 5.21863 16.9865 5.69576C16.9512 6.1817 16.9031 6.82463 16.8519 7.50728Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M6.40381 13.8091V19.745H6.92304H7.44227V13.8091V7.8732H6.92304H6.40381V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M9.48083 13.8091V19.745H10.0001H10.5193V13.8091V7.8732H10.0001H9.48083V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                                <path d="M12.5577 13.8091V19.745H13.077H13.5962V13.8091V7.8732H13.077H12.5577V13.8091Z" stroke="#828282" stroke-width="0.5" />
+                                            </svg>  
+                                        </div>
+                                        <div class="labelText">
+                                            Удалить
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 d-flex flex-column align-items-end">
+                    <div class="w-75">
+                        <div class="d-flex flex-column">
+                            <div class="cartButton d-flex align-items-center justify-content-center">
+                                Перейти к оформлению
+                            </div>
+                            <div class="d-flex flex-column align-items-start justify-content-start mt-5">
+                                <div class="cartEndTitle text-left">Ваша корзина</div>
+                            </div>
+                           <div class="d-flex flex-column gap-3 mt-3">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="cartText">Товары (3)</div>
+                                <div class="cartEndPrice">143 729 <span>₽</span></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="cartText">Товары (3)</div>
+                                <div class="cartEndPrice">143 729 <span>₽</span></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div class="cartText">Введите промокод</div>
+                                <input type="text" class="cartInput" placeholder="Промокод">
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+</div>
+
+    <script>
+        const yearItems = document.querySelectorAll('.year_selector__container p');
+
+// Для каждого элемента добавляем обработчик события при клике
+yearItems.forEach(item => {
+    item.addEventListener('click', function() {
+        // Убираем класс 'active' у всех элементов
+        yearItems.forEach(item => {
+            item.classList.remove('active');
+        });
+        // Добавляем класс 'active' к элементу, по которому произошло событие
+        this.classList.add('active');
+    });
+});
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<script>
+    var myCarousel = document.querySelector('#carouselFade')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: true,
+        pause: 'false'
+    });
+</script>
+<script>
+
+
+
+setTimeout(function() {
+
+    var delay = 0,
+        notes1 = $('.box-1');
+    notes2 = $('.box-2');
+    notes3 = $('.box-3');
+    notes4 = $('.box-4');
+
+    notes1.each(function() {
+        var note = $(this);
+
+        setTimeout(function() {
+            note.addClass('show', 500);
+        }, delay += 1000);
+        setTimeout(function() {
+            note.removeClass('show', 500);
+        }, delay += 7000);
+    });
+    notes2.each(function() {
+        var note = $(this);
+
+        setTimeout(function() {
+            note.addClass('show', 500);
+        }, delay += 500);
+        setTimeout(function() {
+            note.removeClass('show', 500);
+        }, delay += 7000);
+    });
+    notes3.each(function() {
+        var note = $(this);
+
+        setTimeout(function() {
+            note.addClass('show', 500);
+        }, delay += 500);
+        setTimeout(function() {
+            note.removeClass('show', 500);
+        }, delay += 7000);
+    });
+
+    notes4.each(function() {
+        var note = $(this);
+
+        setTimeout(function() {
+            note.addClass('show', 500);
+        }, delay += 500);
+        setTimeout(function() {
+            note.removeClass('show', 500);
+        }, delay += 7000);
+    });
+}, 1000);
+</script>
+
+            <script src="script/index.js"></script>
+        <script src="common.js" async></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+        <script src="script/progressive-image.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

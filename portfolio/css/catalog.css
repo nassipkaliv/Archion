@@ -964,13 +964,13 @@
 }
 
 
-
-/* Блок "Нужна консультация" в отдельном файле*/
-
-
-
-
-/* Блок Футер в отдельном файле */
+.labelText {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 280%;
+    color: #000;
+  }
 
 
 @media (min-width: 319px) {

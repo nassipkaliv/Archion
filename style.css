@@ -1659,7 +1659,104 @@ hr {
 }
 
 
+.labelText {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+  color: #000;
+}
 
+.form-check-input:checked[type=checkbox] {
+  background-image:url('data:image/svg+xml,<svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.81189 7.71425L0 0.885048L0.882847 0L7.50012 6.63409L14.1174 0L15 0.885048L8.1881 7.71425C7.80808 8.09525 7.19192 8.09525 6.81189 7.71425Z" fill="white"/></svg>') !important;
+  background-color: #a78b73 !important;
+  border-color: #a78b73 !important;
+}
+
+.deleteButton  {
+  cursor: pointer;
+}
+
+.bigCheck {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.cartTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #343536;
+}
+
+.cartText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #828282;
+}
+
+.cartPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 107%;
+  color: #a78b73;
+}
+
+.cartPrice span {
+  font-weight: 400;
+}
+
+.count {
+  border: 1px solid #bdbdbd;
+  width: 40px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #828282;
+}
+
+.minus, .plus {
+  cursor: pointer;
+}
+
+.cartButton {
+  background: #a78b73;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  padding: 30px;
+}
+
+.cartEndTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #343536;
+}
+
+.cartEndPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #343536;
+}
+
+.cartEndPrice span {
+  font-weight: 400;
+}
+
+.cartInput {
+  width: 25%;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #343536;
+}
 
 @media screen and (max-width: 557px) {
 
