@@ -1758,6 +1758,89 @@ hr {
   color: #343536;
 }
 
+.otboinik-container {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid #a78b73;
+}
+
+.otboinikImg {
+  position: relative;
+  top: -60px;
+}
+
+.otbornikPadding {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.otboinik-wrapper {
+  position: absolute;
+}
+
+.otboinikTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: #000;
+}
+
+.otboinikDesc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #000;
+}
+
+.otbornikInfo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #000;
+}
+
+.otbornikInfo span {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.otbornikLink {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline !important;
+  text-decoration-skip-ink: none;
+  color: #a78b73;
+  cursor: pointer;
+}
+
+.projectInfo {
+  width: 60%;
+}
+
+.otboinik-border {
+  border-bottom: 1px solid #000;
+}
+
+.otboinik-footer-line {
+  border: 2px solid #a78b73;
+}
+
+.otboinik-footer-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 557px) {
 
 	.title_arhion {
