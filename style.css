@@ -388,12 +388,12 @@ white-space: nowrap;
   background: #C4C4C4;
   background-size: cover;
   background-position: center;
-  height: 67.4rem;
+  height: 100vh;
   display: flex;
 }
 
 .intro__rect {
-  margin: auto 0 auto 12%;
+  margin: auto 0 auto 7%;
   width: 26.125rem;
   height: 35.6875rem;
   border: 6px solid #A78B73;

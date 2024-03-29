@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<html lang="ru" xml:lang="ru">
+<head>
+
+
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#ffcc66">
+<title>Стройматериал</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+<link rel="stylesheet" href="style/progressive-image.min.css">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="../style/new_footer.css">
+<link rel="stylesheet" href="style/main_page_min.css">
+<link href="main1.css" rel="stylesheet">
+<link rel="stylesheet" href="style/corpblog.css">
+<link rel="stylesheet" href="style/progressive-image.min.css">
+<link rel="stylesheet" href="style/pages.css">
+
+<style>
+.windows-form label,input {
+    display: inline-block
+}
+#important_num {
+    text-decoration: underline;
+    font-size: 1.1em;
+    color: #fff;
+    display: inline-block;
+    width: 30px;
+}
+.b-section_content p {
+    text-indent: 35px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+    @media (max-width: 1024px) {
+    .services_scheme{
+        display: none
+    }
+    .services_scheme-mob{
+        display: block
+    }
+}
+    @media (max-width: 1400px) {
+    .b-content {
+        padding: 0;
+        /*margin-left: 0;
+        max-width: 1300px;*/
+        padding-top: 120px;
+    }
+    .b-wrap__main {
+    max-width: 1300px;
+    padding-left: 35px;
+    padding-right: 35px;
+    }
+}
+</style>
+  
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="templates/new_hmkmos.css">
+	<link rel="stylesheet" href="templates/catalog_banner.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="templates/navbarn.css">
+</head>
+<body class="stroymaterial">
+
+
+	<header class="b-header topbar">
+    <nav class="navbar navbar-light row ">
+        <div class="col-12 container-fluid flex-nowrap">
+            <a class="navbar-brand navbar-link" href="#">
+                <img class="navbar-logo-img-gold" src="img/header/arhion-logo-header.svg" alt="arhion-logo-heeader">
+            </a>
+
+            <div class="pl hidden-mobile">
+                <input type="button" onclick="fu()" id="btn-project" value="Подобрать проект" class="btn_project12 ppp" data-bs-toggle="modal" data-bs-target="#cons-project" aria-current="page">
+            </div>
+            <div class="modal fade" id="cons-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 style="font-weight: bold;" class="modal-title consult_form">Подобрать проект</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body form_order_modal card clearfix">
+                            <div class="card-body">
+                                <form id='consultform' method="post" class="consultform" enctype="multipart/form-data" novalidate="novalidate">
+                                    <input type="hidden" name="Formname" value="constop">
+                                    <input type="hidden" name="project_name" value="hmkmos.ru">
+                                    <input type="hidden" name="admin_email" value="msk@hmkmos.ru">
+                                    <input type="hidden" name="form_subject" value="Получить консультацию">
+                                    <input type="hidden" name="Page" value="https://www.hmkmos.ru/">
+                                    <div class="row">
+                                        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                            <div class="z-form">
+                                                <div class="info"></div>
+                                                <a rel="nofollow" class="anchor_tags" name="form-zakaz-uslugi"></a>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <div class="form-group mt-3">
+                                                            <label for="ConsName" class="form-label">Ваше имя<sup>*</sup></label>
+                                                            <input type="text" class="form-control" name="ConsName" id="ConsName" placeholder="Ваше имя" value="" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6">
+                                                        <div class="form-group mt-3">
+                                                            <label for="ConsEmail" class="form-label">Ваш Email<sup>*</sup></label>
+                                                            <input type="email" class="form-control" name="ConsMail" id="ConsEmail" placeholder="Ваш Email" value="" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label for="ConsPhone" class="form-label">Ваш телефон<sup>*</sup></label>
+                                                    <input type="text" class="form-control" name="ConsPhone" id="ConsPhone" placeholder="Ваш телефон" value="" required>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="InputText" class="form-label">Комментарий<sup>*</sup></label>
+                                                            <textarea class="form-control" name="Text" placeholder="Сообщение" rows="4"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center my-2">
+                                                    <input class="btn btn-gold text-light text-uppercase px-5" id="topcons" type="submit" name="web_form_submit" value="Отправить" style="font-size: 24px; line-height: 42px; font-weight: 700; box-shadow: 0px 0px 6px 2px rgb(41 41 42 / 26%); border: none !important;">
+                                                </div>
+                                                <div class="text-center">
+                                                    <small>
+                                                        <label for="agree_individual">
+                                                            <input style="position: relative; top: 3px;" id="agree_individual" type="checkbox" value="146" name="AGREEMENT" checked="">
+                                                            Отправляя форму вы соглашаетесь с
+                                                            <a href="termsofuse.html">правилами обработки персональных данных</a>
+                                                        </label>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer clearfix"></div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+            </div>
+            <script>
+                // function fu(){
+
+                // 	var consult_form = document.querySelector('.consult_form');
+
+
+                // 	if (document.getElementById('ButtonProject')) {
+                // 		consult_form.innerHTML = 'Подобрать проект';
+                // 	}else{
+                // 		consult_form.innerHTML = 'Получить консультацию';
+                // 	}
+
+                // };
+
+                //  event.preventDefault();
+
+                function fu() {
+                    var consult_form = document.querySelector('.consult_form');
+
+                    document.getElementById('btn-project').onclick = function() {
+                        consult_form.innerHTML = 'Подобрать проект';
+                        event.preventDefault();
+                    };
+
+                    let btnSendDataUser = document.querySelector('#topcons');
+                    let wrapperModal = document.querySelector('#cons-project');
+                    btnSendDataUser.addEventListener('click', () => {
+                        wrapperModal.style.display = 'none';
+                    })
+                };
+            </script>
+            <ul class="d-flex nav nav-mod justify-content-end" style="flex-grow: 1;">
+                <div>
+                    <li class="nav-item nav-item--phone">
+                        <a class="nav-link nav-link--mod nav-link--phone" href="tel:+74957997529" tabindex="-1">+7 (495) 799-75-29</a>
+
+                    </li>
+                </div>
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--mod nav-link__icon-phone-link " href="tel:+74957997529" tabindex="-1">
+                            <img class="nav-link nav-link__icon-phone" src="templates/images/header/phone-icon.svg" width="32px" height="32px">
+                        </a>
+                    </li>
+                </div>
+
+                <div class="d-flex wrapper-social-header">
+                    <a class="m-auto nav-link pt-0 logo-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                        <img class="nav-icon-whatsapp" src="img/ph_whatsapp-logo-thin.png" width="32" height="32">
+                    </a>
+                    <a class="m-auto nav-link  d-sm-block" id="social-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                        <img class="nav-icon-telegram" src="img/uit_telegram-alt.png" width="32" height="32">
+                    </a>
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div style="margin-top:4px; margin-bottom:4px; margin-left: 5px; background-color: transparent;padding-right: 3px;" class="ya-share2 d-sm-block" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,viber,whatsapp">
+                    </div>
+                </div>
+            </ul>
+            <ul class="nav justify-content-around">
+                <li class="nav-item">
+                    <button class="navbar-toggler navbar-button-menu" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+                <a class="navnar-arhion-link" href="index.html">
+                    <img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+                </a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <ul class="nav justify-content-around nav-social ">
+
+                        <li class="nav-item social">
+                            <img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+                            <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                WHATSAPP
+                                <hr />
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+                            <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                TELEGRAM
+                                <hr />
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+                                <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                +7 (495) 799-75-29</a>
+                        </li>
+                    </ul>
+
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="zakazat-proekt-doma/index.html">Индивидуальное проектирование</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="index.html#">Дизайн интерьеров</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" aria-current="page" href="index.html">Строительство домов</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="index.html#">Полезная информация</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="kontaktyi.html">Контакты</a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="links2">
+                            <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+                                <img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+                            </a>
+                            <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+                                <img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+                            </a>
+                            <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+                                <img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+                            </a>
+                            <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+                                <img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+	</header>	
+
+  <section class="intro" style="background: url('assets/banners/otdelka_banner.jpg');">
+    <div class="intro-title">
+      Строительство <br>дома
+    </div>
+    <div class="intro-desc">по индивидуальному или готовому проекту</div>
+  </section>
+
+	<footer>
+				<div class="wrapper-footer">
+					<div class="wrapper-logo-desc-politic">
+						<svg width="67" height="70" viewBox="0 0 67 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M66.9999 69.9995C63.057 69.8506 59.9529 68.8347 57.5293 67.4018C53.3476 64.9412 51.1538 61.2413 50.0494 58.5751C49.2525 56.6477 49.0197 55.2595 49.0197 55.2595H25.5923C27.407 50.1059 32.2841 46.6562 37.7582 46.6562H55.1235C56.9532 46.6562 58.5918 47.7883 59.2395 49.4952L66.9999 69.9995Z" fill="#A78B73"/>
+							<path d="M54.5207 34.8421H48.8109C47.8199 34.8421 46.8588 34.6842 45.9515 34.3804H45.9455L45.8947 34.3655C43.6621 33.6297 41.8892 31.9168 41.0773 29.7153L39.3104 24.934L29.8278 0H38.3433C40.17 0 41.8086 1.12903 42.4563 2.83301L50.8614 24.934L54.5207 34.8421Z" fill="#A78B73"/>
+							<path d="M29.0477 0C27.224 0 25.5884 1.12605 24.9407 2.82705L16.5774 24.8238L12.8822 34.8421L8.86176 45.7541H8.8349L3.36084 60.2141L0 69.0974C0.182071 69.0914 0.364142 69.0854 0.540243 69.0706C13.6523 67.7419 17.9802 54.3574 17.9802 54.3574L21.159 45.7541L26.842 29.6646L27.5344 27.7045L31.0535 17.7309L33.0772 11.9129L33.2921 11.2933L29.0477 0Z" fill="#A78B73"/>
+						</svg>	
+						<p>Архитектурно-<br />строительная группа</p>
+						<a href="proekt_m-407.html#" class="politic-desctop" style="border-bottom: 0;">Политика конфиденциальности</a>
+					</div>
+					<div class="wrapper-list-item">
+						<div>
+							<a href="proekt_m-407.html#">Проектирование</a>
+						</div>
+						<div>
+							<a href="proekt_m-407.html#">Каталог проектов</a>
+						</div>
+						<div>
+							<a href="proekt_m-407.html#">Контакты</a>
+						</div>
+						<div>
+							<a href="proekt_m-407.html#">Строительство</a>
+						</div>
+						<div>
+							<a href="proekt_m-407.html#">О компании</a>
+						</div>
+						<div>
+							<a href="proekt_m-407.html#">Полезные статьи</a>
+						</div>
+					</div>
+					<div class="wrapper-contacts-social">
+						<a href="tel:+7 (495) 799-75-29" class="tel-footer">+7 (495) 799-75-29</a>
+						<p>Рабочее время: Ежедневно 10:00 - 21:00</p>
+						<div class="wrapper-social-footer">
+							<a href="proekt_m-407.html#"><img src="../img/footer-img/vk-gold.svg" alt=""></a>
+							<a href="proekt_m-407.html#"><img src="../img/footer-img/instagram-gold.svg" alt=""></a>
+							<a href="proekt_m-407.html#"><img src="../img/footer-img/whatsapp-gold.svg" alt=""></a>
+						</div>
+						<a href="proekt_m-407.html#" class="politic-mobile">Политика конфиденциальности</a>
+					</div>
+				</div>
+				<div class="footer-end text-center">Архитектурно-строительная группа ARHION © 2001 - 2023</div>
+	</footer> 
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<script>
+		var myCarousel = document.querySelector('#carouselFade')
+		var carousel = new bootstrap.Carousel(myCarousel, {
+			interval: 2000,
+			wrap: true,
+			pause: 'false'
+		});
+	</script>
+<script>
+
+
+
+	setTimeout(function() {
+
+		var delay = 0,
+			notes1 = $('.box-1');
+		notes2 = $('.box-2');
+		notes3 = $('.box-3');
+		notes4 = $('.box-4');
+
+		notes1.each(function() {
+			var note = $(this);
+
+			setTimeout(function() {
+				note.addClass('show', 500);
+			}, delay += 1000);
+			setTimeout(function() {
+				note.removeClass('show', 500);
+			}, delay += 7000);
+		});
+		notes2.each(function() {
+			var note = $(this);
+
+			setTimeout(function() {
+				note.addClass('show', 500);
+			}, delay += 500);
+			setTimeout(function() {
+				note.removeClass('show', 500);
+			}, delay += 7000);
+		});
+		notes3.each(function() {
+			var note = $(this);
+
+			setTimeout(function() {
+				note.addClass('show', 500);
+			}, delay += 500);
+			setTimeout(function() {
+				note.removeClass('show', 500);
+			}, delay += 7000);
+		});
+
+		notes4.each(function() {
+			var note = $(this);
+
+			setTimeout(function() {
+				note.addClass('show', 500);
+			}, delay += 500);
+			setTimeout(function() {
+				note.removeClass('show', 500);
+			}, delay += 7000);
+		});
+	}, 1000);
+</script>
+
+				<script src="script/index.js"></script>
+    		<script src="common.js" async></script>
+    		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    		<script src="main.js"></script>
+    		<script src="script/progressive-image.min.js"></script>
+    		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+
+</body>
+</html>
