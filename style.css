@@ -1860,7 +1860,22 @@ hr {
   color: #fbfbfb;
 }
 
+.block_title-sub_link {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0.6rem;
+  text-decoration: underline !important;
+  color: #828282;
+  font-size: 1.25rem;
+  transition: 0.4s;
+}
 
+a {
+  text-decoration: none;
+}
+
+#detailed_text {
+  display: none;
+}
 
 @media screen and (max-width: 557px) {
 
