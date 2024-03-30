@@ -37,6 +37,8 @@ header {
   z-index: 1000;
   left: 0;
   top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .is_scrolled .topbar {
