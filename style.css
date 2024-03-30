@@ -1841,6 +1841,27 @@ hr {
   margin-top: 20px;
 }
 
+.intro-container {
+  margin: auto 0 auto 2%
+}
+
+.intro-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 87%;
+  color: #fbfbfb;
+}
+
+.intro-desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fbfbfb;
+}
+
+
+
 @media screen and (max-width: 557px) {
 
 	.title_arhion {
