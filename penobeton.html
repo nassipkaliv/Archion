@@ -1,0 +1,2009 @@
+<!DOCTYPE HTML>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<title>Пенобетон</title>
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<meta name="format-detection" content="telephone=no">
+<link href="reset.css@2.css" rel="stylesheet">
+<link rel="stylesheet" href="/../proects.css?2">
+<link rel="stylesheet" href="templates/new_hmkmos.css">
+<link rel="stylesheet" href="style/progressive-image.min.css">
+<link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+<link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="style/filtr-new.css@2.css">
+<link rel="stylesheet" href="style/new_footer.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="templates/navbarn.css">
+<link rel="stylesheet" href="templates/catalog_banner.css">
+<script src="script/jquery-2.2.4.min.js"></script>
+<script src="script/jquery.formstyler.min.js@2"></script>  
+<script src="script/filtr-new.js@2" ></script>
+
+<script src="library/slick-1.8.1/slick/slick.min.js"></script>
+<link rel="stylsheet" href="style.css">
+
+</head>
+
+
+<body class="projects">
+
+<header class="b-header topbar">
+    <nav class="navbar navbar-light row ">
+        <div class="col-12 container-fluid flex-nowrap">
+            <a class="navbar-brand navbar-link" href="https://www.hmkmos.ru/">
+                <img class="navbar-logo-img-gold" src="img/header/arhion-logo-header.svg" alt="arhion-logo-heeader">
+            </a>
+
+            <div class="pl hidden-mobile">
+                <input type="button" onclick="fu()" id="btn-project" value="Подобрать проект" class="btn_project12 ppp" data-bs-toggle="modal" data-bs-target="#cons-project" aria-current="page">
+            </div>
+
+            <div class="modal fade" id="cons-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 style="font-weight: bold;" class="modal-title consult_form">Подобрать проект</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body form_order_modal card clearfix">
+                            <div class="card-body">
+                                <form id='consultform' method="post" class="consultform" enctype="multipart/form-data" novalidate="novalidate">
+                                    <input type="hidden" name="Formname" value="constop">
+                                    <input type="hidden" name="project_name" value="hmkmos.ru">
+                                    <input type="hidden" name="admin_email" value="msk@hmkmos.ru">
+                                    <input type="hidden" name="form_subject" value="Получить консультацию">
+                                    <input type="hidden" name="Page" value="https://www.hmkmos.ru/">
+                                    <div class="row">
+                                        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                            <div class="z-form">
+                                                <div class="info"></div>
+                                                <a rel="nofollow" class="anchor_tags" name="form-zakaz-uslugi"></a>
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <div class="form-group mt-3">
+                                                            <label for="ConsName" class="form-label">Ваше имя<sup>*</sup></label>
+                                                            <input type="text" class="form-control" name="ConsName" id="ConsName" placeholder="Ваше имя" value="" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6">
+                                                        <div class="form-group mt-3">
+                                                            <label for="ConsEmail" class="form-label">Ваш Email<sup>*</sup></label>
+                                                            <input type="email" class="form-control" name="ConsMail" id="ConsEmail" placeholder="Ваш Email" value="" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label for="ConsPhone" class="form-label">Ваш телефон<sup>*</sup></label>
+                                                    <input type="text" class="form-control" name="ConsPhone" id="ConsPhone" placeholder="Ваш телефон" value="" required>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="InputText" class="form-label">Комментарий<sup>*</sup></label>
+                                                            <textarea class="form-control" name="Text" placeholder="Сообщение" rows="4"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-center my-2">
+                                                    <input class="btn btn-gold text-light text-uppercase px-5" id="topcons" type="submit" name="web_form_submit" value="Отправить" style="font-size: 24px; line-height: 42px; font-weight: 700; box-shadow: 0px 0px 6px 2px rgb(41 41 42 / 26%); border: none !important;">
+                                                </div>
+                                                <div class="text-center">
+                                                    <small>
+                                                        <label for="agree_individual">
+                                                            <input style="position: relative; top: 3px;" id="agree_individual" type="checkbox" value="146" name="AGREEMENT" checked="">
+                                                            Отправляя форму вы соглашаетесь с
+                                                            <a href="termsofuse.html">правилами обработки персональных данных</a>
+                                                        </label>
+                                                    </small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer clearfix"></div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+            </div>
+            <script>
+                // function fu(){
+
+                // 	var consult_form = document.querySelector('.consult_form');
+
+
+                // 	if (document.getElementById('ButtonProject')) {
+                // 		consult_form.innerHTML = 'Подобрать проект';
+                // 	}else{
+                // 		consult_form.innerHTML = 'Получить консультацию';
+                // 	}
+
+                // };
+
+                //  event.preventDefault();
+
+                function fu() {
+                    var consult_form = document.querySelector('.consult_form');
+
+                    document.getElementById('btn-project').onclick = function() {
+                        consult_form.innerHTML = 'Подобрать проект';
+                        event.preventDefault();
+                    };
+
+                    let btnSendDataUser = document.querySelector('#topcons');
+                    let wrapperModal = document.querySelector('#cons-project');
+                    btnSendDataUser.addEventListener('click', () => {
+                        wrapperModal.style.display = 'none';
+                    })
+                };
+            </script>
+            <ul class="d-flex nav nav-mod justify-content-end" style="flex-grow: 1;">
+                <div>
+                    <li class="nav-item nav-item--phone">
+                        <a class="nav-link nav-link--mod nav-link--phone" href="tel:+74957997529" tabindex="-1">+7 (495) 799-75-29</a>
+
+                    </li>
+                </div>
+                <div>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link--mod nav-link__icon-phone-link " href="tel:+74957997529" tabindex="-1">
+                            <img class="nav-link nav-link__icon-phone" src="templates/images/header/phone-icon.svg" width="32px" height="32px">
+                        </a>
+                    </li>
+                </div>
+
+                <div class="d-flex wrapper-social-header">
+                    <a class="m-auto nav-link pt-0 logo-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                        <img class="nav-icon-whatsapp" src="img/ph_whatsapp-logo-thin.png" width="32" height="32">
+                    </a>
+                    <a class="m-auto nav-link  d-sm-block" id="social-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                        <img class="nav-icon-telegram" src="img/uit_telegram-alt.png" width="32" height="32">
+                    </a>
+                    <script src="https://yastatic.net/share2/share.js"></script>
+                    <div style="margin-top:4px; margin-bottom:4px; margin-left: 5px; background-color: transparent;padding-right: 3px;" class="ya-share2 d-sm-block" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,viber,whatsapp">
+                    </div>
+                </div>
+            </ul>
+            <ul class="nav justify-content-around">
+                <li class="nav-item">
+                    <button class="navbar-toggler navbar-button-menu" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+                <a class="navnar-arhion-link" href="index.html">
+                    <img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+                </a>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <ul class="nav justify-content-around nav-social ">
+
+                        <li class="nav-item social">
+                            <img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+                            <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                WHATSAPP
+                                <hr />
+                            </a>
+                        </li>
+                        <li class="nav-item social">
+                            <img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+                            <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                TELEGRAM
+                                <hr />
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+                                <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                +7 (495) 799-75-29</a>
+                        </li>
+                    </ul>
+
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="zakazat-proekt-doma/index.html">Индивидуальное проектирование</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="proektyi.html#">Дизайн интерьеров</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" aria-current="page" href="index.html">Строительство домов</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="proektyi.html#">Полезная информация</a>
+                    </li>
+                    <li class="nav-item nav-item--hover">
+                        <a class="nav-link active" href="kontaktyi.html">Контакты</a>
+                    </li>
+                    <li class="nav-item ">
+                        <div class="links2">
+                            <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+                                <img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+                            </a>
+                            <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+                                <img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+                            </a>
+                            <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+                                <img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+                            </a>
+                            <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+                                <img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section class="intro" style="background: url('images/proect_zx76.jpg'); background-size: cover; background-repeat: no-repeat;">
+  <div class="intro__rect">
+      <h1 class="intro__title" style="white-space: nowrap; font-size: 70px;">Дома из пенобетона <br> под ключ</h1>
+  </div>
+  <div class="position-absolute buttonOrder" style="z-index: 1000;top: 65%;right: 12%;">
+    <button id="btn-project-order" class="btn-circle-project btn-call-form-project">
+        Заказать <br>
+        <hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25));">
+        Дом
+        <hr class="animation-line-project">
+        <img class="position-absolute arrowImg" src="images/catalog_new_hmkmos/arrow_but_gold.png" style="right: 0%; width: 67.904px;height: 19.323px;top: 36%;left: 108%;">
+    </button>
+</div>
+</section>
+
+
+<section class="block_container">
+  <p class="block_title-above block_title-above--deeper">проект под ключ</p>
+  <h2 class="block_title">Дома из пенобетона</h2>
+  <p class="block_title-sub block_title-sub--margin25"> Пеноблоки (пенобетон) являются инновационным стеновым материалом, который относится к группе ячеистых бетонов. Благодаря своим эксплуатационным характеристикам и невысокой стоимости они широко используются в частном строительстве как для возведения несущих стен, так и в качестве недорогой теплоизоляции. Поэтому проекты домов из пеноблока пользуются большой популярностью при выборе вариантов для личного жилья.</p>
+  <div class="collapse" id="collapseExample">
+    <div class="block_title-sub block_title-sub--margin25 mt-0">
+        Виды пенобетона <br>
+        По плотности и назначению пенобетонные блоки делятся на три категории:
+      <ul>
+        <li>
+            теплоизоляционные. К ним относятся марки D300, D400, D500. Они рассчитаны на малую нагрузку. Такой пеноблок может использоваться только в качестве утеплителя стен;
+        </li>
+        <li>
+            конструкционно-теплоизоляционные. Это марки D600, D700, D800 и D900. Они могут использоваться и для утепления, и как материал для слабо нагруженных стен;
+        </li>
+        <li>
+            конструкционные. В эту категорию входят марки D1000, D1100, D1200. Такой пенобетон имеет самую высокую плотность, используется для возведения сильно нагруженных стен и требует дополнительного утепления.
+        </li>
+        При подборе пенобетона для строительства следует учитывать его морозостойкость. Она обозначается буквой F и числом, показывающим максимальное количество циклов замораживания-оттаивания, которое может выдержать данная марка. Для внутренних стен можно использовать пеноблоки морозостойкостью F15–F25. Для наружных конструкций этот показатель должен быть выше
+      </ul>
+    </div>
+
+  </div>
+  <a href="#" class="block_title-sub_link" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Подробнее</a>
+
+</section>
+
+<section class="block_gradient block_gradient--topdown-mask">
+    <div class="block_gradient__content">
+        <p class="block_title-above">нужен проект</p>
+        <h2 class="block_title">Индвидуальное проектирование</h2>
+        <p class="block_title-sub block_title-sub--margin25 only-pc">Продолжить вдохновляться - перейдите на страницу индивидуального проектирования, где вы сможете сделать каждую деталь вашего будущего дома выразительной, олицетворяющей вас. Откройте двери в мир творчества и возможностей.</p>
+        <p class="block_title-sub block_title-sub--margin25 only-mobile">Продолжить вдохновляться - перейдите на страницу индивидуального проектирования, где вы сможете сделать каждую деталь вашего будущего дома выразительной, олицетворяющей вас. Откройте двери в мир творчества и возможностей.</p>
+
+        <div class="block_gradient__mark only-pc">
+            <b>Индивидуальный проект </b>
+            <p>*при заказе строительства</p>
+        </div>
+
+        <a class="button_type2" href="#">
+            <p>Воплотите свои мечты</p>
+            <svg width="44.625rem" height="11.625rem" viewBox="0 0 714 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="hoverRect" d="M713.5 93.4197C713.5 144.204 672.316 185.373 621.513 185.373C570.71 185.373 529.526 144.204 529.526 93.4197C529.526 42.6357 570.71 1.4668 621.513 1.4668C672.316 1.4668 713.5 42.6357 713.5 93.4197Z" stroke="#A78B73"></path>
+                <line y1="92.9194" x2="623.363" y2="92.9194" stroke="#14010C"></line>
+                <path d="M557 68.8823H556.5V69.8823H557V68.8823ZM622.094 69.7359C622.29 69.5406 622.29 69.224 622.094 69.0288L618.913 65.8468C618.717 65.6515 618.401 65.6515 618.205 65.8468C618.01 66.0421 618.01 66.3586 618.205 66.5539L621.034 69.3823L618.205 72.2108C618.01 72.406 618.01 72.7226 618.205 72.9179C618.401 73.1131 618.717 73.1131 618.913 72.9179L622.094 69.7359ZM557 69.8823H621.741V68.8823H557V69.8823Z" fill="#14010C"></path>
+            </svg>
+        </a>
+    </div>
+    <img src="img/house-gradient1.jpg" class="block_gradient__image">
+</section>
+
+<section class="block_container">
+    <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini" style="font-size: 80px;">быстрое строительство</p>
+    <h2 class="block_title">Преимущества строительства из пенобетона</h2>
+    <div class="block_checks__container">
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Пенобетонные блоки в разы легче кирпича, поэтому нагрузка от здания меньше, что даёт возможность сокращать затраты на строительство</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Пенобетонные блоки имеют бóльшие размеры по сравнению с кирпичом. Стены возводятся быстрее, а сроки строительства значительно сокращаются.</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Пенобетонные блоки легко обрабатываются: сверлятся, шлифуются, режутся стандартными инструментами. </p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Дома из газабетона имеют хорошую звуко- и теплоизоляцию.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="block_container">
+    <p class="block_title-above block_title-above--deeper">Стоимость по запросу</p>
+    <h2 class="block_title">Стоимость дома из пенобетона</h2>
+    <div class="block_checks__container block_checks__container--type2" style="grid-template-columns: 2fr 0fr; gap: 5.5rem 0;">
+        <div class="block_checks__item block_checks__item--font2">
+            <img src="assets/icons/check.svg">
+            <p>Стоимость строительства дома из пенобетона начинается от <span style="font-weight: 600; color: #a78b73;">20 000</span><span style="color: #a78b73;">₽/м2</span>  за коробку дома</p>
+        </div>
+        <div class="block_checks__item block_checks__item--font2">
+            <img src="assets/icons/check.svg">
+            <p>Построить кирпичный дом с внешней отделкой можно по цене от <span style="font-weight: 600; color: #a78b73;">35 000</span><span style="color: #a78b73;">₽/м2</span></p>
+        </div>
+        <div class="block_checks__item block_checks__item--font2">
+            <img src="assets/icons/check.svg">
+            <p>Стоимость строительства под ключ <br> от <span style="font-weight: 600; color: #a78b73;">65 000</span><span style="color: #a78b73;">₽/м2</span></p>
+        </div>
+
+        <div class="block_checks_order only-pc align-items-center">
+            <a href="#" class="button_circle" style="max-height: 14.8rem;
+            max-width: 22rem;">
+                <p>ПОЛУЧИТЬ<br>СМЕТУ</p>
+                <svg width="25rem" height="17.813rem" viewBox="0 0 400 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="hoverRect" d="M284.25 142.5C284.25 220.925 220.73 284.5 142.375 284.5C64.02 284.5 0.5 220.925 0.5 142.5C0.5 64.0751 64.02 0.5 142.375 0.5C220.73 0.5 284.25 64.0751 284.25 142.5Z" stroke="#A78B73"></path>
+                    <line x1="37.0898" y1="148.5" x2="399.608" y2="148.5" stroke="#343536"></line>
+                    <path d="M361.322 127.5H360.822V128.5H361.322V127.5ZM398.765 128.354C398.96 128.158 398.96 127.842 398.765 127.646L395.583 124.464C395.388 124.269 395.071 124.269 394.876 124.464C394.681 124.66 394.681 124.976 394.876 125.172L397.704 128L394.876 130.828C394.681 131.024 394.681 131.34 394.876 131.536C395.071 131.731 395.388 131.731 395.583 131.536L398.765 128.354ZM361.322 128.5H398.412V127.5H361.322V128.5Z" fill="#343536"></path>
+                </svg>
+            </a>
+        </div>
+
+        <div class="block_checks_order-mobile only-mobile">
+
+
+            <a href="#" class="button_circle">
+                <p>ПОЛУЧИТЬ<br>СМЕТУ</p>
+                <svg width="400" height="285" viewBox="0 0 400 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="hoverRect" d="M284.25 142.5C284.25 220.925 220.73 284.5 142.375 284.5C64.02 284.5 0.5 220.925 0.5 142.5C0.5 64.0751 64.02 0.5 142.375 0.5C220.73 0.5 284.25 64.0751 284.25 142.5Z" stroke="#A78B73"></path>
+                    <line x1="37.0898" y1="148.5" x2="399.608" y2="148.5" stroke="#343536"></line>
+                    <path d="M361.322 127.5H360.822V128.5H361.322V127.5ZM398.765 128.354C398.96 128.158 398.96 127.842 398.765 127.646L395.583 124.464C395.388 124.269 395.071 124.269 394.876 124.464C394.681 124.66 394.681 124.976 394.876 125.172L397.704 128L394.876 130.828C394.681 131.024 394.681 131.34 394.876 131.536C395.071 131.731 395.388 131.731 395.583 131.536L398.765 128.354ZM361.322 128.5H398.412V127.5H361.322V128.5Z" fill="#343536"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="block_container">
+	<div class="catalog_list">
+		<link rel="stylesheet" href="proects.css">
+		<div class="block_proekts_img">
+			<div class="">
+				<div class="row mx-0">
+					<div class="row mx-0 px-0">
+						<div class="col-6">
+							<div>
+								<form action="proektyi.html" method="post">
+									<select class="form-select my_sortirovka back_transpar border-0 py-0" style="padding-left: 0px;border-bottom: 1px solid black!important;border-radius: 0px; font-family:'Montserrat' !important;font-weight: 400;">
+										<option selected="">ПОПУЛЯРНЫЕ</option>
+										<option value="new_filter">НОВЫЕ</option>
+										<option value="square_filter">ПО ПЛОЩАДИ</option>
+										<option value="archive_filter">АРХИВНЫЕ</option>
+									</select>
+								
+							<input type="hidden" name="pgld" value="1"></form></div>
+						</div>
+						<div class="col-6 text-end px-0">
+							<button class="border-0 color_gray_text back_transpar btn btn-primary" onclick="openDiv();" style="background-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
+								<img class="m-auto" style="height: 45px; width: 45px;" src="images/catalog_new_hmkmos/sliders-horizontal.png">
+							</button>
+                            
+<!----------------------------PROJECTS FILTER START------------------------------------>
+	<div class="collapse col-12 col-sm-6 col-xl-5 position-absolute filter_nav" id="collapseFilter" style="z-index:1000;">
+		<div class="card card-body" id="myCard">
+			
+				<div class="col-12 text-end">
+					<button type="button" class="close btn-close" aria-label="Close" onclick="closeDiv();">					</button>
+				</div>
+				<div class="col-6 mx-auto">
+					<div class="input-group py-2">
+						<input type="text" class="form-control" name="proect_num" placeholder="Поиск по номеру проекта" aria-label="Recipient's username" aria-describedby="button-addon2">
+						<button class="btn btn-gold " type="submit" id="button-addon2">
+							Поиск
+						</button>
+					</div>
+				</div>
+				<label for="customRange2" class="text-start form-label color_gray_text font_famil_catalog">
+					Площадь дома
+				</label>
+				<input type="range" class="my_range" min="0" max="2500" id="customRange2" color="#A78B73" value="">
+				<div class="d-flex justify-content-between">
+					<span>
+						0
+					</span>
+					<span>
+						2500+
+					</span>
+				</div>
+				<div class="d-flex pt-3">
+					<div class="col-5 px-0 text-start">
+						<span>
+							Ручной ввод:
+						</span>
+					</div>
+					<div class="col-4 row">
+						<div class="px-0 col-7">
+							от
+						</div>
+						<div class="col-5 px-1">
+							<input class="border-0 w-100 my_input" style="border-bottom: 1px solid #BDBDBD !important;">
+						</div>
+					</div>
+					<div class="col-3 row">
+						<div class="px-0 col-7">
+							до
+						</div>
+						<div class="col-5 px-0">
+							<input class="border-0 w-100 my_input" style="border-bottom: 1px solid #BDBDBD !important;">
+						</div>
+					</div>
+				</div>
+				<section class="c-home">
+					<div class="c-home_body pt-md-0">
+						<div class="c-home_col-2">
+							<input type="checkbox" name="x3" value="1" id="mansard">
+							<input type="checkbox" name="proect_et_3" id="floor-3" value="3">
+							<input type="checkbox" name="proect_et_2" id="floor-2" value="2">
+							<input type="checkbox" name="proect_et_1" id="floor-1" value="1">
+							<input type="checkbox" name="x2" value="1" id="gr-floor">
+							<div class="c-home_house-bg">
+								<div class="house-bg_item house-bg_roof"></div>
+								<div class="house-bg_item house-bg_mansard"></div>
+								<div class="house-bg_item house-bg_floor-3"></div>
+								<div class="house-bg_item house-bg_floor-2"></div>
+								<div class="house-bg_item house-bg_floor-1"></div>
+								<div class="house-bg_item house-bg_gr-floor"></div>
+							</div>
+							<div class="c-home_house">
+								<div class="mansard-wrap">
+									<label class="mansard" for="mansard">
+										Мансарда
+									</label>
+								</div>
+								<label class="floor-filter floor-3" for="floor-3">
+									3 этаж
+								</label>
+								<label class="floor-filter floor-2" for="floor-2">
+									2 этаж
+								</label>
+								<label class="floor-filter floor-1" for="floor-1">
+									1 этаж
+								</label>
+								<label class="gr-floor" for="gr-floor">
+									Цокольный этаж
+								</label>
+							</div>
+							<div class="c-home_bottom my_c_bottom">
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="d-sm-none pt-3 px-3">
+					<button class="border_gray back_transpar  col-12 text-center my-2 py-2">
+						<span class="font_famil_catalog text_gray_params">
+							Мансарда
+						</span>
+					</button>
+					<button class="border_gray back_transpar  col-12 text-center my-2 py-2">
+						<span class="font_famil_catalog text_gray_params">
+							3 этажа
+						</span>
+					</button>
+					<button class="border_gray back_transpar  col-12 text-center my-2 py-2">
+						<span class="font_famil_catalog text_gray_params">
+							2 этажа
+						</span>
+					</button>
+					<button class="border_gray back_transpar  col-12 text-center my-2 py-2">
+						<span class="font_famil_catalog text_gray_params">
+							1 этаж
+						</span>
+					</button>
+					<button class="border_gray back_transpar  col-12 text-center my-2 py-2">
+						<span class="font_famil_catalog text_gray_params">
+							Цоколь
+						</span>
+					</button>
+				</div>
+				<div class="pt-3 text-center text-sm-end">
+					<a class="btn px-0 toggler pt-3" id="btn-show-more-param" onclick="action();" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+					<span class="params_hov border_bott_params par">
+					Больше параметров
+					</span>
+					<img src="/images/catalog_new_hmkmos/arrow-down.png" style="width: 7%;">
+					</a>
+					<div class="collapse" id="collapseExample">
+						<div class="card myCard card-body border-0 px-2">
+							<div>
+								<div class="row mx-0 pt-3 justify-content-between">
+									<div class="col-5 px-0 text-start">
+										<span>
+											Габариты дома
+										</span>
+									</div>
+									<div class="col-7 d-flex">
+										<input class="border-0 w-100" style="border-bottom: 1px solid #BDBDBD !important;" name="proect_y">
+										<span>
+											X
+										</span>
+										<input class="border-0 w-100" style="border-bottom: 1px solid #BDBDBD  !important;" name="proect_x">
+										<span>
+											М
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params" href="#">Терасса</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0  form-select my_select text-end" onchange="check()" id="Sone" name="x4">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv2" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params text-start" href="#">Второй свет</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0 form-select my_select text-end" onchange="check()" id="Sone2" name="x13">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv3" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params text-start" href="#">Гараж</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0 form-select my_select text-end" onchange="check()" id="Sone3" name="x6">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv4" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params  text-start" href="#">Сауна</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0 form-select my_select text-end" onchange="check()" id="Sone4" name="x1">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv5" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params  text-start" href="#">Бассейн</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0 form-select my_select text-end" onchange="check()" id="Sone5" name="x15">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv6" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params text-start" href="#">Эркер</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0  form-select my_select text-end" onchange="check()" id="Sone6" name="x12">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv7" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params text-start" href="#">Балкон</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0  form-select my_select text-end" onchange="check()" id="Sone7" name="x5">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv8" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params text-start" href="#">Вид кровли</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0 form-select my_select text-end" onchange="check()" id="Sone8" name="x11">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv9" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params  text-start" href="#">Акция</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0 form-select my_select text-end" onchange="check()" id="Sone9" name="sale">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+						<nav class="navbar navbar-expand-lg navbar-dark">
+							<div id="myDiv10" class="container-fluid row mx-0 px-1 border_bott_params back_color_yes_no">
+								<div class="col-6 text-start px-0">
+									<a class="navbar-brand text_gray_params  text-start" href="#">Архитектурный стиль</a>
+								</div>
+								<div class="col-6 text-end px-0">
+									<select class="border-0 form-select my_select text-end" onchange="check()" id="Sone10" name="x10">
+										<option class="not_select" value="xz">
+											Неважно
+										</option>
+										<option class="not_select" value="1">
+											Да
+										</option>
+										<option class="not_select" value="0">
+											Нет
+										</option>
+									</select>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<a class="btn px-0 selectCount" id="selectCount" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+					<span class="params_hov params_hov border_bott_params par">
+					Скрыть параметры
+					</span>
+					<img src="/images/catalog_new_hmkmos/arrow-upp.png" style="width: 7%;">
+					</a>
+				</div>
+				<div class="d-sm-flex pt-3">
+					<!-- <div class="col-sm-6 col-12 px-3 text-center text-sm-start py-2"> -->
+					<button type="submit" id="btn-send-form-catalog" class="col-sm-6 col-12 px-3 text-center text-sm-start py-2">
+						<a href="proektyi.html#" class="d-flex justify-content-center justify-content-sm-start params_hov position-relative">
+						<div class="d-flex w-75 button_podbor" style="border-bottom: 1px solid #000;">
+                            <div>
+                                <span class="px-0 py-1 color_black_text_catalog pod">Подобрать</span>
+                            </div>
+                            <div class="position-absolute pt-1 button_podbor_two" style=" padding-left: 137px;">
+                                <div class="px-3 py-3 position-relative button_podbor_square" style="border: 1px solid var(--gold, #A78B73);">
+                                    <div class="position-absolute" style="top:-3px;">
+                                        <img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+						</a>
+					</button>
+					<!-- </div> -->
+					<div class="col-12 col-sm-6 pt-4 pt-sm-0 px-3 text-center text-sm-end">
+						<button type="reset">
+							Сбросить фильтры
+						</button>
+						<!-- <a href="#" class="params_hov color_black_text_catalog border_bott_params par ">
+						Сбросить фильтры
+						</a> -->
+					</div>
+				</div>
+			
+		</div>
+	</div>
+	<!----------------------------PROJECTS FILTER END-------------------------------------->
+        
+						</div>
+					</div>
+					<div class="container pt-4 row px-0 ">
+						<div class="col-12 col-lg-6 col-md-6 pb-4 my_slide_catalog  0">
+							<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+								<div id="carouselIndicators_project0" class="carousel my_carousel slide pb-2">
+									<div class="carousel-indicators">
+                                        										<button type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        									</div>
+									<div class="carousel-inner">
+                                    										<a href="/projects/proekt_ml-607.html" target="_blank" class="carousel-item active block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:cover;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_ml-607.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_ml-607.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_ml-607.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project0" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        
+									</div>
+								</div>
+								<div class="pb-3 px-3">
+									<div class="justify-content-between mx-0 px-0 row">
+										<div class="col-6 col-lg-3 col-xl-5 pb-1 pb-lg-0  px-0">
+											<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 24px;font-style: normal;font-weight: 500;line-height: normal;">
+												ML-607											</span>
+										</div>
+										<button class="col-6 d-block pb-3 d-lg-none col-1 px-3 border-0 back_transpar text-end">
+											<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+										</button>
+										<div class="col-12 col-lg-6 d-flex justify-content-start px-0">
+										<div class="d-flex px-0 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bed-single.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													7												</span>
+											</div>
+										</div>
+										<div class="d-flex px-2 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bath.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													7												</span>
+											</div>
+										</div>
+										<div class="px-3 px-xl-2 px-xxl-1">
+											<span class="color_black_text_catalog font_famil_catalog">
+												20×15 м
+											</span>
+										</div>
+										<div class="px-xxl-1">
+											<span class="font_famil_catalog color_black_text_catalog">
+												744 м²
+											</span>
+										</div>
+										</div>
+										<div class="col-1 d-lg-block d-none px-0 text-end">
+											<button class="border-0 back_transpar">
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+											</button>
+										</div>
+
+									</div>
+									<div class="d-none d-lg-flex justify-content-between pt-3">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость строительсва от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												19 284 480 ₽
+											</span>
+										</div>
+									</div>
+									<div class="d-none d-lg-flex justify-content-between">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость проекта от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												99 555 ₽
+											</span>
+										</div>
+									</div>
+
+									<div class="d-flex justify-content-between d-lg-none pt-3">
+										<div class="d-flex col-7">
+											<img src="/images/catalog_new_hmkmos/icon_home_price.png" style="width: 18px;height: 17px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												10 800 000 ₽
+											</span>
+										</div>
+										<div class="d-flex col-5 justify-content-end">
+											<img src="/images/catalog_new_hmkmos/icon_project_price.png" style="width: 18px;height: 21px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												45 000 ₽
+											</span>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-md-6 pb-4 my_slide_catalog  1">
+							<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+								<div id="carouselIndicators_project1" class="carousel my_carousel slide pb-2">
+									<div class="carousel-indicators">
+                                        										<button type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        									</div>
+									<div class="carousel-inner">
+                                    										<a href="/projects/proekt_ml-328.html" target="_blank" class="carousel-item active block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:cover;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_ml-328.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_ml-328.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        
+									</div>
+								</div>
+								<div class="pb-3 px-3">
+									<div class="justify-content-between mx-0 px-0 row">
+										<div class="col-6 col-lg-3 col-xl-5 pb-1 pb-lg-0  px-0">
+											<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 24px;font-style: normal;font-weight: 500;line-height: normal;">
+												ML-328											</span>
+										</div>
+										<button class="col-6 d-block pb-3 d-lg-none col-1 px-3 border-0 back_transpar text-end">
+											<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+										</button>
+										<div class="col-12 col-lg-6 d-flex justify-content-start px-0">
+										<div class="d-flex px-0 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bed-single.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													4												</span>
+											</div>
+										</div>
+										<div class="d-flex px-2 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bath.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													2												</span>
+											</div>
+										</div>
+										<div class="px-3 px-xl-2 px-xxl-1">
+											<span class="color_black_text_catalog font_famil_catalog">
+												16×17 м
+											</span>
+										</div>
+										<div class="px-xxl-1">
+											<span class="font_famil_catalog color_black_text_catalog">
+												296 м²
+											</span>
+										</div>
+										</div>
+										<div class="col-1 d-lg-block d-none px-0 text-end">
+											<button class="border-0 back_transpar">
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+											</button>
+										</div>
+
+									</div>
+									<div class="d-none d-lg-flex justify-content-between pt-3">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость строительсва от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												8 382 720 ₽
+											</span>
+										</div>
+									</div>
+									<div class="d-none d-lg-flex justify-content-between">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость проекта от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												60 369 ₽
+											</span>
+										</div>
+									</div>
+
+									<div class="d-flex justify-content-between d-lg-none pt-3">
+										<div class="d-flex col-7">
+											<img src="/images/catalog_new_hmkmos/icon_home_price.png" style="width: 18px;height: 17px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												10 800 000 ₽
+											</span>
+										</div>
+										<div class="d-flex col-5 justify-content-end">
+											<img src="/images/catalog_new_hmkmos/icon_project_price.png" style="width: 18px;height: 21px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												45 000 ₽
+											</span>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-md-6 pb-4 my_slide_catalog  2">
+							<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+								<div id="carouselIndicators_project2" class="carousel my_carousel slide pb-2">
+									<div class="carousel-indicators">
+                                        										<button type="button" data-bs-target="#carouselIndicators_project2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        									</div>
+									<div class="carousel-inner">
+                                    										<a href="/projects/proekt_zx76.html" target="_blank" class="carousel-item active block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:cover;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_zx76.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        
+									</div>
+								</div>
+								<div class="pb-3 px-3">
+									<div class="justify-content-between mx-0 px-0 row">
+										<div class="col-6 col-lg-3 col-xl-5 pb-1 pb-lg-0  px-0">
+											<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 24px;font-style: normal;font-weight: 500;line-height: normal;">
+												zx76											</span>
+										</div>
+										<button class="col-6 d-block pb-3 d-lg-none col-1 px-3 border-0 back_transpar text-end">
+											<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+										</button>
+										<div class="col-12 col-lg-6 d-flex justify-content-start px-0">
+										<div class="d-flex px-0 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bed-single.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													3												</span>
+											</div>
+										</div>
+										<div class="d-flex px-2 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bath.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													2												</span>
+											</div>
+										</div>
+										<div class="px-3 px-xl-2 px-xxl-1">
+											<span class="color_black_text_catalog font_famil_catalog">
+												15×11 м
+											</span>
+										</div>
+										<div class="px-xxl-1">
+											<span class="font_famil_catalog color_black_text_catalog">
+												103 м²
+											</span>
+										</div>
+										</div>
+										<div class="col-1 d-lg-block d-none px-0 text-end">
+											<button class="border-0 back_transpar">
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+											</button>
+										</div>
+
+									</div>
+									<div class="d-none d-lg-flex justify-content-between pt-3">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость строительсва от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												3 988 160 ₽
+											</span>
+										</div>
+									</div>
+									<div class="d-none d-lg-flex justify-content-between">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость проекта от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												27 555 ₽
+											</span>
+										</div>
+									</div>
+
+									<div class="d-flex justify-content-between d-lg-none pt-3">
+										<div class="d-flex col-7">
+											<img src="/images/catalog_new_hmkmos/icon_home_price.png" style="width: 18px;height: 17px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												10 800 000 ₽
+											</span>
+										</div>
+										<div class="d-flex col-5 justify-content-end">
+											<img src="/images/catalog_new_hmkmos/icon_project_price.png" style="width: 18px;height: 21px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												45 000 ₽
+											</span>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-md-6 pb-4 my_slide_catalog  3">
+							<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+								<div id="carouselIndicators_project3" class="carousel my_carousel slide pb-2">
+									<div class="carousel-indicators">
+                                        										<button type="button" data-bs-target="#carouselIndicators_project3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        									</div>
+									<div class="carousel-inner">
+                                    										<a href="/projects/proekt_zx105.html" target="_blank" class="carousel-item active block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:cover;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project3" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_zx105.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project3" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        
+									</div>
+								</div>
+								<div class="pb-3 px-3">
+									<div class="justify-content-between mx-0 px-0 row">
+										<div class="col-6 col-lg-3 col-xl-5 pb-1 pb-lg-0  px-0">
+											<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 24px;font-style: normal;font-weight: 500;line-height: normal;">
+												Zx105											</span>
+										</div>
+										<button class="col-6 d-block pb-3 d-lg-none col-1 px-3 border-0 back_transpar text-end">
+											<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+										</button>
+										<div class="col-12 col-lg-6 d-flex justify-content-start px-0">
+										<div class="d-flex px-0 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bed-single.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													2												</span>
+											</div>
+										</div>
+										<div class="d-flex px-2 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bath.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													1												</span>
+											</div>
+										</div>
+										<div class="px-3 px-xl-2 px-xxl-1">
+											<span class="color_black_text_catalog font_famil_catalog">
+												10×9 м
+											</span>
+										</div>
+										<div class="px-xxl-1">
+											<span class="font_famil_catalog color_black_text_catalog">
+												86 м²
+											</span>
+										</div>
+										</div>
+										<div class="col-1 d-lg-block d-none px-0 text-end">
+											<button class="border-0 back_transpar">
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+											</button>
+										</div>
+
+									</div>
+									<div class="d-none d-lg-flex justify-content-between pt-3">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость строительсва от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												3 329 920 ₽
+											</span>
+										</div>
+									</div>
+									<div class="d-none d-lg-flex justify-content-between">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость проекта от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												27 555 ₽
+											</span>
+										</div>
+									</div>
+
+									<div class="d-flex justify-content-between d-lg-none pt-3">
+										<div class="d-flex col-7">
+											<img src="/images/catalog_new_hmkmos/icon_home_price.png" style="width: 18px;height: 17px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												10 800 000 ₽
+											</span>
+										</div>
+										<div class="d-flex col-5 justify-content-end">
+											<img src="/images/catalog_new_hmkmos/icon_project_price.png" style="width: 18px;height: 21px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												45 000 ₽
+											</span>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-md-6 pb-4 my_slide_catalog  4">
+							<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+								<div id="carouselIndicators_project4" class="carousel my_carousel slide pb-2">
+									<div class="carousel-indicators">
+                                        										<button type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        									</div>
+									<div class="carousel-inner">
+                                    										<a href="/projects/proekt_rh-558.html" target="_blank" class="carousel-item active block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:cover;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_rh-558.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_rh-558.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        
+									</div>
+								</div>
+								<div class="pb-3 px-3">
+									<div class="justify-content-between mx-0 px-0 row">
+										<div class="col-6 col-lg-3 col-xl-5 pb-1 pb-lg-0  px-0">
+											<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 24px;font-style: normal;font-weight: 500;line-height: normal;">
+												rh-558											</span>
+										</div>
+										<button class="col-6 d-block pb-3 d-lg-none col-1 px-3 border-0 back_transpar text-end">
+											<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+										</button>
+										<div class="col-12 col-lg-6 d-flex justify-content-start px-0">
+										<div class="d-flex px-0 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bed-single.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													6												</span>
+											</div>
+										</div>
+										<div class="d-flex px-2 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bath.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													6												</span>
+											</div>
+										</div>
+										<div class="px-3 px-xl-2 px-xxl-1">
+											<span class="color_black_text_catalog font_famil_catalog">
+												25×22 м
+											</span>
+										</div>
+										<div class="px-xxl-1">
+											<span class="font_famil_catalog color_black_text_catalog">
+												558 м²
+											</span>
+										</div>
+										</div>
+										<div class="col-1 d-lg-block d-none px-0 text-end">
+											<button class="border-0 back_transpar">
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+											</button>
+										</div>
+
+									</div>
+									<div class="d-none d-lg-flex justify-content-between pt-3">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость строительсва от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												14 909 760 ₽
+											</span>
+										</div>
+									</div>
+									<div class="d-none d-lg-flex justify-content-between">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость проекта от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												95 925 ₽
+											</span>
+										</div>
+									</div>
+
+									<div class="d-flex justify-content-between d-lg-none pt-3">
+										<div class="d-flex col-7">
+											<img src="/images/catalog_new_hmkmos/icon_home_price.png" style="width: 18px;height: 17px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												10 800 000 ₽
+											</span>
+										</div>
+										<div class="d-flex col-5 justify-content-end">
+											<img src="/images/catalog_new_hmkmos/icon_project_price.png" style="width: 18px;height: 21px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												45 000 ₽
+											</span>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-md-6 pb-4 my_slide_catalog  5">
+							<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+								<div id="carouselIndicators_project5" class="carousel my_carousel slide pb-2">
+									<div class="carousel-indicators">
+                                        										<button type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        										<button type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        									</div>
+									<div class="carousel-inner">
+                                    										<a href="/projects/proekt_h-62.html" target="_blank" class="carousel-item active block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:cover;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_h-62.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        										<a href="/projects/proekt_h-62.html" target="_blank" class="carousel-item  block image_with_preload progressive" style="background-image: url(/images/proect_zx76.jpg); background-size:contain;">
+  <button class="carousel-control-prev my_prev_catalog" type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next my_next_catalog" type="button" data-bs-target="#carouselIndicators_project5" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+										</a>
+                                        
+									</div>
+								</div>
+								<div class="pb-3 px-3">
+									<div class="justify-content-between mx-0 px-0 row">
+										<div class="col-6 col-lg-3 col-xl-5 pb-1 pb-lg-0  px-0">
+											<span class="font_famil_catalog color_black_text_catalog" style="color: var(--black, #14010C);font-family: Montserrat;font-size: 24px;font-style: normal;font-weight: 500;line-height: normal;">
+												H-62											</span>
+										</div>
+										<button class="col-6 d-block pb-3 d-lg-none col-1 px-3 border-0 back_transpar text-end">
+											<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+										</button>
+										<div class="col-12 col-lg-6 d-flex justify-content-start px-0">
+										<div class="d-flex px-0 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bed-single.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													3												</span>
+											</div>
+										</div>
+										<div class="d-flex px-2 px-lg-1 px-xxl-1">
+											<div>
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/bath.png">
+											</div>
+											<div>
+												<span class="font_famil_catalog color_black_text_catalog">
+													2												</span>
+											</div>
+										</div>
+										<div class="px-3 px-xl-2 px-xxl-1">
+											<span class="color_black_text_catalog font_famil_catalog">
+												14×10 м
+											</span>
+										</div>
+										<div class="px-xxl-1">
+											<span class="font_famil_catalog color_black_text_catalog">
+												96 м²
+											</span>
+										</div>
+										</div>
+										<div class="col-1 d-lg-block d-none px-0 text-end">
+											<button class="border-0 back_transpar">
+												<img class="m-auto" style="height: 18px; width: 19px;" src="/images/catalog_new_hmkmos/Vector (1).png">
+											</button>
+										</div>
+
+									</div>
+									<div class="d-none d-lg-flex justify-content-between pt-3">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость строительсва от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												3 717 120 ₽
+											</span>
+										</div>
+									</div>
+									<div class="d-none d-lg-flex justify-content-between">
+										<div>
+											<span class="font_famil_catalog color_black_text_catalog">
+												Стоимость проекта от:
+											</span>
+										</div>
+										<div>
+											<span class="text_price color_black_text_catalog">
+												27 555 ₽
+											</span>
+										</div>
+									</div>
+
+									<div class="d-flex justify-content-between d-lg-none pt-3">
+										<div class="d-flex col-7">
+											<img src="/images/catalog_new_hmkmos/icon_home_price.png" style="width: 18px;height: 17px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												10 800 000 ₽
+											</span>
+										</div>
+										<div class="d-flex col-5 justify-content-end">
+											<img src="/images/catalog_new_hmkmos/icon_project_price.png" style="width: 18px;height: 21px;">
+											<span class="text_price color_black_text_catalog font_famil_catalog_mob px-1">
+												45 000 ₽
+											</span>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+	                </div>
+					<nav aria-label="Page navigation example" class="d-flex justify-content-center">
+					  <ul class="d-flex new_style_paginat px-0 pt-2">
+						<li class="page-item m-auto">
+						  <a class="page-link my_page_link border-0 px-2" href="#" aria-label="Previous">
+							<img src="/images/catalog_new_hmkmos/arrow_left_sliders.png" style="width:45px;">
+						  </a>
+						</li>
+						<li class="page-item"><a class="page-link my_page_link border-0 px-1" style="font-size: 24px; font-family: Montserrat;" href="#">1</a></li>
+						<li class="page-item"><a class="page-link my_page_link border-0 px-1" style="font-size: 24px; font-family: Montserrat;" href="#">2</a></li>
+						<li class="page-item"><a class="page-link my_page_link border-0 px-1" style="font-size: 24px; font-family: Montserrat;" href="#">3</a></li>
+						<li class="page-item pt-3">...</li>
+						<li class="page-item"><a class="page-link my_page_link border-0 px-1" style="font-size: 24px; font-family: Montserrat;" href="#">10</a></li>
+						<li class="page-item m-auto">
+						  <a class="page-link my_page_link border-0 px-2" href="#" aria-label="Next">
+							<img src="/images/catalog_new_hmkmos/arrow_right_sliders.png" style="width:45px;">
+						  </a>
+						</li>
+					  </ul>
+					</nav>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class=" position-relative aboutus">
+  <img class="logo-img" src="img/arhionlogo.png" alt="logo">
+  <div class="text-behind" style="right: 80px; font-weight: 700;
+  font-size: 352px;
+  text-transform: uppercase;
+  color: rgba(167, 139, 115, 0.1);">о нас </div>
+  <div class="logo-text">обзор компании</div>
+  <div class="d-flex justify-content-between align-items-center">
+    <a class="button_type2" href="#">
+      <p>НАЧАТЬ</p>
+      <svg width="386" height="100" viewBox="0 0 386 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line y1="49.5" x2="337" y2="49.5" stroke="#14010C"/>
+        <circle class="hoverRect" cx="336" cy="50" r="49.5" stroke="#A78B73"/>
+        <path d="M241 36.5H240.5V37.5H241V36.5ZM276.354 37.3536C276.549 37.1583 276.549 36.8417 276.354 36.6464L273.172 33.4645C272.976 33.2692 272.66 33.2692 272.464 33.4645C272.269 33.6597 272.269 33.9763 272.464 34.1716L275.293 37L272.464 39.8284C272.269 40.0237 272.269 40.3403 272.464 40.5355C272.66 40.7308 272.976 40.7308 273.172 40.5355L276.354 37.3536ZM241 37.5H276V36.5H241V37.5Z" fill="#14010C"/>
+      </svg>	
+    </a>
+    <div class="d-flex">
+      <img class="img-fluid" src="img/doc.png" alt="doc">
+      <div class="doc-text">
+        Возглавляем Комитет МТПП <br>
+        по предпринимательству в сфере <br> 
+        архитектуры, проектирования и строительства
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="block_container">
+  <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">пенобетон vs газобетон</p>
+  <h2 class="block_title">Различия между пеноблоком и газобетоном</h2>
+  <div class="block_checks__container">
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Уровень плотности. Для одного и того же вида работ, должны использоваться блоки соответствующей плотности</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Помимо этого, они отличаются составом и технологией производства, технология производства достаточно кустарна и ведёт к сведущим отличиям и минусам пенобетона</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Неоднородность блока — сильно влияет на его характеристики</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Плохая геометрия блока влияет на качество монтажа, расход клея, последующую отделку стен</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Низкая прочность блока и подверженность разряжению, последующая возможная усадка блока требует наличие в конструкции монолитного каркаса</p>
+      </div>
+      <div class="block_checks__item">
+        <img src="assets/icons/check.svg">
+        <p>Высокий процент брака и сколотого блока</p>
+    </div>
+  </div>
+</section>
+
+<div class="b-content pb-md-5 pt-0">
+    <div class="pt-3 pt-md-5 pb-3 px-1">
+        <span class="style_heading_text">
+            Часто задаваемые вопросы
+        </span>
+    </div>
+    <div class="accordion accordion-flush px-1" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button px-1 collapsed questions_font" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Есть ли у материала недостатки?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body px-1 answer">
+            <div>
+                одним из основных минусов является хрупкость пеноблоков. На них легко появляются трещины и изломы, так как они имеют пористую структуру. Рекомендуется строить из пеноблока дома не выше двух этажей. Кроме того, материал имеет свойство впитывать влагу из воздуха. Поэтому при строительстве необходимо позаботиться о гидроизоляции и внешней отделке. Заказывая строительство домов из пеноблоков под ключ, нужно учитывать это. Материал со временем дает естественную усадку. Поэтому на стенах вскоре могут образоваться трещины;- так как пеноблоки изготавливаются довольно просто, их можно сделать даже в кустарных условиях. Выбирая материал, убедитесь в том, что он изготовлен надежным производителем.
+                Как уже было отмечено, весомым недостатком материала является необходимость отделки. Но даже вместе с затратами на отделку цена постройки дома из пеноблоков не будет очень высокой.
+            </div>
+                <div class="col-6 col-lg-3 col-sm-6 pt-2 pb-2">
+                    <a href="proektyi.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+                        <span class="font-size-20px-style" style="font-family:Montserrat">
+                            Подробнее
+                        </span>		
+                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button px-1 collapsed questions_font" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Что за материал пеноблок?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body px-1 answer">
+              <div>
+                Это ячеистый материал, внутри которого содержание воздуха может составлять до 95%. При изготовлении элементов смешивают пенообразователь, а также цемент и песок, добавляют определенное количество воды. По сути, пенобетон можно назвать взбитым раствором цемента. Среди преимуществ можно назвать морозоустойчивость материала, его долговечность. Кроме того, это экологически чистый материал. Он пропускает пар. Поэтому стены из него «дышат». Пенобетон обладает неплохой адгезией к различным отделочным материалам. Материал огнестойкий, на нем не развивается плесень, бактерии. У дома из пеноблоков, цена коробки будет довольно низкой, так как материал является недорогим. Еще одно преимущество состоит в том, что с материалом легко работать. Его можно фрезеровать, сверлить и т. д. Но строение будет требовать отдели и гидроизоляции, поэтому если заказать дом из пеноблоков под отделку, цена будет выше.
+                    <div class="col-6 col-lg-3 col-sm-6 pt-2 pb-2">
+                        <a href="proektyi.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+                            <span class="font-size-20px-style" style="font-family:Montserrat">
+                                Подробнее
+                            </span>		
+                            <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                        </a>
+                    </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button px-1 questions_font collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Какие виды пенобетона есть?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample" style="">
+          <div class="accordion-body px-1 answer">
+            <div>
+                По плотности и назначению пенобетонные блоки делятся на три категории:
+                теплоизоляционные. К ним относятся марки D300, D400, D500. Они рассчитаны на малую нагрузку. Такой пеноблок может использоваться только в качестве утеплителя стен;
+                конструкционно-теплоизоляционные. Это марки D600, D700, D800 и D900. Они могут использоваться и для утепления, и как материал для слабо нагруженных стен;
+                конструкционные. В эту категорию входят марки D1000, D1100, D1200. Такой пенобетон имеет самую высокую плотность, используется для возведения сильно нагруженных стен и требует дополнительного утепления.
+                 <div class="col-6 col-lg-3 col-sm-6 pt-2 pb-2">
+                    <a href="proektyi.html#" class="butt_bord color_gray_button d-flex justify-content-between">
+                        <span class="font-size-20px-style" style="font-family:Montserrat">
+                            Подробнее
+                        </span>		
+                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="px-md-3" style="background: #F1EBE6;">
+	<div class="container-fluid mx-0 pt-3 pt-md-5 pb-md-5 row">
+		<div class="px-0 col-12 col-md-8">
+			<div class="text-start px-1">
+				<span class="style_heading_text">
+					Нужна консультация?
+				</span>
+			</div>
+			<div class="col-12 pt-3 px-1 pb-md-4">
+				<span class="font_consult" style="color:black;">
+					Оставьте контакты и мы с вами свяжемся для обсуждения деталей
+				</span>	
+				
+			</div>
+			<div class="d-flex row">		
+				<div class="col-12 col-md-5">
+				<div>
+					<a href="proektyi.html#" class="row mx-0 py-3 justify-content-start">
+						<img src="images/catalog_new_hmkmos/whatsapp.png" class="px-0" style="width: 38px;height: 38px;">
+						<div class="d-flex px-0 col-9 col-md-7 pt-1 mx-2" style="border-bottom: 1px solid #343536;">
+							<div class="pt-1">
+								<span class="px-0 py-1 kontak_text">WHATSAPP</span>
+							</div>
+							<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+								<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+									<div class="position-absolute" style="top:0px;">
+										<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>			
+				</div>
+				<div>
+					<a href="proektyi.html#" class="row mx-0 py-3 justify-content-start">
+						<img src="images/catalog_new_hmkmos/telega.png" class="px-0" style="width: 38px;height: 38px;">
+						<div class="d-flex px-0 col-9 col-md-7 pt-1 mx-2" style="border-bottom: 1px solid #343536;">
+							<div class="pt-1">
+								<span class="px-0 py-1 kontak_text">TELEGRAM</span>
+							</div>
+							<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+								<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+									<div class="position-absolute" style="top:0px;">
+										<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					</div>
+					<div>
+					<a href="https://test.rddp.ru/”tel:+74957997599”" class="row mx-0 py-3 justify-content-start">
+								<img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+							<div class="col-10 col-md-7 px-0 pt-2 mx-2">
+								<span class="font_consult_text">+7 (495) 799-75-29
+								</span>
+							</div>
+					</a>
+					</div>
+				</div>		
+				<div class="col-12 col-md-7 row mx-0 justify-content-start pb-4 pb-md-0">
+					<div class="m-auto px-0 pb-4 pb-md-0">
+						<input class="back_transpar border-0 col-11 col-md-7 kontak_text" placeholder="Иван" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important;" type="text" id="uname" name="name" />
+					</div>
+					<div class="m-auto px-0 pb-4 pb-md-0">
+						<input class="back_transpar border-0 col-11 col-md-7 kontak_text" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important;" placeholder="+7 964 775-86-97" type="tel" id="telephone" />
+					</div>
+					<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+							<div class="pt-1">
+								<span class="px-0 py-1 kontak_text">Отправить</span>
+							</div>
+							<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+								<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+									<div class="position-absolute" style="top:0px;">
+										<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>						
+		</div>
+		<div class="pb-5 pb-md-0 col-12 col-md-4 px-0 m-auto">
+			<img class="w-100 image-fluid" src="images/catalog_new_hmkmos/block_consult.png">
+		</div>
+	</div>
+</div>
+
+<footer>
+	<div class="wrapper-footer">
+		<div class="wrapper-logo-desc-politic">
+			<svg width="67" height="70" viewBox="0 0 67 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M66.9999 69.9995C63.057 69.8506 59.9529 68.8347 57.5293 67.4018C53.3476 64.9412 51.1538 61.2413 50.0494 58.5751C49.2525 56.6477 49.0197 55.2595 49.0197 55.2595H25.5923C27.407 50.1059 32.2841 46.6562 37.7582 46.6562H55.1235C56.9532 46.6562 58.5918 47.7883 59.2395 49.4952L66.9999 69.9995Z" fill="#A78B73"/>
+				<path d="M54.5207 34.8421H48.8109C47.8199 34.8421 46.8588 34.6842 45.9515 34.3804H45.9455L45.8947 34.3655C43.6621 33.6297 41.8892 31.9168 41.0773 29.7153L39.3104 24.934L29.8278 0H38.3433C40.17 0 41.8086 1.12903 42.4563 2.83301L50.8614 24.934L54.5207 34.8421Z" fill="#A78B73"/>
+				<path d="M29.0477 0C27.224 0 25.5884 1.12605 24.9407 2.82705L16.5774 24.8238L12.8822 34.8421L8.86176 45.7541H8.8349L3.36084 60.2141L0 69.0974C0.182071 69.0914 0.364142 69.0854 0.540243 69.0706C13.6523 67.7419 17.9802 54.3574 17.9802 54.3574L21.159 45.7541L26.842 29.6646L27.5344 27.7045L31.0535 17.7309L33.0772 11.9129L33.2921 11.2933L29.0477 0Z" fill="#A78B73"/>
+			</svg>	
+			<p>Архитектурно-<br />строительная группа</p>
+			<a href="proekt_m-407.html#" class="politic-desctop" style="border-bottom: 0;">Политика конфиденциальности</a>
+		</div>
+		<div class="wrapper-list-item">
+			<div>
+				<a href="proekt_m-407.html#">Проектирование</a>
+			</div>
+			<div>
+				<a href="proekt_m-407.html#">Каталог проектов</a>
+			</div>
+			<div>
+				<a href="proekt_m-407.html#">Контакты</a>
+			</div>
+			<div>
+				<a href="proekt_m-407.html#">Строительство</a>
+			</div>
+			<div>
+				<a href="proekt_m-407.html#">О компании</a>
+			</div>
+			<div>
+				<a href="proekt_m-407.html#">Полезные статьи</a>
+			</div>
+		</div>
+		<div class="wrapper-contacts-social">
+			<a href="tel:+7 (495) 799-75-29" class="tel-footer">+7 (495) 799-75-29</a>
+			<p>Рабочее время: Ежедневно 10:00 - 21:00</p>
+			<div class="wrapper-social-footer">
+				<a href="proekt_m-407.html#"><img src="../img/footer-img/vk-gold.svg" alt=""></a>
+				<a href="proekt_m-407.html#"><img src="../img/footer-img/instagram-gold.svg" alt=""></a>
+				<a href="proekt_m-407.html#"><img src="../img/footer-img/whatsapp-gold.svg" alt=""></a>
+			</div>
+			<a href="proekt_m-407.html#" class="politic-mobile">Политика конфиденциальности</a>
+		</div>
+	</div>
+	<div class="footer-end text-center">Архитектурно-строительная группа ARHION © 2001 - 2023</div>
+</footer> 
+
+
+<link href="style.css@2.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="library/ui/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+<link rel="stylesheet" href="portfolio/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="portfolio/css/catalog.css">
+<link rel="stylsheet" href="portfolio/css/main.css">
+<link rel="stylsheet" href="portfolio/css/normalize.css">
+
+<script src="jquery.bxslider.min.js@2"></script>
+<script src="script/jquery.mb.browser.js@2"></script>
+<script src="script/jquery.cookie.js@2"></script>
+<script src="portfolio/js/jquery.validate.js"></script>
+<script src="script/index.js@2"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+<script type="text/javascript" src="library/Pagination/dist/pagination.min.js"></script>
+<script src="owl/owl.carousel.min.js@2"></script>
+<script src="placeholder.js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="common.js"></script>
+<script src="script/progressive-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script type='text/javascript'>
+$('.pagination').pagination({
+    total: 2325,
+    current: 1, 
+    length: 6,
+    size: 0,
+    prev: '«',
+    next: '»',
+    click: function(options,$target) {
+        $.post("/bestprojects.php", {
+            page: options.current.toString(),
+            query: $("input[name=query]").val()
+        }, function(data) {
+            window.scrollTo(0, 0);
+            $(".block_proekts_img .best").html(data);
+        }, "json").fail(function(xhr, status, error) {
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
+    });    }
+
+ });
+ 
+    var $range = $("#slider-range");
+    var $inputFrom = $("#proect_s0_min");
+    var $inputTo = $("#proect_s0_max");
+    var instance;
+    var min = 0;
+    var max = 2500;
+    var from = 0;
+    var to = 2500;
+    
+ $range.ionRangeSlider({
+    type: "double",
+    skin: "big",
+    grid: true,
+    min: min,
+    max: max,
+    from: from,
+    to: to,
+    step: 50,
+    postfix: " м<sup>2</sup>",
+    onChange: updateInputs
+ });
+ instance = $range.data("ionRangeSlider");
+ function updateInputs (data) {
+        from = data.from;
+        to = data.to;
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);
+        countfiltr();
+ }
+
+</script>
+
+
+<script>
+$(function() {
+    $(".slide-prosmotrenny").owlCarousel({
+		dots:false,
+		loop:true, //Зацикливаем слайдер
+		nav:true, 
+		nav:true, 
+		navText: ["<div class='d-flex pt-3 justify-content-center'><div class='px-2' aria-label='Previous'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_left_sliders.png'></div>","<div class='px-2' aria-label='Next'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_right_sliders.png'></div></div>"],
+		autoplay:true, //Автозапуск слайдера
+		autoplayHoverPause:true, //Пауза при навидении мыши
+		smartSpeed:1000, //Время движения слайда
+		autoplayTimeout:2000, //Время смены слайда
+		responsiveBaseElement: 'body',
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			800:{
+				items:3
+			},
+			1000:{
+				items:4
+			}
+		}
+	
+    });
+	
+});
+
+
+</script>
+</body>
+</html>
