@@ -1871,7 +1871,9 @@ hr {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
+
 
 #detailed_text {
   display: none;
