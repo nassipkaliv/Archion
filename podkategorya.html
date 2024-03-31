@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подкатегория</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="libs/owlcarousel/scss/owl.carousel.css">
+    <link rel="stylesheet" href="templates/navbarn.css">
+    <script src="libs/owlcarousel/js/owl.carousel.js"></script>
+    <script src="libs/owlcarousel/js/owl.autoplay.js"></script>
+    <link href="reset.css@2.css" rel="stylesheet">
+    <link rel="stylesheet" href="/../proects.css?2">
+    <link rel="stylesheet" href="templates/new_hmkmos.css">
+    <link rel="stylesheet" href="style/progressive-image.min.css">
+    <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+    <link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="style/filtr-new.css@2.css">
+    <link rel="stylesheet" href="style/new_footer.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="templates/navbarn.css">
+    <link rel="stylesheet" href="templates/catalog_banner.css">
+    <script src="script/jquery-2.2.4.min.js"></script>
+    <script src="script/jquery.formstyler.min.js@2"></script>  
+    <script src="script/filtr-new.js@2" ></script>
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- Шапка основного типа -->
+        <header class="b-header topbar">
+            <nav class="navbar navbar-light row ">
+                <div class="col-12 container-fluid flex-nowrap">
+                    <a class="navbar-brand navbar-link" href="#">
+                        <img class="navbar-logo-img-gold" src="img/header/arhion-logo-header.svg" alt="arhion-logo-heeader">
+                    </a>
+        
+                    <div class="pl hidden-mobile">
+                        <input type="button" onclick="fu()" id="btn-project" value="Подобрать проект" class="btn_project12 ppp" data-bs-toggle="modal" data-bs-target="#cons-project" aria-current="page">
+                    </div>
+                    <div class="modal fade" id="cons-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 style="font-weight: bold;" class="modal-title consult_form">Подобрать проект</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body form_order_modal card clearfix">
+                                    <div class="card-body">
+                                        <form id='consultform' method="post" class="consultform" enctype="multipart/form-data" novalidate="novalidate">
+                                            <input type="hidden" name="Formname" value="constop">
+                                            <input type="hidden" name="project_name" value="hmkmos.ru">
+                                            <input type="hidden" name="admin_email" value="msk@hmkmos.ru">
+                                            <input type="hidden" name="form_subject" value="Получить консультацию">
+                                            <input type="hidden" name="Page" value="https://www.hmkmos.ru/">
+                                            <div class="row">
+                                                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                                    <div class="z-form">
+                                                        <div class="info"></div>
+                                                        <a rel="nofollow" class="anchor_tags" name="form-zakaz-uslugi"></a>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                                <div class="form-group mt-3">
+                                                                    <label for="ConsName" class="form-label">Ваше имя<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" name="ConsName" id="ConsName" placeholder="Ваше имя" value="" required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6">
+                                                                <div class="form-group mt-3">
+                                                                    <label for="ConsEmail" class="form-label">Ваш Email<sup>*</sup></label>
+                                                                    <input type="email" class="form-control" name="ConsMail" id="ConsEmail" placeholder="Ваш Email" value="" required>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group mt-3">
+                                                            <label for="ConsPhone" class="form-label">Ваш телефон<sup>*</sup></label>
+                                                            <input type="text" class="form-control" name="ConsPhone" id="ConsPhone" placeholder="Ваш телефон" value="" required>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                <div class="form-group">
+                                                                    <label for="InputText" class="form-label">Комментарий<sup>*</sup></label>
+                                                                    <textarea class="form-control" name="Text" placeholder="Сообщение" rows="4"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-center my-2">
+                                                            <input class="btn btn-gold text-light text-uppercase px-5" id="topcons" type="submit" name="web_form_submit" value="Отправить" style="font-size: 24px; line-height: 42px; font-weight: 700; box-shadow: 0px 0px 6px 2px rgb(41 41 42 / 26%); border: none !important;">
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <small>
+                                                                <label for="agree_individual">
+                                                                    <input style="position: relative; top: 3px;" id="agree_individual" type="checkbox" value="146" name="AGREEMENT" checked="">
+                                                                    Отправляя форму вы соглашаетесь с
+                                                                    <a href="termsofuse.html">правилами обработки персональных данных</a>
+                                                                </label>
+                                                            </small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal-footer clearfix"></div>
+                            </div>
+                            <!-- /.modal-content -->
+                        </div>
+                    </div>
+                    <script>
+                        // function fu(){
+        
+                        // 	var consult_form = document.querySelector('.consult_form');
+        
+        
+                        // 	if (document.getElementById('ButtonProject')) {
+                        // 		consult_form.innerHTML = 'Подобрать проект';
+                        // 	}else{
+                        // 		consult_form.innerHTML = 'Получить консультацию';
+                        // 	}
+        
+                        // };
+        
+                        //  event.preventDefault();
+        
+                        function fu() {
+                            var consult_form = document.querySelector('.consult_form');
+        
+                            document.getElementById('btn-project').onclick = function() {
+                                consult_form.innerHTML = 'Подобрать проект';
+                                event.preventDefault();
+                            };
+        
+                            let btnSendDataUser = document.querySelector('#topcons');
+                            let wrapperModal = document.querySelector('#cons-project');
+                            btnSendDataUser.addEventListener('click', () => {
+                                wrapperModal.style.display = 'none';
+                            })
+                        };
+                    </script>
+                    <ul class="d-flex nav nav-mod justify-content-end" style="flex-grow: 1;">
+                        <div>
+                            <li class="nav-item nav-item--phone">
+                                <a class="nav-link nav-link--mod nav-link--phone" href="tel:+74957997529" tabindex="-1">+7 (495) 799-75-29</a>
+        
+                            </li>
+                        </div>
+                        <div class="me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link--mod nav-link__icon-phone-link " href="tel:+74957997529" tabindex="-1">
+                                    <img class="nav-link nav-link__icon-phone" src="templates/images/header/phone-icon.svg" width="32px" height="32px">
+                                </a>
+                            </li>
+                        </div>
+        
+                        <div class="d-flex wrapper-social-header align-items-center gap-1">
+                            <a class="m-auto nav-link pt-0 logo-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.0297 19.1906L20.0297 16.6906C19.9313 16.6416 19.8217 16.6194 19.7119 16.6262C19.6022 16.6331 19.4962 16.6688 19.4047 16.7297L16.8047 18.4641C15.3754 17.7787 14.2229 16.6261 13.5375 15.1969L15.2718 12.5969C15.3328 12.5053 15.3684 12.3994 15.3753 12.2896C15.3822 12.1799 15.36 12.0703 15.3109 11.9719L12.8109 6.97188C12.7591 6.86751 12.679 6.77972 12.5799 6.71843C12.4808 6.65713 12.3665 6.62477 12.25 6.625C10.7581 6.625 9.32739 7.21763 8.2725 8.27252C7.21761 9.32742 6.62497 10.7582 6.62497 12.25C6.6287 15.7298 8.0127 19.0661 10.4733 21.5267C12.9339 23.9873 16.2702 25.3713 19.75 25.375C21.2418 25.375 22.6726 24.7824 23.7274 23.7275C24.7823 22.6726 25.375 21.2418 25.375 19.75C25.3751 19.6339 25.3428 19.52 25.2818 19.4212C25.2208 19.3224 25.1335 19.2426 25.0297 19.1906ZM19.75 24.125C16.6015 24.1217 13.583 22.8695 11.3567 20.6432C9.13046 18.417 7.87828 15.3984 7.87497 12.25C7.87479 11.155 8.28522 10.0998 9.02521 9.29265C9.76521 8.48554 10.781 7.98526 11.8718 7.89062L14.0281 12.2047L12.3093 14.7891C12.2521 14.8743 12.2167 14.9724 12.2063 15.0746C12.196 15.1768 12.211 15.28 12.25 15.375C13.0804 17.3491 14.6508 18.9196 16.625 19.75C16.7201 19.7895 16.8235 19.8049 16.926 19.7948C17.0285 19.7847 17.1269 19.7495 17.2125 19.6922L19.7968 17.9734L24.1109 20.1297C24.0159 21.2206 23.5152 22.2362 22.7078 22.9759C21.9004 23.7156 20.845 24.1256 19.75 24.125ZM16 0.375C13.2798 0.374495 10.6066 1.08414 8.24484 2.43373C5.88307 3.78333 3.91455 5.72612 2.53399 8.06993C1.15343 10.4137 0.408674 13.0774 0.373385 15.7973C0.338097 18.5172 1.0135 21.1993 2.33279 23.5781L0.473412 29.1547C0.363238 29.4851 0.347249 29.8396 0.427238 30.1785C0.507226 30.5175 0.680031 30.8274 0.926285 31.0737C1.17254 31.3199 1.48251 31.4927 1.82145 31.5727C2.1604 31.6527 2.51492 31.6367 2.84529 31.5266L8.42185 29.6672C10.5079 30.823 12.8308 31.486 15.2126 31.6054C17.5945 31.7248 19.9721 31.2974 22.1632 30.3559C24.3543 29.4144 26.3009 27.9838 27.8537 26.1738C29.4065 24.3638 30.5244 22.2223 31.1217 19.9135C31.719 17.6046 31.7799 15.1897 31.2997 12.8537C30.8195 10.5177 29.8109 8.32267 28.3513 6.4367C26.8916 4.55073 25.0196 3.0239 22.8787 1.9732C20.7378 0.922494 18.3848 0.3758 16 0.375ZM16 30.375C13.4726 30.3758 10.9897 29.7102 8.80154 28.4453C8.70645 28.3906 8.59876 28.3615 8.48904 28.3609C8.42154 28.3609 8.35449 28.372 8.2906 28.3938L2.44997 30.3406C2.33985 30.3773 2.22168 30.3827 2.1087 30.356C1.99571 30.3294 1.89239 30.2718 1.81031 30.1897C1.72822 30.1076 1.67062 30.0043 1.64396 29.8913C1.6173 29.7783 1.62262 29.6601 1.65935 29.55L3.60622 23.7094C3.63431 23.6254 3.64423 23.5364 3.63534 23.4484C3.62645 23.3603 3.59895 23.2751 3.55466 23.1984C1.96982 20.459 1.33334 17.2731 1.74396 14.135C2.15457 10.9968 3.58933 8.08196 5.82565 5.84249C8.06198 3.60302 10.9748 2.16416 14.1124 1.74914C17.2499 1.33411 20.4367 1.96611 23.1784 3.5471C25.9201 5.12809 28.0634 7.56968 29.2758 10.4931C30.4882 13.4165 30.702 16.6583 29.8839 19.7156C29.0659 22.773 27.2617 25.4748 24.7514 27.4022C22.2411 29.3295 19.1648 30.3744 16 30.375Z" fill="#14010C" />
+                                  </svg>
+                            </a>
+                            <a class="m-auto nav-link  d-sm-block" id="social-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M36.5751 4.60834C36.2157 4.31046 35.7824 4.11539 35.3212 4.04379C34.8599 3.9722 34.3879 4.02675 33.9551 4.20167L4.09345 16.2567C3.6109 16.455 3.20008 16.7953 2.91551 17.2326C2.63095 17.6699 2.4861 18.1833 2.50021 18.7049C2.51431 19.2264 2.6867 19.7313 2.99448 20.1525C3.30227 20.5737 3.73089 20.8914 4.22345 21.0633L10.6668 23.3L14.1585 34.8433C14.1651 34.8667 14.1868 34.8817 14.1968 34.9033C14.2328 34.9954 14.2853 35.0802 14.3518 35.1533C14.4528 35.2662 14.5832 35.3487 14.7285 35.3917C14.7451 35.3983 14.7568 35.4133 14.7735 35.4167H14.7835L14.7885 35.4183C14.9174 35.4461 15.0514 35.4392 15.1768 35.3983C15.1901 35.395 15.2035 35.395 15.2185 35.39C15.3389 35.3478 15.4478 35.2782 15.5368 35.1867C15.5468 35.175 15.5635 35.1733 15.5735 35.1633L20.5951 29.62L27.9235 35.295C28.3685 35.6433 28.9168 35.8317 29.4818 35.8317C30.7051 35.8317 31.7601 34.975 32.0118 33.78L37.4485 7.08334C37.5407 6.63013 37.5081 6.16039 37.3543 5.72422C37.2005 5.28804 36.9312 4.9018 36.5751 4.60667V4.60834ZM15.9801 25.4917L14.8018 31.22L12.3435 23.09L24.5351 16.74L16.2068 25.07C16.0915 25.1853 16.0126 25.3319 15.9801 25.4917ZM30.3785 33.445C30.3472 33.5961 30.2775 33.7367 30.1763 33.8531C30.075 33.9696 29.9454 34.0581 29.8001 34.11C29.6583 34.1646 29.5048 34.1813 29.3546 34.1585C29.2044 34.1357 29.0627 34.0742 28.9435 33.98L21.0051 27.8317C20.8392 27.7036 20.631 27.6427 20.4222 27.6613C20.2134 27.6798 20.0192 27.7763 19.8785 27.9317L16.3835 31.7833L17.5601 26.0717L29.5418 14.0883C29.6821 13.9476 29.7675 13.7613 29.7825 13.5631C29.7975 13.3649 29.7412 13.1678 29.6238 13.0075C29.5063 12.8472 29.3354 12.7341 29.1418 12.6887C28.9483 12.6434 28.745 12.6686 28.5685 12.76L11.2968 21.7567L4.76845 19.4867C4.59536 19.4295 4.44439 19.3198 4.33655 19.1728C4.22872 19.0259 4.16937 18.8489 4.16679 18.6667C4.15848 18.4828 4.20761 18.3009 4.30736 18.1462C4.40711 17.9915 4.55253 17.8717 4.72345 17.8033L34.5801 5.74834C34.7331 5.68334 34.9012 5.66231 35.0655 5.68763C35.2298 5.71296 35.3838 5.78362 35.5101 5.89167C35.6357 5.99332 35.7306 6.12788 35.7842 6.28034C35.8377 6.43279 35.8479 6.59713 35.8135 6.75501L30.3785 33.4467V33.445Z" fill="#14010C" />
+                                </svg>
+                            </a>
+                            <a class="m-auto nav-link  d-sm-block" target="_blank">
+                                <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5965 0.0166008C11.5474 0.262704 9.79793 1.08432 8.36785 2.47207C7.08956 3.71247 6.34246 5.0692 5.94815 6.86585C5.78813 7.59497 5.78813 9.24821 5.94815 9.97732C6.34284 11.7758 7.08447 13.12 8.37082 14.3682C9.65156 15.6111 11.0504 16.3379 12.8956 16.7192C13.6503 16.8752 15.3505 16.8745 16.1085 16.7179C17.9615 16.3352 19.3078 15.6381 20.5936 14.3956C21.9146 13.1191 22.6506 11.7949 23.0495 9.97732C23.2095 9.24821 23.2095 7.59497 23.0495 6.86585C22.65 5.04543 21.911 3.7151 20.5954 2.44818C20.2021 2.06949 19.6629 1.61937 19.397 1.44788C18.4233 0.819831 17.2636 0.349763 16.1423 0.128676C15.6896 0.0394287 14.0189 -0.0341209 13.5965 0.0166008ZM16.0865 2.0354C18.542 2.62855 20.4209 4.45622 21.0808 6.89349C21.2978 7.69491 21.297 9.13607 21.0791 9.94968C20.4263 12.3877 18.5877 14.172 16.0735 14.8075C15.2419 15.0177 13.7558 15.0177 12.9241 14.8075C10.4087 14.1717 8.53574 12.3484 7.9062 9.9226C7.70873 9.16177 7.70873 7.6814 7.9062 6.92057C8.5971 4.25828 10.7948 2.32816 13.6288 1.89474C14.0809 1.82563 15.5711 1.91088 16.0865 2.0354ZM11.1152 18.8321C9.64131 19.0084 8.56649 19.3127 7.22974 19.9325C3.02265 21.8832 0.27278 25.8992 0.021555 30.4593C-0.0185327 31.1865 -0.0124745 31.2462 0.124803 31.4833C0.205172 31.6221 0.379638 31.7945 0.5135 31.8675L0.756346 32H14.4941C27.8554 32 28.2383 31.9967 28.4714 31.8814C28.8128 31.7123 29 31.3606 29 30.888C29 28.7733 28.2048 26.232 26.9651 24.3857C26.4386 23.6013 26.0925 23.18 25.3978 22.4776C23.3305 20.3875 20.6245 19.1037 17.6569 18.8048C16.7805 18.7167 11.9116 18.7369 11.1152 18.8321ZM18.2691 20.7628C19.9199 21.0818 21.4058 21.7081 22.6999 22.6302C23.4125 23.138 24.5501 24.2673 25.0834 24.9965C25.5806 25.6762 26.1933 26.836 26.4837 27.6469C26.6923 28.2295 27.0021 29.5929 27.0021 29.9284V30.1237H14.4988H1.99558V29.9284C1.99558 29.5958 2.30449 28.2321 2.51241 27.6469C2.79553 26.8501 3.41154 25.6851 3.91457 24.9953C4.46008 24.2472 5.72 23.0194 6.46246 22.5123C7.56874 21.7566 9.17141 21.0761 10.4063 20.8375C11.4003 20.6454 11.7832 20.6285 14.7566 20.6458C17.1851 20.6598 17.8513 20.682 18.2691 20.7628Z" fill="black" />
+                                </svg>
+                            </a>
+                            
+                        </div>
+                    </ul>
+                    <ul class="nav justify-content-around">
+                        <li class="nav-item">
+                            <button class="navbar-toggler navbar-button-menu" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon">
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+                        <a class="navnar-arhion-link" href="index.html">
+                            <img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+                        </a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <ul class="nav justify-content-around nav-social ">
+        
+                                <li class="nav-item social">
+                                    <img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+                                    <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                        WHATSAPP
+                                        <hr />
+                                    </a>
+                                </li>
+                                <li class="nav-item social">
+                                    <img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+                                    <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                        TELEGRAM
+                                        <hr />
+                                    </a>
+                                </li>
+        
+                                <li class="nav-item">
+                                    <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+                                        <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                        +7 (495) 799-75-29</a>
+                                </li>
+                            </ul>
+        
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" href="zakazat-proekt-doma/index.html">Индивидуальное проектирование</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" href="index.html#">Дизайн интерьеров</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" aria-current="page" href="index.html">Строительство домов</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" href="index.html#">Полезная информация</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                <a class="nav-link active" href="kontaktyi.html">Контакты</a>
+                            </li>
+                            <li class="nav-item ">
+                                <div class="links2">
+                                    <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+                                        <img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+                                    </a>
+                                    <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+                                        <img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+                                    </a>
+                                    <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+                                        <img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+                                    </a>
+                                    <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+                                        <img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>	
+
+
+        <!-- Интро основного типа -->
+        <section class="intro" style="background: url('img/derdom.png');">
+            <div class="intro__rect intro__rect--white">
+                <h1 class="intro__title intro__title--type2">Деревянные<br>дома</h1>
+            </div>
+        </section>
+
+
+        <section class="block_container block_text">
+            <p class="block_title-sub">Дерево - уникальный материал, созданный самой природой и не имеющий себе равных по экологичности. Считается, что у человека, живущего в деревянном доме, все будет хорошо и со здоровьем, и в личной жизни. Деревянный дом самый экологичный из всех существующих вариантов домов. Он обладает самой большой естественной паропроницаемостью, имея при этом отличную теплостойкость. Толщина стен деревянного дома может быть всего 100 мм с дополнительным наружным утеплением или от 200 мм, но с учетом повышенных теплопотерь.</p>
+             <div class="collapse" id="collapseExample">
+              <p class="block_title-sub">Строительство дома - это важное и волнующее событие в жизни каждого человека. Выбор материалов для строительства имеет огромное значение, и одним из наиболее привлекательных вариантов является деревянный дом. Давайте рассмотрим, почему строительство деревянного дома может быть отличным выбором.
+                <br> 1. Естественная красота: Дерево обладает уникальной естественной красотой. Его текстура, цвет и природные узоры придают дому неповторимый стиль и тепло. Каждый деревянный дом имеет свой характер и индивидуальность, что делает его особенно привлекательным для тех, кто ценит природную красоту.
+                <br> 2. Экологическая устойчивость: Дерево - это один из наиболее экологически чистых стройматериалов. При добыче и обработке древесины выбрасывается гораздо меньше загрязняющих веществ, чем при производстве более традиционных стройматериалов, таких как бетон и металл. Это означает, что строительство деревянного дома менее вредно для окружающей среды.
+                <br> 3. Естественная теплоизоляция: Дерево обладает отличными теплоизоляционными свойствами. Оно сохраняет тепло в зимний период и обеспечивает прохладу в жаркое лето. Это позволяет снизить энергозатраты на отопление и кондиционирование воздуха, что способствует экономии энергии и снижению затрат на коммунальные услуги.
+                <br> 4. Прочность и долговечность: Правильно обработанная и ухаживаемая древесина может прослужить десятилетиями. Древесные конструкции могут выдерживать различные погодные условия, включая сильные ветры и снегопады. При необходимости ремонта, деревянные элементы легко заменяются или восстанавливаются.
+                <br> 5. Особый микроклимат: Дерево способствует созданию особого микроклимата внутри дома. Его натуральные свойства поглощения и удержания влаги способствуют созданию комфортной атмосферы внутри помещения. Это может оказать положительное воздействие на здоровье и благополучие обитателей.
+                <br> 6. Быстрое возведение: Деревянные дома часто строятся быстрее, чем дома из более традиционных материалов. Это позволяет сэкономить время и ресурсы при строительстве.
+                <br> В заключение, строительство деревянного дома - это не только экологически устойчивый выбор, но и возможность создать уютное и красивое жилище, которое будет радовать вас и ваших близких на протяжении многих лет.</p>
+             </div>
+              <a href="#" class="block_title-sub_link" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Подробнее</a>
+        </section>
+
+
+        <!-- Блок "Стоимость, комплектации и сроки" -->
+        <section class="block_container">
+            <p class="block_title-above block_title-above--font6rem">Ваш дом — наша забота</p>
+            <h2 class="block_title">Стоимость, комплектации и сроки</h2>
+
+            <!-- Селектор (Десктоп) -->
+            <div class="selector only-pc">
+                <!-- Переключатели -->
+                <div class="selector__items_container">
+                    <a data-target="panel1-1" class="selector__item js-panel-toggler active"><img src="assets/icons/arrow-right.svg">Черновые работы</a>
+                    <a data-target="panel1-2" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Чистовые работы</a>
+                </div>
+
+                <!-- Контент -->
+                <!-- Черновые -->
+                <div id="panel1-1" class="selector_content-includes js-content-panel">
+                    <p class="selector_content-includes__price">от 15 000 ₽</p>
+                    <p class="selector_content-includes__text">Что включает?</p>
+
+                    <div class="selector_content-includes__checks_container">
+                        <div class="selector_content-includes__check_item">
+                            <img src="assets/icons/check.svg">
+                            <p>Черновые материалы</p>
+                        </div>
+                        <div class="selector_content-includes__check_item">
+                            <img src="assets/icons/check.svg">
+                            <p>Черновые работы</p>
+                        </div>
+                        <div class="selector_content-includes__check_item">
+                            <img src="assets/icons/check.svg">
+                            <p>Контроль качества</p>
+                        </div>
+                    </div>
+
+                    <a class="button_type2" href="#">
+                        <p>Расчитать стоимость<br>отделки</p>
+                        <svg width="401" height="80" viewBox="0 0 401 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="hoverRect" cx="361" cy="40" r="39.5" stroke="#A78B73" />
+                            <line y1="39.5" x2="360" y2="39.5" stroke="#14010C" />
+                            <path d="M286 25.5H285.5V26.5H286V25.5ZM313.354 26.3536C313.549 26.1583 313.549 25.8417 313.354 25.6464L310.172 22.4645C309.976 22.2692 309.66 22.2692 309.464 22.4645C309.269 22.6597 309.269 22.9763 309.464 23.1716L312.293 26L309.464 28.8284C309.269 29.0237 309.269 29.3403 309.464 29.5355C309.66 29.7308 309.976 29.7308 310.172 29.5355L313.354 26.3536ZM286 26.5H313V25.5H286V26.5Z" fill="#14010C" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Чистовые -->
+                <div id="panel1-2" class="selector_content-includes js-content-panel" style="display: none;">
+                    <p class="selector_content-includes__price">от 20 000 ₽</p>
+                    <p class="selector_content-includes__text">Что включает?</p>
+
+                    <div class="selector_content-includes__checks_container">
+                        <div class="selector_content-includes__check_item">
+                            <img src="assets/icons/check.svg">
+                            <p>Чистовые материалы</p>
+                        </div>
+                        <div class="selector_content-includes__check_item">
+                            <img src="assets/icons/check.svg">
+                            <p>Чистовые работы</p>
+                        </div>
+                        <div class="selector_content-includes__check_item">
+                            <img src="assets/icons/check.svg">
+                            <p>Контроль качества</p>
+                        </div>
+                    </div>
+
+                    <a class="button_type2" href="#">
+                        <p>Расчитать стоимость<br>отделки</p>
+                        <svg width="401" height="80" viewBox="0 0 401 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="hoverRect" cx="361" cy="40" r="39.5" stroke="#A78B73" />
+                            <line y1="39.5" x2="360" y2="39.5" stroke="#14010C" />
+                            <path d="M286 25.5H285.5V26.5H286V25.5ZM313.354 26.3536C313.549 26.1583 313.549 25.8417 313.354 25.6464L310.172 22.4645C309.976 22.2692 309.66 22.2692 309.464 22.4645C309.269 22.6597 309.269 22.9763 309.464 23.1716L312.293 26L309.464 28.8284C309.269 29.0237 309.269 29.3403 309.464 29.5355C309.66 29.7308 309.976 29.7308 310.172 29.5355L313.354 26.3536ZM286 26.5H313V25.5H286V26.5Z" fill="#14010C" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Блок "Отделка стен" -->
+        <section class="block_container">
+            <p class="block_title-above block_title-above--deep block_title-above--font6rem">атмосфера</p>
+            <h2 class="block_title">Отделка стен</h2>
+
+            <p class="block_title-sub">
+                Стены - это не просто разделители пространства, но и холст для выражения стиля и характера помещения. Выбор материалов и отделки стен может значительно повлиять на общую атмосферу. Например, кирпичные стены придают интерьеру смелости и индустриального шарма, в то время как гипсокартонные стены могут обеспечить гладкую поверхность для минималистичного дизайна. Кроме того, цвет, текстура и использование декоративных элементов, таких как обои или панели, могут придать стенам уникальный вид.
+            </p>
+
+            <!-- Селектор (Десктоп) -->
+            <div class="selector only-pc">
+                <!-- Переключатели -->
+                <div class="selector__items_container">
+                    <a data-target="panel2-1" class="selector__item js-panel-toggler active">
+                        <img src="assets/icons/arrow-right.svg">
+                        Штукатурка
+                    </a>
+                    <a data-target="panel2-2" class="selector__item js-panel-toggler">
+                        <img src="assets/icons/arrow-right.svg">
+                        Облицовачный камень
+                    </a>
+                    <a data-target="panel2-3" class="selector__item js-panel-toggler">
+                        <img src="assets/icons/arrow-right.svg">
+                        Обои
+                    </a>
+                    <a data-target="panel2-4" class="selector__item js-panel-toggler">
+                        <img src="assets/icons/arrow-right.svg">
+                        Покраска
+                    </a>
+                    <a data-target="panel2-5" class="selector__item js-panel-toggler">
+                        <img src="assets/icons/arrow-right.svg">
+                        Структурная шпаклевка
+                    </a>
+                    <a data-target="panel2-6" class="selector__item js-panel-toggler">
+                        <img src="assets/icons/arrow-right.svg">
+                        Венецианская штукатурка
+                    </a>
+                    <a data-target="panel2-7" class="selector__item js-panel-toggler">
+                        <img src="assets/icons/arrow-right.svg">
+                        Отделка стен тканью
+                    </a>
+                </div>
+
+                <!-- Контент -->
+                <!-- Штукатурка -->
+                <div id="panel2-1" class="selector_content-checks js-content-panel">
+                    <h3 class="selector_content-checks__title">Штукатурка</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Гипсовая штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Штукатурка под покраску</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Цементная штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Терракотовая штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Декоративная штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Штукатурка с эффектом старины</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Облицовочный камень -->
+                <div id="panel2-2" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Облицовочнный камень</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Плитка под кирпич</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Натуральный камень</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Плитка из искусственного камня</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Мозаика</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Деревянная облицовка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Стеклянная облицовка</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Обои -->
+                <div id="panel2-3" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Обои</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Обои с бумажным основанием</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Стеклообои</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Виниловые обои</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Текстильные обои</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Флизелиновые обои</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Текстурные обои</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Покраска -->
+                <div id="panel2-4" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Покраска</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Акриловая покраска</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Латексная покраска</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Масляная покраска</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Термопластичная покраска</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Эмалевая покраска</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Антиграффити покрытия</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Структурная шпаклевка -->
+                <div id="panel2-5" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Структурная шпаклевка</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Грубая текстурная штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Гипсовая штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Штукатурка "ржавая стена"</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Стиль "шаблоны"</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Штукатурка "каменная стена"</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Скрэппи и гроути</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Венецианская штукатурка -->
+                <div id="panel2-6" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Венецианская штукатурка</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Классическая штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Текстурная штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Металлическая штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Античная венецианская штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Двойная отделка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Венецианская штукатурка с рисунками</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отделка стен тканью -->
+                <div id="panel2-7" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Отделка стен тканью</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые обои</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Отделка с использованием системы натяжения</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые панели</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые панели с рисунками или узорами</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Автоматический слайдер -->
+        <section class="block_auto-slider owl-carousel">
+            <img src="assets/sliders/otdelka_walls/1.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/2.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/3.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/4.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/5.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/6.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/7.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/8.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/9.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/10.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/11.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/12.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/13.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/14.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_walls/15.jpg" class="block_auto-slider__item">
+        </section>
+
+
+        <!-- Блок "Функциональное покрытие" -->
+        <section class="block_container">
+            <p class="block_title-above block_title-above--deep block_title-above--font6rem only-pc">Функциональное покрытие</p>
+            <p class="block_title-above block_title-above--deeper only-mobile">Покрытие</p>
+            <h2 class="block_title">Полы</h2>
+
+            <p class="block_title-sub">
+                Полы являются неотъемлемой частью внутреннего отдела и важны для комфорта и функциональности помещения. Выбор материала пола зависит от предполагаемой нагрузки, стиля и бюджета. Деревянные полы придают тепло и природную красоту, ламинат - прочность и доступность, а кафель или камень - устойчивость к влаге и износу. Отделка полов также может включать в себя ковровое покрытие, что придает помещению мягкость и звукоизоляцию.
+            </p>
+
+            <!-- Селектор (Десктоп) -->
+            <div class="selector only-pc">
+                <!-- Переключатели -->
+                <div class="selector__items_container">
+                    <a data-target="panel3-1" class="selector__item js-panel-toggler active"><img src="assets/icons/arrow-right.svg">Стяжка пола</a>
+                    <a data-target="panel3-2" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Плитка на пол</a>
+                    <a data-target="panel3-3" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Износостойкий ковролин</a>
+                    <a data-target="panel3-4" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Пробка</a>
+                    <a data-target="panel3-5" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Натуральный линолеум</a>
+                    <a data-target="panel3-6" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Венецианская штукатурка</a>
+                    <a data-target="panel3-7" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Отделка полов тканью</a>
+                </div>
+
+                <!-- Контент -->
+
+                <!-- Стяжка пола -->
+                <div id="panel3-1" class="selector_content-checks js-content-panel">
+                    <h3 class="selector_content-checks__title">Стяжка пола</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Цементно-песчаная стяжка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Армирующая стяжка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Ангидритная стяжка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Сухая стяжка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Полимерная стяжка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Плавающая стяжка</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Плитка на пол -->
+                <div id="panel3-2" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Плитка на пол</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Керамическая плитка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Мраморная плитка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Гранитная плитка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Терракота и керамогранит</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Порцелановая плитка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Ламинатная плитка</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Износостойкий ковролин -->
+                <div id="panel3-3" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Износостойкий ковролин</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Беспробковый ковролин</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Коммерческий ковролин с низким ворсом</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Коммерческий ковролин</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Ворсистый ковролин</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Модульный ковролин</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Влагостойкий ковролин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Пробка -->
+                <div id="panel3-4" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Пробка</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Паркет из пробки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Штучная пробка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Клик-пробка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Самоклеящаяся пробка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Плитки из пробки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Звукоизоляционная пробка</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Натуральный линолеум -->
+                <div id="panel3-5" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Натуральный линолеум</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Листовой натуральный линолеум</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Плитки из натурального линолеума</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Линолеум с тиснением</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Линолеум с изображением</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Линолеум с звукоизоляцией</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Линолеум с покрытием для защиты</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Венецианская штукатурка -->
+                <div id="panel3-6" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Венецианская штукатурка</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Классическая штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Текстурная штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Металлическая штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Античная венецианская штукатурка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Двойная отделка</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Венецианская штукатурка с рисунками</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отделка полов тканью -->
+                <div id="panel3-7" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Отделка полов тканью</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые полы</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Отделка с использованием системы натяжения</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые панели</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые панели с рисунками или узорами</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Автоматический слайдер -->
+        <section class="block_auto-slider owl-carousel">
+            <img src="assets/sliders/otdelka_floors/1.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/2.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/3.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/4.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/5.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/6.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/7.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/8.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/9.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/10.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/11.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_floors/12.jpg" class="block_auto-slider__item">
+        </section>
+
+
+        <!-- Блок "Дизайн интерьера" -->
+        <section class="block_gradient block_gradient--topdown-mask">
+            <div class="block_gradient__content">
+                <p class="block_title-above">Красота и уют</p>
+                <h2 class="block_title">Дизайн интерьера</h2>
+                <p class="block_title-sub block_title-sub--margin25 only-pc">Добро пожаловать в мир дизайна интерьера, где каждый уголок вашего дома становится произведением искусства. Мы - команда опытных дизайнеров, готовых сделать ваш дом уникальным и уютным.</p>
+                <p class="block_title-sub block_title-sub--margin25 only-mobile">Добро пожаловать в мир дизайна интерьера, где каждый уголок вашего дома становится произведением искусства.</p>
+
+                <div class="block_gradient__mark">
+                    <b>Сделаем бесплатно</b>
+                    <p>*при заказе отделки</p>
+                </div>
+
+                <a class="button_type2" href="#">
+                    <p>Рассчитать смету</p>
+                    <svg width="44.625rem" height="11.625rem" viewBox="0 0 714 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="hoverRect" d="M713.5 93.4197C713.5 144.204 672.316 185.373 621.513 185.373C570.71 185.373 529.526 144.204 529.526 93.4197C529.526 42.6357 570.71 1.4668 621.513 1.4668C672.316 1.4668 713.5 42.6357 713.5 93.4197Z" stroke="#A78B73" />
+                        <line y1="92.9194" x2="623.363" y2="92.9194" stroke="#14010C" />
+                        <path d="M557 68.8823H556.5V69.8823H557V68.8823ZM622.094 69.7359C622.29 69.5406 622.29 69.224 622.094 69.0288L618.913 65.8468C618.717 65.6515 618.401 65.6515 618.205 65.8468C618.01 66.0421 618.01 66.3586 618.205 66.5539L621.034 69.3823L618.205 72.2108C618.01 72.406 618.01 72.7226 618.205 72.9179C618.401 73.1131 618.717 73.1131 618.913 72.9179L622.094 69.7359ZM557 69.8823H621.741V68.8823H557V69.8823Z" fill="#14010C" />
+                    </svg>
+                </a>
+            </div>
+            <img src="assets/images/interior-gradient1.jpg" class="block_gradient__image">
+        </section>
+
+
+        <!-- Блок "Потолки" -->
+        <section class="block_container">
+            <p class="block_title-above block_title-above--deep block_title-above--font6rem">Потолки</p>
+            <h2 class="block_title">Потолки</h2>
+
+            <p class="block_title-sub">
+                Потолки могут быть не только функциональными, но и декоративными элементами. Выбор потолочных материалов, таких как гипсокартон, натяжные потолки или деревянные балки, может влиять на визуальные пропорции помещения и внешний вид. Высота потолков и их отделка, такие как покраска или использование молдингов и розеток, могут добавить архитектурный интерес к помещению.
+            </p>
+
+            <!-- Селектор (Десктоп) -->
+            <div class="selector only-pc">
+                <!-- Переключатели -->
+                <div class="selector__items_container">
+                    <a data-target="panel4-1" class="selector__item js-panel-toggler active"><img src="assets/icons/arrow-right.svg">Натяжные потолки</a>
+                    <a data-target="panel4-2" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Гипсокартон</a>
+                    <a data-target="panel4-3" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Подвесные потолки</a>
+                </div>
+
+                <!-- Контент -->
+
+                <!-- Натяжные потолки -->
+                <div id="panel4-1" class="selector_content-checks js-content-panel">
+                    <h3 class="selector_content-checks__title">Натяжные потолки</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды натяжных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Глянцевые натяжные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Фотопечать на натяжных потолках</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Матовые натяжные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Световые натяжные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Сатиновые натяжные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые натяжные потолки</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Гипсокартон -->
+                <div id="panel4-2" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Гипсокартон</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды гипсокартона, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов гипсокартона, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Стандартный гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Звукоизоляционный гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Влагостойкий гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Криволинейный гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Огнестойкий гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Светопрозрачный гипсокартон</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Подвесные потолки -->
+                <div id="panel4-3" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Подвесные потолки</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды подвесных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов подвесного потолка, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Армстронговский потолок</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Минеральные волокнистые плиты</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Металлические потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Подвесные потолки из гипсокартона</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые подвесные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Подвесные потолки с подсветкой</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Автоматический слайдер -->
+        <section class="block_auto-slider owl-carousel">
+            <img src="assets/sliders/otdelka_ceilings/1.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/2.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/3.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/4.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/5.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/6.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/7.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/8.jpg" class="block_auto-slider__item">
+        </section>
+
+
+        <!-- Блок "Внутренняя отделка" -->
+        <section class="block_gradient block_gradient--topdown-mask">
+            <div class="block_gradient__content">
+                <p class="block_title-above">Качество</p>
+                <h2 class="block_title">Внутренняя отделка</h2>
+                <p class="block_title-sub block_title-sub--margin25 only-pc">Добро пожаловать в мир, где каждая деталь имеет значение. Мы специализируемся на внутренней отделке домов, превращая пустые стены в уютные и стильные интерьеры, которые отражают вашу личность и комфорт.</p>
+                <p class="block_title-sub block_title-sub--margin25 only-mobile">Добро пожаловать в мир, где каждая деталь имеет значение. Мы превращаем пустые стены в уютные интерьеры.</p>
+
+                <div class="block_gradient__mark only-pc">
+                    <b>Сделаем бесплатно</b>
+                    <p>*при заказе индивидуального проектирования</p>
+                </div>
+
+                <a class="button_type2" href="#">
+                    <p>Рассчитать стоимость</p>
+                    <svg width="44.625rem" height="11.625rem" viewBox="0 0 714 186" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="hoverRect" d="M713.5 93.4197C713.5 144.204 672.316 185.373 621.513 185.373C570.71 185.373 529.526 144.204 529.526 93.4197C529.526 42.6357 570.71 1.4668 621.513 1.4668C672.316 1.4668 713.5 42.6357 713.5 93.4197Z" stroke="#A78B73" />
+                        <line y1="92.9194" x2="623.363" y2="92.9194" stroke="#14010C" />
+                        <path d="M557 68.8823H556.5V69.8823H557V68.8823ZM622.094 69.7359C622.29 69.5406 622.29 69.224 622.094 69.0288L618.913 65.8468C618.717 65.6515 618.401 65.6515 618.205 65.8468C618.01 66.0421 618.01 66.3586 618.205 66.5539L621.034 69.3823L618.205 72.2108C618.01 72.406 618.01 72.7226 618.205 72.9179C618.401 73.1131 618.717 73.1131 618.913 72.9179L622.094 69.7359ZM557 69.8823H621.741V68.8823H557V69.8823Z" fill="#14010C" />
+                    </svg>
+                </a>
+            </div>
+            <img src="assets/images/interior-gradient1.jpg" class="block_gradient__image">
+        </section>
+
+
+        <!-- Блок "Декоративные элементы" -->
+        <section class="block_container">
+            <p class="block_title-above block_title-above--deep block_title-above--font6rem">красота в деталях</p>
+            <h2 class="block_title">Декоративные элементы</h2>
+
+            <p class="block_title-sub only-pc">
+                Ваш интерьер - это холст, на котором вы можете реализовать свои самые смелые идеи. Декоративные элементы помогут вам преобразить обыденные пространства в уникальные и вдохновляющие места. Детали могут изменить всю атмосферу интерьера. Они придают пространству характер и гармонию, делая его более живым и интересным.
+            </p>
+
+            <p class="block_title-sub only-mobile">
+                Ваш интерьер - это холст, на котором вы можете реализовать свои самые смелые идеи. Декоративные элементы помогут вам преобразить обыденные пространства в уникальные и вдохновляющие места.
+            </p>
+
+            <!-- Селектор (Десктоп) -->
+            <div class="selector only-pc">
+                <!-- Переключатели -->
+                <div class="selector__items_container">
+                    <a data-target="panel5-1" class="selector__item js-panel-toggler active"><img src="assets/icons/arrow-right.svg">Молдинги</a>
+                    <a data-target="panel5-2" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Сандрики</a>
+                    <a data-target="panel5-3" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Плинтуса</a>
+                    <a data-target="panel5-4" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Колонны</a>
+                </div>
+
+                <!-- Контент -->
+
+                <!-- Натяжные потолки -->
+                <div id="panel4-1" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Натяжные потолки</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды натяжных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Глянцевые натяжные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Фотопечать на натяжных потолках</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Матовые натяжные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Световые натяжные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Сатиновые натяжные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые натяжные потолки</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Гипсокартон -->
+                <div id="panel4-2" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Гипсокартон</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды гипсокартона, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов гипсокартона, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Стандартный гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Звукоизоляционный гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Влагостойкий гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Криволинейный гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Огнестойкий гипсокартон</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Светопрозрачный гипсокартон</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Подвесные потолки -->
+                <div id="panel4-3" class="selector_content-checks js-content-panel" style="display: none;">
+                    <h3 class="selector_content-checks__title">Подвесные потолки</h3>
+                    <p class="selector_content-checks__text">Наша компания предлагает различные виды подвесных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов подвесного потолка, которые мы с радостью для вас выполним: </p>
+
+                    <div class="block_checks__container">
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Армстронговский потолок</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Минеральные волокнистые плиты</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Металлические потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Подвесные потолки из гипсокартона</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Тканевые подвесные потолки</p>
+                        </div>
+                        <div class="block_checks__item">
+                            <img src="assets/icons/check.svg">
+                            <p>Подвесные потолки с подсветкой</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Автоматический слайдер -->
+        <section class="block_auto-slider owl-carousel">
+            <img src="assets/sliders/otdelka_ceilings/1.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/2.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/3.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/4.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/5.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/6.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/7.jpg" class="block_auto-slider__item">
+            <img src="assets/sliders/otdelka_ceilings/8.jpg" class="block_auto-slider__item">
+        </section>
+
+
+        <!-- Блок с Консультацией -->
+        <section class="block_container block_consult block_container--accentcolor only-pc">
+            <div class="block_consult__content">
+                <h2 class="block_title">Нужна консультация?</h2>
+                <p class="block_consult__text">Оставьте контакты и мы с вами свяжемся для обсуждения деталей</p>
+                <div class="block_consult__feedback_container">
+                    <div class="block_consult__contacts">
+                        <div class="block_consult__contact-item">
+                            <img src="assets/icons/nav/whatsapp.svg">
+                            <a href="" class="button_type1 button_type1--min">
+                                <p>WHATSAPP</p>
+                                <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73" />
+                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536" />
+                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="block_consult__contact-item">
+                            <img src="assets/icons/nav/telegram.svg">
+                            <a href="" class="button_type1 button_type1--min">
+                                <p>TELEGRAM</p>
+                                <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73" />
+                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536" />
+                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="block_consult__contact-item">
+                            <img src="assets/icons/nav/phone.svg">
+                            <p>+7 (495) 799-75-29</p>
+                        </div>
+                    </div>
+                    <div class="block_consult__contacts">
+                        <input placeholder="Имя" type="text">
+                        <input placeholder="Телефон" type="text">
+                        <div class="block_consult__contact-item">
+                            <a href="" class="button_type1">
+                                <p>Отправить</p>
+                                <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73" />
+                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536" />
+                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/arhion_plate.jpg" alt="Arhion" class="block_consult__plate">
+        </section>
+
+
+        <!-- Футер -->
+        <footer>
+          <div class="wrapper-footer">
+            <div class="wrapper-logo-desc-politic">
+              <svg width="67" height="70" viewBox="0 0 67 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M66.9999 69.9995C63.057 69.8506 59.9529 68.8347 57.5293 67.4018C53.3476 64.9412 51.1538 61.2413 50.0494 58.5751C49.2525 56.6477 49.0197 55.2595 49.0197 55.2595H25.5923C27.407 50.1059 32.2841 46.6562 37.7582 46.6562H55.1235C56.9532 46.6562 58.5918 47.7883 59.2395 49.4952L66.9999 69.9995Z" fill="#A78B73"/>
+                <path d="M54.5207 34.8421H48.8109C47.8199 34.8421 46.8588 34.6842 45.9515 34.3804H45.9455L45.8947 34.3655C43.6621 33.6297 41.8892 31.9168 41.0773 29.7153L39.3104 24.934L29.8278 0H38.3433C40.17 0 41.8086 1.12903 42.4563 2.83301L50.8614 24.934L54.5207 34.8421Z" fill="#A78B73"/>
+                <path d="M29.0477 0C27.224 0 25.5884 1.12605 24.9407 2.82705L16.5774 24.8238L12.8822 34.8421L8.86176 45.7541H8.8349L3.36084 60.2141L0 69.0974C0.182071 69.0914 0.364142 69.0854 0.540243 69.0706C13.6523 67.7419 17.9802 54.3574 17.9802 54.3574L21.159 45.7541L26.842 29.6646L27.5344 27.7045L31.0535 17.7309L33.0772 11.9129L33.2921 11.2933L29.0477 0Z" fill="#A78B73"/>
+              </svg>	
+              <p>Архитектурно-<br />строительная группа</p>
+              <a href="proekt_m-407.html#" class="politic-desctop" style="border-bottom: 0;">Политика конфиденциальности</a>
+            </div>
+            <div class="wrapper-list-item">
+              <div>
+                <a href="proekt_m-407.html#">Проектирование</a>
+              </div>
+              <div>
+                <a href="proekt_m-407.html#">Каталог проектов</a>
+              </div>
+              <div>
+                <a href="proekt_m-407.html#">Контакты</a>
+              </div>
+              <div>
+                <a href="proekt_m-407.html#">Строительство</a>
+              </div>
+              <div>
+                <a href="proekt_m-407.html#">О компании</a>
+              </div>
+              <div>
+                <a href="proekt_m-407.html#">Полезные статьи</a>
+              </div>
+            </div>
+            <div class="wrapper-contacts-social">
+              <a href="tel:+7 (495) 799-75-29" class="tel-footer">+7 (495) 799-75-29</a>
+              <p>Рабочее время: Ежедневно 10:00 - 21:00</p>
+              <div class="wrapper-social-footer">
+                <a href="proekt_m-407.html#"><img src="../img/footer-img/vk-gold.svg" alt=""></a>
+                <a href="proekt_m-407.html#"><img src="../img/footer-img/instagram-gold.svg" alt=""></a>
+                <a href="proekt_m-407.html#"><img src="../img/footer-img/whatsapp-gold.svg" alt=""></a>
+              </div>
+              <a href="proekt_m-407.html#" class="politic-mobile">Политика конфиденциальности</a>
+            </div>
+          </div>
+          <div class="footer-end text-center">Архитектурно-строительная группа ARHION © 2001 - 2023</div>
+        </footer> 
+
+    </div>
+
+    <!-- Скрипт активации слайдеров -->
+    <script>
+        $(document).ready(function () {
+            $(".block_auto-slider").owlCarousel({
+                loop: true,
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                smartSpeed: 800,
+                responsive: {
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        });
+    </script>
+    <link rel="stylesheet" href="library/ui/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

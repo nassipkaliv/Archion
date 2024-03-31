@@ -79,7 +79,6 @@ header {
 }
 
 .nav-link.logo-wa {
-  border-left: 1px solid black;
   height: 32px;
   padding-right: 0px;
   padding-left: 4px;
@@ -87,7 +86,6 @@ header {
 }
 
 #navbar-toggler-header {
-  border: 2px solid black;
   margin-left: 5px;
 }
 
@@ -205,6 +203,10 @@ header {
 /* .offcanvas-body .nav-item:last-of-type .nav-link {
   padding-bottom: 24px;
 } */
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,<svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.6666 23.9998V27.3332H0.333252V23.9998H33.6666ZM33.6666 12.3332V15.6665H0.333252V12.3332H33.6666ZM33.6666 0.666504V3.99984H0.333252V0.666504H33.6666Z" fill="%2314010C" /></svg>') !important;
+}
 
 .nav-link.nav-link--mod {
   padding: 0;

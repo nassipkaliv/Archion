@@ -302,6 +302,7 @@ li {
 }
 
 .block_title-sub {
+  font-family: "Montserrat", sans-serif;
   color: #343536;
   font-size: 1.25rem;
   font-weight: 400;
@@ -315,6 +316,7 @@ li {
 }
 
 .block_title-sub_link {
+  font-family: "Montserrat", sans-serif;
   margin-top: 0.6rem;
   text-decoration: underline;
   color: #828282;
@@ -1392,6 +1394,7 @@ hr {
     margin-bottom: -0.75rem;
   }
   .block_title-sub {
+    font-family: "Montserrat", sans-serif;
     font-size: 0.875rem;
     line-height: 1.375rem;
     margin-top: 1rem;
