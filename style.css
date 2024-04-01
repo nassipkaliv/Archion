@@ -1,4 +1,4 @@
-/*.expecto-callback-btn-wrapper {display: none !important;}*/
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova');
 
 .p-wrapper{background:white!important}
 
@@ -1877,6 +1877,45 @@ a {
 
 #detailed_text {
   display: none;
+}
+
+.locationBigNumber {
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 700;
+  font-size: 260px;
+  color: rgba(167, 139, 115, 0.5);
+}
+
+.locationBigNumber.small {
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 83%;
+  text-align: right;
+  color: rgba(167, 139, 115, 0.5);
+  position: relative;
+  top: -50px;
+  right: -35px;
+}
+
+.locationBigNumberText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  color: #343536;
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+  white-space: nowrap;
+}
+
+.locationBigNumberText.left {
+  left: 0;
+}
+
+.city {
+  font-family: "Montserrat", sans-serif;
+  color: #a78b73;
 }
 
 @media screen and (max-width: 557px) {
