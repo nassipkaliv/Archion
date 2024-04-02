@@ -332,7 +332,7 @@ li {
   position: relative;
   background: #A78B73;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   align-items: center;
 }
@@ -707,7 +707,7 @@ hr {
   max-width: 1920px;
   box-sizing: border-box;
   display: flex;
-  margin: 0 auto;
+  margin: 0;
   height: 43.2rem;
   position: relative;
 }
