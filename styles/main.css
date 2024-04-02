@@ -1317,7 +1317,19 @@ hr {
   display: none;
 }
 
+.select_active {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #a78b73;
+}
 
+.vertical-line {
+  position: absolute;
+  left: 0;
+}
+
+.statyaItem {
+  margin-bottom: 210px;
+}
 
 
 @media (max-width: 1651px) {
