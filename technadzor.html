@@ -33,232 +33,100 @@
 
 <script src="library/slick-1.8.1/slick/slick.min.js"></script>
 <link rel="stylsheet" href="style.css">
+<link rel="stylesheet" href="styles/main.css">
 
 </head>
 
 
 <body class="projects">
 
-<header class="b-header topbar">
-    <nav class="navbar navbar-light row ">
-        <div class="col-12 container-fluid flex-nowrap">
-            <a class="navbar-brand navbar-link" href="https://www.hmkmos.ru/">
-                <img class="navbar-logo-img-gold" src="img/header/arhion-logo-header.svg" alt="arhion-logo-heeader">
-            </a>
-
-            <div class="pl hidden-mobile">
-                <input type="button" onclick="fu()" id="btn-project" value="Подобрать проект" class="btn_project12 ppp" data-bs-toggle="modal" data-bs-target="#cons-project" aria-current="page">
-            </div>
-
-            <div class="modal fade" id="cons-project" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 style="font-weight: bold;" class="modal-title consult_form">Подобрать проект</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body form_order_modal card clearfix">
-                            <div class="card-body">
-                                <form id='consultform' method="post" class="consultform" enctype="multipart/form-data" novalidate="novalidate">
-                                    <input type="hidden" name="Formname" value="constop">
-                                    <input type="hidden" name="project_name" value="hmkmos.ru">
-                                    <input type="hidden" name="admin_email" value="msk@hmkmos.ru">
-                                    <input type="hidden" name="form_subject" value="Получить консультацию">
-                                    <input type="hidden" name="Page" value="https://www.hmkmos.ru/">
-                                    <div class="row">
-                                        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
-                                            <div class="z-form">
-                                                <div class="info"></div>
-                                                <a rel="nofollow" class="anchor_tags" name="form-zakaz-uslugi"></a>
-                                                <div class="row">
-                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                                        <div class="form-group mt-3">
-                                                            <label for="ConsName" class="form-label">Ваше имя<sup>*</sup></label>
-                                                            <input type="text" class="form-control" name="ConsName" id="ConsName" placeholder="Ваше имя" value="" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6">
-                                                        <div class="form-group mt-3">
-                                                            <label for="ConsEmail" class="form-label">Ваш Email<sup>*</sup></label>
-                                                            <input type="email" class="form-control" name="ConsMail" id="ConsEmail" placeholder="Ваш Email" value="" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group mt-3">
-                                                    <label for="ConsPhone" class="form-label">Ваш телефон<sup>*</sup></label>
-                                                    <input type="text" class="form-control" name="ConsPhone" id="ConsPhone" placeholder="Ваш телефон" value="" required>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                        <div class="form-group">
-                                                            <label for="InputText" class="form-label">Комментарий<sup>*</sup></label>
-                                                            <textarea class="form-control" name="Text" placeholder="Сообщение" rows="4"></textarea>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-center my-2">
-                                                    <input class="btn btn-gold text-light text-uppercase px-5" id="topcons" type="submit" name="web_form_submit" value="Отправить" style="font-size: 24px; line-height: 42px; font-weight: 700; box-shadow: 0px 0px 6px 2px rgb(41 41 42 / 26%); border: none !important;">
-                                                </div>
-                                                <div class="text-center">
-                                                    <small>
-                                                        <label for="agree_individual">
-                                                            <input style="position: relative; top: 3px;" id="agree_individual" type="checkbox" value="146" name="AGREEMENT" checked="">
-                                                            Отправляя форму вы соглашаетесь с
-                                                            <a href="termsofuse.html">правилами обработки персональных данных</a>
-                                                        </label>
-                                                    </small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="modal-footer clearfix"></div>
-                    </div>
-                    <!-- /.modal-content -->
+    <header class="header header--white header--mobile-default">
+        <div class="header__content">
+            <img class="logo only-pc" src="assets/icons/logo_white.svg" alt="">
+            <img class="logo only-mobile" src="assets/icons/logo.svg" alt="">
+            <nav class="header__nav">
+                <p class="text_20-400 mb-0">+7 (495) 799-75-29 | Ежедневно 10:00-21:00</p>
+                <div class="header__icons">
+                    <a href="#"><img src="assets/icons/nav/whatsapp.svg" alt="Whatsapp"></a>
+                    <a href="#"><img src="assets/icons/nav/telegram.svg" alt="Telegram"></a>
+                    <a href="#"><img src="assets/icons/nav/user.svg" alt="Профиль"></a>
+                    <a href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><img src="assets/icons/nav/menu.svg" alt="Меню"></a>
                 </div>
-            </div>
-            <script>
-                // function fu(){
-
-                // 	var consult_form = document.querySelector('.consult_form');
-
-
-                // 	if (document.getElementById('ButtonProject')) {
-                // 		consult_form.innerHTML = 'Подобрать проект';
-                // 	}else{
-                // 		consult_form.innerHTML = 'Получить консультацию';
-                // 	}
-
-                // };
-
-                //  event.preventDefault();
-
-                function fu() {
-                    var consult_form = document.querySelector('.consult_form');
-
-                    document.getElementById('btn-project').onclick = function() {
-                        consult_form.innerHTML = 'Подобрать проект';
-                        event.preventDefault();
-                    };
-
-                    let btnSendDataUser = document.querySelector('#topcons');
-                    let wrapperModal = document.querySelector('#cons-project');
-                    btnSendDataUser.addEventListener('click', () => {
-                        wrapperModal.style.display = 'none';
-                    })
-                };
-            </script>
-            <ul class="d-flex nav nav-mod justify-content-end" style="flex-grow: 1;">
-                <div>
-                    <li class="nav-item nav-item--phone">
-                        <a class="nav-link nav-link--mod nav-link--phone" href="tel:+74957997529" tabindex="-1">+7 (495) 799-75-29</a>
-
-                    </li>
-                </div>
-                <div>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link--mod nav-link__icon-phone-link " href="tel:+74957997529" tabindex="-1">
-                            <img class="nav-link nav-link__icon-phone" src="templates/images/header/phone-icon.svg" width="32px" height="32px">
-                        </a>
-                    </li>
-                </div>
-
-                <div class="d-flex wrapper-social-header">
-                    <a class="m-auto nav-link pt-0 logo-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
-                        <img class="nav-icon-whatsapp" src="img/ph_whatsapp-logo-thin.png" width="32" height="32">
-                    </a>
-                    <a class="m-auto nav-link  d-sm-block" id="social-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
-                        <img class="nav-icon-telegram" src="img/uit_telegram-alt.png" width="32" height="32">
-                    </a>
-                    <script src="https://yastatic.net/share2/share.js"></script>
-                    <div style="margin-top:4px; margin-bottom:4px; margin-left: 5px; background-color: transparent;padding-right: 3px;" class="ya-share2 d-sm-block" data-curtain data-shape="round" data-limit="0" data-more-button-type="short" data-services="vkontakte,odnoklassniki,telegram,viber,whatsapp">
-                    </div>
-                </div>
-            </ul>
-            <ul class="nav justify-content-around">
-                <li class="nav-item">
-                    <button class="navbar-toggler navbar-button-menu" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon">
-                        </span>
-                    </button>
-                </li>
-            </ul>
+                
+            </nav>
         </div>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
-                <a class="navnar-arhion-link" href="index.html">
-                    <img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
-                </a>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-                </button>
+                    <a class="navnar-arhion-link" href="index.html">
+                            <img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+                    </a>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
             </div>
             <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                    <ul class="nav justify-content-around nav-social ">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                            <ul class="nav justify-content-around nav-social ">
 
-                        <li class="nav-item social">
-                            <img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
-                            <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
-                                WHATSAPP
-                                <hr />
-                            </a>
-                        </li>
-                        <li class="nav-item social">
-                            <img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
-                            <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
-                                TELEGRAM
-                                <hr />
-                            </a>
-                        </li>
+                                    <li class="nav-item social">
+                                            <img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+                                            <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                                    WHATSAPP
+                                                    <hr>
+                                            </a>
+                                    </li>
+                                    <li class="nav-item social">
+                                            <img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+                                            <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                                    TELEGRAM
+                                                    <hr>
+                                            </a>
+                                    </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
-                                <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
-                                +7 (495) 799-75-29</a>
-                        </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+                                                    <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                                    +7 (495) 799-75-29</a>
+                                    </li>
+                            </ul>
+
+                            <li class="nav-item nav-item--hover">
+                                    <a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                    <a class="nav-link active" href="zakazat-proekt-doma/index.html">Индивидуальное проектирование</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                    <a class="nav-link active" href="index.html#">Дизайн интерьеров</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Строительство домов</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                    <a class="nav-link active" href="index.html#">Полезная информация</a>
+                            </li>
+                            <li class="nav-item nav-item--hover">
+                                    <a class="nav-link active" href="kontaktyi.html">Контакты</a>
+                            </li>
+                            <li class="nav-item ">
+                                    <div class="links2">
+                                            <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+                                                    <img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+                                            </a>
+                                            <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+                                                    <img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+                                            </a>
+                                            <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+                                                    <img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+                                            </a>
+                                            <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+                                                    <img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+                                            </a>
+                                    </div>
+                            </li>
                     </ul>
-
-                    <li class="nav-item nav-item--hover">
-                        <a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
-                    </li>
-                    <li class="nav-item nav-item--hover">
-                        <a class="nav-link active" href="zakazat-proekt-doma/index.html">Индивидуальное проектирование</a>
-                    </li>
-                    <li class="nav-item nav-item--hover">
-                        <a class="nav-link active" href="proektyi.html#">Дизайн интерьеров</a>
-                    </li>
-                    <li class="nav-item nav-item--hover">
-                        <a class="nav-link active" aria-current="page" href="index.html">Строительство домов</a>
-                    </li>
-                    <li class="nav-item nav-item--hover">
-                        <a class="nav-link active" href="proektyi.html#">Полезная информация</a>
-                    </li>
-                    <li class="nav-item nav-item--hover">
-                        <a class="nav-link active" href="kontaktyi.html">Контакты</a>
-                    </li>
-                    <li class="nav-item ">
-                        <div class="links2">
-                            <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
-                                <img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
-                            </a>
-                            <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
-                                <img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
-                            </a>
-                            <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
-                                <img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
-                            </a>
-                            <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
-                                <img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
-                            </a>
-                        </div>
-                    </li>
-                </ul>
             </div>
         </div>
-    </nav>
-</header>
+    </header>
 
 
 <section class="intro" style="background: url('img/technadzorbg.png'); background-size: cover; background-repeat: no-repeat;">
