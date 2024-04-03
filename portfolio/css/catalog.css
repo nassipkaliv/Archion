@@ -973,6 +973,57 @@
   }
 
 
+.selector_titles {
+    justify-content: space-between;
+}
+
+.stage-selector {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #969696 !important;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #969696;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.stage-selector:hover {
+    color: #a78b73 !important;
+    border-bottom: 4px solid #a78b73;
+}
+
+.stage-selector.active {
+    color: #a78b73 !important;
+    border-bottom: 4px solid #a78b73;
+}
+
+.selected-tab {
+    margin-top: 30px !important;
+}
+
+.selected-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #343536;
+}
+
+.selected-desc {
+    margin-top: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: justify;
+    color: #343536;
+}
+
+
+
+
+
 @media (min-width: 319px) {
 
     /* Первый блок, с изображениями  */
