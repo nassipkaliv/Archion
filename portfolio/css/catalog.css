@@ -1020,7 +1020,41 @@
     color: #343536;
 }
 
+.custom-marker {
+    list-style-type: none;
+}
 
+.custom-marker li:before {
+    content: "\25CF"; /* Unicode character for black circle */
+    color: #000; /* Black color */
+    font-size: 10px; /* Adjust size as needed */
+    margin-right: 5px; /* Adjust spacing as needed */
+}
+
+.filterInput {
+    height: 2rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #969696;
+    width: 26.625rem;
+    border-bottom: 1px solid #343536;
+    background: transparent;
+    padding: 0;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    bottom: -20px; 
+    transform: translateY(-50%);
+}
 
 
 
