@@ -2025,6 +2025,40 @@ a {
   gap: 100px;
 }
 
+#slider {
+  background-color: #646464;
+  height: 8px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* Styling the filled line */
+#slider .noUi-connect {
+  background-color: #a78b73;
+}
+
+/* Styling the handles */
+#slider .noUi-handle {
+  width: 20px;
+  height: 20px;
+  background-color: #a78b73;
+  border: 2px solid #a78b73;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+#slider .noUi-handle:after, .noUi-handle:before {
+  background: transparent !important;
+}
+
+.ruchnoiInput {
+  border-bottom: 1px solid #646464;
+  width: 40px;
+  background: transparent;
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 557px) {
 
 	.title_arhion {
