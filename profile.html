@@ -61,7 +61,35 @@
                     <div class="header__icons">
                         <a href="#"><img src="assets/icons/nav/whatsapp.svg" alt="Whatsapp"></a>
                         <a href="#"><img src="assets/icons/nav/telegram.svg" alt="Telegram"></a>
-                        <a href="#"><img src="assets/icons/nav/user.svg" alt="Профиль"></a>
+                        <a href="#" id="profilePopoverTrigger">
+                          <img src="assets/icons/nav/user.svg" alt="Профиль">
+                      </a>
+                      
+                      <div id="profilePopoverContent" class="d-none">
+                          <div class="d-flex align-items-center">
+                              <img class="img-fluid" width="110px" height="110px" src="img/profile.png" alt="ivan">
+                              <div>
+                                  <div class="profileName pop" style="font-size: 18px;">Иванов Иван</div>
+                                  <div class="profileTel pop" style="font-size: 16px; font-family: 'Inter', sans-serif; color: #1d2026;">+7(999)999 99-99</div>
+                              </div>
+                          </div>
+                          <div class="mt-4">
+                            <li class="nav-item social">
+                              <a class="link-wa"  target="_blank" tabindex="-1" rel="nofollow noopener">
+                                      ПРОФИЛЬ
+                                  <hr>
+                              </a>
+                            </li>
+                            <div>
+                              <li class="nav-item social pop">
+                                <a class="link-wa"  target="_blank" tabindex="-1" rel="nofollow noopener">
+                                        Выйти
+                                    <hr style="width: 180px;">
+                                </a>
+                              </li>
+                            </div>
+                          </div>
+                      </div>
                         <a href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><img src="assets/icons/nav/menu.svg" alt="Меню"></a>
                     </div>
                     
@@ -140,6 +168,19 @@
             </div>
         </header>
 
+
+        <script>
+          $(document).ready(function () {
+          $('#profilePopoverTrigger').popover({
+          container: 'body',
+          content: function () {
+            return $('#profilePopoverContent').html();
+          },
+          html: true,
+          placement: 'bottom'
+          });
+        });
+        </script>
 
         <section class="intro_solid only-pc">
             <div class="intro_solid__card-inset p-4 d-block">
