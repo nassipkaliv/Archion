@@ -1472,6 +1472,14 @@ hr {
   width: 160px !important;
 }
 
+a:hover {
+  color: #fff !important;
+}
+
+a {
+	color: #fff !important;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
