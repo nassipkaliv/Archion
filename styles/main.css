@@ -184,7 +184,7 @@ li {
 
 .intro_solid__card-inset {
   width: 100%;
-  max-width: 82.5rem;
+  max-width: 86.5rem;
   max-height: 11.875rem;
   margin: 0 auto;
   background: #FFFFFF;
@@ -1086,11 +1086,11 @@ hr {
 
 .year_selector {
   width: 100%;
-  max-width: 82.5rem;
+  max-width: 86.5rem;
   margin: 0 auto;
   border: 1px solid #F1EBE6;
   box-sizing: border-box;
-  padding: 1.25rem 3.75rem;
+  padding: 1.25rem 1.75rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -1354,6 +1354,85 @@ hr {
 	color: #343536;
 }
 
+.profileName {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  color: #1d2026;
+  white-space: nowrap;
+  margin-left: 15px;
+}
+
+.year_selector__container .nav-item .nav-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  text-align: center;
+  color: #4e5566 !important;
+}
+
+.nav-link.active {
+  padding-bottom: 10px !important;
+  border-bottom: 4px solid #f1ebe6 !important;
+  border: 0;
+}
+
+.imgContainer {
+  max-width: 90%;
+  border: 1px solid #e9eaf0;
+  padding: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imgText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  position: relative;
+  bottom: 23px;
+  cursor: pointer;
+}
+
+.imgLabel {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #6e7485;
+}
+
+.profileBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px 24px;
+  background: #a78b73;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 300%;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #fff;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
@@ -1549,7 +1628,7 @@ hr {
   }
   .intro__title {
     margin: 1.2rem 0 0 1.5rem;
-    font-size: 1.25rem !important;
+    font-size: 1.25rem;
     line-height: normal;
   }
   .intro__title--type2 {
