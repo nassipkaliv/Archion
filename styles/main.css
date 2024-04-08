@@ -1490,19 +1490,6 @@ a {
   cursor: pointer;
 }
 
-.catalogBlock::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  background: rgba(167, 139, 115, 0.45);
-
-}
-
-
 .catalogBlockText {
   font-family: "Inter", sans-serif;
   font-weight: 600;
