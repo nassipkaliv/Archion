@@ -1580,6 +1580,14 @@ hr {
   height: 1px;
 }
 
+.cartButton {
+  background: #a78b73;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  padding: 30px 20px;
+}
 
 @media (max-width: 1651px) {
   html {
