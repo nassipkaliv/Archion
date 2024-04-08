@@ -1490,6 +1490,15 @@ a {
   cursor: pointer;
 }
 
+.catalogBigBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+  cursor: pointer;
+}
+
 .catalogBlockText {
   font-family: "Inter", sans-serif;
   font-weight: 600;
