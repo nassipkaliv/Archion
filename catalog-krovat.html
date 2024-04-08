@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товара</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="templates/navbarn.css">
+    <link href="reset.css@2.css" rel="stylesheet">
+    <link rel="stylesheet" href="/../proects.css?2">
+    <link rel="stylesheet" href="templates/new_hmkmos.css">
+    <link rel="stylesheet" href="style/progressive-image.min.css">
+    <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+    <link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style/filtr-new.css@2.css">
+    <link rel="stylesheet" href="style/new_footer.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="templates/navbarn.css">
+    <link rel="stylesheet" href="templates/catalog_banner.css">
+    <script src="script/jquery-2.2.4.min.js"></script>
+    <script src="script/jquery.formstyler.min.js@2"></script>  
+    <script src="script/filtr-new.js@2" ></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/owlcarousel/scss/owl.carousel.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="portfolio/css/catalog.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- Шапка основного типа -->
+        <header class="header header--white header--mobile-default topbar">
+            <div class="header__content">
+                <img class="logo only-pc" src="assets/icons/logo_white.svg" alt="">
+                <img class="logo only-mobile" src="assets/icons/logo.svg" alt="">
+                <nav class="header__nav">
+                    <p class="text_20-400 mb-0">+7 (495) 799-75-29 | Ежедневно 10:00-21:00</p>
+                    <div class="header__icons">
+                        <a href="#"><img src="assets/icons/nav/whatsapp.svg" alt="Whatsapp"></a>
+                        <a href="#"><img src="assets/icons/nav/telegram.svg" alt="Telegram"></a>
+                        <a href="#" id="profilePopoverTrigger">
+                          <img src="assets/icons/nav/user.svg" alt="Профиль">
+                      </a>
+                      
+                      <div id="profilePopoverContent" class="d-none">
+                          <div class="d-flex align-items-center">
+                              <img class="img-fluid" width="110px" height="110px" src="img/profile.png" alt="ivan">
+                              <div>
+                                  <div class="profileName pop" style="font-size: 18px;">Иванов Иван</div>
+                                  <div class="profileTel pop" style="font-size: 16px; font-family: 'Inter', sans-serif; color: #1d2026;">+7(999)999 99-99</div>
+                              </div>
+                          </div>
+                          <div class="mt-4">
+                            <li class="nav-item social">
+                              <a class="link-wa"  target="_blank" tabindex="-1" rel="nofollow noopener">
+                                      ПРОФИЛЬ
+                                  <hr>
+                              </a>
+                            </li>
+                            <div>
+                              <li class="nav-item social pop">
+                                <a class="link-wa"  target="_blank" tabindex="-1" rel="nofollow noopener">
+                                        Выйти
+                                    <hr style="width: 180px;">
+                                </a>
+                              </li>
+                            </div>
+                          </div>
+                      </div>
+                        <a href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><img src="assets/icons/nav/menu.svg" alt="Меню"></a>
+                    </div>
+                    
+                </nav>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+                        <a class="navnar-arhion-link" href="index.html">
+                                <img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+                        </a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                </div>
+                <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <ul class="nav justify-content-around nav-social ">
+
+                                        <li class="nav-item social">
+                                                <img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+                                                <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                                        WHATSAPP
+                                                        <hr>
+                                                </a>
+                                        </li>
+                                        <li class="nav-item social">
+                                                <img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+                                                <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                                        TELEGRAM
+                                                        <hr>
+                                                </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                                <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+                                                        <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                                        +7 (495) 799-75-29</a>
+                                        </li>
+                                </ul>
+
+                                <li class="nav-item nav-item--hover">
+                                        <a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+                                </li>
+                                <li class="nav-item nav-item--hover">
+                                        <a class="nav-link active" href="zakazat-proekt-doma/index.html">Индивидуальное проектирование</a>
+                                </li>
+                                <li class="nav-item nav-item--hover">
+                                        <a class="nav-link active" href="index.html#">Дизайн интерьеров</a>
+                                </li>
+                                <li class="nav-item nav-item--hover">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Строительство домов</a>
+                                </li>
+                                <li class="nav-item nav-item--hover">
+                                        <a class="nav-link active" href="index.html#">Полезная информация</a>
+                                </li>
+                                <li class="nav-item nav-item--hover">
+                                        <a class="nav-link active" href="kontaktyi.html">Контакты</a>
+                                </li>
+                                <li class="nav-item ">
+                                        <div class="links2">
+                                                <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+                                                        <img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+                                                </a>
+                                                <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+                                                        <img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+                                                </a>
+                                                <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+                                                        <img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+                                                </a>
+                                                <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+                                                        <img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+                                                </a>
+                                        </div>
+                                </li>
+                        </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <script>
+          $(document).ready(function () {
+          $('#profilePopoverTrigger').popover({
+          container: 'body',
+          content: function () {
+            return $('#profilePopoverContent').html();
+          },
+          html: true,
+          placement: 'bottom'
+          });
+        });
+        </script>
+
+        <section class="intro_solid only-pc">
+        <div class="intro_solid__card-inset">
+          <img src="img/catalogmebel.png" alt="">
+          <h1>Каталог кровати</h1>
+        </div>
+        </section>
+
+
+        <div class="year_selector pb-0">
+          <ul class="nav nav-tabs border-bottom-0 year_selector__container" role="tablist">
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#pane1" type="button" role="tab" aria-controls="pane1" aria-selected="true">Тумбочки</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#pane2" type="button" role="tab" aria-controls="pane2" aria-selected="false">Кровати</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#pane3" type="button" role="tab" aria-controls="pane3" aria-selected="false">Комоды</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#pane4" type="button" role="tab" aria-controls="pane4" aria-selected="false">Полки</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="tab5" data-bs-toggle="tab" data-bs-target="#pane5" type="button" role="tab" aria-controls="pane5" aria-selected="false">Столы</button>
+              </li>
+          </ul>
+      </div>
+
+        
+
+      
+        <section class="block_container my-lg-5">
+             <div class="tab-content">
+              <div class="tab-pane fade show active" id="pane1" role="tabpanel" aria-labelledby="tab1">
+                <div class="catalogTitle d-flex align-items-center justify-content-center my-4">
+                  Кровати
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pane2" role="tabpanel" aria-labelledby="tab2">
+                <div class="catalogTitle d-flex align-items-center justify-content-center my-4">
+                  Кровати
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pane3" role="tabpanel" aria-labelledby="tab3">
+                <div class="catalogTitle d-flex align-items-center justify-content-center my-4">
+                  Кровати
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pane4" role="tabpanel" aria-labelledby="tab4">
+                <div class="catalogTitle d-flex align-items-center justify-content-center my-4">
+                  Кровати
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pane5" role="tabpanel" aria-labelledby="tab5">
+                <div class="catalogTitle d-flex align-items-center justify-content-center my-4">
+                  Кровати
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 col-md-12 mb-4">
+                    <a href="#" class="project-card">
+                      <img src="img/malta.png" alt="Проект" class="project-card__image">
+                      <div class="px-3 py-4 pb-5">
+                        <div class="d-flex justify-content-between">
+                          <div class="tovarName">
+                            Мальта
+                          </div>
+                          <span class="text_price" style="color: #a78b73; font-size: 30px;">
+                            10&nbsp;800&nbsp;000&nbsp;₽
+                          </span>
+                        </div>
+                        <div class="tovarInfo mt-2">
+                          Кровать с подъемным механизмом «Мальта» - самая популярная модель из ассортимента фабрики "КРОКУС". 
+                        </div>
+                        <div class="tovarMore">
+                          <span>Подробнее</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <script>
+          document.getElementById('toggleCurrentPassword').addEventListener('click', function() {
+              var passwordInput = document.getElementById('currentPassword');
+              if (passwordInput.type === 'password') {
+                  passwordInput.type = 'text';
+                  
+              } else {
+                  passwordInput.type = 'password';
+                  
+              }
+          });
+      </script>
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+        $(".block_auto-slider").owlCarousel({
+            loop: true,
+            margin: 20,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            smartSpeed: 800,
+            responsive: {
+                320: {
+                    items: 1.2
+                },
+
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1167,6 +1167,7 @@ hr {
 .footer__link {
   position: relative;
   margin-right: auto;
+  color: #fff !important;
 }
 .footer__link::after {
   content: "";
@@ -1472,13 +1473,7 @@ hr {
   width: 160px !important;
 }
 
-a:hover {
-  color: #fff !important;
-}
 
-a {
-	color: #fff;
-}
 
 .catalogBlock {
   position: relative;
@@ -1506,6 +1501,93 @@ a {
   line-height: 93%;
   color: #fff;
   z-index: 1;
+}
+
+.catalogTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 117%;
+  text-align: center;
+  color: #a78b73;
+}
+
+.tovarName {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #343536;
+}
+
+.tovarInfo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #343536;
+}
+
+.tovarMore {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #828282;
+  cursor: pointer;
+}
+
+.tovarMore span {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #828282;
+}
+
+.tovarTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 133%;
+  text-transform: capitalize;
+  color: #343536;
+}
+
+.tovarInf {
+  min-width: 80%;
+  max-width: 80%;
+}
+
+.tovarCollapseItem {
+  border: 2px solid #bdbdbd !important;
+  padding: 16px 0;
+}
+
+.tovarCollapseHeader {
+  font-family: "Inter", sans-serif;
+  font-weight: 700 !important;
+  font-size: 20px;
+  line-height: 160%;
+  color: #343536;
+}
+
+.tovarCollapseHeader::after {
+  width: 30px;
+  height: 20px;
+  background-image: url('data:image/svg+xml,<svg width="30" height="16" viewBox="0 0 30 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6238 15.4618L0 2.59873L2.75242 0L15 11.5637L27.2476 0L30 2.59873L16.3762 15.4618C15.6162 16.1794 14.3838 16.1794 13.6238 15.4618Z" fill="%23343536"/></svg>');
+  background-size: 2rem;
+}
+
+.collapseDivider {
+  border: 0.50px solid #343536;
+  border-bottom: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.cartButton {
+  background: #a78b73;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  padding: 30px 20px;
+  max-width: 264px;
 }
 
 @media (max-width: 1651px) {

@@ -186,6 +186,7 @@ header {
 
 .nav-item .nav-link {
   padding: 12px 0;
+  color: rgb(0, 0, 0);
 }
 
 .offcanvas-body .nav-item:nth-of-type(6) .nav-link.active {
@@ -198,6 +199,7 @@ header {
 
 .offcanvas-body .nav-item:first-of-type .nav-link {
   padding-top: 24px;
+  color: rgb(0, 0, 0) !important;
 }
 
 /* .offcanvas-body .nav-item:last-of-type .nav-link {
