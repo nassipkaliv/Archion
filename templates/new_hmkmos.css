@@ -724,6 +724,23 @@ border-bottom: 2px solid #969696 !important;
 	.font_title_main{
 		font-size:40px
 	}
+
+
+	.list-group-item.services_text.active {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+	}
+
+	.list-group-item.services_text:hover {
+		font-size: 24px !important;
+		font-weight: 600 !important;
+	}
+
+	.services_text {
+		font-weight: 400 !important;
+		font-size: 18px !important;
+	}
+
 	.height_block_uslugi{
 		height: 928px;
 	}
@@ -1347,10 +1364,10 @@ border-bottom: 2px solid #969696 !important;
 
 .services_text{
 	color: #F7F7F9 !important;
-	font-family: Inter !important;
-	font-size: 32px !important;
+	font-family: 'Inter', sans-serif !important;
+	font-size: 32px ;
 	font-style: normal !important;
-	font-weight: 400 !important;
+	font-weight: 400;
 	transition:1s;
 }
 
@@ -1380,13 +1397,13 @@ border-bottom: 2px solid #969696 !important;
 }
 
 .list-group-item.services_text.active {
-	font-size: 40px !important;
-	font-weight: 600 !important;
+	font-size: 40px ;
+	font-weight: 600;
 
 }
 .list-group-item.services_text:hover {
-	font-size: 40px !important;
-	font-weight: 600 !important;
+	font-size: 40px ;
+	font-weight: 600;
 }
 
 .description{

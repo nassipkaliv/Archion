@@ -634,6 +634,8 @@ hr {
   box-sizing: border-box;
   font-size: 1.5rem;
   font-weight: 500;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
 }
 
 .project-card__favorite {
@@ -1254,6 +1256,7 @@ hr {
   font-weight: 400;
   line-height: 1.625rem;
   color: #14010C;
+  font-family: "Montserrat", sans-serif;
 }
 .button_type2 .hoverRect {
   fill: transparent;
@@ -1353,6 +1356,7 @@ hr {
 	font-size: 26px;
 	line-height: 115%;
 	color: #343536;
+  margin-left: 10px;
 }
 
 .profileName {
