@@ -21,18 +21,16 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<style>
 
+body {
+	overflow-x: hidden;
+}
 
+.block_container {
+	margin: 0 !important;
+}
 
-
-<link rel="stylesheet" href="../style/new_footer.css">
-<link rel="stylesheet" href="style/main_page_min.css">
-<link href="main1.css" rel="stylesheet">
-<link rel="stylesheet" href="style/corpblog.css">
-<link rel="stylesheet" href="style/progressive-image.min.css">
-<link rel="stylesheet" href="style/pages.css">
-
-<style>
 .windows-form label,input {
     display: inline-block
 }
@@ -69,11 +67,8 @@
     padding-right: 35px;
     }
 }
-</style>
-  
+	</style>
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<style>
     
     .logoreg:active, .logoreg:focus{
@@ -1175,7 +1170,7 @@
 	<p class="block_title-above block_title-above--deeper">ценность работы с нами</p>
 	<h2 class="block_title">Как мы с вами добьёмся желаемого результата</h2>
 
-	<div class="block_steps_carousel">
+	<div class="block_steps_carousel owl-carousel block_steps_carousel">
 			<article class="block_steps_item">
 					<p class="block_steps_item__number">01</p>
 
@@ -1228,17 +1223,52 @@
 	<div class="slide_indicators">
 			<div class="slide_indicators__item active"></div>
 			<div class="slide_indicators__item"></div>
-			<div class="slide_indicators__item"></div>
-			<div class="slide_indicators__item"></div>
-			<div class="slide_indicators__item"></div>
 	</div>
 </section>
+
+<script>
+$(function() {
+    var $blockStepsCarousel = $(".block_steps_carousel");
+
+    $blockStepsCarousel.owlCarousel({
+        loop:false,
+        autoplay:false,
+        smartSpeed:2000,
+        responsiveBaseElement: 'body',
+        responsiveClass:true,
+        autoplayTimeout:4000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        }
+    });
+
+    $blockStepsCarousel.on('changed.owl.carousel', function(event) {
+        var currentItemIndex = event.item.index;
+        $(".slide_indicators__item").removeClass('active');
+        $(".slide_indicators__item").eq(currentItemIndex).addClass('active');
+    });
+
+    // Pagination click handler
+    $(".slide_indicators__item").click(function(){
+        var index = $(this).index();
+        $blockStepsCarousel.trigger('to.owl.carousel', index);
+    });
+});
+</script>
 
 <section class="block_container">
 	<p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">уникальные решения</p>
 	<h2 class="block_title">Реализованные проекты</h2>
 
-	<div class="projects-carousel">
+	<div class="projects-carousel owl-carousel project-carousel">
 			<a class="project-card">
 					<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
 					<div class="slide_indicators project-card__indicators">
@@ -1254,78 +1284,131 @@
 
 					<div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
 			</a>
-			<div class="project-card">
-					<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
-					<div class="slide_indicators project-card__indicators">
-							<div class="slide_indicators__item active"></div>
-							<div class="slide_indicators__item"></div>
-					</div>
+			<a class="project-card">
+				<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+				<div class="slide_indicators project-card__indicators">
+						<div class="slide_indicators__item active"></div>
+						<div class="slide_indicators__item"></div>
+				</div>
 
-					<div class="project-card__line3">
-							<b>ZX76</b>
-							<div class="project-card__info-line">
-									<div class="project-card__icons-line">
-											<p class="icon_holder"><img src="assets/icons/bed-single.svg" alt="Спальных мест">4</p>
-											<p class="icon_holder"><img src="assets/icons/bath.svg" alt="Санузлов">2</p>
-									</div>
-									<p class="think">20×15 м</p>
-									<p>744 м²</p>
-							</div>
-							<a href="#"><img class="project-card__favorite" src="assets/icons/favorite.svg" alt="В избранное"></a>
-					</div>
+				<div class="project-card__line3">
+						<b>ZX76</b>
+						<p>3 этажа, 744 м²</p>
+						<p>2023</p>
+				</div>
 
-					<div class="project-card__line2">
-							<p>Стоимость строительства от:</p>
-							<b>10 800 000 ₽</b>
-					</div>
-					<div class="project-card__line2">
-							<p>Стоимость проекта от:</p>
-							<b>45 000 ₽</b>
-					</div>
+				<div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+			</a>
+			<a class="project-card">
+				<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+				<div class="slide_indicators project-card__indicators">
+						<div class="slide_indicators__item active"></div>
+						<div class="slide_indicators__item"></div>
+				</div>
+
+				<div class="project-card__line3">
+						<b>ZX76</b>
+						<p>3 этажа, 744 м²</p>
+						<p>2023</p>
+				</div>
+
+				<div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+		</a>
+		<a class="project-card">
+			<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+			<div class="slide_indicators project-card__indicators">
+					<div class="slide_indicators__item active"></div>
+					<div class="slide_indicators__item"></div>
 			</div>
-			<a class="project-card">
-					<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
-					<div class="slide_indicators project-card__indicators">
-							<div class="slide_indicators__item active"></div>
-							<div class="slide_indicators__item"></div>
-					</div>
 
-					<div class="project-card__line3">
-							<b>ZX76</b>
-							<p>3 этажа, 744 м²</p>
-							<p>2023</p>
-					</div>
+			<div class="project-card__line3">
+					<b>ZX76</b>
+					<p>3 этажа, 744 м²</p>
+					<p>2023</p>
+			</div>
 
-					<div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
-			</a>
-			<a class="project-card">
-					<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
-					<div class="slide_indicators project-card__indicators">
-							<div class="slide_indicators__item active"></div>
-							<div class="slide_indicators__item"></div>
-					</div>
+			<div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+		</a>
+		<a class="project-card">
+			<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+			<div class="slide_indicators project-card__indicators">
+					<div class="slide_indicators__item active"></div>
+					<div class="slide_indicators__item"></div>
+			</div>
 
-					<div class="project-card__line3">
-							<b>ZX76</b>
-							<p>3 этажа, 744 м²</p>
-							<p>2023</p>
-					</div>
+			<div class="project-card__line3">
+					<b>ZX76</b>
+					<p>3 этажа, 744 м²</p>
+					<p>2023</p>
+			</div>
 
-					<div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
-			</a>
+			<div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+	</a>
+	<a class="project-card">
+		<img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+		<div class="slide_indicators project-card__indicators">
+				<div class="slide_indicators__item active"></div>
+				<div class="slide_indicators__item"></div>
+		</div>
+
+		<div class="project-card__line3">
+				<b>ZX76</b>
+				<p>3 этажа, 744 м²</p>
+				<p>2023</p>
+		</div>
+
+		<div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+	</a>
 	</div>
 
 	<div class="slide_indicators">
-			<div class="slide_indicators__item"></div>
-			<div class="slide_indicators__item"></div>
-			<div class="slide_indicators__item"></div>
-			<div class="slide_indicators__item"></div>
 			<div class="slide_indicators__item active"></div>
+			<div class="slide_indicators__item"></div>
+			<div class="slide_indicators__item"></div>
 	</div>
 
 
 
 </section>
+
+<script>
+	$(function() {
+			var $projectCarousel = $(".project-carousel");
+	
+			$projectCarousel.owlCarousel({
+					loop:false,
+					margin: 20,
+					autoplay:false,
+					smartSpeed:2000,
+					responsiveBaseElement: 'body',
+					responsiveClass:true,
+					autoplayTimeout:4000,
+					responsive:{
+							0:{
+									items:1
+							},
+							600:{
+									items:2
+							},
+							992:{
+									items:2
+							}
+					}
+			});
+	
+			$projectCarousel.on('changed.owl.carousel', function(event) {
+					var currentItemIndex = event.item.index;
+					$(this).closest('.block_container').find(".slide_indicators__item").removeClass('active');
+					$(this).closest('.block_container').find(".slide_indicators__item").eq(currentItemIndex).addClass('active');
+			});
+	
+			// Pagination click handler
+			$(".slide_indicators__item").click(function(){
+					var index = $(this).index();
+					$(this).closest('.block_container').find(".project-carousel").trigger('to.owl.carousel', [index, 300]);
+			});
+	});
+	</script>
 
 <div class=" position-relative aboutus">
 	<img class="logo-img" src="img/arhionlogo.png" alt="logo">
