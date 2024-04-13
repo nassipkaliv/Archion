@@ -529,7 +529,7 @@ white-space: nowrap;
 .block_title {
   font-family: "Inter", sans-serif;
 	font-weight: 400;
-	font-size: 48px;
+	font-size: 44px;
 	line-height: 100%;
 	color: #343536;
 }
@@ -537,7 +537,7 @@ white-space: nowrap;
 .block_title-above {
   color: rgba(167, 139, 115, 0.1);
   font-family: "Inter", sans-serif;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
