@@ -1651,6 +1651,37 @@ hr {
   color: #343536;
 }
 
+.razdelCard {
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+  height: 340px;
+}
+
+.razdelCardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #343536;
+}
+
+.razdelCardList {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #343536;
+}
+
+.razdelPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #343536;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
