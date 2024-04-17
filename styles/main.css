@@ -1634,6 +1634,23 @@ hr {
   opacity: 0.8;
 }
 
+.cardArthouseTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 133%;
+  color: #343536;
+  text-transform: uppercase;
+}
+
+.cardArthouseDescription {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 133%;
+  color: #343536;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
