@@ -1608,6 +1608,32 @@ hr {
   color: #343536;
 }
 
+.exampleCrossedPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+  text-decoration: line-through;
+  color: #343536;
+}
+
+.exampleRealPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 80%;
+  color: #a78b73;
+}
+
+.exampleUnderPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #343536;
+  opacity: 0.8;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
