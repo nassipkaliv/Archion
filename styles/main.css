@@ -1877,6 +1877,10 @@ input:checked + .slider.small:before {
   color: #dd5c24;
 }
 
+.sidebar-link.active {
+  color: #dd5c24;
+}
+
 .indicator-svg {
   display: none;
   transition: opacity 0.3s ease; 
@@ -1904,6 +1908,50 @@ input:checked + .slider.small:before {
   color: #f1ebe6;
 }
 
+.introductionImg {
+  position: absolute;
+  height: 100vh;
+  width: auto;
+  right: 0;
+  top: 0;
+}
+
+.introductionBlock {
+  position: absolute;
+  top: 25%;
+  padding: 50px 35px;
+  background: #f1ebe6;
+  border: 1px solid #585858;
+  z-index: 100;
+  max-width: 45rem;
+}
+
+.introductionBlockNumber {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 118%;
+  text-transform: uppercase;
+  color: #2e2e2e;
+}
+
+.introductionBlockTitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 98%;
+  text-transform: uppercase;
+  color: #2e2e2e;
+}
+
+
+.introductionBlockList {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 165%;
+  color: #2e2e2e;
+}
 
 @media (max-width: 1651px) {
   html {
