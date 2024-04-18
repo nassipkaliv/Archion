@@ -1859,7 +1859,7 @@ input:checked + .slider.small:before {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #585858;
-  height: 56px;
+  height: 40px;
   margin-bottom: 24px;
 }
 
