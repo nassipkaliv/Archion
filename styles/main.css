@@ -1682,6 +1682,146 @@ hr {
   color: #343536;
 }
 
+.calculatorLabel {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 150%;
+  color: #343536;
+}
+
+.calculatorInput {
+  border: 0;
+  border-bottom: 1px solid #14010c;
+  width: 120px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+  color: #828282;
+}
+
+.calculatedPrice {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 133%;
+  color: #a78b73;
+  border-bottom: 1px solid #14010c;
+}
+
+.calculatorText {
+  font-family: "Inter", sans-serif;
+  font-weight: 500 !important;
+  font-size: 33px !important;
+  line-height: 150% !important;
+  color: #343536 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.calulatorContainer {
+  margin-top: 60px;
+}
+
+.calculatorText::after {
+  flex-shrink: 0;
+  width: 25px !important;
+  height: 25px !important;
+  margin-left: 20px !important;
+  content: "";
+  background-size: 25px !important;
+  transition: transform .2s ease-in-out;
+  margin-top: 15px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+.switch.small {
+  width: 40px; /* Adjusted width for small class */
+  height: 22px; /* Adjusted height for small class */
+}
+
+/* The slider */
+.slider.round.small {
+  border-radius: 11px; /* Adjusted border-radius for small class */
+}
+
+.slider.round.small:before {
+  border-radius: 50%;
+  height: 18px; /* Adjusted height for small class */
+  width: 18px; /* Adjusted width for small class */
+  left: 2px; /* Adjusted left position for small class */
+  bottom: 2px; /* Adjusted bottom position for small class */
+}
+
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+input:checked + .slider.small:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
+}
+
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.calculatorText.small {
+  font-weight: 400 !important;
+  font-size: 32px !important;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;

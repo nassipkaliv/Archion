@@ -1076,28 +1076,451 @@ $(function() {
 	</div>
 </div>
 
-<section class="block_gradient block_gradient--topdown-mask">
-	<div class="block_gradient__content">
-			<p class="block_title-above">нужен проект</p>
-			<h2 class="block_title">Индивидуальное проектирование</h2>
-			<p class="block_title-sub block_title-sub--margin25 only-pc">Продолжить вдохновляться - перейдите на страницу индивидуального проектирования, где вы сможете сделать каждую деталь вашего будущего дома выразительной, олицетворяющей вас. Откройте двери в мир творчества и возможностей.</p>
-			<p class="block_title-sub block_title-sub--margin25 only-mobile">Продолжить вдохновляться - перейдите на страницу индивидуального проектирования, где вы сможете сделать каждую деталь вашего будущего дома выразительной, олицетворяющей вас. Откройте двери в мир творчества и возможностей.</p>
-
-			<div class="block_gradient__mark">
-					<b>Скидка 100% на проект </b>
-					<p>*при заказе строительства</p>
-			</div>
-
-			<a class="button_type2" href="#">
-					<p>Воплотите свои мечты</p>
-					<svg width="44.625rem" height="11.625rem" viewBox="0 0 714 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path class="hoverRect" d="M713.5 93.4197C713.5 144.204 672.316 185.373 621.513 185.373C570.71 185.373 529.526 144.204 529.526 93.4197C529.526 42.6357 570.71 1.4668 621.513 1.4668C672.316 1.4668 713.5 42.6357 713.5 93.4197Z" stroke="#A78B73"></path>
-							<line y1="92.9194" x2="623.363" y2="92.9194" stroke="#14010C"></line>
-							<path d="M557 68.8823H556.5V69.8823H557V68.8823ZM622.094 69.7359C622.29 69.5406 622.29 69.224 622.094 69.0288L618.913 65.8468C618.717 65.6515 618.401 65.6515 618.205 65.8468C618.01 66.0421 618.01 66.3586 618.205 66.5539L621.034 69.3823L618.205 72.2108C618.01 72.406 618.01 72.7226 618.205 72.9179C618.401 73.1131 618.717 73.1131 618.913 72.9179L622.094 69.7359ZM557 69.8823H621.741V68.8823H557V69.8823Z" fill="#14010C"></path>
-					</svg>
-			</a>
+<section class="block_container">
+	<p class="block_title-above block_title-above--deeper">стоимость проектирования</p>
+	<h2 class="block_title">Калькулятор индивидуального проекта дома</h2>
+	
+	<div class="calculatorHead d-flex justify-content-between mt-lg-5 pe-4">
+		<div class="d-flex justify-content-between align-items-center gap-5">
+			<div class="calculatorLabel">Укажите площадь, м2</div>
+			<input type="text" class="calculatorInput ms-4" placeholder="200">
+		</div>
+		<div class="calculatedPrice me-lg-5">
+			1 180 000 <span style="font-weight: 400;">₽</span>
+		</div>
 	</div>
-	<img src="img/house-gradient1.jpg" class="block_gradient__image">
+	<div class="calulatorContainer d-flex flex-column gap-4">
+		<div class="d-flex justify-content-between align-items-start gap-5">
+			<div class="calculatorItem w-50 d-flex justify-content-between align-items-center">
+				<div class="accordion-item border-0 w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button collapsed calculatorText" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Геология и геодезия
+							</button>
+						</h2>
+						<label class="switch ms-auto">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 w-75">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Геология
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Геодезия
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Заключение конструктора <br> на геологию
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calculatorItem w-50">
+				<div class="accordion-item border-0 w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed calculatorText" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+								Инженерные коммуникации
+							</button>
+						</h2>
+						<label class="switch ms-auto">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 w-75">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Инженерные схемы
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Отопление и вентиляция
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Электрика и освещение
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Водоснабжение <br> и канализация 
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Проект молниизащиты
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between align-items-start gap-5">
+			<div class="calculatorItem w-50 d-flex justify-content-between align-items-center">
+				<div class="accordion-item border-0 w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed calculatorText" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+								Эскизный проект
+							</button>
+						</h2>
+						<label class="switch ms-auto">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 w-75">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Разработка эскиза дома
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Разработка декора фасадов
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Реалистичные 3D фото
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Реалистичные 3D видео
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calculatorItem w-50">
+				<div class="accordion-item border-0 w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<h2 class="accordion-header" id="headingFour">
+							<button class="accordion-button collapsed calculatorText" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+								Ландшафтный дизайн
+							</button>
+						</h2>
+						<label class="switch ms-auto">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 w-75">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Генплан участка
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Схема высадки растений <br> и деревьев
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Внешние инженерные <br> коммуникации
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between align-items-start gap-5">
+			<div class="calculatorItem w-50 d-flex justify-content-between align-items-center">
+				<div class="accordion-item border-0 w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<h2 class="accordion-header" id="headingFive">
+							<button class="accordion-button collapsed calculatorText" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+								Чертежи для строительства
+							</button>
+						</h2>
+						<label class="switch ms-auto">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 w-75">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Архитектурно-<br>строительный раздел
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Архитектурный раздел
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Конструктивный раздел
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calculatorItem w-50">
+				<div class="accordion-item border-0 w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<h2 class="accordion-header" id="headingSix">
+							<button class="accordion-button collapsed calculatorText" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+								Документы для строительства
+							</button>
+						</h2>
+						<label class="switch ms-auto">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 w-75">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Архитектурный <br> паспорт проекта
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Смета на строительство
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Копия проекта <br> для строителей
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Электронная версия <br>проекта
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d-flex justify-content-between align-items-start gap-5">
+			<div class="calculatorItem w-50 d-flex justify-content-between align-items-center">
+				<div class="accordion-item border-0 w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<h2 class="accordion-header" id="headingSeven">
+							<button class="accordion-button collapsed calculatorText" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+								Дизайн интерьера
+							</button>
+						</h2>
+						<label class="switch ms-auto">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 w-75">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Расстановка мебели 
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Базовый дизайн
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									3D визуализация
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Подбор мебели и декора
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calculatorItem w-50" style="visibility: hidden;">
+				<div class="accordion-item border-0 w-100">
+					<div class="d-flex align-items-center justify-content-between">
+						<h2 class="accordion-header" id="headingEight">
+							<button class="accordion-button collapsed calculatorText" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+								Документы для строительства
+							</button>
+						</h2>
+						<label class="switch ms-auto">
+							<input type="checkbox">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+						<div class="accordion-body p-0 w-75">
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Архитектурный <br> паспорт проекта
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Смета на строительство
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Копия проекта <br> для строителей
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+							<div class="d-flex align-items-center justify-content-between">
+								<div class="calculatorText small">
+									Электронная версия <br>проекта
+								</div>
+								<label class="switch small ms-auto">
+									<input type="checkbox">
+									<span class="slider round small"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 
