@@ -1822,6 +1822,89 @@ input:checked + .slider.small:before {
   font-size: 32px !important;
 }
 
+.brandTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 200px;
+  line-height: 85%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #a78b73;
+}
+
+.brandContainer {
+  margin-top: 80px !important;
+}
+
+.brandSidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30%;
+  border-right: 1px solid #585858; 
+  z-index: 1000;
+  padding: 30px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brandSidebarLogo {
+  margin-bottom: 30px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #585858;
+  height: 56px;
+  margin-bottom: 24px;
+}
+
+.sidebar-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #2e2e2e;
+  opacity: 0.6;
+  transition: 0.3s ease all;
+}
+
+.sidebar-link:hover {
+  color: #dd5c24;
+}
+
+.indicator-svg {
+  display: none;
+  transition: opacity 0.3s ease; 
+}
+
+.sidebar-link.active + .indicator-svg {
+  display: block; 
+}
+
+.brandContent {
+  margin-left: 30%; 
+  padding: 20px;
+}
+
+.sidebarPdfButton {
+  border-radius: 34px;
+  background: #2e2e2e;
+  padding: 18px 30px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #f1ebe6;
+}
+
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
