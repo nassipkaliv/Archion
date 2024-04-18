@@ -1892,7 +1892,6 @@ input:checked + .slider.small:before {
 
 .brandContent {
   margin-left: 30%; 
-  padding: 20px;
 }
 
 .sidebarPdfButton {
@@ -1910,7 +1909,7 @@ input:checked + .slider.small:before {
 
 .introductionImg {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: auto;
   right: 0;
   top: 0;
@@ -1918,7 +1917,7 @@ input:checked + .slider.small:before {
 
 .introductionBlock {
   position: absolute;
-  top: 25%;
+  top: 17%;
   padding: 50px 35px;
   background: #f1ebe6;
   border: 1px solid #585858;
@@ -1951,6 +1950,13 @@ input:checked + .slider.small:before {
   font-size: 20px;
   line-height: 165%;
   color: #2e2e2e;
+}
+
+.scroll-line {
+  position: fixed;
+  right: 1%;
+  top: 2%;
+  height: 95%;
 }
 
 @media (max-width: 1651px) {
