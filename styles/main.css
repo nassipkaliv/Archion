@@ -1959,6 +1959,77 @@ input:checked + .slider.small:before {
   height: 95%;
 }
 
+.opportunityImg {
+  position: absolute;
+  top: 0%;
+  height: 45%;
+  width: 70%;
+}
+
+.tabBlocks {
+  margin-top: 25%;
+  margin-left: 20px;
+  z-index: 100;
+  position: relative;
+}
+
+.tabBlock {
+  border: 1px solid #585858;
+  background: #f1ebe6;
+  max-width: 532px;
+  max-height: 140px;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 90%;
+  color: #2e2e2e;
+  transition: 0.3s all ease;
+  z-index: 1000;
+}
+
+
+.tabBlock.active {
+  background: #2e2e2e;
+  color: #f1ebe6;
+}
+
+.tabBlockContentBlock {
+  margin-top: 25%;
+}
+
+.tabBlockContent {
+  background: #f1ebe6;
+  border: 1px solid #707070;
+  position: relative;
+  z-index: 99;
+  padding: 50px 40px;
+}
+
+.tabBlockContentTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 120%;
+  color: #2e2e2e;
+}
+
+.tabBlockContentDescription {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #2e2e2e;
+}
+
+
+.tabBlockContent {
+  display: none;
+}
+
+.tabBlockContent.active {
+  display: block;
+}
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
