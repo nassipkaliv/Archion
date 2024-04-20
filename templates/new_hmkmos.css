@@ -19,6 +19,7 @@
 	letter-spacing: 98px;
 	text-transform: uppercase;
 	font-family: 'StickNoBills'; 
+	max-width: 1220px;
 }
 
 
@@ -1412,6 +1413,7 @@ border-bottom: 2px solid #969696 !important;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 32px; 
+	text-align: justify;
 }
 
 .text_together_with_us{
@@ -2032,7 +2034,7 @@ border-bottom: 2px solid #969696 !important;
 
 .text_slide_main{
 	color: var(--gray, #F7F7F9);
-	font-family: Inter;
+	font-family: 'Inter', sans-serif;
 	font-size: 40px;
 	font-style: normal;
 	font-weight: 600;
