@@ -2108,7 +2108,7 @@ border-bottom: 2px solid #969696 !important;
     text-align: left;
     padding-left: 10%;
     text-transform: uppercase;
-    transition: all ease-in-out .3s;
+    transition: all ease-in-out 1s;
 }
 
 .btn-circle-project:hover {

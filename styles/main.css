@@ -1235,7 +1235,8 @@ hr {
 }
 .button_type1 .hoverRect {
   fill: transparent;
-  transition: 0.25s;
+  transition: 1s;
+  z-index: 99;
 }
 .button_type1:hover .hoverRect {
   fill: #A78B73;
@@ -1260,7 +1261,8 @@ hr {
 }
 .button_type2 .hoverRect {
   fill: transparent;
-  transition: 0.25s;
+  transition: 1s;
+  z-index: 99;
 }
 .button_type2:hover .hoverRect {
   fill: #A78B73;
@@ -1290,7 +1292,9 @@ hr {
 }
 .button_circle .hoverRect {
   fill: transparent;
-  transition: 0.25s;
+  transition: 1s;
+  z-index: 99;
+  
 }
 .button_circle:hover .hoverRect {
   fill: #A78B73;
