@@ -178,11 +178,6 @@ body, html* {
 	background-image: url("data:image/svg+xml,%3Csvg width='18' height='16' viewBox='0 0 18 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='8.27942' y1='13.6671' x2='15.9704' y2='1.46674' stroke='white' stroke-width='2'/%3E%3Cline x1='8.56516' y1='15.0287' x2='1.43975' y2='10.2091' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
 }
 
-.footer__social {
-	display: flex;
-	justify-content: center;
-	padding: 20px 0 ;
-}
 .social_icon {
 	-webkit-transition: all 0.6s ease;
      -moz-transition: all 0.6s ease;
