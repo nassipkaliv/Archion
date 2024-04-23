@@ -116,93 +116,134 @@
 <body class="glavnaya">
 
 
-	<header class="header header--mobile-default topbar">
+	<header class="header  header--mobile-default topbar">
 		<div class="header__content">
 				<img class="logo only-pc" src="assets/icons/logo.svg" alt="">
 				<img class="logo only-mobile" src="assets/icons/logo.svg" alt="">
 				<nav class="header__nav">
-						<a href="tel:+74957997529" class="text_20-400 mb-0" style="color:#14010C;">+7 (495) 799-75-29 | Ежедневно 10:00-21:00</a>
+						<p class="text_20-400 mb-0">+7 (495) 799-75-29 | Ежедневно 10:00-21:00</p>
 						<div class="header__icons">
-								<a href="https://api.whatsapp.com/send?phone=79772621722"><img src="assets/icons/nav/whatsapp.svg" alt="Whatsapp" style="fill: #14010c;"></a>
-								<a href="https://t.me/ARHION_Architecture_Construction"><img src="assets/icons/nav/telegram.svg" alt="Telegram" style="fill: #14010c;"></a>
-								<a href="#"><img src="assets/icons/nav/user.svg" alt="Профиль" style="fill: #14010c;"></a>
-								<a href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><img src="assets/icons/nav/menu.svg" alt="Меню" style="fill: #14010c;"></a>
+								<a href="https://api.whatsapp.com/send?phone=79772621722"><img src="assets/icons/nav/whatsapp.svg" alt="Whatsapp"></a>
+								<a href="https://t.me/ARHION_Architecture_Construction"><img src="assets/icons/nav/telegram.svg" alt="Telegram"></a>
+								<a href="#" id="profilePopoverTrigger">
+									<img src="assets/icons/nav/user.svg" alt="Профиль">
+							</a>
+							
+							<div id="profilePopoverContent" class="d-none">
+									<div class="d-flex align-items-center">
+											<img class="img-fluid" width="110px" height="110px" src="img/profile.png" alt="ivan">
+											<div>
+													<div class="profileName pop" style="font-size: 18px;">Иванов Иван</div>
+													<div class="profileTel pop" style="font-size: 16px; font-family: 'Inter', sans-serif; color: #1d2026;">+7(999)999 99-99</div>
+											</div>
+									</div>
+									<div class="mt-4">
+										<li class="nav-item social">
+											<a class="link-wa" href="profile.html"   tabindex="-1" rel="nofollow noopener">
+															ПРОФИЛЬ
+													<hr>
+											</a>
+										</li>
+										<div>
+											<li class="nav-item social pop">
+												<a class="link-wa" href="#" tabindex="-1" rel="nofollow noopener">
+																Выйти
+														<hr style="width: 180px;">
+												</a>
+											</li>
+										</div>
+									</div>
+							</div>
+								<a href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><img src="assets/icons/nav/menu.svg" alt="Меню"></a>
 						</div>
 						
 				</nav>
 		</div>
 		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-				<div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
-								<a class="navnar-arhion-link" href="index.html">
-												<img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
-								</a>
-								<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-								</button>
-				</div>
-				<div class="offcanvas-body">
-								<ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-												<ul class="nav justify-content-around nav-social ">
+			<div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+							<a class="navnar-arhion-link" href="index.html">
+											<img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+							</a>
+							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+							</button>
+			</div>
+			<div class="offcanvas-body">
+							<ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+											<ul class="nav justify-content-around nav-social ">
 
-																<li class="nav-item social">
-																				<img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
-																				<a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
-																								WHATSAPP
-																								<hr>
-																				</a>
-																</li>
-																<li class="nav-item social">
-																				<img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
-																				<a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
-																								TELEGRAM
-																								<hr>
-																				</a>
-																</li>
+															<li class="nav-item social">
+																			<img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+																			<a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+																							WHATSAPP
+																							<hr>
+																			</a>
+															</li>
+															<li class="nav-item social">
+																			<img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+																			<a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+																							TELEGRAM
+																							<hr>
+																			</a>
+															</li>
 
-																<li class="nav-item">
-																				<a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
-																								<img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
-																								+7 (495) 799-75-29</a>
-																</li>
-												</ul>
+															<li class="nav-item">
+																			<a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+																							<img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+																							+7 (495) 799-75-29</a>
+															</li>
+											</ul>
 
-												<li class="nav-item nav-item--hover">
-																<a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
-												</li>
-												<li class="nav-item nav-item--hover">
-																<a class="nav-link active" href="individual.html">Индивидуальное проектирование</a>
-												</li>
-												<li class="nav-item nav-item--hover">
-																<a class="nav-link active" href="design.html">Дизайн интерьеров</a>
-												</li>
-												<li class="nav-item nav-item--hover">
-																<a class="nav-link active" aria-current="page" href="stroymaterial.html">Строительство домов</a>
-												</li>
-												<li class="nav-item nav-item--hover">
-																<a class="nav-link active" href="index.html#">Полезная информация</a>
-												</li>
-												<li class="nav-item nav-item--hover">
-																<a class="nav-link active" href="kontaktyi.html">Контакты</a>
-												</li>
-												<li class="nav-item ">
-																<div class="links2">
-																				<a href="https://clck.ru/yM6kk" rel="nofollow noopener">
-																								<img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
-																				</a>
-																				<a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
-																								<img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
-																				</a>
-																				<a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
-																								<img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
-																				</a>
-																				<a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
-																								<img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
-																				</a>
-																</div>
-												</li>
-								</ul>
-				</div>
-		</div>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" href="individual.html">Индивидуальное проектирование</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" href="design.html">Дизайн интерьеров</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" aria-current="page" href="stroymaterial.html">Строительство домов</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" href="index.html#">Полезная информация</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" href="kontaktyi.html">Контакты</a>
+											</li>
+											<li class="nav-item ">
+															<div class="links2">
+																			<a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+																							<img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+																			</a>
+																			<a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+																							<img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+																			</a>
+																			<a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+																							<img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+																			</a>
+																			<a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+																							<img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+																			</a>
+															</div>
+											</li>
+							</ul>
+			</div>
+	</div>
 	</header>
+
+<script>
+	$(document).ready(function () {
+	$('#profilePopoverTrigger').popover({
+	container: 'body',
+	content: function () {
+		return $('#profilePopoverContent').html();
+	},
+	html: true,
+	placement: 'bottom'
+	});
+});
+</script>
 
 
 	<div id="carouselFade" class="carousel slide carousel-fade my_carousel_main_slide" data-bs-ride="carousel">
