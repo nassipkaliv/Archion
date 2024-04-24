@@ -2490,6 +2490,37 @@ input:checked + .slider.small:before {
   .footer__mini-text {
     margin: 1.5rem auto 0.63rem auto;
   }
+
+  .aboutus {
+    background: #f1ebe6;
+    padding: 20px;
+    height: auto;
+  }
+
+  .logo-img {
+    max-width: 135px;
+  }
+
+  .logo-text {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .aboutusRow {
+    flex-direction: column !important;
+  }
+
+  .doc-text {
+    font-size: 10px;
+  }
+
+  .doc-img {
+    width: 35px;
+    height: 46px;
+  }
 }
 @media (max-width: 480px) {
   .block_gradient::after {

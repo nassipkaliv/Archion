@@ -2320,6 +2320,7 @@ body {
     .banner_text-img {
         min-width: 380px;
     }
+    
 }
 @media (max-width: 408px) {
 	.banner_text-img{
