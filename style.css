@@ -745,9 +745,7 @@ hr {
   padding: 11.25rem 3rem 9.9rem;
   box-sizing: border-box;
   overflow: hidden;
-  min-width: 35.3rem;
-  max-width: 35.3rem;
-  max-height: 44.3rem;
+  height: 44.3rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;

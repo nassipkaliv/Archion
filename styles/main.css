@@ -491,8 +491,6 @@ hr {
   padding: 11.25rem 3rem 9.9rem;
   box-sizing: border-box;
   overflow: hidden;
-  min-width: 35.3rem;
-  max-width: 35.3rem;
   max-height: 44.3rem;
   display: flex;
   flex-direction: column;
@@ -515,7 +513,7 @@ hr {
 .block_steps_item__title {
   color: #343536;
   font-family: "Inter", sans-serif;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 400;
   line-height: 3rem;
 }
@@ -526,6 +524,8 @@ hr {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.75rem;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 .projects-carousel {
