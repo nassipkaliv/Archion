@@ -1240,6 +1240,7 @@ hr {
 }
 .button_type1:hover .hoverRect {
   fill: #A78B73;
+  z-index: 99;
 }
 
 .button_type2 {
