@@ -19,7 +19,7 @@
 	letter-spacing: 98px;
 	text-transform: uppercase;
 	font-family: 'StickNoBills'; 
-	max-width: 1220px;
+	max-width: 980px;
 }
 
 
@@ -1343,6 +1343,19 @@ border-bottom: 2px solid #969696 !important;
 		 opacity:0;
 
 	}
+}
+
+
+.box-text {
+  background-image: url('data:image/svg+xml;utf8,<svg width="30" height="10" viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" rx="5" fill="%23A78B73"/></svg>');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 18px 30px;
+  padding-left: 40px; 
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #f7f7f9;
 }
 
 

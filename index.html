@@ -320,8 +320,8 @@
 
 	<div id="carouselFade" class="carousel slide carousel-fade my_carousel_main_slide" data-bs-ride="carousel">
 		<div class="carousel-inner position-relative">
-			<div class="mx-0 d-flex align-items-center justify-content-center position-absolute" style="z-index:999; top: 12%;">
-				<img alt="Архион" style="padding-left: 7%;" src="img/arhion.png" class="title_arhion">
+			<div class="d-flex align-items-center justify-content-center position-absolute w-100" style="z-index:999; top: 12%;">
+				<img alt="Архион" style="" src="img/arhion.png" class="title_arhion">
 			</div>
 			<div class="position-absolute buttonOrder" style="z-index: 2;top: 50%;left: 7%;">
 				<button id="btn-project-order" class="btn-circle-project btn-call-form-project" data-bs-toggle="modal" data-bs-target="#cons-project">
@@ -1190,7 +1190,7 @@
 		<img src="img/dom.png" class="block_gradient__image">
 	</section>
 
-	<div class="b-content black-bg" style="background: var(--dark, #343536); height:400px;">
+	<div class="b-content black-bg" style="background: var(--dark, #343536); height:500px;">
 		<div class="col-12">
 			<div class="row mx-0">
 				<div class="col-6 px-0">
@@ -1202,10 +1202,18 @@
 							<a class="text_together_with_us title_blox-1">делегируете</a>
 						</div>
 						<div class="box-1">
-							<span>
-								полный комплекс услуг по строительству своего дома. В нашей команде только профессионалы, которые воплотят в жизнь любые решения
-								по вашему запросу.
-							</span>
+							<div class="box-text">
+								контроль качества строительсва
+							</div>
+							<div class="box-text">
+								Задачи, в которых вы не разбираетесь
+							</div>
+							<div class="box-text">
+								По подбору и закупке материалов
+							</div>
+							<div class="box-text">
+								Архитектурный надзор за строительством
+							</div>
 						</div>
 					</div>
 					<div>
@@ -1213,9 +1221,18 @@
 							<a class="text_together_with_us title_blox-2">сохраняете</a>
 						</div>
 						<div class="box-2">
-							<span>
-								время и спокойствие. Мы гарантируем качество предоставляемых нами услуг.
-							</span>
+							<div class="box-text">
+								Время
+							</div>
+							<div class="box-text">
+								Силы
+							</div>
+							<div class="box-text">
+								Нервы
+							</div>
+							<div class="box-text">
+								Деньги
+							</div>
 						</div>
 					</div>
 					<div>
@@ -1223,9 +1240,15 @@
 							<a class="text_together_with_us title_blox-3">контролируете</a>
 						</div>
 						<div class="box-3">
-							<span>
-								вопросы, где важно ваше мнение. Остальные детали мы берем на себя.
-							</span>
+							<div class="box-text">
+								Вопросы, которые для вас важны
+							</div>
+							<div class="box-text">
+								На какой стадии находится строительство
+							</div>
+							<div class="box-text">
+								Вопросы, в которых важно ваше мнение
+							</div>
 						</div>
 					</div>
 					<div>
@@ -1233,9 +1256,15 @@
 							<a class="text_together_with_us title_blox-4">счастливы</a>
 						</div>
 						<div class="box-4">
-							<span>
-								блаблаблабла
-							</span>
+							<div class="box-text">
+								Воплощать свои мечты
+							</div>
+							<div class="box-text">
+								Ощущать безопасность за результат
+							</div>
+							<div class="box-text">
+								Быть уверенными в нашей поддержке
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1244,6 +1273,8 @@
 		</div>
 
 	</div>
+
+	
 
 	<section class="block_gradient block_gradient--topdown-mask">
 		<div class="block_gradient__content">
@@ -1656,100 +1687,64 @@
 	</div>	
 
 
-	<div class="px-md-3" style="background: #F1EBE6;">
-		<div class="container-fluid mx-0 pt-3 pt-md-5 pb-md-5 row">
-			<div class="px-0 col-12 col-md-8">
-				<div class="text-start px-1">
-					<span class="style_heading_text">
-						Нужна консультация?
-					</span>
+	<section class="block_container block_consult block_container--accentcolor only-pc mx-0">
+		<div class="block_consult__content">
+				<h2 class="block_title">Нужна консультация?</h2>
+				<p class="block_consult__text">Оставьте контакты и мы с вами свяжемся для обсуждения деталей</p>
+				<div class="block_consult__feedback_container">
+						<div class="block_consult__contacts">
+								<div class="block_consult__contact-item">
+										<img src="assets/icons/nav/whatsapp.svg">
+										<a href="" class="button_type1 button_type1--min">
+												<p>WHATSAPP</p>
+												<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+														<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+														<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+												</svg>
+										</a>
+								</div>
+								<div class="block_consult__contact-item">
+										<img src="assets/icons/nav/telegram.svg">
+										<a href="" class="button_type1 button_type1--min">
+												<p>TELEGRAM</p>
+												<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+														<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+														<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+												</svg>
+										</a>
+								</div>
+								<div class="block_consult__contact-item">
+										<img src="assets/icons/nav/phone.svg">
+										<p>+7 (495) 799-75-29</p>
+								</div>
+						</div>
+						<div class="block_consult__contacts">
+								<input placeholder="Имя" type="text">
+								<input placeholder="Телефон" type="text">
+								<div class="block_consult__contact-item">
+										<a href="" class="button_type1">
+												<p>Отправить</p>
+												<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+														<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+														<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+												</svg>
+										</a>
+								</div>
+						</div>
 				</div>
-				<div class="col-12 pt-3 px-1 pb-md-4">
-					<span class="font_consult" style="color:black;">
-						Оставьте контакты и мы с вами свяжемся для обсуждения деталей
-					</span>	
-					
-				</div>
-				<div class="d-flex row">		
-					<div class="col-12 col-md-5">
-					<div>
-						<a href="index.html#" class="row mx-0 py-3 justify-content-start">
-							<img src="images/catalog_new_hmkmos/whatsapp.png" class="px-0" style="width: 38px;height: 38px;">
-							<div class="d-flex px-0 col-9 col-md-7 pt-1 mx-2" style="border-bottom: 1px solid #343536;">
-								<div class="pt-1">
-									<span class="px-0 py-1 kontak_text">WHATSAPP</span>
-								</div>
-								<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
-									<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
-										<div class="position-absolute" style="top:0px;">
-											<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>			
-					</div>
-					<div>
-						<a href="index.html#" class="row mx-0 py-3 justify-content-start">
-							<img src="images/catalog_new_hmkmos/telega.png" class="px-0" style="width: 38px;height: 38px;">
-							<div class="d-flex px-0 col-9 col-md-7 pt-1 mx-2" style="border-bottom: 1px solid #343536;">
-								<div class="pt-1">
-									<span class="px-0 py-1 kontak_text">TELEGRAM</span>
-								</div>
-								<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
-									<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
-										<div class="position-absolute" style="top:0px;">
-											<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</a>
-						</div>
-						<div>
-						<a href="https://test.rddp.ru/”tel:+74957997599”" class="row mx-0 py-3 justify-content-start">
-									<img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
-								<div class="col-10 col-md-7 px-0 pt-2 mx-2">
-									<span class="font_consult_text">+7 (495) 799-75-29
-									</span>
-								</div>
-						</a>
-						</div>
-					</div>		
-					<div class="col-12 col-md-7 row mx-0 justify-content-start pb-4 pb-md-0">
-						<div class="m-auto px-0 pb-4 pb-md-0">
-							<input class="back_transpar border-0 col-11 col-md-7 kontak_text" placeholder="Имя" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important;" type="text" id="uname" name="name" />
-						</div>
-						<div class="m-auto px-0 pb-4 pb-md-0">
-							<input class="back_transpar border-0 col-11 col-md-7 kontak_text" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important;" placeholder="Телефон" type="tel" id="telephone" />
-						</div>
-						<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
-								<div class="pt-1">
-									<span class="px-0 py-1 kontak_text">Отправить</span>
-								</div>
-								<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
-									<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
-										<div class="position-absolute" style="top:0px;">
-											<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
-										</div>
-									</div>
-								</div>
-							</div>
-					</div>
-				</div>						
-			</div>
-			<div class="pb-5 pb-md-0 col-12 col-md-4 px-0 m-auto">
-				<img class="w-100 image-fluid" src="images/catalog_new_hmkmos/block_consult.png">
-			</div>
 		</div>
-	</div>
+		<img src="assets/images/arhion_plate.jpg" alt="Arhion" class="block_consult__plate">
+</section>
 
  <!-- Футер -->
  <footer class="footer">
 	<div class="footer_container">
 			<div class="footer__text-block">
 					<img src="assets/icons/a.svg" alt="Arhion">
-					<p>Архитектурно- <br> строительная группа</p>
+					<p>Архитектурно- <br> строительная <br> группа</p>
 					<a href="termsofuse.html" class="footer__link footer__mini-text only-pc">Политика конфиденциальности</a>
 			</div>
 			<div class="footer__link_blocks only-pc">
