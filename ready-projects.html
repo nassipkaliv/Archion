@@ -347,9 +347,88 @@
                 </a>
             </div>
 
-            <a href="#" class="more_link">показать еще<img src="assets/icons/spoiler-arrow.svg" alt=""></a>
+            
+            
+
+            <a data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" class="more_link block_title-sub_link" id="showMoreLink">показать еще<img src="assets/icons/spoiler-arrow.svg" alt=""></a>
+
+            
+            <div class="collapse projects-container mt-0" id="collapseExample">
+                    <a href="#" class="project-card">
+                        <img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+                        <div class="slide_indicators project-card__indicators">
+                            <div class="slide_indicators__item active"></div>
+                            <div class="slide_indicators__item"></div>
+                        </div>
+    
+                        <div class="project-card__line3">
+                            <b>ZX76</b>
+                            <p>3 этажа, 744 м²</p>
+                            <p>2023</p>
+                        </div>
+    
+                        <div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+                    </a>
+                    <a href="#" class="project-card">
+                        <img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+                        <div class="slide_indicators project-card__indicators">
+                            <div class="slide_indicators__item active"></div>
+                            <div class="slide_indicators__item"></div>
+                        </div>
+    
+                        <div class="project-card__line3">
+                            <b>ZX76</b>
+                            <p>3 этажа, 744 м²</p>
+                            <p>2023</p>
+                        </div>
+    
+                        <div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+                    </a>
+                    <a href="#" class="project-card">
+                        <img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+                        <div class="slide_indicators project-card__indicators">
+                            <div class="slide_indicators__item active"></div>
+                            <div class="slide_indicators__item"></div>
+                        </div>
+    
+                        <div class="project-card__line3">
+                            <b>ZX76</b>
+                            <p>3 этажа, 744 м²</p>
+                            <p>2023</p>
+                        </div>
+    
+                        <div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+                    </a>
+                    <a href="#" class="project-card">
+                        <img src="assets/images/project1.png" alt="Проект" class="project-card__image">
+                        <div class="slide_indicators project-card__indicators">
+                            <div class="slide_indicators__item active"></div>
+                            <div class="slide_indicators__item"></div>
+                        </div>
+    
+                        <div class="project-card__line3">
+                            <b>ZX76</b>
+                            <p>3 этажа, 744 м²</p>
+                            <p>2023</p>
+                        </div>
+    
+                        <div class="project-card__text1">Россия, Москва, ул. Полевая, д.36</div>
+                    </a>
+            </div>
         </section>
 
+        <script>
+            var collapseElement = document.getElementById('collapseExample');
+            var showMoreLink = document.getElementById('showMoreLink');
+        
+            collapseElement.addEventListener('show.bs.collapse', function () {
+                showMoreLink.style.display = 'none';
+            });
+        
+            collapseElement.addEventListener('hide.bs.collapse', function () {
+                showMoreLink.style.display = 'block';
+            });
+        </script>
 
         <!-- Блок с градиентной картинкой справа -->
         <section class="block_gradient block_gradient--topdown-mask">
