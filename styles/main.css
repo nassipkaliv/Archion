@@ -1712,6 +1712,14 @@ hr {
   color: #828282;
 }
 
+.list-group-item.services_text {
+  color: #000 !important;
+}
+
+.list-group-item.services_text.active {
+  color: #000 !important;
+}
+
 .calculatedPrice {
   font-family: "Inter", sans-serif;
   font-weight: 500;
