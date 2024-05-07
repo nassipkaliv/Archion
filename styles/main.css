@@ -1712,13 +1712,7 @@ hr {
   color: #828282;
 }
 
-.list-group-item.services_text {
-  color: #000 !important;
-}
 
-.list-group-item.services_text.active {
-  color: #000 !important;
-}
 
 .calculatedPrice {
   font-family: "Inter", sans-serif;
@@ -2049,6 +2043,11 @@ input:checked + .slider.small:before {
 .tabBlockContent.active {
   display: block;
 }
+
+.stroyReadyContainer {
+  max-width: 40%;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
