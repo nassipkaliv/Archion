@@ -1705,6 +1705,10 @@ hr {
   font-weight: 400;
   font-size: 50px;
   line-height: 120%;
+  color: #a78b73;
+}
+
+.calculatorInput::placeholder {
   color: #828282;
 }
 

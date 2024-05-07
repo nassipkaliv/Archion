@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
 <html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
 <title>Индивидуальное проектирование </title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
 <link href="style.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
@@ -663,12 +663,15 @@ body {
 	<p class="block_title-above block_title-above--deeper">проект высокого качества</p>
 	<h2 class="block_title">Пример проектной документации</h2>
 	<p class="block_title-sub mt-0">Вам не придется объяснять строителям детали, поскольку в проекте учтено все до мелочей. </p>
-	<div class="wrapper-content-example-docum mt-4">
-			<button id="btn-view-example-docum" class="btn-circle btn-call-form">
-					СМОТРЕТЬ
-					<hr class="static-line">
-					<hr class="animation-line">
+	<div class="wrapper-content-example-docum mt-4 position-relative">
+		<div class="buttonOrder position-absolute" style="z-index: 2;top: 20%; left: 4%;">
+			<button id="btn-project-order" class="btn-circle-project btn-call-form-project">
+					<span style="position: absolute; bottom: 48%;">СМОТРЕТЬ</span>
+					<hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25)); background-color: #000;">
+					<hr class="animation-line-project" style=" background-color: #000;">
+					<img class="position-absolute arrowImg" src="portfolio/img/block_stage_building/arrow-black.svg" style="right: 0%; width: 53px;height: 19.323px;top: 36%;left: 140%;">
 			</button>
+		</div>
 			<div class="vertical-line-example-docum"></div>
 			<img src="../portfolio/img/block_example_docum/group-list.png" class="img-group-house" alt="group-list">
 			<img src="../portfolio/img/block_example_docum/group-house.png" class="img-group-house-mobile" alt="group-list">
@@ -1586,13 +1589,13 @@ $(function() {
 	</div>
 
 	<a href="#" class="button_circle mt-5" style="max-height: max-content; max-width: max-content;">
-		<p style="font-family: 'Montserrat', sans-serif;">РАСЧИТАТЬ СТОИМОСТЬ СТРОИТЕЛЬСТВА</p>
-		<svg width="705" height="200" viewBox="0 0 705 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<circle class="hoverRect" cx="100" cy="100" r="99" stroke="#343536" stroke-width="2"/>
-			<line x1="28" y1="121" x2="704" y2="121" stroke="black" stroke-width="2"/>
-			<path d="M666 100H665V102H666V100ZM704.707 101.707C705.098 101.317 705.098 100.683 704.707 100.293L698.343 93.9289C697.953 93.5384 697.319 93.5384 696.929 93.9289C696.538 94.3195 696.538 94.9526 696.929 95.3431L702.586 101L696.929 106.657C696.538 107.047 696.538 107.681 696.929 108.071C697.319 108.462 697.953 108.462 698.343 108.071L704.707 101.707ZM666 102H704V100H666V102Z" fill="black"/>
+		<p style="font-family: 'Montserrat', sans-serif; margin-left: 0;">РАСЧИТАТЬ СТОИМОСТЬ СТРОИТЕЛЬСТВА</p>
+		<svg width="818" height="200" viewBox="0 0 818 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle class="hoverRect" cx="700" cy="100" r="89" stroke="#343536" stroke-width="2"/>
+			<line y1="121" x2="676" y2="121" stroke="black" stroke-width="2"/>
+			<path d="M638 100H637V102H638V100ZM676.707 101.707C677.098 101.317 677.098 100.683 676.707 100.293L670.343 93.9289C669.953 93.5384 669.319 93.5384 668.929 93.9289C668.538 94.3195 668.538 94.9526 668.929 95.3431L674.586 101L668.929 106.657C668.538 107.047 668.538 107.681 668.929 108.071C669.319 108.462 669.953 108.462 670.343 108.071L676.707 101.707ZM638 102H676V100H638V102Z" fill="black"/>
 		</svg>	
-</a>
+	</a>
 </section>
 
 

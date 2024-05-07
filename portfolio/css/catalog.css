@@ -833,6 +833,7 @@
 #btn-view-example-docum .static-line::after {
     content: url('../img/block_stage_building/arrow-black.svg');
     bottom: 0;
+    z-index: 99;
 }
 
 #btn-view-example-docum-mobile {
@@ -863,7 +864,7 @@
     min-height: 290px;
     width: 5px;
     background-color: #A78B73;
-    margin-left: 230px;
+    margin-left: 450px;
     margin-right: 60px;
     align-self: center;
 }
