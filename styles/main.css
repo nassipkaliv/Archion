@@ -685,7 +685,7 @@ hr {
 .block_checks__item {
   color: #343536;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   gap: 1.44rem;
 }
