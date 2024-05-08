@@ -2,25 +2,119 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отделка</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="libs/owlcarousel/scss/owl.carousel.css">
-
-    <script src="libs/owlcarousel/js/owl.carousel.js"></script>
-    <script src="libs/owlcarousel/js/owl.autoplay.js"></script>
-
-    <link rel="stylesheet" href="templates/new_hmkmos.css">
-    <link rel="stylesheet" href="templates/catalog_banner.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="templates/navbarn.css">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
+    <title>Внутреняя отделка</title>
+    
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+    <link rel="stylesheet" href="style/progressive-image.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <style>
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .block_container {
+        margin: 0 !important;
+    }
+    
+    .list-group-item.services_text {
+        color: #000 !important;
+    }
+    
+    .list-group-item.services_text.active 
+         {
+        color: #000 !important;
+        }
+    
+    .windows-form label,input {
+        display: inline-block
+    }
+    #important_num {
+        text-decoration: underline;
+        font-size: 1.1em;
+        color: #fff;
+        display: inline-block;
+        width: 30px;
+    }
+    .b-section_content p {
+        text-indent: 35px;
+        line-height: 1.4;
+        font-size: 18px;
+    }
+        @media (max-width: 1024px) {
+        .services_scheme{
+            display: none
+        }
+        .services_scheme-mob{
+            display: block
+        }
+    }
+        @media (max-width: 1400px) {
+        .b-content {
+            padding: 0;
+            /*margin-left: 0;
+            max-width: 1300px;*/
+            padding-top: 120px;
+        }
+        .b-wrap__main {
+        max-width: 1300px;
+        padding-left: 35px;
+        padding-right: 35px;
+        }
+    }
+        </style>
+    
+        <style>
+        
+        .logoreg:active, .logoreg:focus{
+     outline:none;
+    }
+    .logoreg option, .logoreg option:active, .logoreg option:focus{
+        outline: none;
+        -moz-border:none;
+        -webkit-border:none;
+    }
+    .slogan-wrapper{text-align: center;
+        font-size: 26px;
+        padding: 23px 0px;
+        color: #fff;
+        font-weight: bold;background-color:#435061;}
+    .slogan{
+     padding-top: 20px;
+     display: inline-flex; 
+     height: 40px;
+     font-weight: bold;
+     margin: 0 20px;}
+    .tp{
+     padding-bottom: 30px;
+     vertical-align: bottom;}
+    #important_num{
+        text-decoration: underline;
+        font-size: 1.1em;
+        color: #fff;
+        display: inline-block;
+        width: 30px;
+    }
+    
+        </style>
+        <link rel="stylesheet" href="templates/new_hmkmos.css">
+        <link rel="stylesheet" href="templates/catalog_banner.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="templates/navbarn.css">
+        
+    </head>
 
 <body>
     <div class="page">
@@ -143,18 +237,6 @@
         </div>
         </header>
     
-    <script>
-        $(document).ready(function () {
-        $('#profilePopoverTrigger').popover({
-        container: 'body',
-        content: function () {
-            return $('#profilePopoverContent').html();
-        },
-        html: true,
-        placement: 'bottom'
-        });
-    });
-    </script>
     
     <script>
         $(document).ready(function () {
@@ -188,9 +270,42 @@
 
         <section class="block_container block_text">
             <p class="block_title-sub">Внутренний отдел помещения играет ключевую роль в создании его общей атмосферы, функциональности и эстетики. От выбора материалов до дизайнерских решений, каждый элемент стен, полов и потолков влияет на внешний вид и комфорт помещения.</p>
-            <a href="#" class="block_title-sub_link">Подробнее</a>
+            <div class="collapse" id="collapseExample">
+             <p class="block_title-sub mt-0">
+                Внутренняя отделка дома - это важный этап строительства, который придает вашему жилищу индивидуальность и комфорт. Эта услуга включает в себя широкий спектр работ, направленных на создание уютного и функционального интерьера. Давайте рассмотрим, почему внутренняя отделка дома так важна и какие возможности она предоставляет.
+               <br> 1. Строительное Завершение: Внутренняя отделка дома включает в себя установку стен и потолков, наружных и внутренних дверей, а также полов. Эти работы придают вашему дому законченный вид и защищают его от внешних воздействий.
+               <br> 2. Эстетика И Дизайн: Внутренняя отделка позволяет вам создать интерьер, соответствующий вашим предпочтениям и стилю жизни. Вы можете выбирать цветовую палитру, материалы, текстуры и декоративные элементы, чтобы сделать свой дом уникальным и привлекательным.
+               <br> 3. Комфорт И Функциональность: Внутренняя отделка также включает в себя установку систем отопления, кондиционирования воздуха, электрических систем и сантехники. Эти системы обеспечивают комфортное проживание и функциональность вашего дома.
+               <br> 4. Энергоэффективность: Правильно выполненная внутренняя отделка может способствовать энергоэффективности вашего дома. Хорошая теплоизоляция, выбор эффективных окон и дверей помогут снизить расходы на отопление и кондиционирование воздуха.
+               <br> 5. Персонализация: Ваш дом - это ваше личное пространство, и внутренняя отделка позволяет вам воплотить в жизнь ваши идеи и представления о комфорте и стиле. Вы можете выбирать материалы и детали, которые отражают вашу уникальность.
+               <br> 6. Увеличение Стоимости: Качественная внутренняя отделка может повысить стоимость вашего дома. Это важно, если вы в будущем решите продать или сдать его в аренду.
+               <br> Внутренняя отделка дома - это инвестиция в комфорт, красоту и функциональность вашего жилья. При выборе подрядчика для выполнения этой работы важно обращать внимание на опыт, профессионализм и репутацию, чтобы убедиться в качественном результате. Создание уникального и уютного интерьера - это ключевой этап создания дома, в котором вы будете чувствовать себя комфортно и счастливо.
+            </p>
+            </div>
+             <a href="#" class="block_title-sub_link" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Подробнее</a>
         </section>
 
+        <script>
+            // Получаем ссылку "Подробнее"
+            const link = document.querySelector('.block_title-sub_link');
+            // Получаем блок collapse
+            const collapse = document.querySelector('.collapse');
+          
+            // Функция для изменения текста ссылки в зависимости от состояния блока collapse
+            function toggleLinkText() {
+              // Проверяем, открыт ли блок collapse
+              const isCollapsed = collapse.classList.contains('show');
+              // Изменяем текст ссылки в зависимости от состояния
+              link.textContent = isCollapsed ? 'Закрыть' : 'Подробнее';
+            }
+          
+            // Добавляем обработчик события для ссылки
+            link.addEventListener('click', toggleLinkText);
+          
+            // Добавляем обработчики событий Bootstrap для событий "показа" и "скрытия" collapse
+            collapse.addEventListener('shown.bs.collapse', toggleLinkText);
+            collapse.addEventListener('hidden.bs.collapse', toggleLinkText);
+          </script>
 
         <!-- Блок "Стоимость, комплектации и сроки" -->
         <section class="block_container">
@@ -198,73 +313,90 @@
             <h2 class="block_title">Стоимость, комплектации и сроки</h2>
 
             <!-- Селектор (Десктоп) -->
-            <div class="selector only-pc">
-                <!-- Переключатели -->
-                <div class="selector__items_container">
-                    <a data-target="panel1-1" class="selector__item js-panel-toggler active"><img src="assets/icons/arrow-right.svg">Черновые работы</a>
-                    <a data-target="panel1-2" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Чистовые работы</a>
+            <div class="row mx-0 px-0 mb-lg-5">
+                <div class="col-6 px-0">
+                    <div class="d-block list-group" id="list-tab" role="tablist">
+                        <a class="d-flex py-4 list-group-item list-group-item-action services_text px-0" id="list-home-list" data-bs-toggle="list" href="index.html#list-home" role="tab" aria-controls="home" aria-selected="false">
+                        <div class="m-auto mx-2">
+                            <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">
+                        </div>
+                        <div class="m-auto mx-2">
+                            Чистовые работы
+                        </div>	
+                        </a>
+                        <a class="d-flex py-4 list-group-item list-group-item-action services_text px-0 active" id="list-profile-list" data-bs-toggle="list" href="index.html#list-profile" role="tab" aria-controls="profile" aria-selected="true">
+                        <div class="m-auto mx-2">
+                            <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                        </div>
+                        <div class="m-auto mx-2">
+                            Черновые работы
+                        </div>
+                     </a>
+                    </div>
                 </div>
-
-                <!-- Контент -->
-                <!-- Черновые -->
-                <div id="panel1-1" class="selector_content-includes js-content-panel">
-                    <p class="selector_content-includes__price">от 15 000 ₽</p>
-                    <p class="selector_content-includes__text">Что включает?</p>
-
-                    <div class="selector_content-includes__checks_container">
-                        <div class="selector_content-includes__check_item">
-                            <img src="assets/icons/check.svg">
-                            <p>Черновые материалы</p>
+                <div class="col-6 d-flex flex-column justify-content-end">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> 
+                        <div class="priceTitle mb-4">
+                            от 20 000 ₽
                         </div>
-                        <div class="selector_content-includes__check_item">
-                            <img src="assets/icons/check.svg">
-                            <p>Черновые работы</p>
+                        <div class="mt-4">
+                        <div class="timeSection mt-0 d-flex gap-2">
+                          <div class="timeText">Что включает?</div>
                         </div>
-                        <div class="selector_content-includes__check_item">
-                            <img src="assets/icons/check.svg">
-                            <p>Контроль качества</p>
+                        <div class="section">
+                          <p class="description-sections-building">Чистовые материалы</p>
+                          <p class="description-sections-building">Чистовые работы</p>
+                          <p class="description-sections-building">Контроль качества</p>
+                        </div>
+                        </div>
+                        <a href="index.html#" class="d-flex but_hover_square position-relative w-50 pt-4" style="border-bottom: 1px solid black;">
+                        <span class="pt-4 but_podrobnee_srvices" style="color: #121212; font-size: 16px;">
+                          РАССЧИТАТЬ СТОИМОСТЬ
+                        </span>
+                          <div class="position-absolute square_block_services_pdl">
+                            <div class="button_podbor_square_services  position-relative px-5 py-5" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%;">
+                              <div class="position-absolute" style="left: -35px; top: 20px;">
+                                <svg width="29" height="8" viewBox="0 0 29 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1 3.5H0.5V4.5H1V3.5ZM28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM1 4.5H28V3.5H1V4.5Z" fill="#14010C"></path>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </a>
+                        </div>
+                        <div class="tab-pane fade active show" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                <div class="priceTitle mb-4">
+                                    от 15 000 ₽
+                                </div>
+                                <div class="mt-4">
+                                <div class="timeSection mt-0 d-flex gap-2">
+                                    <div class="timeText">Что включает?</div>
+                                </div>
+                                <div class="section">
+                                    <p class="description-sections-building">Черновые материалы</p>
+                                    <p class="description-sections-building">Черновые работы</p>
+                                    <p class="description-sections-building">Контроль качества</p>
+                                </div>
+                                </div>
+                                <a href="index.html#" class="d-flex but_hover_square position-relative w-50 pt-4" style="border-bottom: 1px solid black;">
+                                <span class="pt-4 but_podrobnee_srvices" style="color: #121212; font-size: 16px;">
+                                    РАССЧИТАТЬ СТОИМОСТЬ
+                                </span>
+                                    <div class="position-absolute square_block_services_pdl">
+                                        <div class="button_podbor_square_services  position-relative px-5 py-5" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%;">
+                                            <div class="position-absolute" style="left: -35px; top: 20px;">
+                                                <svg width="29" height="8" viewBox="0 0 29 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 3.5H0.5V4.5H1V3.5ZM28.3536 4.35355C28.5488 4.15829 28.5488 3.84171 28.3536 3.64645L25.1716 0.464466C24.9763 0.269204 24.6597 0.269204 24.4645 0.464466C24.2692 0.659728 24.2692 0.976311 24.4645 1.17157L27.2929 4L24.4645 6.82843C24.2692 7.02369 24.2692 7.34027 24.4645 7.53553C24.6597 7.7308 24.9763 7.7308 25.1716 7.53553L28.3536 4.35355ZM1 4.5H28V3.5H1V4.5Z" fill="#14010C"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </a>
                         </div>
                     </div>
-
-                    <a class="button_type2" href="#">
-                        <p>Расчитать стоимость<br>отделки</p>
-                        <svg width="401" height="80" viewBox="0 0 401 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="hoverRect" cx="361" cy="40" r="39.5" stroke="#A78B73" />
-                            <line y1="39.5" x2="360" y2="39.5" stroke="#14010C" />
-                            <path d="M286 25.5H285.5V26.5H286V25.5ZM313.354 26.3536C313.549 26.1583 313.549 25.8417 313.354 25.6464L310.172 22.4645C309.976 22.2692 309.66 22.2692 309.464 22.4645C309.269 22.6597 309.269 22.9763 309.464 23.1716L312.293 26L309.464 28.8284C309.269 29.0237 309.269 29.3403 309.464 29.5355C309.66 29.7308 309.976 29.7308 310.172 29.5355L313.354 26.3536ZM286 26.5H313V25.5H286V26.5Z" fill="#14010C" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Чистовые -->
-                <div id="panel1-2" class="selector_content-includes js-content-panel" style="display: none;">
-                    <p class="selector_content-includes__price">от 20 000 ₽</p>
-                    <p class="selector_content-includes__text">Что включает?</p>
-
-                    <div class="selector_content-includes__checks_container">
-                        <div class="selector_content-includes__check_item">
-                            <img src="assets/icons/check.svg">
-                            <p>Чистовые материалы</p>
-                        </div>
-                        <div class="selector_content-includes__check_item">
-                            <img src="assets/icons/check.svg">
-                            <p>Чистовые работы</p>
-                        </div>
-                        <div class="selector_content-includes__check_item">
-                            <img src="assets/icons/check.svg">
-                            <p>Контроль качества</p>
-                        </div>
-                    </div>
-
-                    <a class="button_type2" href="#">
-                        <p>Расчитать стоимость<br>отделки</p>
-                        <svg width="401" height="80" viewBox="0 0 401 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="hoverRect" cx="361" cy="40" r="39.5" stroke="#A78B73" />
-                            <line y1="39.5" x2="360" y2="39.5" stroke="#14010C" />
-                            <path d="M286 25.5H285.5V26.5H286V25.5ZM313.354 26.3536C313.549 26.1583 313.549 25.8417 313.354 25.6464L310.172 22.4645C309.976 22.2692 309.66 22.2692 309.464 22.4645C309.269 22.6597 309.269 22.9763 309.464 23.1716L312.293 26L309.464 28.8284C309.269 29.0237 309.269 29.3403 309.464 29.5355C309.66 29.7308 309.976 29.7308 310.172 29.5355L313.354 26.3536ZM286 26.5H313V25.5H286V26.5Z" fill="#14010C" />
-                        </svg>
-                    </a>
-                </div>
+                </div>    
             </div>
 
         </section>
@@ -1299,9 +1431,128 @@
             })
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <script src="js/main.js"></script>
+<link href="style.css@2.css" rel="stylesheet">
+
+<link rel="stylesheet" href="library/ui/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+<link rel="stylesheet" href="portfolio/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="portfolio/css/catalog.css">
+<link rel="stylsheet" href="portfolio/css/main.css">
+<link rel="stylsheet" href="portfolio/css/normalize.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+<link rel="stylesheet" href="portfolio/css/success.min.css">
+<link type="text/css" rel="stylesheet" href="style/catalog.css@2.css">
+
+
+<script src="jquery.bxslider.min.js@2"></script>
+<script src="script/jquery.mb.browser.js@2"></script>
+<script src="script/jquery.cookie.js@2"></script>
+<script src="portfolio/js/jquery.validate.js"></script>
+<script src="script/index.js@2"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+<script type="text/javascript" src="library/Pagination/dist/pagination.min.js"></script>
+<script src="owl/owl.carousel.min.js@2"></script>
+<script src="placeholder.js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="common.js"></script>
+<script src="script/progressive-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script type='text/javascript'>
+$('.pagination').pagination({
+    total: 2325,
+    current: 1, 
+    length: 6,
+    size: 0,
+    prev: '«',
+    next: '»',
+    click: function(options,$target) {
+        $.post("/bestprojects.php", {
+            page: options.current.toString(),
+            query: $("input[name=query]").val()
+        }, function(data) {
+            window.scrollTo(0, 0);
+            $(".block_proekts_img .best").html(data);
+        }, "json").fail(function(xhr, status, error) {
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
+    });    }
+
+ });
+ 
+    var $range = $("#slider-range");
+    var $inputFrom = $("#proect_s0_min");
+    var $inputTo = $("#proect_s0_max");
+    var instance;
+    var min = 0;
+    var max = 2500;
+    var from = 0;
+    var to = 2500;
+    
+ $range.ionRangeSlider({
+    type: "double",
+    skin: "big",
+    grid: true,
+    min: min,
+    max: max,
+    from: from,
+    to: to,
+    step: 50,
+    postfix: " м<sup>2</sup>",
+    onChange: updateInputs
+ });
+ instance = $range.data("ionRangeSlider");
+ function updateInputs (data) {
+        from = data.from;
+        to = data.to;
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);
+        countfiltr();
+ }
+
+</script>
+
+
+
+
+<script>
+$(function() {
+    $(".slide-prosmotrenny").owlCarousel({
+		dots:false,
+		loop:true, //Зацикливаем слайдер
+		nav:true, 
+		nav:true, 
+		navText: ["<div class='d-flex pt-3 justify-content-center'><div class='px-2' aria-label='Previous'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_left_sliders.png'></div>","<div class='px-2' aria-label='Next'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_right_sliders.png'></div></div>"],
+		autoplay:true, //Автозапуск слайдера
+		autoplayHoverPause:true, //Пауза при навидении мыши
+		smartSpeed:1000, //Время движения слайда
+		autoplayTimeout:2000, //Время смены слайда
+		responsiveBaseElement: 'body',
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			800:{
+				items:3
+			},
+			1000:{
+				items:4
+			}
+		}
+	
+    });
+	
+});
+
+
+</script>
+
 </body>
 
 </html>
