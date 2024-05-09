@@ -1071,14 +1071,18 @@
                     <p>*при заказе отделки</p>
                 </div>
 
-                <a class="button_type2" href="#">
-                    <p>Рассчитать смету</p>
-                    <svg width="44.625rem" height="11.625rem" viewBox="0 0 714 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="hoverRect" d="M713.5 93.4197C713.5 144.204 672.316 185.373 621.513 185.373C570.71 185.373 529.526 144.204 529.526 93.4197C529.526 42.6357 570.71 1.4668 621.513 1.4668C672.316 1.4668 713.5 42.6357 713.5 93.4197Z" stroke="#A78B73" />
-                        <line y1="92.9194" x2="623.363" y2="92.9194" stroke="#14010C" />
-                        <path d="M557 68.8823H556.5V69.8823H557V68.8823ZM622.094 69.7359C622.29 69.5406 622.29 69.224 622.094 69.0288L618.913 65.8468C618.717 65.6515 618.401 65.6515 618.205 65.8468C618.01 66.0421 618.01 66.3586 618.205 66.5539L621.034 69.3823L618.205 72.2108C618.01 72.406 618.01 72.7226 618.205 72.9179C618.401 73.1131 618.717 73.1131 618.913 72.9179L622.094 69.7359ZM557 69.8823H621.741V68.8823H557V69.8823Z" fill="#14010C" />
-                    </svg>
-                </a>
+                <a href="design.html" class="d-flex but_hover_square position-relative w-75 pt-4" style="border-bottom: 1px solid #14010C;">
+					<span class="pt-4 but_podrobnee_srvices mb-2" style="color: #14010C; font-size: 2.25rem;">
+						Рассчитать смету
+					</span>
+						<div class="position-absolute square_block_services_pdl" style="top: 10%;">
+							<div class="button_podbor_square_services  position-relative" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%; padding: 5rem;">
+								<div class="position-absolute" style="top: 30px;left: 10px;z-index: 0;">
+									<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 35px;height: 7px;">
+								</div>
+							</div>
+						</div>
+				</a>
             </div>
             <img src="assets/images/interior-gradient1.jpg" class="block_gradient__image">
         </section>
@@ -1094,114 +1098,141 @@
             </p>
 
             <!-- Селектор (Десктоп) -->
-            <div class="selector only-pc">
-                <!-- Переключатели -->
-                <div class="selector__items_container">
-                    <a data-target="panel4-1" class="selector__item js-panel-toggler active"><img src="assets/icons/arrow-right.svg">Натяжные потолки</a>
-                    <a data-target="panel4-2" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Гипсокартон</a>
-                    <a data-target="panel4-3" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Подвесные потолки</a>
-                </div>
+            <div class="row mx-0 px-0 mb-lg-5">
+                <div class="col-4 px-0">
+                    <div class="d-block list-group" id="list-tab3" role="tablist">
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0 active" id="list-potolok1-list" data-bs-toggle="list" href="index.html#list-potolok1" role="tab" aria-controls="potolok1" aria-selected="true">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">
+                            </div>
+                            <div class="m-auto mx-2">
+                                Натяжные потолки
+                            </div>	
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-potolok2-list" data-bs-toggle="list" href="index.html#list-potolok2" role="tab" aria-controls="potolok2" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Гипсокартон
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-potolok3-list" data-bs-toggle="list" href="index.html#list-potolok3" role="tab" aria-controls="potolok3" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Подвесные потолки
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-8 d-flex align-items-center justify-content-center">
+                    <div class="tab-content" id="nav-tabContent3">
+                        <div class="tab-pane fade active show" id="list-potolok1" role="tabpanel" aria-labelledby="list-potolok1-list"> 
+                            <!-- Натяжные потолки -->
+                            <div id="panel4-1" class="selector_content-checks js-content-panel">
+    <h3 class="selector_content-checks__title">Натяжные потолки</h3>
+    <p class="selector_content-checks__text">Наша компания предлагает различные виды натяжных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
 
-                <!-- Контент -->
+    <div class="block_checks__container">
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Глянцевые натяжные потолки</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Фотопечать на натяжных потолках</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Матовые натяжные потолки</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Световые натяжные потолки</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Сатиновые натяжные потолки</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Тканевые натяжные потолки</p>
+        </div>
+    </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-potolok2" role="tabpanel" aria-labelledby="list-potolok2-list">
+                            <!-- Гипсокартон -->
+                            <div id="panel4-2" class="selector_content-checks js-content-panel">
+    <h3 class="selector_content-checks__title">Гипсокартон</h3>
+    <p class="selector_content-checks__text">Наша компания предлагает различные виды гипсокартона, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов гипсокартона, которые мы с радостью для вас выполним: </p>
 
-                <!-- Натяжные потолки -->
-                <div id="panel4-1" class="selector_content-checks js-content-panel">
-                    <h3 class="selector_content-checks__title">Натяжные потолки</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды натяжных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+    <div class="block_checks__container">
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Стандартный гипсокартон</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Звукоизоляционный гипсокартон</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Влагостойкий гипсокартон</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Криволинейный гипсокартон</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Огнестойкий гипсокартон</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Светопрозрачный гипсокартон</p>
+        </div>
+    </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-potolok3" role="tabpanel" aria-labelledby="list-potolok3-list">
+                            <!-- Подвесные потолки -->
+                            <div id="panel4-3" class="selector_content-checks js-content-panel">
+    <h3 class="selector_content-checks__title">Подвесные потолки</h3>
+    <p class="selector_content-checks__text">Наша компания предлагает различные виды подвесных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов подвесного потолка, которые мы с радостью для вас выполним: </p>
 
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Глянцевые натяжные потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Фотопечать на натяжных потолках</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Матовые натяжные потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Световые натяжные потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Сатиновые натяжные потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые натяжные потолки</p>
+    <div class="block_checks__container">
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Армстронговский потолок</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Минеральные волокнистые плиты</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Металлические потолки</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Подвесные потолки из гипсокартона</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Тканевые подвесные потолки</p>
+        </div>
+        <div class="block_checks__item">
+            <img src="assets/icons/check.svg">
+            <p>Подвесные потолки с подсветкой</p>
+        </div>
+    </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Гипсокартон -->
-                <div id="panel4-2" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Гипсокартон</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды гипсокартона, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов гипсокартона, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Стандартный гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Звукоизоляционный гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Влагостойкий гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Криволинейный гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Огнестойкий гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Светопрозрачный гипсокартон</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Подвесные потолки -->
-                <div id="panel4-3" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Подвесные потолки</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды подвесных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов подвесного потолка, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Армстронговский потолок</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Минеральные волокнистые плиты</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Металлические потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Подвесные потолки из гипсокартона</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые подвесные потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Подвесные потолки с подсветкой</p>
-                        </div>
-                    </div>
-                </div>
+                </div>   
             </div>
 
         </section>
@@ -1232,14 +1263,18 @@
                     <p>*при заказе индивидуального проектирования</p>
                 </div>
 
-                <a class="button_type2" href="#">
-                    <p>Рассчитать стоимость</p>
-                    <svg width="44.625rem" height="11.625rem" viewBox="0 0 714 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path class="hoverRect" d="M713.5 93.4197C713.5 144.204 672.316 185.373 621.513 185.373C570.71 185.373 529.526 144.204 529.526 93.4197C529.526 42.6357 570.71 1.4668 621.513 1.4668C672.316 1.4668 713.5 42.6357 713.5 93.4197Z" stroke="#A78B73" />
-                        <line y1="92.9194" x2="623.363" y2="92.9194" stroke="#14010C" />
-                        <path d="M557 68.8823H556.5V69.8823H557V68.8823ZM622.094 69.7359C622.29 69.5406 622.29 69.224 622.094 69.0288L618.913 65.8468C618.717 65.6515 618.401 65.6515 618.205 65.8468C618.01 66.0421 618.01 66.3586 618.205 66.5539L621.034 69.3823L618.205 72.2108C618.01 72.406 618.01 72.7226 618.205 72.9179C618.401 73.1131 618.717 73.1131 618.913 72.9179L622.094 69.7359ZM557 69.8823H621.741V68.8823H557V69.8823Z" fill="#14010C" />
-                    </svg>
-                </a>
+                <a href="(4) Отделка.html" class="d-flex but_hover_square position-relative w-75 pt-4" style="border-bottom: 1px solid #14010C;">
+					<span class="pt-4 but_podrobnee_srvices mb-2" style="color: #14010C; font-size: 2.25rem;">
+						Рассчитать смету
+					</span>
+						<div class="position-absolute square_block_services_pdl" style="top: 10%;">
+							<div class="button_podbor_square_services  position-relative" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%; padding: 5rem;">
+								<div class="position-absolute" style="top: 30px;left: 10px;z-index: 0;">
+									<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 35px;height: 7px;">
+								</div>
+							</div>
+						</div>
+				</a>
             </div>
             <img src="assets/images/interior-gradient1.jpg" class="block_gradient__image">
         </section>
@@ -1258,122 +1293,159 @@
                 Ваш интерьер - это холст, на котором вы можете реализовать свои самые смелые идеи. Декоративные элементы помогут вам преобразить обыденные пространства в уникальные и вдохновляющие места.
             </p>
 
-            <!-- Селектор (Десктоп) -->
-            <div class="selector only-pc">
-                <!-- Переключатели -->
-                <div class="selector__items_container">
-                    <a data-target="panel5-1" class="selector__item js-panel-toggler active"><img src="assets/icons/arrow-right.svg">Молдинги</a>
-                    <a data-target="panel5-2" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Сандрики</a>
-                    <a data-target="panel5-3" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Плинтуса</a>
-                    <a data-target="panel5-4" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Колонны</a>
-                </div>
-
-                <!-- Контент -->
-
-                <!-- Натяжные потолки -->
-                <div id="panel4-1" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Натяжные потолки</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды натяжных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Глянцевые натяжные потолки</p>
+            <div class="row mx-0 px-0 mb-lg-5">
+                <div class="col-4 px-0">
+                    <div class="d-block list-group" id="list-tab4" role="tablist">
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0 active" id="list-dekor1-list" data-bs-toggle="list" href="index.html#list-dekor1" role="tab" aria-controls="dekor1" aria-selected="true">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">
+                            </div>
+                            <div class="m-auto mx-2">
+                                Молдинги
+                            </div>	
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-decor2-list" data-bs-toggle="list" href="index.html#list-decor2" role="tab" aria-controls="decor2" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Сандрики
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-decor3-list" data-bs-toggle="list" href="index.html#list-decor3" role="tab" aria-controls="decor3" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Плинтуса
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-decor4-list" data-bs-toggle="list" href="index.html#list-decor4" role="tab" aria-controls="decor4" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Колонны
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-8 d-flex align-items-center justify-content-center">
+                    <div class="tab-content" id="nav-tabContent4">
+                        <div class="tab-pane fade active show" id="list-decor1" role="tabpanel" aria-labelledby="list-decor1-list"> 
+                            <!-- Натяжные потолки -->
+                            <div id="panel4-1" class="selector_content-checks js-content-panel">
+                            <h3 class="selector_content-checks__title">Молдинги</h3>
+                            <p class="selector_content-checks__text">Наша компания предлагает различные виды молдингов в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые  мы с радостью для вас выполним: </p>
+        
+                            <div class="block_checks__container">
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Сухогипсовые молдинги</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Деревянные молдинги</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Металлические молдинги</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Полимерные молдинги</p>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Фотопечать на натяжных потолках</p>
+                        <div class="tab-pane fade" id="list-decor2" role="tabpanel" aria-labelledby="list-decor2-list">
+                            <!-- Гипсокартон -->
+                            <div id="panel4-2" class="selector_content-checks js-content-panel">
+                            <h3 class="selector_content-checks__title">Сандрики</h3>
+                            <p class="selector_content-checks__text">Наша компания предлагает различные виды сандриков в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов сандриков, которые  мы с радостью для вас выполним: </p>
+        
+                            <div class="block_checks__container">
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Тканевые подвесные сандрики</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Декоративные элементы из полиуретана</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Деревянные подвесные сандрики</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Стеклянные подвесные сандрики</p>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Матовые натяжные потолки</p>
+                        <div class="tab-pane fade" id="list-decor3" role="tabpanel" aria-labelledby="list-decor3-list">
+                            <!-- Подвесные потолки -->
+                            <div id="panel4-3" class="selector_content-checks js-content-panel">
+                            <h3 class="selector_content-checks__title">Плинтуса</h3>
+                            <p class="selector_content-checks__text">Наша компания предлагает различные виды плинтусов в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов плинтусов, которые  мы с радостью для вас выполним: </p>
+        
+                            <div class="block_checks__container">
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Плинтус из дерева</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Плинтус из полиэтилена</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Плинтус из полиуретана</p>
+                                </div>
+                                <div class="block_checks__item">
+                                    <img src="assets/icons/check.svg">
+                                    <p>Металлический плинтус</p>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Световые натяжные потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Сатиновые натяжные потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые натяжные потолки</p>
+                        <div class="tab-pane fade" id="list-decor4" role="tabpanel" aria-labelledby="list-decor4-list">
+                            <!-- Подвесные потолки -->
+                            <div id="panel4-3" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Колонны</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды колонн в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов колонн, которые  мы с радостью для вас выполним: </p>
+            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Классические колонны</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Композитные колонны</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Тосканские колонны</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Корпусные (несущие) колонны</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Гипсокартон -->
-                <div id="panel4-2" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Гипсокартон</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды гипсокартона, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов гипсокартона, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Стандартный гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Звукоизоляционный гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Влагостойкий гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Криволинейный гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Огнестойкий гипсокартон</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Светопрозрачный гипсокартон</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Подвесные потолки -->
-                <div id="panel4-3" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Подвесные потолки</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды подвесных потолков, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов подвесного потолка, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Армстронговский потолок</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Минеральные волокнистые плиты</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Металлические потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Подвесные потолки из гипсокартона</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые подвесные потолки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Подвесные потолки с подсветкой</p>
-                        </div>
-                    </div>
-                </div>
+                </div>   
             </div>
 
         </section>
 
+
+
         <!-- Автоматический слайдер -->
-        <section class="block_auto-slider owl-carousel">
+        <section class="block_auto-slider owl-carousel mb-0">
             <img src="assets/sliders/otdelka_ceilings/1.jpg" class="block_auto-slider__item">
             <img src="assets/sliders/otdelka_ceilings/2.jpg" class="block_auto-slider__item">
             <img src="assets/sliders/otdelka_ceilings/3.jpg" class="block_auto-slider__item">
@@ -1444,7 +1516,7 @@
             <div class="footer_container">
                     <div class="footer__text-block">
                             <img src="assets/icons/a.svg" alt="Arhion">
-                            <p>Архитектурно- <br> строительная группа</p>
+                            <p>Архитектурно- <br> строительная <br> группа</p>
                             <a href="termsofuse.html" class="footer__link footer__mini-text only-pc">Политика конфиденциальности</a>
                     </div>
                     <div class="footer__link_blocks only-pc">
