@@ -30,12 +30,14 @@
     
     .list-group-item.services_text {
         color: #000 !important;
+        font-size: 24px;
     }
     
     .list-group-item.services_text.active 
-         {
+    {
         color: #000 !important;
-        }
+        font-size: 28px !important;
+    }
     
     .windows-form label,input {
         display: inline-block
@@ -256,7 +258,7 @@
             <div class="intro__rect intro__rect--white">
                 <h1 class="intro__title intro__title--type2">Внутренняя<br>отделка</h1>
             </div>
-            <div class="position-absolute buttonOrder" style="z-index: 1;top: 65%;right: 12%;">
+            <div class="position-absolute buttonOrder" style="z-index: 1;top: 55%;right: 12%;">
                 <button id="btn-project-order" class="btn-circle-project btn-call-form-project">
                     Рассчитать
                     <hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25));">
@@ -411,264 +413,300 @@
                 Стены - это не просто разделители пространства, но и холст для выражения стиля и характера помещения. Выбор материалов и отделки стен может значительно повлиять на общую атмосферу. Например, кирпичные стены придают интерьеру смелости и индустриального шарма, в то время как гипсокартонные стены могут обеспечить гладкую поверхность для минималистичного дизайна. Кроме того, цвет, текстура и использование декоративных элементов, таких как обои или панели, могут придать стенам уникальный вид.
             </p>
 
-            <!-- Селектор (Десктоп) -->
-            <div class="selector only-pc">
-                <!-- Переключатели -->
-                <div class="selector__items_container">
-                    <a data-target="panel2-1" class="selector__item js-panel-toggler active">
-                        <img src="assets/icons/arrow-right.svg">
-                        Штукатурка
-                    </a>
-                    <a data-target="panel2-2" class="selector__item js-panel-toggler">
-                        <img src="assets/icons/arrow-right.svg">
-                        Облицовачный камень
-                    </a>
-                    <a data-target="panel2-3" class="selector__item js-panel-toggler">
-                        <img src="assets/icons/arrow-right.svg">
-                        Обои
-                    </a>
-                    <a data-target="panel2-4" class="selector__item js-panel-toggler">
-                        <img src="assets/icons/arrow-right.svg">
-                        Покраска
-                    </a>
-                    <a data-target="panel2-5" class="selector__item js-panel-toggler">
-                        <img src="assets/icons/arrow-right.svg">
-                        Структурная шпаклевка
-                    </a>
-                    <a data-target="panel2-6" class="selector__item js-panel-toggler">
-                        <img src="assets/icons/arrow-right.svg">
-                        Венецианская штукатурка
-                    </a>
-                    <a data-target="panel2-7" class="selector__item js-panel-toggler">
-                        <img src="assets/icons/arrow-right.svg">
-                        Отделка стен тканью
-                    </a>
-                </div>
-
-                <!-- Контент -->
-                <!-- Штукатурка -->
-                <div id="panel2-1" class="selector_content-checks js-content-panel">
-                    <h3 class="selector_content-checks__title">Штукатурка</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Гипсовая штукатурка</p>
+            <div class="row mx-0 px-0 mb-lg-5">
+                <div class="col-4 px-0">
+                    <div class="d-block list-group" id="list-tab1" role="tablist">
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0 active" id="list-shtukaturka-list" data-bs-toggle="list" href="index.html#list-shtukaturka" role="tab" aria-controls="shtukaturka" aria-selected="true">
+                        <div class="m-auto mx-2">
+                            <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Штукатурка под покраску</p>
+                        <div class="m-auto mx-2">
+                            Штукатурка 
+                        </div>	
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-stone-list" data-bs-toggle="list" href="index.html#list-stone" role="tab" aria-controls="stone" aria-selected="false">
+                        <div class="m-auto mx-2">
+                            <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Цементная штукатурка</p>
+                        <div class="m-auto mx-2">
+                            Облицовачный камень
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Терракотовая штукатурка</p>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-oboi-list" data-bs-toggle="list" href="index.html#list-oboi" role="tab" aria-controls="oboi" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Обои
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-pokraska-list" data-bs-toggle="list" href="index.html#list-pokraska" role="tab" aria-controls="pokraska" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Покраска
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-shpaklevka-list" data-bs-toggle="list" href="index.html#list-shpaklevka" role="tab" aria-controls="shpaklevka" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Структурная шпаклевка
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-venec-list" data-bs-toggle="list" href="index.html#list-venec" role="tab" aria-controls="venec" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Венецианская штукатурка
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-tkan-list" data-bs-toggle="list" href="index.html#list-tkan" role="tab" aria-controls="tkan" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Отделка стен тканью
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-8 d-flex align-items-center justify-content-center">
+                    <div class="tab-content" id="nav-tabContent1">
+                        <div class="tab-pane fade active show" id="list-shtukaturka" role="tabpanel" aria-labelledby="list-shtukaturka-list"> 
+                            <div id="panel2-1" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Штукатурка</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Гипсовая штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Штукатурка под покраску</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Цементная штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Терракотовая штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Декоративная штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Штукатурка с эффектом старины</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Декоративная штукатурка</p>
+                        <div class="tab-pane fade" id="list-stone" role="tabpanel" aria-labelledby="list-stone-list">
+                            <!-- Облицовочный камень -->
+                            <div id="panel2-2" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Облицовочнный камень</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+                            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Плитка под кирпич</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Натуральный камень</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Плитка из искусственного камня</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Мозаика</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Деревянная облицовка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Стеклянная облицовка</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Штукатурка с эффектом старины</p>
+                        <div class="tab-pane fade" id="list-oboi" role="tabpanel" aria-labelledby="list-oboi-list">
+                        <!-- Обои -->
+                            <div id="panel2-3" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Обои</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+                            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Обои с бумажным основанием</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Стеклообои</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Виниловые обои</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Текстильные обои</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Флизелиновые обои</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Текстурные обои</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-pokraska" role="tabpanel" aria-labelledby="list-pokraska-list">
+                            <!-- Покраска -->
+                            <div id="panel2-4" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Покраска</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+                            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Акриловая покраска</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Латексная покраска</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Масляная покраска</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Термопластичная покраска</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Эмалевая покраска</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Антиграффити покрытия</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-shpaklevka" role="tabpanel" aria-labelledby="list-shpaklevka-list">
+                            <!-- Структурная шпаклевка -->
+                            <div id="panel2-5" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Структурная шпаклевка</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+                            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Грубая текстурная штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Гипсовая штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Штукатурка "ржавая стена"</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Стиль "шаблоны"</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Штукатурка "каменная стена"</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Скрэппи и гроути</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-venec" role="tabpanel" aria-labelledby="list-venec-list">
+                            <!-- Венецианская штукатурка -->
+                            <div id="panel2-6" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Венецианская штукатурка</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+                            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Классическая штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Текстурная штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Металлическая штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Античная венецианская штукатурка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Двойная отделка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Венецианская штукатурка с рисунками</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-tkan" role="tabpanel" aria-labelledby="list-tkan-list">
+                            <!-- Отделка стен тканью -->
+                            <div id="panel2-7" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Отделка стен тканью</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+                            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Тканевые обои</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Отделка с использованием системы натяжения</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Тканевые панели</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Тканевые панели с рисунками или узорами</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Облицовочный камень -->
-                <div id="panel2-2" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Облицовочнный камень</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Плитка под кирпич</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Натуральный камень</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Плитка из искусственного камня</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Мозаика</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Деревянная облицовка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Стеклянная облицовка</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Обои -->
-                <div id="panel2-3" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Обои</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Обои с бумажным основанием</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Стеклообои</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Виниловые обои</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Текстильные обои</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Флизелиновые обои</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Текстурные обои</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Покраска -->
-                <div id="panel2-4" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Покраска</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Акриловая покраска</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Латексная покраска</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Масляная покраска</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Термопластичная покраска</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Эмалевая покраска</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Антиграффити покрытия</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Структурная шпаклевка -->
-                <div id="panel2-5" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Структурная шпаклевка</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Грубая текстурная штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Гипсовая штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Штукатурка "ржавая стена"</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Стиль "шаблоны"</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Штукатурка "каменная стена"</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Скрэппи и гроути</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Венецианская штукатурка -->
-                <div id="panel2-6" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Венецианская штукатурка</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Классическая штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Текстурная штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Металлическая штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Античная венецианская штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Двойная отделка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Венецианская штукатурка с рисунками</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Отделка стен тканью -->
-                <div id="panel2-7" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Отделка стен тканью</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды штукатурных работ, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые обои</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Отделка с использованием системы натяжения</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые панели</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые панели с рисунками или узорами</p>
-                        </div>
-                    </div>
-                </div>
-
+                </div>   
             </div>
         </section>
 
@@ -702,246 +740,306 @@
                 Полы являются неотъемлемой частью внутреннего отдела и важны для комфорта и функциональности помещения. Выбор материала пола зависит от предполагаемой нагрузки, стиля и бюджета. Деревянные полы придают тепло и природную красоту, ламинат - прочность и доступность, а кафель или камень - устойчивость к влаге и износу. Отделка полов также может включать в себя ковровое покрытие, что придает помещению мягкость и звукоизоляцию.
             </p>
 
-            <!-- Селектор (Десктоп) -->
-            <div class="selector only-pc">
-                <!-- Переключатели -->
-                <div class="selector__items_container">
-                    <a data-target="panel3-1" class="selector__item js-panel-toggler active"><img src="assets/icons/arrow-right.svg">Стяжка пола</a>
-                    <a data-target="panel3-2" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Плитка на пол</a>
-                    <a data-target="panel3-3" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Износостойкий ковролин</a>
-                    <a data-target="panel3-4" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Пробка</a>
-                    <a data-target="panel3-5" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Натуральный линолеум</a>
-                    <a data-target="panel3-6" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Венецианская штукатурка</a>
-                    <a data-target="panel3-7" class="selector__item js-panel-toggler"><img src="assets/icons/arrow-right.svg">Отделка полов тканью</a>
+            <div class="row mx-0 px-0 mb-lg-5">
+                <div class="col-4 px-0">
+                    <div class="d-block list-group" id="list-tab2" role="tablist">
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0 active" id="list-styazhka-list" data-bs-toggle="list" href="index.html#list-styazhka" role="tab" aria-controls="styazhka" aria-selected="true">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">
+                            </div>
+                            <div class="m-auto mx-2">
+                                Стяжка пола
+                            </div>	
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-plitka-list" data-bs-toggle="list" href="index.html#list-plitka" role="tab" aria-controls="plitka" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Плитка на пол
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-kover-list" data-bs-toggle="list" href="index.html#list-kover" role="tab" aria-controls="kover" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Износостойкий ковролин
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-probka-list" data-bs-toggle="list" href="index.html#list-probka" role="tab" aria-controls="probka" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Пробка
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-linol-list" data-bs-toggle="list" href="index.html#list-linol" role="tab" aria-controls="linol" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Натуральный линолеум
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-venec2-list" data-bs-toggle="list" href="index.html#list-venec2" role="tab" aria-controls="venec2" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Венецианская штукатурка
+                            </div>
+                        </a>
+                        <a class="d-flex py-3 list-group-item list-group-item-action services_text px-0" id="list-tkan2-list" data-bs-toggle="list" href="index.html#list-tkan2" role="tab" aria-controls="tkan2" aria-selected="false">
+                            <div class="m-auto mx-2">
+                                <img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+                            </div>
+                            <div class="m-auto mx-2">
+                                Отделка полов тканью
+                            </div>
+                        </a>
+                    </div>
+                </div> 
+                <div class="col-8 d-flex align-items-center justify-content-center">
+                    <div class="tab-content" id="nav-tabContent2">
+                        <div class="tab-pane fade active show" id="list-styazhka" role="tabpanel" aria-labelledby="list-styazhka-list"> 
+                            <!-- Стяжка пола -->
+                            <div id="panel3-1" class="selector_content-checks js-content-panel">
+                                <h3 class="selector_content-checks__title">Стяжка пола</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+                            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Цементно-песчаная стяжка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Армирующая стяжка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Ангидритная стяжка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Сухая стяжка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Полимерная стяжка</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Плавающая стяжка</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-plitka" role="tabpanel" aria-labelledby="list-plitka-list">
+                            <!-- Плитка на пол -->
+                            <div id="panel3-2" class="selector_content-checks js-content-panel">
+            <h3 class="selector_content-checks__title">Плитка на пол</h3>
+            <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+            <div class="block_checks__container">
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Керамическая плитка</p>
                 </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Мраморная плитка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Гранитная плитка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Терракота и керамогранит</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Порцелановая плитка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Ламинатная плитка</p>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-kover" role="tabpanel" aria-labelledby="list-kover-list">
+                            <!-- Износостойкий ковролин -->
+                            <div id="panel3-3" class="selector_content-checks js-content-panel" >
+                                <h3 class="selector_content-checks__title">Износостойкий ковролин</h3>
+                                <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+                            
+                                <div class="block_checks__container">
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Беспробковый ковролин</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Коммерческий ковролин с низким ворсом</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Коммерческий ковролин</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Ворсистый ковролин</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Модульный ковролин</p>
+                                    </div>
+                                    <div class="block_checks__item">
+                                        <img src="assets/icons/check.svg">
+                                        <p>Влагостойкий ковролин</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-probka" role="tabpanel" aria-labelledby="list-probka-list">                    
+                            <!-- Пробка -->
+                            <div id="panel3-4" class="selector_content-checks js-content-panel" >
+            <h3 class="selector_content-checks__title">Пробка</h3>
+            <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
 
-                <!-- Контент -->
+            <div class="block_checks__container">
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Паркет из пробки</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Штучная пробка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Клик-пробка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Самоклеящаяся пробка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Плитки из пробки</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Звукоизоляционная пробка</p>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-linol" role="tabpanel" aria-labelledby="list-linol-list">
+                            <!-- Натуральный линолеум -->
+                            <div id="panel3-5" class="selector_content-checks js-content-panel">
+            <h3 class="selector_content-checks__title">Натуральный линолеум</h3>
+            <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
 
-                <!-- Стяжка пола -->
-                <div id="panel3-1" class="selector_content-checks js-content-panel">
-                    <h3 class="selector_content-checks__title">Стяжка пола</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+            <div class="block_checks__container">
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Листовой натуральный линолеум</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Плитки из натурального линолеума</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Линолеум с тиснением</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Линолеум с изображением</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Линолеум с звукоизоляцией</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Линолеум с покрытием для защиты</p>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-venec2" role="tabpanel" aria-labelledby="list-venec2-list">
+                            <!-- Венецианская штукатурка -->
+                            <div id="panel3-6" class="selector_content-checks js-content-panel" >
+            <h3 class="selector_content-checks__title">Венецианская штукатурка</h3>
+            <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
 
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Цементно-песчаная стяжка</p>
+            <div class="block_checks__container">
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Классическая штукатурка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Текстурная штукатурка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Металлическая штукатурка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Античная венецианская штукатурка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Двойная отделка</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Венецианская штукатурка с рисунками</p>
+                </div>
+            </div>
+                            </div>
                         </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Армирующая стяжка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Ангидритная стяжка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Сухая стяжка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Полимерная стяжка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Плавающая стяжка</p>
+                        <div class="tab-pane fade" id="list-tkan2" role="tabpanel" aria-labelledby="list-tkan2-list">
+                            <!-- Отделка полов тканью -->
+                            <div id="panel3-7" class="selector_content-checks js-content-panel">
+            <h3 class="selector_content-checks__title">Отделка полов тканью</h3>
+            <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
+
+            <div class="block_checks__container">
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Тканевые полы</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Отделка с использованием системы натяжения</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Тканевые панели</p>
+                </div>
+                <div class="block_checks__item">
+                    <img src="assets/icons/check.svg">
+                    <p>Тканевые панели с рисунками или узорами</p>
+                </div>
+            </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Плитка на пол -->
-                <div id="panel3-2" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Плитка на пол</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Керамическая плитка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Мраморная плитка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Гранитная плитка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Терракота и керамогранит</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Порцелановая плитка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Ламинатная плитка</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Износостойкий ковролин -->
-                <div id="panel3-3" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Износостойкий ковролин</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Беспробковый ковролин</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Коммерческий ковролин с низким ворсом</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Коммерческий ковролин</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Ворсистый ковролин</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Модульный ковролин</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Влагостойкий ковролин</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Пробка -->
-                <div id="panel3-4" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Пробка</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Паркет из пробки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Штучная пробка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Клик-пробка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Самоклеящаяся пробка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Плитки из пробки</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Звукоизоляционная пробка</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Натуральный линолеум -->
-                <div id="panel3-5" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Натуральный линолеум</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Листовой натуральный линолеум</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Плитки из натурального линолеума</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Линолеум с тиснением</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Линолеум с изображением</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Линолеум с звукоизоляцией</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Линолеум с покрытием для защиты</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Венецианская штукатурка -->
-                <div id="panel3-6" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Венецианская штукатурка</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Классическая штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Текстурная штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Металлическая штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Античная венецианская штукатурка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Двойная отделка</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Венецианская штукатурка с рисунками</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Отделка полов тканью -->
-                <div id="panel3-7" class="selector_content-checks js-content-panel" style="display: none;">
-                    <h3 class="selector_content-checks__title">Отделка полов тканью</h3>
-                    <p class="selector_content-checks__text">Наша компания предлагает различные виды стяжки пола, в зависимости от потребностей клиента и характера проекта. Вот некоторые из наиболее распространенных видов штукатурных работ, которые мы с радостью для вас выполним: </p>
-
-                    <div class="block_checks__container">
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые полы</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Отделка с использованием системы натяжения</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые панели</p>
-                        </div>
-                        <div class="block_checks__item">
-                            <img src="assets/icons/check.svg">
-                            <p>Тканевые панели с рисунками или узорами</p>
-                        </div>
-                    </div>
-                </div>
+                </div>   
             </div>
 
         </section>
+        
+
 
         <!-- Автоматический слайдер -->
         <section class="block_auto-slider owl-carousel">
