@@ -29,12 +29,14 @@
 <script src="js/respond.min.js"></script>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="templates/navbarn.css">
 <link rel="stylesheet" href="templates/catalog_banner.css">
+<link rel="stylesheet" href="portfolio/css/catalog.css">
+
 <script src="jquery-2.2.4.min.js"></script>
 <script src="jquery.formstyler.min.js@2"></script>  
 <script src="script/filtr-new.js@2" ></script>
-
+<link href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
 <script src="library/slick-1.8.1/slick/slick.min.js"></script>
 
 <style>
@@ -42,6 +44,10 @@
 		width: 350px;
 	}
 </style>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="templates/navbarn.css">
 
 </head>
 
@@ -235,11 +241,19 @@
 								</form>
 							</div>
 						</div>
-						<div class="col-6 text-end px-0">
+						<div class="col-6 text-end px-0 d-flex gap-3 justify-content-end">
+							<div class="input-container" style="display: flex; align-items: center;">
+								<input class="filterInput" placeholder="Поиск по номеру проекта" type="text">
+								<div class="search-icon" style="bottom: -5px; top: 50%;">
+										<svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M25 24L19.2094 18.4507M19.2094 18.4507C20.1999 17.5014 20.9856 16.3745 21.5217 15.1343C22.0577 13.8941 22.3336 12.5648 22.3336 11.2224C22.3336 9.87995 22.0577 8.55067 21.5217 7.31044C20.9856 6.0702 20.1999 4.9433 19.2094 3.99406C18.2189 3.04483 17.043 2.29185 15.7488 1.77813C14.4547 1.26441 13.0676 1 11.6668 1C10.266 1 8.87896 1.26441 7.5848 1.77813C6.29065 2.29185 5.11474 3.04483 4.12424 3.99406C2.12382 5.91113 1 8.51123 1 11.2224C1 13.9335 2.12382 16.5336 4.12424 18.4507C6.12466 20.3677 8.8378 21.4447 11.6668 21.4447C14.4958 21.4447 17.209 20.3677 19.2094 18.4507Z" stroke="#969696" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+								</div>
+							</div>
 							<button class="border-0 color_gray_text back_transpar btn btn-primary" onclick="openDiv();" style="background-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilter" aria-expanded="false" aria-controls="collapseFilter">
 								<img class="m-auto" style="height: 45px; width: 45px;" src="images/catalog_new_hmkmos/sliders-horizontal.png">
 							</button>
-                            
+						
 <!----------------------------PROJECTS FILTER START------------------------------------!>
 	<div class="collapse col-12 col-sm-6 col-xl-5 position-absolute filter_nav" id="collapseFilter" style="z-index:1000;">
 		<div class="card card-body" id="myCard">
@@ -258,7 +272,7 @@
 				<label for="customRange2" class="text-start form-label color_gray_text font_famil_catalog">
 					Площадь дома
 				</label>
-				<input type="range" class="my_range" min="0" max="2500" id="customRange2" color="#A78B73" value="">
+				<div id="slider"></div>
 				<div class="d-flex justify-content-between">
 					<span>
 						0
@@ -621,7 +635,7 @@
 						Сбросить фильтры
 						</a> -->
 					</div>
-				</div>
+						</div>
 			</form>
 		</div>
 	</div>
@@ -4829,6 +4843,21 @@ $('.pagination').pagination({
  }
 
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var slider = document.getElementById('slider');
+      noUiSlider.create(slider, {
+        start: [0, 2500],
+        connect: true,
+        range: {
+          'min': 0,
+          'max': 3000
+        }
+      });
+    });
+  </script>
+
 
 <script>
 /*
