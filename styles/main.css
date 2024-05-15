@@ -135,7 +135,7 @@ li {
   background: #C4C4C4;
   background-size: cover;
   background-position: center;
-  height: 67.4rem;
+  height: 58rem;
   display: flex;
 }
 
@@ -1347,16 +1347,16 @@ hr {
 .aboutus {
 	background: #f1ebe6;
 	padding: 50px 80px;
-	height: 1050px;
+	height: 770px;
 }
 
 .logo-text {
 	font-family: "Inter", sans-serif;
 	font-weight: 400;
-	font-size: 182px;
+	font-size: 130px;
 	text-transform: uppercase;
 	color: #a78b73;
-	margin-top: 150px;
+	margin-top: 60px;
 }
 
 .doc-text {
