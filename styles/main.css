@@ -490,7 +490,7 @@ hr {
 .block_steps_item {
   position: relative;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
-  padding: 11.25rem 3rem 9.9rem;
+  padding: 11.25rem 2rem 9.9rem;
   box-sizing: border-box;
   overflow: hidden;
   max-height: 44.3rem;
@@ -504,20 +504,21 @@ hr {
   color: rgba(167, 139, 115, 0.4);
   text-align: right;
   font-family: "Inter", sans-serif;
-  font-size: 43.75rem;
+  font-size: 40.75rem;
   font-weight: 700;
   opacity: 0.2;
   top: 50%;
   left: 50%;
-  transform: translate(-55%, -50%);
+  transform: translate(-57%, -50%);
 }
 
 .block_steps_item__title {
   color: #343536;
   font-family: "Inter", sans-serif;
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 400;
   line-height: 3rem;
+  text-transform: uppercase;
 }
 
 .block_steps_item__content {
@@ -527,6 +528,7 @@ hr {
   font-weight: 400;
   line-height: 1.75rem;
   font-family: "Montserrat", sans-serif;
+  margin-top: 24px;
 
 }
 

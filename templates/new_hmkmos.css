@@ -2125,7 +2125,7 @@ border-bottom: 2px solid #969696 !important;
 }
 
 .btn-circle-project:hover {
-    background-color: #A78B73;
+    background-color: #A78B73 !important;
 }
 
 .btn-circle-project:active {
