@@ -2057,7 +2057,8 @@ input:checked + .slider.small:before {
 }
 
 .stroyReadyContainer {
-  max-width: 40%;
+  max-width: 55%;
+  margin-top: 60px;
 }
 
 @media (max-width: 1651px) {
