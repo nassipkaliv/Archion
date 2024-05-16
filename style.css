@@ -1456,7 +1456,7 @@ hr {
 .footer__social {
   display: flex;
   gap: 1rem;
-  margin: 3.8rem 0 2.5rem auto;
+  margin: 0rem 0 2.5rem auto;
 }
 .footer__social img {
   max-height: 2.25rem;
