@@ -693,6 +693,20 @@ hr {
   display: flex;
   gap: 1.44rem;
 }
+
+.block_checks__item span {
+  font-weight: 600;
+  color: #a78b73;
+}
+
+.block__checks__item-p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 150%;
+  color: #343536;
+}
+
 .block_checks__item img {
   margin-top: 0.25rem;
   max-height: 2rem;

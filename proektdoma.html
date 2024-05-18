@@ -1,0 +1,1261 @@
+<!DOCTYPE HTML>
+<html xmlns="https://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
+<title>Стоимость проекта дома</title>
+
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+<link rel="stylesheet" href="style/progressive-image.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<style>
+
+body {
+	overflow-x: hidden;
+}
+
+.block_container {
+	margin: 0 !important;
+}
+
+.list-group-item.services_text {
+	color: #000 !important;
+}
+
+.list-group-item.services_text.active 
+ 	{
+    color: #000 !important;
+	}
+
+.windows-form label,input {
+    display: inline-block
+}
+#important_num {
+    text-decoration: underline;
+    font-size: 1.1em;
+    color: #fff;
+    display: inline-block;
+    width: 30px;
+}
+.b-section_content p {
+    text-indent: 35px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+    @media (max-width: 1024px) {
+    .services_scheme{
+        display: none
+    }
+    .services_scheme-mob{
+        display: block
+    }
+}
+    @media (max-width: 1400px) {
+    .b-content {
+        padding: 0;
+        /*margin-left: 0;
+        max-width: 1300px;*/
+        padding-top: 120px;
+    }
+    .b-wrap__main {
+    max-width: 1300px;
+    padding-left: 35px;
+    padding-right: 35px;
+    }
+}
+	</style>
+
+	<style>
+    
+    .logoreg:active, .logoreg:focus{
+ outline:none;
+}
+.logoreg option, .logoreg option:active, .logoreg option:focus{
+    outline: none;
+    -moz-border:none;
+    -webkit-border:none;
+}
+.slogan-wrapper{text-align: center;
+    font-size: 26px;
+    padding: 23px 0px;
+    color: #fff;
+    font-weight: bold;background-color:#435061;}
+.slogan{
+ padding-top: 20px;
+ display: inline-flex; 
+ height: 40px;
+ font-weight: bold;
+ margin: 0 20px;}
+.tp{
+ padding-bottom: 30px;
+ vertical-align: bottom;}
+#important_num{
+    text-decoration: underline;
+    font-size: 1.1em;
+    color: #fff;
+    display: inline-block;
+    width: 30px;
+}
+
+	</style>
+	<link rel="stylesheet" href="templates/new_hmkmos.css">
+	<link rel="stylesheet" href="templates/catalog_banner.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="templates/navbarn.css">
+	
+</head>
+
+
+<body class="glavnaya">
+
+	<header class="header  header--mobile-default topbar">
+		<div class="header__content">
+				<a href="index.html">
+					<img class="logo only-pc" src="assets/icons/logo.svg" alt="">
+				</a>
+				<img class="logo only-mobile" src="assets/icons/logo.svg" alt="">
+				<nav class="header__nav">
+						<p class="text_20-400 mb-0">+7 (495) 799-75-29 | Ежедневно 10:00-21:00</p>
+						<div class="header__icons">
+								<a href="https://api.whatsapp.com/send?phone=79772621722"><img src="assets/icons/nav/whatsapp.svg" alt="Whatsapp"></a>
+								<a href="https://t.me/ARHION_Architecture_Construction"><img src="assets/icons/nav/telegram.svg" alt="Telegram"></a>
+								<a href="#" id="profilePopoverTrigger">
+									<img src="assets/icons/nav/user.svg" alt="Профиль">
+							</a>
+							
+							<div id="profilePopoverContent" class="d-none">
+									<div class="d-flex align-items-center">
+											<img class="img-fluid" width="110px" height="110px" src="img/profile.png" alt="ivan">
+											<div>
+													<div class="profileName pop" style="font-size: 18px;">Иванов Иван</div>
+													<div class="profileTel pop" style="font-size: 16px; font-family: 'Inter', sans-serif; color: #1d2026;">+7(999)999 99-99</div>
+											</div>
+									</div>
+									<div class="mt-4">
+										<li class="nav-item social">
+											<a class="link-wa" href="profile.html"   tabindex="-1" rel="nofollow noopener">
+															ПРОФИЛЬ
+													<hr>
+											</a>
+										</li>
+										<div>
+											<li class="nav-item social pop">
+												<a class="link-wa" href="#" tabindex="-1" rel="nofollow noopener">
+																Выйти
+														<hr style="width: 180px;">
+												</a>
+											</li>
+										</div>
+									</div>
+							</div>
+								<a href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><img src="assets/icons/nav/menu.svg" alt="Меню"></a>
+						</div>
+						
+				</nav>
+		</div>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+							<a class="navnar-arhion-link" href="index.html">
+											<img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+							</a>
+							<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+							</button>
+			</div>
+			<div class="offcanvas-body">
+							<ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+											<ul class="nav justify-content-around nav-social ">
+
+															<li class="nav-item social">
+																			<img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+																			<a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+																							WHATSAPP
+																							<hr>
+																			</a>
+															</li>
+															<li class="nav-item social">
+																			<img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+																			<a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+																							TELEGRAM
+																							<hr>
+																			</a>
+															</li>
+
+															<li class="nav-item">
+																			<a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+																							<img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+																							+7 (495) 799-75-29</a>
+															</li>
+											</ul>
+
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" href="individual.html">Индивидуальное проектирование</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" href="design.html">Дизайн интерьеров</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" aria-current="page" href="stroymaterial.html">Строительство домов</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" href="index.html#">Полезная информация</a>
+											</li>
+											<li class="nav-item nav-item--hover">
+															<a class="nav-link active" href="kontaktyi.html">Контакты</a>
+											</li>
+											<li class="nav-item ">
+															<div class="links2">
+																			<a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+																							<img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+																			</a>
+																			<a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+																							<img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+																			</a>
+																			<a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+																							<img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+																			</a>
+																			<a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+																							<img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+																			</a>
+															</div>
+											</li>
+							</ul>
+			</div>
+	</div>
+	</header>
+
+<script>
+	$(document).ready(function () {
+	$('#profilePopoverTrigger').popover({
+	container: 'body',
+	content: function () {
+		return $('#profilePopoverContent').html();
+	},
+	html: true,
+	placement: 'bottom'
+	});
+});
+</script>
+
+
+<section class="intro position-relative" style="background: url('img/proektdomabg.png'); background-size: cover; background-repeat: no-repeat;">
+  <div class="intro__rect">
+    <h1 class="intro__title" style="font-size: 70px; width: 180%;">Стоимость проекта дома</h1>
+</div>
+<div class="position-absolute buttonOrder" style="z-index: 1;top: 65%;right: 12%;">
+  <button id="btn-project-order" class="btn-circle-project btn-call-form-project">
+      СДЕЛАТЬ
+      <hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25)); background: #343536;">
+      ЗАКАЗ
+      <hr class="animation-line-project" style=" background: #343536;">
+			<img class="position-absolute arrowImg" src="images/catalog_new_hmkmos/arrow_right_filter.png" style="right: 0%; width: 46px;height: 9px;top: 40%;left: 140%;">
+	</button>
+</div>
+</section>
+
+<section class="block_container">
+  <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">Всё учтено</p>
+  <h2 class="block_title">Преимущества при заказе</h2>
+  <div class="block_checks__container">
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Первый эскиз в течении 2-х дней</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Срок проектирования от 15-ти дней</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Экономия до 30% (1 000000 рублей) на строительстве за счет рациональных конструктивных решений.</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Только качественное и подробные проекты по ГОСТ и СНиП</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Очень теплые домаэнергоэфективные дома</p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p>Персональный менеджер и архитектор для каждого клиента.</p>
+      </div>
+  </div>
+</section>
+
+
+
+<div class="wrapper-stage-building position-relative">
+	<div class="position-absolute buttonOrder" style="z-index: 2;top: 60%;right: 12%;">
+		<button id="btn-project-order" class="btn-circle-project btn-call-form-project" style="background-color: #F1EBE6">
+				Заказать
+				<hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25)); background-color: #000;">
+				Проект
+				<hr class="animation-line-project" style=" background-color: #000;">
+        <img class="position-absolute arrowImg" src="images/catalog_new_hmkmos/arrow_right_filter.png" style="right: 0%; width: 46px;height: 9px;top: 40%;left: 140%;">
+    </button>
+	</div>
+  <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">лучшее предложение </p>
+	<h2 class="block_title mb-lg-5">Комплексная стоимость индивидуального проекта</h2>
+
+  <div class="row mx-0 px-0 mb-lg-5">
+    <div class="col-4 px-0">
+    	<div class="d-block list-group" id="list-tab" role="tablist">
+				<a class="d-flex py-4 list-group-item list-group-item-action services_text px-0 active" id="list-home-list" data-bs-toggle="list" href="index.html#list-home" role="tab" aria-controls="home" aria-selected="true">
+				<div class="m-auto mx-2">
+					<img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">
+				</div>
+				<div class="m-auto mx-2">
+					Минимальный
+				</div>	
+				</a>
+				<a class="d-flex py-4 list-group-item list-group-item-action services_text px-0" id="list-profile-list" data-bs-toggle="list" href="index.html#list-profile" role="tab" aria-controls="profile" aria-selected="false">
+				<div class="m-auto mx-2">
+					<img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">			 
+				</div>
+				<div class="m-auto mx-2">
+					Стандартный
+				</div>
+			 </a>
+				<a class="d-flex py-4 list-group-item list-group-item-action services_text px-0" id="list-messages-list" data-bs-toggle="list" href="index.html#list-messages" role="tab" aria-controls="messages" aria-selected="false">
+				<div class="m-auto mx-2">
+					<img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">
+				</div>
+				<div class="m-auto mx-2">
+					Оптимальный
+				</div>
+			 </a>
+       <a class="d-flex py-4 list-group-item list-group-item-action services_text px-0" id="list-upgraded-list" data-bs-toggle="list" href="index.html#list-upgraded" role="tab" aria-controls="upgraded" aria-selected="false">
+				<div class="m-auto mx-2">
+					<img src="images/catalog_new_hmkmos/arrow_right_new.png" style="width:50px;">
+				</div>
+				<div class="m-auto mx-2">
+					Расширенный
+				</div>
+			 </a>
+			</div>
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-end">
+    	<div class="tab-content" id="nav-tabContent">
+      	<div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> 
+        <div class="row">
+					<div class="col-7">
+						<div class="timeSection d-flex gap-2 mt-4">
+							<div>
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z" fill="#343536"></path>
+									<path d="M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z" fill="#A78B73"></path>
+								</svg>													
+							</div>
+							<div class="timeText" style="font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; line-height: 133%;">Срок от 2 недель</div>
+						</div>
+						<div class="section">
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">ЭП — эскизный раздел</p>
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">3D виды</p>
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Реалистичное 3D фото и видео</p>
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Сметы на работы и материалы</p>
+							<a href="#" class="block_title-sub_link">Подробнее</a>
+							<div style="visibility: hidden;">
+								<hr style="width: 370px;">
+								<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Адаптация по геологию и геодезию</p>
+								<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">КР — конструктивный раздел</p>
+								<hr style="width: 370px;">
+								<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Дизайн интерьера</p>
+								<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Инженерные коммуникации</p>
+                <a href="#" class="block_title-sub_link">Подробнее</a>
+              </div>
+							</div>
+					</div>
+					<div class="col-5">
+						<div class="examplePrice d-flex gap-3 mt-4">
+							<div class="exampleCrossedPrice">780 ₽/м2 </div>
+							<div>
+								<div class="exampleRealPrice">300 <span style="font-weight: 400;">₽/м2</span></div>
+								<div class="exampleUnderPrice">*от 80 000 ₽  </div>
+							</div>
+						</div>
+					</div>
+        </div>
+      	</div>
+      	<div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+        	<div class="row">
+					<div class="col-7">
+						<div class="timeSection d-flex gap-2 mt-4">
+							<div>
+								<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z" fill="#343536"></path>
+									<path d="M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z" fill="#A78B73"></path>
+								</svg>													
+							</div>
+							<div class="timeText" style="font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; line-height: 133%;">Срок от 1,5 месяцев</div>
+						</div>
+						<div class="section">
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">ЭП — эскизы проекта</p>
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">3D виды</p>
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Реалистичное 3D фото и видео</p>
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Сметы на работы и материалы</p>
+							<hr style="width: 370px;">
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Конструктивное решение</p>
+							<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Генеральный план участка</p>
+							<a href="#" class="block_title-sub_link">Подробнее</a>
+							<div style="visibility: hidden;">
+								<hr style="width: 370px;">
+								<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Дизайн интерьера</p>
+								<p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Инженерные коммуникации</p>
+                <hr style="width: 370px;">
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Паспорт проекта</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">3D планировка с расстановкой мебели</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="examplePrice d-flex gap-3 mt-4">
+							<div class="exampleCrossedPrice">1070 ₽/м2 </div>
+							<div>
+								<div class="exampleRealPrice">690<span style="font-weight: 400;">₽/м2</span></div>
+								<div class="exampleUnderPrice">*от 130 000 ₽    </div>
+							</div>
+						</div>
+					</div>
+        	</div>
+      	</div>
+      	<div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+					<div class="row">
+						<div class="col-7">
+							<div class="timeSection d-flex gap-2 mt-4">
+								<div>
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z" fill="#343536"></path>
+										<path d="M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z" fill="#A78B73"></path>
+									</svg>													
+								</div>
+								<div class="timeText" style="font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; line-height: 133%;">Срок от 3 месяцев</div>
+							</div>
+							<div class="section">
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">ЭП — эскизы проекта</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">3D виды</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Реалистичное 3D фото и видео</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Сметы на работы и материалы</p>
+                <hr style="width: 370px;">
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Конструктивное решение</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Генеральный план участка</p>
+                <hr style="width: 370px;">
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Паспорт проекта</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">3D планировка с расстановкой мебели</p>
+                <a href="#" class="block_title-sub_link">Подробнее</a>
+                <div style="visibility: hidden;">
+                  <hr style="width: 370px;">
+                  <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Паспорт проекта</p>
+                  <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">3D планировка с расстановкой мебели</p></div>
+              </div>
+						</div>
+						<div class="col-5">
+							<div class="examplePrice d-flex gap-3 mt-4">
+								<div class="exampleCrossedPrice">1790 ₽/м2 </div>
+								<div>
+									<div class="exampleRealPrice">1190<span style="font-weight: 400;">₽/м2</span></div>
+									<div class="exampleUnderPrice">*от 240 000 ₽      </div>
+								</div>
+							</div>
+						</div>
+					</div>
+      	</div>
+        <div class="tab-pane fade" id="list-upgraded" role="tabpanel" aria-labelledby="list-upgraded-list">
+					<div class="row">
+						<div class="col-7">
+							<div class="timeSection d-flex gap-2 mt-4">
+								<div>
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z" fill="#343536"></path>
+										<path d="M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z" fill="#A78B73"></path>
+									</svg>													
+								</div>
+								<div class="timeText" style="font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 400; line-height: 133%;">Срок от 3 месяцев</div>
+							</div>
+							<div class="section">
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">ЭП — эскизы проекта</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">3D виды</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Реалистичное 3D фото и видео</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Сметы на работы и материалы</p>
+                <hr style="width: 370px;">
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Конструктивное решение</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Генеральный план участка</p>
+                <hr style="width: 370px;">
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Паспорт проекта</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">3D планировка с расстановкой мебели</p>
+                <hr style="width: 370px;">
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Спецификация по материалам</p>
+                <p class="description-sections-building" style="font-family: 'Inter'; font-size: 20px;">Разработка декора</p>
+              </div>
+							<a href="#" class="block_title-sub_link">Подробнее</a>
+						</div>
+						<div class="col-5">
+							<div class="examplePrice d-flex gap-3 mt-4">
+								<div class="exampleCrossedPrice">1790 ₽/м2 </div>
+								<div>
+									<div class="exampleRealPrice">1190<span style="font-weight: 400;">₽/м2</span></div>
+									<div class="exampleUnderPrice">*от 240 000 ₽      </div>
+								</div>
+							</div>
+						</div>
+					</div>
+      	</div>
+    	</div>
+    </div>
+		
+  </div>
+</div>
+
+
+
+
+<script>
+	$(function() {
+			var $projectCarousel = $(".projects-carousel");
+	
+			$projectCarousel.owlCarousel({
+					loop:false,
+					margin: 20,
+					autoplay:false,
+					smartSpeed:2000,
+					responsiveBaseElement: 'body',
+					responsiveClass:true,
+					autoplayTimeout:4000,
+					responsive:{
+							0:{
+									items:1
+							},
+							600:{
+									items:2
+							},
+							992:{
+									items:3
+							}
+					}
+			});
+	
+			$projectCarousel.on('changed.owl.carousel', function(event) {
+					var currentItemIndex = event.item.index;
+					$(this).closest('.block_container').find(".slide_indicators__item").removeClass('active');
+					$(this).closest('.block_container').find(".slide_indicators__item").eq(currentItemIndex).addClass('active');
+			});
+	
+			// Pagination click handler
+			$(".slide_indicators__item").click(function(){
+					var index = $(this).index();
+					$(this).closest('.block_container').find(".project-carousel").trigger('to.owl.carousel', [index, 300]);
+			});
+	});
+</script>
+
+
+
+<section class="block_container">
+	<p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">Что входит в проект дома</p>
+	<h2 class="block_title">Цена за отдельные разделы</h2>
+
+	<div class="projects-carousel owl-carousel project-carouselCard p-4">
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">ЭСКИЗНЫЙ ПРОЕКТ</div>
+			<ul class="razdelCardList">
+				<li>Общие данные по объекту</li>
+				<li>Поэтажные планировочные решения</li>
+				<li>3D виды модели</li>
+				<li>Изображения фасадов</li>
+				<li>Форма кровли</li>
+				<li>Разрез с основными высотами</li>
+				<li>Схема посадки дома на участок</li>
+				<li>Цветовые решения по фасадам</li>
+				<li>3D макет дома</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">АРХИТЕКТУРНЫЙ ПРОЕКТ</div>
+			<ul class="razdelCardList">
+				<li>Схема посадки дома на рельеф</li>
+				<li>Разбивочный чертеж</li>
+				<li>Поэтажные монтажные планы</li>
+				<li>План кровли</li>
+				<li>Разрез с детальными размерами и высотами</li>
+				<li>Фасады с размерами и отметками высот</li>
+				<li>Ведомость отделки фасадов</li>
+				<li>Спецификации оконных и дверных проёмов</li>
+				<li>Дымоходы и вентканалы</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 290р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">КОНСТРУКТОРСКАЯ ЧАСТЬ</div>
+			<ul class="razdelCardList">
+				<li>План котлованов и траншеи</li>
+				<li>Схемы армирования фундамента</li>
+				<li>Схемы армирования перекрытий</li>
+				<li>Схемы кровли, стропильной системы</li>
+				<li>Дополнительные сечения, разрезы</li>
+				<li>Узлы и детали</li>
+				<li>Спецификации строительных материалов</li>
+				<li>Техническое описание конструкторской части</li>
+				<li>Дополнительная документация</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">КОНСТРУКТОРСКАЯ ЧАСТЬ</div>
+			<ul class="razdelCardList">
+				<li>План котлованов и траншеи</li>
+				<li>Схемы армирования фундамента</li>
+				<li>Схемы армирования перекрытий</li>
+				<li>Схемы кровли, стропильной системы</li>
+				<li>Дополнительные сечения, разрезы</li>
+				<li>Узлы и детали</li>
+				<li>Спецификации строительных материалов</li>
+				<li>Техническое описание конструкторской части</li>
+				<li>Дополнительная документация</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">КОНСТРУКТОРСКАЯ ЧАСТЬ</div>
+			<ul class="razdelCardList">
+				<li>План котлованов и траншеи</li>
+				<li>Схемы армирования фундамента</li>
+				<li>Схемы армирования перекрытий</li>
+				<li>Схемы кровли, стропильной системы</li>
+				<li>Дополнительные сечения, разрезы</li>
+				<li>Узлы и детали</li>
+				<li>Спецификации строительных материалов</li>
+				<li>Техническое описание конструкторской части</li>
+				<li>Дополнительная документация</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">КОНСТРУКТОРСКАЯ ЧАСТЬ</div>
+			<ul class="razdelCardList">
+				<li>План котлованов и траншеи</li>
+				<li>Схемы армирования фундамента</li>
+				<li>Схемы армирования перекрытий</li>
+				<li>Схемы кровли, стропильной системы</li>
+				<li>Дополнительные сечения, разрезы</li>
+				<li>Узлы и детали</li>
+				<li>Спецификации строительных материалов</li>
+				<li>Техническое описание конструкторской части</li>
+				<li>Дополнительная документация</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">КОНСТРУКТОРСКАЯ ЧАСТЬ</div>
+			<ul class="razdelCardList">
+				<li>План котлованов и траншеи</li>
+				<li>Схемы армирования фундамента</li>
+				<li>Схемы армирования перекрытий</li>
+				<li>Схемы кровли, стропильной системы</li>
+				<li>Дополнительные сечения, разрезы</li>
+				<li>Узлы и детали</li>
+				<li>Спецификации строительных материалов</li>
+				<li>Техническое описание конструкторской части</li>
+				<li>Дополнительная документация</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">КОНСТРУКТОРСКАЯ ЧАСТЬ</div>
+			<ul class="razdelCardList">
+				<li>План котлованов и траншеи</li>
+				<li>Схемы армирования фундамента</li>
+				<li>Схемы армирования перекрытий</li>
+				<li>Схемы кровли, стропильной системы</li>
+				<li>Дополнительные сечения, разрезы</li>
+				<li>Узлы и детали</li>
+				<li>Спецификации строительных материалов</li>
+				<li>Техническое описание конструкторской части</li>
+				<li>Дополнительная документация</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">КОНСТРУКТОРСКАЯ ЧАСТЬ</div>
+			<ul class="razdelCardList">
+				<li>План котлованов и траншеи</li>
+				<li>Схемы армирования фундамента</li>
+				<li>Схемы армирования перекрытий</li>
+				<li>Схемы кровли, стропильной системы</li>
+				<li>Дополнительные сечения, разрезы</li>
+				<li>Узлы и детали</li>
+				<li>Спецификации строительных материалов</li>
+				<li>Техническое описание конструкторской части</li>
+				<li>Дополнительная документация</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+		<div class="razdelCard p-4 position-relative d-flex flex-column justify-content-between mx-2 my-3">
+			<div class="razdelCardTitle mb-4">КОНСТРУКТОРСКАЯ ЧАСТЬ</div>
+			<ul class="razdelCardList">
+				<li>План котлованов и траншеи</li>
+				<li>Схемы армирования фундамента</li>
+				<li>Схемы армирования перекрытий</li>
+				<li>Схемы кровли, стропильной системы</li>
+				<li>Дополнительные сечения, разрезы</li>
+				<li>Узлы и детали</li>
+				<li>Спецификации строительных материалов</li>
+				<li>Техническое описание конструкторской части</li>
+				<li>Дополнительная документация</li>
+			</ul>
+			<a style="position: absolute; left: 65%; top: 74%;" href="#" class="block_title-sub_link">Подробнее</a>
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+					<div class="pt-1">
+						<span class="px-0 py-1 kontak_text">ЗАКАЗАТЬ</span>
+					</div>
+					<div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+						<div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+							<div class="position-absolute" style="top:5px;">
+								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="razdelPrice">от 390р за м2</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="slide_indicators">
+			<div class="slide_indicators__item active"></div>
+			<div class="slide_indicators__item"></div>
+			<div class="slide_indicators__item"></div>
+			<div class="slide_indicators__item"></div>
+			<div class="slide_indicators__item"></div>
+			<div class="slide_indicators__item"></div>
+			<div class="slide_indicators__item"></div>
+			<div class="slide_indicators__item"></div>
+	</div>
+
+</section>
+
+<script>
+	$(function() {
+			var $projectCarousel = $(".projects-carouselCard");
+	
+			$projectCarousel.owlCarousel({
+					loop:false,
+					margin: 20,
+					autoplay:false,
+					smartSpeed:2000,
+					responsiveBaseElement: 'body',
+					responsiveClass:true,
+					autoplayTimeout:4000,
+					responsive:{
+							0:{
+									items:1
+							},
+							600:{
+									items:2
+							},
+							992:{
+									items:3
+							}
+					}
+			});
+	
+			$projectCarousel.on('changed.owl.carousel', function(event) {
+					var currentItemIndex = event.item.index;
+					$(this).closest('.block_container').find(".slide_indicators__item").removeClass('active');
+					$(this).closest('.block_container').find(".slide_indicators__item").eq(currentItemIndex).addClass('active');
+			});
+	
+			// Pagination click handler
+			$(".slide_indicators__item").click(function(){
+					var index = $(this).index();
+					$(this).closest('.block_container').find(".project-carouselCard").trigger('to.owl.carousel', [index, 300]);
+			});
+	});
+
+	$(document).ready(function() {
+        var $projectCarousel = $('.project-carouselCard');
+
+        // Обработчик события изменения слайдов
+        $projectCarousel.on('changed.owl.carousel', function(event) {
+            var currentItemIndex = event.item.index;
+            $(this).closest('.block_container').find(".slide_indicators__item").removeClass('active');
+            $(this).closest('.block_container').find(".slide_indicators__item").eq(currentItemIndex).addClass('active');
+        });
+
+        // Обработчик клика по индикаторам
+        $(".slide_indicators__item").click(function(){
+            var index = $(this).index();
+            $(this).siblings().removeClass('active'); // Удаляем класс active у всех индикаторов
+            $(this).addClass('active'); // Добавляем класс active только к текущему индикатору
+            $(this).closest('.block_container').find(".project-carouselCard").trigger('to.owl.carousel', [index, 300]);
+        });
+    });
+</script>
+
+
+
+<div class=" position-relative aboutus">
+	<img class="logo-img" src="img/arhionlogo.png" alt="logo">
+	<div class="text-behind" style="right: 130px; font-weight: 700;
+	font-size: 265px;
+	text-transform: uppercase;
+	color: rgba(167, 139, 115, 0.1);">о нас </div>
+	<div class="logo-text">обзор <br> компании</div>
+	<div class="d-flex justify-content-between align-items-center">
+		<a class="button_type2" href="#">
+			<p>НАЧАТЬ</p>
+			<svg width="386" height="100" viewBox="0 0 386 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<line y1="49.5" x2="337" y2="49.5" stroke="#14010C"></line>
+				<circle class="hoverRect" cx="336" cy="50" r="49.5" stroke="#A78B73"></circle>
+				<path d="M241 36.5H240.5V37.5H241V36.5ZM276.354 37.3536C276.549 37.1583 276.549 36.8417 276.354 36.6464L273.172 33.4645C272.976 33.2692 272.66 33.2692 272.464 33.4645C272.269 33.6597 272.269 33.9763 272.464 34.1716L275.293 37L272.464 39.8284C272.269 40.0237 272.269 40.3403 272.464 40.5355C272.66 40.7308 272.976 40.7308 273.172 40.5355L276.354 37.3536ZM241 37.5H276V36.5H241V37.5Z" fill="#14010C"></path>
+			</svg>	
+		</a>
+		<div class="d-flex">
+			<img class="img-fluid" src="img/doc.png" alt="doc">
+			<div class="doc-text">
+				Возглавляем Комитет МТПП <br>
+				по&nbsp;предпринимательству в&nbsp;сфере <br> 
+				архитектуры, проектирования и&nbsp;строительства
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="block_container position-relative" style="padding-bottom: 180px;">
+  <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">Выгодные цены</p>
+  <h2 class="block_title">Стоимость проекта</h2>
+  <div class="block_checks__container">
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p class="block__checks__item-p">Эскизный проект от <span>150 ₽/м2</span></p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p class="block__checks__item-p">Дизайн интерьеров от <span>550 ₽/м2</span></p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p class="block__checks__item-p">Конструктивные решения <br> от <span>350 ₽/м2</span></p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p class="block__checks__item-p">Архитектурно - строительные <br> решения от <span>250 ₽/м2</span></p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p class="block__checks__item-p">Инженерные схемы от <span>150 ₽/м2</span></p>
+      </div>
+      <div class="block_checks__item">
+          <img src="assets/icons/check.svg">
+          <p class="block__checks__item-p">Инженерные разделы от <span>650 ₽/м2</span></p>
+      </div>
+      <div class="block_checks__item">
+        <img src="assets/icons/check.svg">
+        <p class="block__checks__item-p">Ландшафтный дизайн от <span>50 ₽/м2</span></p>
+    </div>
+  </div>
+  <div class="position-absolute buttonOrder" style="z-index: 2;top: 68%;right: 12%;">
+		<button id="btn-project-order" class="btn-circle-project btn-call-form-project" >
+				Заказать
+				<hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25)); background-color: #000;">
+				ДОМ
+				<hr class="animation-line-project" style=" background-color: #000;">
+        <img class="position-absolute arrowImg" src="images/catalog_new_hmkmos/arrow_right_filter.png" style="right: 0%; width: 46px;height: 9px;top: 40%;left: 140%;">
+      </button>
+	</div>
+</section>
+
+
+
+<section class="block_container block_consult block_container--accentcolor only-pc mx-0">
+	<div class="block_consult__content">
+			<h2 class="block_title">Нужна консультация?</h2>
+			<p class="block_consult__text">Оставьте контакты и мы с вами свяжемся для обсуждения деталей</p>
+			<div class="block_consult__feedback_container">
+					<div class="block_consult__contacts">
+							<div class="block_consult__contact-item">
+									<img src="assets/icons/nav/whatsapp.svg">
+									<a href="" class="button_type1 button_type1--min">
+											<p>WHATSAPP</p>
+											<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+													<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+													<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+											</svg>
+									</a>
+							</div>
+							<div class="block_consult__contact-item">
+									<img src="assets/icons/nav/telegram.svg">
+									<a href="" class="button_type1 button_type1--min">
+											<p>TELEGRAM</p>
+											<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+													<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+													<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+											</svg>
+									</a>
+							</div>
+							<div class="block_consult__contact-item">
+									<img src="assets/icons/nav/phone.svg">
+									<p>+7 (495) 799-75-29</p>
+							</div>
+					</div>
+					<div class="block_consult__contacts">
+							<input placeholder="Имя" type="text">
+							<input placeholder="Телефон" type="text">
+							<div class="block_consult__contact-item">
+									<a href="" class="button_type1">
+											<p>Отправить</p>
+											<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+													<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+													<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+											</svg>
+									</a>
+							</div>
+					</div>
+			</div>
+	</div>
+	<img src="assets/images/arhion_plate.jpg" alt="Arhion" class="block_consult__plate">
+</section>
+
+ <!-- Футер -->
+ <footer class="footer">
+	<div class="footer_container">
+			<div class="footer__text-block">
+					<img src="assets/icons/a.svg" alt="Arhion">
+					<p>Архитектурно- <br> строительная группа</p>
+					<a href="termsofuse.html" class="footer__link footer__mini-text only-pc">Политика конфиденциальности</a>
+			</div>
+			<div class="footer__link_blocks only-pc">
+					<div class="footer__links-block">
+							<a href="individual.html" class="footer__link">Проектирование</a>
+							<a href="stroymaterial.html" class="footer__link">Строительство</a>
+					</div>
+					<div class="footer__links-block">
+							<a href="proektyi.html" class="footer__link">Каталог проектов</a>
+							<a href="index.html" class="footer__link">О компании</a>
+					</div>
+					<div class="footer__links-block">
+							<a href="#" class="footer__link">Контакты</a>
+							<a href="statya.html" class="footer__link">Полезные статьи</a>
+					</div>
+			</div>
+			<div class="footer__link_blocks only-mobile">
+					<div class="footer__links-block">
+							<a href="individual.html" class="footer__link">Проектирование</a>
+							<a href="stroymaterial.html" class="footer__link">Строительство</a>
+							<a href="stroymaterial.html" class="footer__link">Строительство</a>
+					</div>
+					<div class="footer__links-block">
+							<a href="stroymaterial.html" class="footer__link">Строительство</a>
+							<a href="proektyi.html" class="footer__link">Каталог проектов</a>
+							<a href="index.html" class="footer__link">О компании</a>
+					</div>
+			</div>
+
+			<div class="footer__social only-mobile">
+					<a href="#">
+							<img src="assets/icons/social_vk.svg" alt="VK">
+					</a>
+					<a href="#">
+							<img src="assets/icons/social_insta.svg" alt="Instagram">
+					</a>
+					<a href="#">
+							<img src="assets/icons/social_whatsapp.svg" alt="Whatsapp">
+					</a>
+			</div>
+
+			<div class="footer__text-block footer__text-block--375 only-pc">
+					<p>+7 (495) 799-75-29</p>
+					<p class="footer__worktime">Рабочее время:<br>Ежедневно 10:00 - 21:00</p>
+					<div class="footer__social">
+							<a href="#">
+									<img src="assets/icons/social_vk.svg" alt="VK">
+							</a>
+							<a href="#">
+									<img src="assets/icons/social_insta.svg" alt="Instagram">
+							</a>
+							<a href="#">
+									<img src="assets/icons/social_whatsapp.svg" alt="Whatsapp">
+							</a>
+					</div>
+			</div>
+
+			<a href="" class="footer__link footer__mini-text only-mobile">Политика конфиденциальности</a>
+			<p class="footer__group">Архитектурно-строительная группа ARHION © 2001 - 2023</p>
+	</div>
+ </footer>
+
+
+<link href="style.css@2.css" rel="stylesheet">
+
+<link rel="stylesheet" href="library/ui/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+<link rel="stylesheet" href="portfolio/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="portfolio/css/catalog.css">
+<link rel="stylsheet" href="portfolio/css/main.css">
+<link rel="stylsheet" href="portfolio/css/normalize.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+<link rel="stylesheet" href="portfolio/css/success.min.css">
+<link type="text/css" rel="stylesheet" href="style/catalog.css@2.css">
+
+
+<script src="jquery.bxslider.min.js@2"></script>
+<script src="script/jquery.mb.browser.js@2"></script>
+<script src="script/jquery.cookie.js@2"></script>
+<script src="portfolio/js/jquery.validate.js"></script>
+<script src="script/index.js@2"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+<script type="text/javascript" src="library/Pagination/dist/pagination.min.js"></script>
+<script src="owl/owl.carousel.min.js@2"></script>
+<script src="placeholder.js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="common.js"></script>
+<script src="script/progressive-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script type='text/javascript'>
+$('.pagination').pagination({
+    total: 2325,
+    current: 1, 
+    length: 6,
+    size: 0,
+    prev: '«',
+    next: '»',
+    click: function(options,$target) {
+        $.post("/bestprojects.php", {
+            page: options.current.toString(),
+            query: $("input[name=query]").val()
+        }, function(data) {
+            window.scrollTo(0, 0);
+            $(".block_proekts_img .best").html(data);
+        }, "json").fail(function(xhr, status, error) {
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
+    });    }
+
+ });
+ 
+    var $range = $("#slider-range");
+    var $inputFrom = $("#proect_s0_min");
+    var $inputTo = $("#proect_s0_max");
+    var instance;
+    var min = 0;
+    var max = 2500;
+    var from = 0;
+    var to = 2500;
+    
+ $range.ionRangeSlider({
+    type: "double",
+    skin: "big",
+    grid: true,
+    min: min,
+    max: max,
+    from: from,
+    to: to,
+    step: 50,
+    postfix: " м<sup>2</sup>",
+    onChange: updateInputs
+ });
+ instance = $range.data("ionRangeSlider");
+ function updateInputs (data) {
+        from = data.from;
+        to = data.to;
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);
+        countfiltr();
+ }
+
+</script>
+
+
+
+
+<script>
+$(function() {
+    $(".slide-prosmotrenny").owlCarousel({
+		dots:false,
+		loop:true, //Зацикливаем слайдер
+		nav:true, 
+		nav:true, 
+		navText: ["<div class='d-flex pt-3 justify-content-center'><div class='px-2' aria-label='Previous'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_left_sliders.png'></div>","<div class='px-2' aria-label='Next'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_right_sliders.png'></div></div>"],
+		autoplay:true, //Автозапуск слайдера
+		autoplayHoverPause:true, //Пауза при навидении мыши
+		smartSpeed:1000, //Время движения слайда
+		autoplayTimeout:2000, //Время смены слайда
+		responsiveBaseElement: 'body',
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			800:{
+				items:3
+			},
+			1000:{
+				items:4
+			}
+		}
+	
+    });
+	
+});
+
+
+</script>
+</body>
+</html>
