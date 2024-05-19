@@ -1420,7 +1420,20 @@ border-bottom: 2px solid #969696 !important;
 	font-weight: 600;
 }
 
-
+.list-group-item.services_text {
+        color: #000 !important;
+        font-size: 24px;
+    }
+    
+    .list-group-item.services_text.active 
+    {
+        color: #000 !important;
+        font-size: 28px !important;
+    }
+    
+    .list-group-item.services_text:hover {
+        font-size: 28px !important;
+    }
 
 .description{
 	color: var(--gray, #F7F7F9);

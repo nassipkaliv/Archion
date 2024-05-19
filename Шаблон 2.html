@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
+    <title>Шаблон 2</title>
+    
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+    <link rel="stylesheet" href="style/progressive-image.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <style>
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .block_container {
+        margin: 0 !important;
+    }
+    
+    .list-group-item.services_text {
+        color: #000 !important;
+    }
+    
+    .list-group-item.services_text.active 
+         {
+        color: #000 !important;
+        }
+    
+    .windows-form label,input {
+        display: inline-block
+    }
+    #important_num {
+        text-decoration: underline;
+        font-size: 1.1em;
+        color: #fff;
+        display: inline-block;
+        width: 30px;
+    }
+    .b-section_content p {
+        text-indent: 35px;
+        line-height: 1.4;
+        font-size: 18px;
+    }
+        @media (max-width: 1024px) {
+        .services_scheme{
+            display: none
+        }
+        .services_scheme-mob{
+            display: block
+        }
+    }
+        @media (max-width: 1400px) {
+        .b-content {
+            padding: 0;
+            /*margin-left: 0;
+            max-width: 1300px;*/
+            padding-top: 120px;
+        }
+        .b-wrap__main {
+        max-width: 1300px;
+        padding-left: 35px;
+        padding-right: 35px;
+        }
+    }
+        </style>
+    
+        <style>
+        
+        .logoreg:active, .logoreg:focus{
+     outline:none;
+    }
+    .logoreg option, .logoreg option:active, .logoreg option:focus{
+        outline: none;
+        -moz-border:none;
+        -webkit-border:none;
+    }
+    .slogan-wrapper{text-align: center;
+        font-size: 26px;
+        padding: 23px 0px;
+        color: #fff;
+        font-weight: bold;background-color:#435061;}
+    .slogan{
+     padding-top: 20px;
+     display: inline-flex; 
+     height: 40px;
+     font-weight: bold;
+     margin: 0 20px;}
+    .tp{
+     padding-bottom: 30px;
+     vertical-align: bottom;}
+    #important_num{
+        text-decoration: underline;
+        font-size: 1.1em;
+        color: #fff;
+        display: inline-block;
+        width: 30px;
+    }
+    
+        </style>
+        <link rel="stylesheet" href="templates/new_hmkmos.css">
+        <link rel="stylesheet" href="templates/catalog_banner.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="templates/navbarn.css">
+        
+    </head>
+
+<body>
+    <div class="page">
+        <!-- Шапка основного типа -->
+        <header class="header  header--mobile-default topbar">
+            <div class="header__content">
+                    <a href="index.html">
+                        <img class="logo only-pc" src="assets/icons/logo.svg" alt="">
+                    </a>
+                    <img class="logo only-mobile" src="assets/icons/logo.svg" alt="">
+                    <nav class="header__nav">
+                            <p class="text_20-400 mb-0">+7 (495) 799-75-29 | Ежедневно 10:00-21:00</p>
+                            <div class="header__icons">
+                                    <a href="https://api.whatsapp.com/send?phone=79772621722"><img src="assets/icons/nav/whatsapp.svg" alt="Whatsapp"></a>
+                                    <a href="https://t.me/ARHION_Architecture_Construction"><img src="assets/icons/nav/telegram.svg" alt="Telegram"></a>
+                                    <a href="#" id="profilePopoverTrigger">
+                                        <img src="assets/icons/nav/user.svg" alt="Профиль">
+                                </a>
+                                
+                                <div id="profilePopoverContent" class="d-none">
+                                        <div class="d-flex align-items-center">
+                                                <img class="img-fluid" width="110px" height="110px" src="img/profile.png" alt="ivan">
+                                                <div>
+                                                        <div class="profileName pop" style="font-size: 18px;">Иванов Иван</div>
+                                                        <div class="profileTel pop" style="font-size: 16px; font-family: 'Inter', sans-serif; color: #1d2026;">+7(999)999 99-99</div>
+                                                </div>
+                                        </div>
+                                        <div class="mt-4">
+                                            <li class="nav-item social">
+                                                <a class="link-wa" href="profile.html"   tabindex="-1" rel="nofollow noopener">
+                                                                ПРОФИЛЬ
+                                                        <hr>
+                                                </a>
+                                            </li>
+                                            <div>
+                                                <li class="nav-item social pop">
+                                                    <a class="link-wa" href="#" tabindex="-1" rel="nofollow noopener">
+                                                                    Выйти
+                                                            <hr style="width: 180px;">
+                                                    </a>
+                                                </li>
+                                            </div>
+                                        </div>
+                                </div>
+                                    <a href="#" id="navbar-toggler-header" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><img src="assets/icons/nav/menu.svg" alt="Меню"></a>
+                            </div>
+                            
+                    </nav>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header offcanvas-header--mod" style="margin-bottom:0;">
+                                <a class="navnar-arhion-link" href="index.html">
+                                                <img class="navnar-arhion-logo" src="img/header/arhion-logo-header.svg" width="300px" height="100px" alt="Архион">
+                                </a>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                                </button>
+                </div>
+                <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                                <ul class="nav justify-content-around nav-social ">
+    
+                                                                <li class="nav-item social">
+                                                                                <img class="nav-icon-whatsapp" src="images/catalog_new_hmkmos/whatsapp.png" width="32" height="32">
+                                                                                <a class="link-wa" href="https://api.whatsapp.com/send?phone=79772621722" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                                                                                WHATSAPP
+                                                                                                <hr>
+                                                                                </a>
+                                                                </li>
+                                                                <li class="nav-item social">
+                                                                                <img class="nav-icon-telegram" src="images/catalog_new_hmkmos/telega.png" width="32" height="32">
+                                                                                <a class="link-tg" href="https://t.me/ARHION_Architecture_Construction" target="_blank" tabindex="-1" rel="nofollow noopener">
+                                                                                                TELEGRAM
+                                                                                                <hr>
+                                                                                </a>
+                                                                </li>
+    
+                                                                <li class="nav-item">
+                                                                                <a class="nav-link-tel" href="tel:+74957997529" tabindex="-1">
+                                                                                                <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                                                                                +7 (495) 799-75-29</a>
+                                                                </li>
+                                                </ul>
+    
+                                                <li class="nav-item nav-item--hover">
+                                                                <a class="nav-link active" aria-current="page" href="proektyi.html">Каталог домов</a>
+                                                </li>
+                                                <li class="nav-item nav-item--hover">
+                                                                <a class="nav-link active" href="individual.html">Индивидуальное проектирование</a>
+                                                </li>
+                                                <li class="nav-item nav-item--hover">
+                                                                <a class="nav-link active" href="design.html">Дизайн интерьеров</a>
+                                                </li>
+                                                <li class="nav-item nav-item--hover">
+                                                                <a class="nav-link active" aria-current="page" href="stroymaterial.html">Строительство домов</a>
+                                                </li>
+                                                <li class="nav-item nav-item--hover">
+                                                                <a class="nav-link active" href="index.html#">Полезная информация</a>
+                                                </li>
+                                                <li class="nav-item nav-item--hover">
+                                                                <a class="nav-link active" href="kontaktyi.html">Контакты</a>
+                                                </li>
+                                                <li class="nav-item ">
+                                                                <div class="links2">
+                                                                                <a href="https://clck.ru/yM6kk" rel="nofollow noopener">
+                                                                                                <img class="social__zen" width="32" height="32" src="img/header/icon-gold-yandex-zen.svg" alt="Яндекс">
+                                                                                </a>
+                                                                                <a style="margin-left:10px;" href="https://ok.ru/remstroyservisplus" rel="nofollow noopener">
+                                                                                                <img src="img/header/icon-gold-odnokl.svg" alt="Одноклассники">
+                                                                                </a>
+                                                                                <a style="margin-left:10px;" href="https://www.youtube.com/channel/UCL_bid-5hyyTI0XnmAoOaxA" rel="nofollow noopener">
+                                                                                                <img src="img/header/icon-gold-youtube.svg" alt="Ютуб">
+                                                                                </a>
+                                                                                <a style="margin-left:10px;" href="https://vk.com/remstroyservis_plus" rel="nofollow noopener">
+                                                                                                <img src="img/header/icon-gold-vk.svg" alt="Вконтакте">
+                                                                                </a>
+                                                                </div>
+                                                </li>
+                                </ul>
+                </div>
+        </div>
+        </header>
+    
+        <script>
+        $(document).ready(function () {
+        $('#profilePopoverTrigger').popover({
+        container: 'body',
+        content: function () {
+            return $('#profilePopoverContent').html();
+        },
+        html: true,
+        placement: 'bottom'
+        });
+    });
+        </script>
+
+        <div class="b-content pb-0">
+
+	        <div class="text-center container-fluid mt-4">
+	        	<span class="style_heading_text_cat" style="font-weight: 600; color:#343536 !important; font-size: 38px; font-family: 'Inter', sans-serif;">
+	        		Заголовок
+	        	</span>
+	        </div>
+
+        </div>
+
+        <section class="block_container pt-0">
+          <p class="block_title-sub">В каталоге мы собрали лучшие готовые проекты частных загородных домов и коттеджей. Каждый проект дома по-своему очень интересный, красивый и индивидуальный...</p>
+          <div class="collapse" id="collapseExample">
+           <p class="block_title-sub mt-0">
+             1. Уникальность и Индивидуальность: Индивидуальное проектирование дома позволяет вам создать дом, который полностью соответствует вашей уникальной личности и стилю жизни. Вы можете выбирать дизайн, планировку, материалы и детали, которые отражают ваши предпочтения и вкусы.
+            <br> 2. Максимальное использование пространства: Проектировщики могут оптимизировать планировку вашего дома, чтобы обеспечить максимальное использование пространства и удовлетворение ваших потребностей. Это позволяет создать функциональное и эффективное пространство.
+            <br> 3. Энергоэффективность и Устойчивость: При индивидуальном проектировании можно учесть современные технологии и требования к энергоэффективности и устойчивости. Это помогает снизить расходы на отопление и водоснабжение и делает ваш дом более экологически дружелюбным.
+            <br> 4. Подгонка под бюджет: Проектирование дома с учетом ваших финансовых возможностей позволяет избежать непредвиденных расходов и соблюдать бюджет.
+            <br> 5. Эффективное использование природных ресурсов: Проектирование дома также может включать в себя учет местности, климата и природных ресурсов, что способствует более эффективному использованию энергии и воды.
+            <br> 6. Эксклюзивный Дизайн: Вы имеете возможность работать с опытными дизайнерами, чтобы создать уникальный и стильный интерьер, который отражает ваш вкус и желания.
+            <br> 7. Построение с нуля: Индивидуальное проектирование позволяет вам построить дом с нуля, что означает отсутствие устаревших систем и скрытых проблем, часто присутствующих в старых домах.
+            <br> 8. Долгосрочная Инвестиция: Инвестирование в индивидуальное проектирование дома может увеличить стоимость вашей недвижимости в будущем, что делает это затраты на долгосрочную инвестицию.
+             <br> Индивидуальное проектирование дома - это путь к созданию вашего идеального жилища, которое будет полностью соответствовать вашим потребностям и желаниям. Обратившись к профессионалам в этой области, вы получите уникальный и функциональный дом, который станет вашим уютным убежищем и местом, где сбудутся ваши мечты.
+        
+         </p>
+          </div>
+           <a href="#" class="block_title-sub_link" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Подробнее</a>
+        </section>
+
+        <script>
+          // Получаем ссылку "Подробнее"
+          const link = document.querySelector('.block_title-sub_link');
+          // Получаем блок collapse
+          const collapse = document.querySelector('.collapse');
+        
+          // Функция для изменения текста ссылки в зависимости от состояния блока collapse
+          function toggleLinkText() {
+            // Проверяем, открыт ли блок collapse
+            const isCollapsed = collapse.classList.contains('show');
+            // Изменяем текст ссылки в зависимости от состояния
+            link.textContent = isCollapsed ? 'Закрыть' : 'Подробнее';
+          }
+        
+          // Добавляем обработчик события для ссылки
+          link.addEventListener('click', toggleLinkText);
+        
+          // Добавляем обработчики событий Bootstrap для событий "показа" и "скрытия" collapse
+          collapse.addEventListener('shown.bs.collapse', toggleLinkText);
+          collapse.addEventListener('hidden.bs.collapse', toggleLinkText);
+        </script>
+
+        
+        <section class="block_container pt-0">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <img class="img-fluid" style="height: 450px !important;" src="img/Rectangle 772.png">
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="shablonText" style="font-size: 18px; color: #000;">
+                Строительство домов – это сложный и многогранный процесс, который включает в себя несколько этапов и требует координации различных специалистов и ресурсов. В этой статье мы рассмотрим основные этапы строительства домов и ключевые аспекты этого процесса.
+                Первый и, возможно, самый важный этап строительства дома – это планирование. На этом этапе определяются следующие ключевые параметры:
+                <ol>
+                  <li>
+                    Выбор местоположения: Определение места, где будет построен дом, учитывая факторы, такие как близость к школам, работе, магазинам, а также климатические условия и доступ к коммуникациям.
+                  </li>
+                  <li>
+                    Дизайн и архитектура: Разработка дизайна дома с учетом желаемого стиля, размеров и планировки. Также рассматриваются вопросы безопасности и удобства.                  </li>
+                  <li>
+                    Бюджет: Определение бюджета на строительство, включая расходы на материалы, труд и другие затраты.                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+
+        <section class="block_container">
+          <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">Заголовок</p>
+          <h2 class="block_title">Заголовок</h2>
+          <div class="block_checks__container">
+              <div class="block_checks__item">
+                  <img src="assets/icons/check.svg">
+                  <p>Текст</p>
+              </div>
+              <div class="block_checks__item">
+                  <img src="assets/icons/check.svg">
+                  <p>Текст</p>
+              </div>
+              <div class="block_checks__item">
+                  <img src="assets/icons/check.svg">
+                  <p>Текст</p>
+              </div>
+              <div class="block_checks__item">
+                  <img src="assets/icons/check.svg">
+                  <p>Текст</p>
+              </div>
+              <div class="block_checks__item">
+                  <img src="assets/icons/check.svg">
+                  <p>Текст</p>
+              </div>
+              <div class="block_checks__item">
+                  <img src="assets/icons/check.svg">
+                  <p>Текст</p>
+              </div>
+          </div>
+        </section>
+
+        <section class="block_container pb-0">
+          <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">Заголовок</p>
+          <h2 class="block_title">Заголовок</h2>
+          <div class="shablonText" style="font-size: 18px; color: #000;">
+            Строительство домов – это сложный и многогранный процесс, который включает в себя несколько этапов и требует координации различных специалистов и ресурсов. В этой статье мы рассмотрим основные этапы строительства домов и ключевые аспекты этого процесса.
+            Первый и, возможно, самый важный этап строительства дома – это планирование. На этом этапе определяются следующие ключевые параметры:
+            <ol>
+              <li>
+                Выбор местоположения: Определение места, где будет построен дом, учитывая факторы, такие как близость к школам, работе, магазинам, а также климатические условия и доступ к коммуникациям.
+              </li>
+              <li>
+                Дизайн и архитектура: Разработка дизайна дома с учетом желаемого стиля, размеров и планировки. Также рассматриваются вопросы безопасности и удобства.                  </li>
+              <li>
+                Бюджет: Определение бюджета на строительство, включая расходы на материалы, труд и другие затраты.                  </li>
+            </ol>
+          </div>
+        </section>
+        
+        <!-- Автоматический слайдер -->
+        <section class="block_auto-slider owl-carousel pt-0">
+          <img src="assets/sliders/otdelka_walls/1.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/2.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/3.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/4.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/5.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/6.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/7.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/8.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/9.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/10.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/11.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/12.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/13.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/14.jpg" class="block_auto-slider__item">
+          <img src="assets/sliders/otdelka_walls/15.jpg" class="block_auto-slider__item">
+      </section>
+
+
+      <script>
+        $(document).ready(function () {
+            $(".block_auto-slider").owlCarousel({
+                loop: true,
+                margin: 0,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                smartSpeed: 800,
+                responsive: {
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            })
+        });
+      </script>
+
+      <section class="block_container">
+        <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">Заголовок</p>
+        <h2 class="block_title">Заголовок</h2>
+          <div class="block_checks__container">
+            <div class="block_checks__item">
+                <img src="assets/icons/check.svg">
+                <p>Текст <br> Текст</p>
+            </div>
+            <div class="block_checks__item">
+                <img src="assets/icons/check.svg">
+                <p>Текст <br> Текст</p>
+            </div>
+            <div class="block_checks__item">
+                <img src="assets/icons/check.svg">
+                <p>Текст <br> Текст</p>
+            </div>
+            <div class="block_checks__item">
+                <img src="assets/icons/check.svg">
+                <p>Текст <br> Текст</p>
+            </div>
+            <div class="block_checks__item">
+                <img src="assets/icons/check.svg">
+                <p>Текст <br> Текст</p>
+            </div>
+            <div class="block_checks__item">
+                <img src="assets/icons/check.svg">
+                <p>Текст <br> Текст</p>
+            </div>
+          </div>
+      </section>
+
+      <section class="block_container pt-0">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="shablonText" style="font-size: 18px; color: #000;">
+              Строительство домов – это сложный и многогранный процесс, который включает в себя несколько этапов и требует координации различных специалистов и ресурсов. В этой статье мы рассмотрим основные этапы строительства домов и ключевые аспекты этого процесса.
+              Первый и, возможно, самый важный этап строительства дома – это планирование. На этом этапе определяются следующие ключевые параметры:
+              <ol>
+                <li>
+                  Выбор местоположения: Определение места, где будет построен дом, учитывая факторы, такие как близость к школам, работе, магазинам, а также климатические условия и доступ к коммуникациям.
+                </li>
+                <li>
+                  Дизайн и архитектура: Разработка дизайна дома с учетом желаемого стиля, размеров и планировки. Также рассматриваются вопросы безопасности и удобства.                  </li>
+                <li>
+                  Бюджет: Определение бюджета на строительство, включая расходы на материалы, труд и другие затраты.                  </li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <img class="img-fluid" style="height: 450px !important;" src="img/Rectangle 772.png">
+          </div>
+        </div>
+      </section>
+        
+        
+        <div class="px-md-3" style="background: #F1EBE6;">
+            <div class="container-fluid mx-0 pt-3 pt-md-5 pb-md-5 row">
+                <div class="px-0 col-12 col-md-8">
+                    <div class="text-start px-1">
+                        <span class="style_heading_text">
+                            Нужна консультация?
+                        </span>
+                    </div>
+                    <div class="col-12 pt-3 px-1 pb-md-4">
+                        <span class="font_consult" style="color:black;">
+                            Оставьте контакты и мы с вами свяжемся для обсуждения деталей
+                        </span>	
+                        
+                    </div>
+                    <div class="d-flex row">		
+                        <div class="col-12 col-md-5">
+                        <div>
+                            <a href="proektyi.html#" class="row mx-0 py-3 justify-content-start">
+                                <img src="images/catalog_new_hmkmos/whatsapp.png" class="px-0" style="width: 38px;height: 38px;">
+                                <div class="d-flex px-0 col-9 col-md-7 pt-1 mx-2" style="border-bottom: 1px solid #343536;">
+                                    <div class="pt-1">
+                                        <span class="px-0 py-1 kontak_text">WHATSAPP</span>
+                                    </div>
+                                    <div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+                                        <div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                                            <div class="position-absolute" style="top:0px;">
+                                                <img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>			
+                        </div>
+                        <div>
+                            <a href="proektyi.html#" class="row mx-0 py-3 justify-content-start">
+                                <img src="images/catalog_new_hmkmos/telega.png" class="px-0" style="width: 38px;height: 38px;">
+                                <div class="d-flex px-0 col-9 col-md-7 pt-1 mx-2" style="border-bottom: 1px solid #343536;">
+                                    <div class="pt-1">
+                                        <span class="px-0 py-1 kontak_text">TELEGRAM</span>
+                                    </div>
+                                    <div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+                                        <div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                                            <div class="position-absolute" style="top:0px;">
+                                                <img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            </div>
+                            <div>
+                            <a href="https://test.rddp.ru/”tel:+74957997599”" class="row mx-0 py-3 justify-content-start">
+                                        <img src="images/catalog_new_hmkmos/telephone.png" class="px-0" style="width: 38px;height: 38px;">
+                                    <div class="col-10 col-md-7 px-0 pt-2 mx-2">
+                                        <span class="font_consult_text">+7 (495) 799-75-29
+                                        </span>
+                                    </div>
+                            </a>
+                            </div>
+                        </div>		
+                        <div class="col-12 col-md-7 row mx-0 justify-content-start pb-4 pb-md-0">
+                            <div class="m-auto px-0 pb-4 pb-md-0">
+                                <input class="back_transpar border-0 col-11 col-md-7 kontak_text" placeholder="Иван" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important;" type="text" id="uname" name="name" />
+                            </div>
+                            <div class="m-auto px-0 pb-4 pb-md-0">
+                                <input class="back_transpar border-0 col-11 col-md-7 kontak_text" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important;" placeholder="+7 964 775-86-97" type="tel" id="telephone" />
+                            </div>
+                            <div class="d-flex m-auto px-0 col-6 mx-0" style="border-bottom: 1px solid #343536;">
+                                    <div class="pt-1">
+                                        <span class="px-0 py-1 kontak_text">Отправить</span>
+                                    </div>
+                                    <div class="position-absolute  button_podbor_two" style=" padding-left: 135px;">
+                                        <div class="button_podbor_square my-2 position-relative px-3 py-3" style="border: 1px solid var(--gold, #A78B73);">
+                                            <div class="position-absolute" style="top:0px;">
+                                                <img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 37px;height: 7px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>						
+                </div>
+                <div class="pb-5 pb-md-0 col-12 col-md-4 px-0 m-auto">
+                    <img class="w-100 image-fluid" src="images/catalog_new_hmkmos/block_consult.png">
+                </div>
+            </div>
+        </div>
+        
+         <!-- Футер -->
+         <footer class="footer">
+            <div class="footer_container">
+                    <div class="footer__text-block">
+                            <img src="assets/icons/a.svg" alt="Arhion">
+                            <p>Архитектурно- <br> строительная <br> группа</p>
+                            <a href="termsofuse.html" class="footer__link footer__mini-text only-pc">Политика конфиденциальности</a>
+                    </div>
+                    <div class="footer__link_blocks only-pc">
+                            <div class="footer__links-block">
+                                    <a href="individual.html" class="footer__link">Проектирование</a>
+                                    <a href="stroymaterial.html" class="footer__link">Строительство</a>
+                            </div>
+                            <div class="footer__links-block">
+                                    <a href="proektyi.html" class="footer__link">Каталог проектов</a>
+                                    <a href="index.html" class="footer__link">О компании</a>
+                            </div>
+                            <div class="footer__links-block">
+                                    <a href="#" class="footer__link">Контакты</a>
+                                    <a href="statya.html" class="footer__link">Полезные статьи</a>
+                            </div>
+                    </div>
+                    <div class="footer__link_blocks only-mobile">
+                            <div class="footer__links-block">
+                                    <a href="individual.html" class="footer__link">Проектирование</a>
+                                    <a href="stroymaterial.html" class="footer__link">Строительство</a>
+                                    <a href="stroymaterial.html" class="footer__link">Строительство</a>
+                            </div>
+                            <div class="footer__links-block">
+                                    <a href="stroymaterial.html" class="footer__link">Строительство</a>
+                                    <a href="proektyi.html" class="footer__link">Каталог проектов</a>
+                                    <a href="index.html" class="footer__link">О компании</a>
+                            </div>
+                    </div>
+        
+                    <div class="footer__social only-mobile">
+                            <a href="#">
+                                    <img src="assets/icons/social_vk.svg" alt="VK">
+                            </a>
+                            <a href="#">
+                                    <img src="assets/icons/social_insta.svg" alt="Instagram">
+                            </a>
+                            <a href="#">
+                                    <img src="assets/icons/social_whatsapp.svg" alt="Whatsapp">
+                            </a>
+                    </div>
+        
+                    <div class="footer__text-block footer__text-block--375 only-pc">
+                            <p>+7 (495) 799-75-29</p>
+                            <p class="footer__worktime">Рабочее время:<br>Ежедневно 10:00 - 21:00</p>
+                            <div class="footer__social">
+                                    <a href="#">
+                                            <img src="assets/icons/social_vk.svg" alt="VK">
+                                    </a>
+                                    <a href="#">
+                                            <img src="assets/icons/social_insta.svg" alt="Instagram">
+                                    </a>
+                                    <a href="#">
+                                            <img src="assets/icons/social_whatsapp.svg" alt="Whatsapp">
+                                    </a>
+                            </div>
+                    </div>
+        
+                    <a href="" class="footer__link footer__mini-text only-mobile">Политика конфиденциальности</a>
+                    <p class="footer__group">Архитектурно-строительная группа ARHION © 2001 - 2023</p>
+            </div>
+         </footer>
+
+    </div>
+
+    <link href="style.css@2.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="library/ui/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="portfolio/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="portfolio/css/catalog.css">
+    <link rel="stylsheet" href="portfolio/css/main.css">
+    <link rel="stylsheet" href="portfolio/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="portfolio/css/success.min.css">
+    <link type="text/css" rel="stylesheet" href="style/catalog.css@2.css">
+    
+    
+    <script src="jquery.bxslider.min.js@2"></script>
+    <script src="script/jquery.mb.browser.js@2"></script>
+    <script src="script/jquery.cookie.js@2"></script>
+    <script src="portfolio/js/jquery.validate.js"></script>
+    <script src="script/index.js@2"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+    <script type="text/javascript" src="library/Pagination/dist/pagination.min.js"></script>
+    <script src="owl/owl.carousel.min.js@2"></script>
+    <script src="placeholder.js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="common.js"></script>
+    <script src="script/progressive-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script type='text/javascript'>
+    $('.pagination').pagination({
+        total: 2325,
+        current: 1, 
+        length: 6,
+        size: 0,
+        prev: '«',
+        next: '»',
+        click: function(options,$target) {
+            $.post("/bestprojects.php", {
+                page: options.current.toString(),
+                query: $("input[name=query]").val()
+            }, function(data) {
+                window.scrollTo(0, 0);
+                $(".block_proekts_img .best").html(data);
+            }, "json").fail(function(xhr, status, error) {
+            console.log(xhr);
+            console.log(status);
+            console.log(error);
+        });    }
+    
+     });
+     
+        var $range = $("#slider-range");
+        var $inputFrom = $("#proect_s0_min");
+        var $inputTo = $("#proect_s0_max");
+        var instance;
+        var min = 0;
+        var max = 2500;
+        var from = 0;
+        var to = 2500;
+        
+     $range.ionRangeSlider({
+        type: "double",
+        skin: "big",
+        grid: true,
+        min: min,
+        max: max,
+        from: from,
+        to: to,
+        step: 50,
+        postfix: " м<sup>2</sup>",
+        onChange: updateInputs
+     });
+     instance = $range.data("ionRangeSlider");
+     function updateInputs (data) {
+            from = data.from;
+            to = data.to;
+            $inputFrom.prop("value", from);
+            $inputTo.prop("value", to);
+            countfiltr();
+     }
+    
+    </script>
+    
+    
+    
+    
+    <script>
+    $(function() {
+        $(".slide-prosmotrenny").owlCarousel({
+            dots:false,
+            loop:true, //Зацикливаем слайдер
+            nav:true, 
+            nav:true, 
+            navText: ["<div class='d-flex pt-3 justify-content-center'><div class='px-2' aria-label='Previous'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_left_sliders.png'></div>","<div class='px-2' aria-label='Next'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_right_sliders.png'></div></div>"],
+            autoplay:true, //Автозапуск слайдера
+            autoplayHoverPause:true, //Пауза при навидении мыши
+            smartSpeed:1000, //Время движения слайда
+            autoplayTimeout:2000, //Время смены слайда
+            responsiveBaseElement: 'body',
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                800:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        
+        });
+        
+    });
+    
+    
+    </script>
+</body>
+
+</html>
