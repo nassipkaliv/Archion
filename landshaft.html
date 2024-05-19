@@ -288,6 +288,28 @@ body {
     <a href="#" class="block_title-sub_link" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Подробнее</a>
 </section>
 
+<script>
+  // Получаем ссылку "Подробнее"
+  const link = document.querySelector('.block_title-sub_link');
+  // Получаем блок collapse
+  const collapse = document.querySelector('.collapse');
+
+  // Функция для изменения текста ссылки в зависимости от состояния блока collapse
+  function toggleLinkText() {
+    // Проверяем, открыт ли блок collapse
+    const isCollapsed = collapse.classList.contains('show');
+    // Изменяем текст ссылки в зависимости от состояния
+    link.textContent = isCollapsed ? 'Закрыть' : 'Подробнее';
+  }
+
+  // Добавляем обработчик события для ссылки
+  link.addEventListener('click', toggleLinkText);
+
+  // Добавляем обработчики событий Bootstrap для событий "показа" и "скрытия" collapse
+  collapse.addEventListener('shown.bs.collapse', toggleLinkText);
+  collapse.addEventListener('hidden.bs.collapse', toggleLinkText);
+</script>
+
 <div class="wrapper-stage-building position-relative" style="padding-bottom: 200px;">
   <p class="block_title-above block_title-above--deeper block_title-above--mobile-mini">лучшее предложение </p>
 	<h2 class="block_title mb-lg-5">Стоимость ландшафтного дизайна</h2>
