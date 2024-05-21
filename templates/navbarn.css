@@ -170,7 +170,7 @@ header {
 .links2 {
   display: flex;
   justify-content: center;
-  padding-top: 95px;
+  padding-top: 25px;
 }
 
 
@@ -329,8 +329,8 @@ header {
 }
 
 .offcanvas.show {
-  padding: 3px 16px 37px;
-  background-color: #f7f7f9;
+  padding: 20px 16px 37px;
+  background-color: #f1ebe6;
 }
 
 .offcanvas-header.offcanvas-header--mod {
@@ -391,6 +391,24 @@ header {
   padding-bottom: 15px;
   padding-top: 13px;
 }
+
+.nav-social li {
+  margin-left: 5px;
+}
+
+.rotatedText {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 53px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(167, 139, 115, 0.1);
+  transform: rotate(270deg);
+  position: absolute;
+  left: -97px;
+  top: 38%;
+}
+
 
 .nav-link.active {
   cursor: pointer;
