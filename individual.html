@@ -258,7 +258,7 @@ body {
     </h2>
 </div>
 <div class="position-absolute buttonOrder" style="z-index: 1;top: 65%;right: 12%;">
-  <button id="btn-project-order" class="btn-circle-project btn-call-form-project">
+  <button id="btn-project-order" class="btn-circle-project btn-call-form-project" data-bs-toggle="modal" data-bs-target="#projectOrderModal">
       Заказать
       <hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25)); background: #343536;">
       Проект
@@ -267,6 +267,39 @@ body {
 	</button>
 </div>
 </section>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="projectOrderModal" tabindex="-1" aria-labelledby="projectOrderModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body border-0">
+        <form id="project-order-form">
+					<h1 class="modal-title" id="projectOrderModalLabel">Заказать проект</h1>
+					<p class="modal-desc mt-3">Оставьте контакты и мы с вами свяжемся для обсуждения деталей проекта</p>
+					<div class="block_consult p-0 align-items-center justify-content-center">
+						<input class="w-100 mb-4" placeholder="Иван" type="text" required>
+						<input class="w-100 mb-4" placeholder="+7 964 775-86-97" type="text" required>
+						<input class="w-100 mb-4" placeholder="pochta.86@gmail.com" type="email" required>
+					</div>
+          <div class="form-btn mt-2 mb-4">
+						<button class="button_type1" id="proceedBtn" type="submit" style="background: transparent;">
+							<p class="form-btn-label">Заказать</p>
+							<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+									<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+									<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+							</svg>
+						</button>
+					</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <section class="block_container block_container--wide">
   <p class="block_title-above block_title-above--deeper">Индивидуальный подход</p>
@@ -314,7 +347,7 @@ body {
 
 <div class="wrapper-stage-building position-relative">
 	<div class="position-absolute buttonOrder" style="z-index: 2;top: 60%;right: 12%;">
-		<button id="btn-project-order" class="btn-circle-project btn-call-form-project" style="background-color: #F1EBE6">
+		<button id="btn-project-order" class="btn-circle-project btn-call-form-project" style="background-color: #F1EBE6" data-bs-toggle="modal" data-bs-target="#projectOrderModal">
 				Заказать
 				<hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25)); background-color: #000;">
 				Проект

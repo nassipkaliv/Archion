@@ -2075,6 +2075,24 @@ input:checked + .slider.small:before {
   margin-top: 60px;
 }
 
+.modal-title {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 167%;
+  text-align: center;
+  color: #343536;
+}
+
+.modal-desc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #343536;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
