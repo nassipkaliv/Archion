@@ -2,23 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Страница статей</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta name="format-detection" content="telephone=no">
+    <link href="reset.css@2.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/../proects.css?2">
+    
+    <link rel="stylesheet" href="templates/new_hmkmos.css">
+    <link rel="stylesheet" href="style/progressive-image.min.css">
+    <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+    <link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="libs/owlcarousel/scss/owl.carousel.css">
-
-    <link rel="stylesheet" href="templates/navbarn.css">
+    <link rel="stylesheet" href="style/filtr-new.css@2.css">
+    <link rel="stylesheet" href="style/new_footer.css">
     <link rel="stylesheet" href="styles/main.css">
-</head>
+    <script src="js/respond.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="templates/catalog_banner.css">
+    <link rel="stylesheet" href="portfolio/css/catalog.css">
+    
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="jquery.formstyler.min.js@2"></script>  
+    <script src="script/filtr-new.js@2" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
+    <script src="library/slick-1.8.1/slick/slick.min.js"></script>
+    
+    <style>
+        .slick-list.draggable {
+            width: 350px;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="templates/navbarn.css">
+    
+    </head>
 
 <body>
     <div class="page">
@@ -171,523 +203,961 @@
 
         <section class="intro_solid only-pc">
             <div class="intro_solid__card-inset">
-                <img src="img/statyahead.png" alt="">
-                <h1>Полезная информация</h1>
+                <img src="img/techno.png" alt="">
+                <h1>Технология строительства</h1>
             </div>
         </section>
 
 
-        <div class="year_selector">
-            <div class="year_selector__container">
-                <p class="select_active">Проектирование</p>
-                <p>Строительство</p>
-                <p>Внешняя отделка</p>
-                <p>Внутренняя отделка</p>
-            </div>
+        <div class="year_selector pb-0">
+            <ul class="nav nav-tabs border-bottom-0 year_selector__container" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab1" data-bs-toggle="tab" data-bs-target="#pane1" type="button" role="tab" aria-controls="pane1" aria-selected="true">Проектирование</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link  active" id="tab2" data-bs-toggle="tab" data-bs-target="#pane2" type="button" role="tab" aria-controls="pane2" aria-selected="false">Строительство</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#pane3" type="button" role="tab" aria-controls="pane3" aria-selected="false">Внутренняя отделка</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#pane4" type="button" role="tab" aria-controls="pane4" aria-selected="false">Обустройства участка</button>
+                </li>
+            </ul>
         </div>
 
-        <script>
-            $(document).ready(function() {
-                $(".year_selector__container p").click(function() {
-                    $(".year_selector__container p").removeClass("select_active");
-                    $(this).addClass("select_active");
-                });
-            });
-        </script>
+        
+        <section class="block_container my-lg-5 pt-0">
+            <div class="tab-content">
+             <div class="tab-pane fade" id="pane1" role="tabpanel" aria-labelledby="tab1">
+               <div class="catalogTitle text-center my-4">
+                 Создадим дизайн интерьера с нуля для вас
+               </div>
+               <div class="row">
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/krovat2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">ДИВАНЫ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/shkaf2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">ШКАФЫ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/tumbochka2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">КРЕСЛА</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/stoly.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">ЖУРНАЛНЫЕ СТОЛЫ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/polki.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">ПОЛКИ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/stellazh.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">СТЕЛЛАЖЫ</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="tab-pane fade show active" id="pane2" role="tabpanel" aria-labelledby="tab2">
+                <div class="position-relative">
+                    <div class="vertical-line only-pc">
+                        <svg width="2" height="1786" viewBox="0 0 2 1786" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M-7.80248e-05 1785C-7.8049e-05 1785.55 0.447637 1786 0.999922 1786C1.55221 1786 1.99992 1785.55 1.99992 1785L-7.80248e-05 1785ZM0 -4.37114e-08L-7.80248e-05 1785L1.99992 1785L2 4.37114e-08L0 -4.37114e-08Z" fill="#A78B73" />
+                        </svg>
+                    </div>
+                    <div class="statyaItem">
+                        <div class="d-flex gap-3 align-items-start">
+                            <svg  style="position: relative; top: -5px;" width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M66.7735 6L61 0.226497L55.2265 6L61 11.7735L66.7735 6ZM1 5C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7V5ZM61 5L1 5V7L61 7V5Z" fill="#A78B73" />
+                            </svg>
+                            <h1 style="position: relative; top: -13px;">Фундамент</h1>
+                        </div>
+                        <div class="projects-carousel owl-carousel project-carousel mx-4 mt-0 mb-0">
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Фундамент дома
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-1.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Россверк на сваях
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-3.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Мелко-заглубленный
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-4.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Ленточный
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-5.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Блоки ФБС
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 6.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Плита
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 6-1.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Цокольный
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="slide_indicators align-items-center justify-content-center">
+                                <div class="slide_indicators__item active"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                        </div>
+                    </div>
+                    <div class="statyaItem">
+                        <div class="d-flex gap-3 align-items-start">
+                            <svg  style="position: relative; top: -5px;" width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M66.7735 6L61 0.226497L55.2265 6L61 11.7735L66.7735 6ZM1 5C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7V5ZM61 5L1 5V7L61 7V5Z" fill="#A78B73" />
+                            </svg>
+                            <h1 style="position: relative; top: -13px;">Перекрытия</h1>
+                        </div>
+                        <div class="projects-carousel owl-carousel project-carousel mx-4 mt-0 mb-0">
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/perek/image\ 5.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Перекрытия дома
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/perek/image\ 5-1.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Деревянные перекрытия
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/perek/image\ 5-2.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Плиты перекрытий
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/perek/image\ 6.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Монолитные перекрытия
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="slide_indicators align-items-center justify-content-center">
+                                <div class="slide_indicators__item active"></div>
+                                <div class="slide_indicators__item"></div>
+                        </div>
+                    </div> 
+                    <div class="statyaItem">
+                        <div class="d-flex gap-3 align-items-start">
+                            <svg  style="position: relative; top: -5px;" width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M66.7735 6L61 0.226497L55.2265 6L61 11.7735L66.7735 6ZM1 5C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7V5ZM61 5L1 5V7L61 7V5Z" fill="#A78B73" />
+                            </svg>
+                            <h1 style="position: relative; top: -13px;">Стены</h1>
+                        </div>
+                        <div class="projects-carousel owl-carousel project-carousel mx-4 mt-0 mb-0">
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 5-1.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Каркасные стены
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 5-2.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Деревянные стены
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-3.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Мелко-заглубленный
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 5-3.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Стены дома
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 5-4.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Панельные стены
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 5.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Стены из газобетона
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 79.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Стены из теплой керамики
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 80.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Стены из монолита
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 81.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Стены из кирпича
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/walls/image\ 83.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Стены из пеноблока
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="slide_indicators align-items-center justify-content-center">
+                                <div class="slide_indicators__item active"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                        </div>
+                    </div>
+                    <div class="statyaItem">
+                        <div class="d-flex gap-3 align-items-start">
+                            <svg  style="position: relative; top: -5px;" width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M66.7735 6L61 0.226497L55.2265 6L61 11.7735L66.7735 6ZM1 5C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7V5ZM61 5L1 5V7L61 7V5Z" fill="#A78B73" />
+                            </svg>
+                            <h1 style="position: relative; top: -13px;">Фундамент</h1>
+                        </div>
+                        <div class="projects-carousel owl-carousel project-carousel mx-4 mt-0 mb-0">
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Фундамент дома
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-1.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Россверк на сваях
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-3.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Мелко-заглубленный
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-4.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Ленточный
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 5-5.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Блоки ФБС
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 6.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Плита
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                            <div class="item px-0 px-sm-2  0">
+                                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+                            <div>
+                                <a href="proektyi.html#" style="background-image: url(img/statya/fundament/image\ 6-1.png);height: 240px;display: block;background-size: cover;">
+                                </a>
+                            </div>
+                            <div class="py-2 px-4">
+                                <div class="py-2 row">
+                                    <div class="col-12 px-1">
+                                        <span class="font-size-24px-styles articles_text">
+                                            Цокольный
+                                        </span>
+                                    </div>	
+                                </div>
+                                <div class="py-2 d-flex">
+                                    <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                                        <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                                            Подробнее
+                                        </span>		
+                                        <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                                    </a>							
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                        <div class="slide_indicators align-items-center justify-content-center">
+                                <div class="slide_indicators__item active"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                                <div class="slide_indicators__item"></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="tab-pane fade" id="pane3" role="tabpanel" aria-labelledby="tab3">
+               <div class="catalogTitle text-center my-4">
+                 Создадим дизайн интерьера с нуля для вас
+               </div>
+               <div class="row">
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/krovat2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">ПОЛКИ ДЛЯ ОБУВИ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/shkaf2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">ШКАФЫ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/tumbochka2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">ТУМБОЧКА</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/stoly.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">КОМОДЫ </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/polki.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">ПОЛКИ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/stellazh.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">СТЕЛЛАЖЫ</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <div class="tab-pane fade" id="pane4" role="tabpanel" aria-labelledby="tab4">
+               <div class="catalogTitle text-center my-4">
+                 Создадим дизайн интерьера с нуля для вас
+               </div>
+               <div class="row">
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/krovat2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">СТОЛЕЩНИЦЫ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/shkaf2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">КУХОННЫЕ ШКАФЫ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/tumbochka2.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">СТУЛЬЯ</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/stoly.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">КУХОННЫЕ СТОЛЫ </div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/polki.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">БАРНАЯ СТОЙКА</div>
+                   </div>
+                 </div>
+                 <div class="col-lg-6 col-md-12 mb-4">
+                   <div class="catalogBigBlock" style="background: url('img/stellazh.png'); background-size: cover; background-repeat: no-repeat;">
+                     <div class="catalogBlockText">СТЕЛЛАЖИ ДЛЯ ПОСУДЫ</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+         </div>
+       </section>
 
-      
-        <section class="block_container">
-            <div class="position-relative">
-                <div class="vertical-line only-pc">
-                    <svg width="2" height="1786" viewBox="0 0 2 1786" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M-7.80248e-05 1785C-7.8049e-05 1785.55 0.447637 1786 0.999922 1786C1.55221 1786 1.99992 1785.55 1.99992 1785L-7.80248e-05 1785ZM0 -4.37114e-08L-7.80248e-05 1785L1.99992 1785L2 4.37114e-08L0 -4.37114e-08Z" fill="#A78B73" />
-                    </svg>
-                </div>
-                <div class="statyaItem">
-                    <div class="d-flex gap-3 align-items-start">
-                        <svg  style="position: relative; top: -5px;" width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M66.7735 6L61 0.226497L55.2265 6L61 11.7735L66.7735 6ZM1 5C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7V5ZM61 5L1 5V7L61 7V5Z" fill="#A78B73" />
-                        </svg>
-                        <h1 style="position: relative; top: -13px;">Стены</h1>
-                    </div>
-                    <div class="ms-5 mx-0 owl-carousel px-0 slide-two position-relative">
-                        <div class="item px-0 px-sm-2  0">
-                        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                        <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                        </div>
-                        <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  1">
-                        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                        <div>
-                            <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                            </a>
-                        </div>
-                        <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  2">
-                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                    <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                    </div>
-                    <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  3">
-                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                    <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                    </div>
-                    <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>						
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="statyaItem">
-                    <div class="d-flex gap-3 align-items-start">
-                        <svg  style="position: relative; top: -5px;" width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M66.7735 6L61 0.226497L55.2265 6L61 11.7735L66.7735 6ZM1 5C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7V5ZM61 5L1 5V7L61 7V5Z" fill="#A78B73" />
-                        </svg>
-                        <h1 style="position: relative; top: -13px;">Полы</h1>
-                    </div>
-                    <div class="ms-5 mx-0 owl-carousel px-0 slide-two position-relative">
-                        <div class="item px-0 px-sm-2  0">
-                        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                        <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                        </div>
-                        <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  1">
-                        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                        <div>
-                            <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                            </a>
-                        </div>
-                        <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  2">
-                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                    <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                    </div>
-                    <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  3">
-                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                    <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                    </div>
-                    <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>						
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                    </div>
-                </div>  
-                <div class="statyaItem">
-                    <div class="d-flex gap-3 align-items-start">
-                        <svg  style="position: relative; top: -5px;" width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M66.7735 6L61 0.226497L55.2265 6L61 11.7735L66.7735 6ZM1 5C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7V5ZM61 5L1 5V7L61 7V5Z" fill="#A78B73" />
-                        </svg>
-                        <h1 style="position: relative; top: -13px;">Потолки</h1>
-                    </div>
-                    <div class="ms-5 mx-0 owl-carousel px-0 slide-two position-relative">
-                        <div class="item px-0 px-sm-2  0">
-                        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                        <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                        </div>
-                        <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  1">
-                        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                        <div>
-                            <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                            </a>
-                        </div>
-                        <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  2">
-                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                    <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                    </div>
-                    <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  3">
-                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                    <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                    </div>
-                    <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>						
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                    </div>
-                </div>  
-                <div class="statyaItem mb-0">
-                    <div class="d-flex gap-3 align-items-start">
-                        <svg  style="position: relative; top: -5px;" width="67" height="12" viewBox="0 0 67 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M66.7735 6L61 0.226497L55.2265 6L61 11.7735L66.7735 6ZM1 5C0.447715 5 0 5.44772 0 6C0 6.55228 0.447715 7 1 7V5ZM61 5L1 5V7L61 7V5Z" fill="#A78B73" />
-                        </svg>
-                        <h1 style="position: relative; top: -13px;">Декоративные элементы</h1>
-                    </div>
-                    <div class="ms-5 mx-0 owl-carousel px-0 slide-two position-relative">
-                        <div class="item px-0 px-sm-2  0">
-                        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                        <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                        </div>
-                        <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  1">
-                        <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                        <div>
-                            <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                            </a>
-                        </div>
-                        <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  2">
-                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                    <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                    </div>
-                    <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>							
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                        <div class="item px-0 px-sm-2  3">
-                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-                    <div>
-                        <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
-                        </a>
-                    </div>
-                    <div class="py-2 px-4">
-                        <div class="py-2 row">
-                            <div class="col-12 px-1">
-                                <span class="font-size-24px-styles articles_text">
-                                    Дома в стиле барн
-                                </span>
-                            </div>	
-                        </div>
-                        <div  class="py-2 row col-12">
-                            <a href="" class="button_type1">
-                                <p>ПОДРОБНЕЕ</p>
-                                <svg width="16.75rem" height="2.5rem" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-                                    <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-                                </svg>
-                            </a>						
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-        </section>
-
-        <script>
-            $(function() {
-                $(".slide-two").owlCarousel({
-                    loop:true, //Зацикливаем слайдер
-                    autoplay:false, //Автозапуск слайдера
-                    smartSpeed:2000, //Время движения слайда
-                    responsiveBaseElement: 'body',
-                    responsiveClass:true,
-                    autoplayTimeout:4000, //Время смены слайда
-                    responsive:{
-                        0:{
-                            items:1
-                        },
-                        600:{
-                            items:2
-                        },
-                        992:{
-                            items:3
+       
+       <script>
+        $(function() {
+                var $projectCarousel = $(".projects-carousel");
+        
+                $projectCarousel.owlCarousel({
+                        loop:false,
+                        margin: 20,
+                        autoplay:false,
+                        smartSpeed:2000,
+                        responsiveBaseElement: 'body',
+                        responsiveClass:true,
+                        autoplayTimeout:4000,
+                        responsive:{
+                                0:{
+                                        items:1
+                                },
+                                600:{
+                                        items:2
+                                },
+                                992:{
+                                        items:3
+                                }
                         }
-                    }
                 });
-                
-            
-            });
-            
-        </script>	
+        
+                $projectCarousel.on('changed.owl.carousel', function(event) {
+                        var currentItemIndex = event.item.index;
+                        $(this).closest('.block_container').find(".slide_indicators__item").removeClass('active');
+                        $(this).closest('.block_container').find(".slide_indicators__item").eq(currentItemIndex).addClass('active');
+                });
+        
+                // Pagination click handler
+                $(".slide_indicators__item").click(function(){
+                        var index = $(this).index();
+                        $(this).closest('.block_container').find(".project-carousel").trigger('to.owl.carousel', [index, 300]);
+                });
+        });
+    </script>
 
         
 
@@ -856,9 +1326,25 @@
     });
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link href="style.css@2.css" rel="stylesheet">
+<link rel="stylesheet" href="library/ui/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+<link rel="stylesheet" href="portfolio/css/fontawesome-all.min.css">
 
-    <script src="js/main.js"></script>
+<script src="jquery.bxslider.min.js@2"></script>
+<script src="script/jquery.mb.browser.js@2"></script>
+<script src="script/jquery.cookie.js@2"></script>
+<script src="portfolio/js/jquery.validate.js"></script>
+<script src="script/index.js@2"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+<script type="text/javascript" src="library/Pagination/dist/pagination.min.js"></script>
+<script src="owl/owl.carousel.min.js@2"></script>
+<script src="placeholder.js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="common.js"></script>
+<script src="script/progressive-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 </body>
 
 </html>
