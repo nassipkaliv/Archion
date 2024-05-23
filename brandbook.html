@@ -85,7 +85,7 @@
         </div>
       </li>
       <li class="sidebar-item">
-        <a class="sidebar-link">Контакты</a>
+        <button style="background: transparent;" class="sidebar-link" data-bs-toggle="modal" data-bs-target="#contactModal">Контакты</button>
         <div class="indicator-svg">
           <svg width="58" height="13" viewBox="0 0 58 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.20942 6.5H53.7539" stroke="#DD5C24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -175,8 +175,84 @@
         </div>
     </div>
     </div>
+
+    <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
+      
+    </div>
+
+    <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+      
+    </div>
+
   </div>
 
+
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header position-relative" style="background: #f1ebe6;">
+                <h1 class="modal-title" id="contactModalLabel" style="margin: 5rem auto 1.5rem 2rem; font-weight: 400; font-size: 50px; line-height: 98%; text-transform: uppercase; color: #2e2e2e;">КОНТАКТЫ</h1>
+                <button type="button" class="btn-close position-absolute" style="top: 10px; right: 10px;" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="background: url(img/brandbookbg.png); background-size: cover; height: 600px;">
+                <div class="introductionBlock" style="right: 2%; top: -10%;">
+                  <div class="introductionBlockTitle" style="margin-top: 70px; font-weight: 700; font-size: 30px; line-height: 120%; color: #14010c; text-transform: none;">Нужна консультация?</div>
+                  <p class="introductionBlockList mt-5">
+                    Напишите или позвоните нам 
+                    и наш великолепный менеджер ответит 
+                    на все вопросы. 
+                  </p>
+                  <div class="mt-5">
+                    <div class="block_consult__contact-item mb-4">
+                      <img src="assets/icons/nav/whatsapp.svg">
+                      <a href="" class="button_type1 button_type1--min">
+                          <p style="font-size: 12px;">WHATSAPP</p>
+                          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+                              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+                              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+                          </svg>
+                      </a>
+                    </div>
+                    <div class="block_consult__contact-item mb-4">
+                      <img src="assets/icons/nav/telegram.svg">
+                      <a href="" class="button_type1 button_type1--min">
+                          <p style="font-size: 12px;">TELEGRAM</p>
+                          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+                              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+                              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+                          </svg>
+                      </a>
+                    </div>
+                    <div class="block_consult__contact-item mb-4">
+                      <img src="assets/icons/nav/phone.svg">
+                      <a href="" class="button_type1 button_type1--min">
+                          <p style="font-size: 12px;">ПОЗВОНИТЬ</p>
+                          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+                              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+                              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+                          </svg>
+                      </a>
+                    </div>
+                    <div class="block_consult__contact-item mb-4">
+                      <img src="assets/icons/nav/phone2.svg">
+                      <a href="" class="button_type1 button_type1--min">
+                          <p style="font-size: 12px;">МЫ ПЕРЕЗВОНИМ</p>
+                          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+                              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+                              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+                          </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="js/main.js"></script>
     
