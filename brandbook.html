@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="templates/new_hmkmos.css">
 
-  
+
 
 </head>
 
-<body  style="height: 100vh; background: #f1ebe6; position: relative;">
+<body  style="height: 100vh; background: #f1ebe6; position: relative; overflow-x: hidden;">
 
   <div class="brandSidebar">
     <img style="max-width: 290px;" class="img-fluid brandSidebarLogo" src="img/brandlogo.png" alt="Brand Logo">
@@ -150,41 +150,110 @@
       <img class="opportunityImg" src="img/examplestab.png">
       <div class="d-flex justify-content-between gap-4 px-5">
         <div class="tabBlocks d-flex flex-column gap-4 col">
-            <div class="tabBlock active" data-bs-toggle="pill" data-bs-target="#tab1">Первый пример</div>
-            <div class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab2">Второй пример</div>
-            <div class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab3">Третий пример</div>
-            <div class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab4">Четвертый пример</div>
+            <button class="tabBlock active" data-bs-toggle="pill" data-bs-target="#tab1">Первый пример</button>
+            <button class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab2">Второй пример</button>
+            <button class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab3">Третий пример</button>
+            <button class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab4">Четвертый пример</button>
         </div>
         <div class="tabBlockContentBlock col">
-            <div class="tabBlockContent tab-pane fade show active" id="tab1">
-                <div class="tabBlockContentTitle mb-4">Первый</div>
-                <p class="tabBlockContentDescription">...</p>
-            </div>
-            <div class="tabBlockContent tab-pane fade" id="tab2">
-                <div class="tabBlockContentTitle mb-4">Второй</div>
-                <p class="tabBlockContentDescription">...</p>
-            </div>
-            <div class="tabBlockContent tab-pane fade" id="tab3">
-                <div class="tabBlockContentTitle mb-4">Третий</div>
-                <p class="tabBlockContentDescription">...</p>
-            </div>
-            <div class="tabBlockContent tab-pane fade" id="tab4">
-                <div class="tabBlockContentTitle mb-4">Четвертый</div>
-                <p class="tabBlockContentDescription">...</p>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab1">
+                    <div class="tabBlockContent">
+                        <div class="tabBlockContentTitle mb-4">Первый</div>
+                        <p class="tabBlockContentDescription">...</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab2">
+                    <div class="tabBlockContent">
+                        <div class="tabBlockContentTitle mb-4">Второй</div>
+                        <p class="tabBlockContentDescription">...</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab3">
+                    <div class="tabBlockContent">
+                        <div class="tabBlockContentTitle mb-4">Третий</div>
+                        <p class="tabBlockContentDescription">...</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab4">
+                    <div class="tabBlockContent">
+                        <div class="tabBlockContentTitle mb-4">Четвертый</div>
+                        <p class="tabBlockContentDescription">...</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
     </div>
+    
 
     <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
       
     </div>
 
     <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-      
+      <img class="opportunityImg" src="img/reviewbg.png">
+      <div class="redLine" style="position: absolute; top: 73%; right: 0%;">
+        <svg width="320" height="4" viewBox="0 0 320 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 2H677" stroke="#DD5C24" stroke-width="4" />
+        </svg>
+      </div>
+        <div class="position-absolute" style="top: 45%;">
+          <div class="introductionBlock position-relative mb-5" style="max-width: 52rem;">
+            <p class="reviewText">
+              I have been doing business with Monak since  2020. The staff are extremely generous, helpful and friendly. Whenever I have a questions or need help; they are all so quick to assist and with genuinely happy attitudes.  
+            </p>
+            <div class="mt-5 d-flex align-items-center gap-3">
+              <img class="imgAvatar" style="width: 108px; height:133px;" src="img/ava.png">
+              <div class="">
+                <div class="avaName">Full Name</div>
+                <div class="avaPodText">ABC</div>
+              </div>
+            </div>
+          </div>
+          <div class="introductionBlock position-relative mb-5" style="max-width: 52rem;">
+            <p class="reviewText">
+              I have been doing business with Monak since  2020. The staff are extremely generous, helpful and friendly. Whenever I have a questions or need help; they are all so quick to assist and with genuinely happy attitudes.  
+            </p>
+            <div class="mt-5 d-flex align-items-center gap-3">
+              <img class="imgAvatar" style="width: 108px; height:133px;" src="img/ava.png">
+              <div class="">
+                <div class="avaName">Full Name</div>
+                <div class="avaPodText">ABC</div>
+              </div>
+            </div>
+          </div>
+          <div class="introductionBlock position-relative mb-5" style="max-width: 52rem;">
+            <p class="reviewText">
+              I have been doing business with Monak since  2020. The staff are extremely generous, helpful and friendly. Whenever I have a questions or need help; they are all so quick to assist and with genuinely happy attitudes.  
+            </p>
+            <div class="mt-5 d-flex align-items-center gap-3">
+              <img class="imgAvatar" style="width: 108px; height:133px;" src="img/ava.png">
+              <div class="">
+                <div class="avaName">Full Name</div>
+                <div class="avaPodText">ABC</div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var triggerTabList = [].slice.call(document.querySelectorAll('[data-bs-toggle="pill"]'))
+    triggerTabList.forEach(function (triggerEl) {
+        var tabTrigger = new bootstrap.Tab(triggerEl)
+
+        triggerEl.addEventListener('click', function (event) {
+            event.preventDefault()
+            tabTrigger.show()
+        })
+    })
+})
+  </script>
 
 
   <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
@@ -198,8 +267,8 @@
                 <div class="introductionBlock" style="right: 2%; top: -10%;">
                   <div class="introductionBlockTitle" style="margin-top: 70px; font-weight: 700; font-size: 30px; line-height: 120%; color: #14010c; text-transform: none;">Нужна консультация?</div>
                   <p class="introductionBlockList mt-5">
-                    Напишите или позвоните нам 
-                    и наш великолепный менеджер ответит 
+                    Напишите или позвоните нам <br>
+                    и наш великолепный менеджер ответит <br>
                     на все вопросы. 
                   </p>
                   <div class="mt-5">
@@ -254,6 +323,12 @@
     </div>
 </div>
 
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap 5 JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     
     

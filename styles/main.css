@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@font-face {
+  font-family: 'Myanmar MN';
+  src: url('../fonts/MyanmarMN.woff') format('woff2'),
+      url('../fonts/MyanmarMN.woff') format('woff'),
+      url('../fonts/MyanmarMN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 * {
   margin: 0;
 }
@@ -2091,6 +2102,31 @@ input:checked + .slider.small:before {
   font-size: 16px;
   text-align: center;
   color: #343536;
+}
+
+.reviewText {
+  font-family: "Myanmar MN";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 136%;
+  color: #2e2e2e;
+}
+
+.avaName {
+  font-family: "Myanmar MN", sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 90%;
+  color: #2e2e2e;
+}
+
+.avaPodText {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 165%;
+  color: #585858;
+  opacity: 0.75;
 }
 
 @media (max-width: 1651px) {
