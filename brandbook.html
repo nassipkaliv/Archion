@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="templates/new_hmkmos.css">
 
 
+    <style>
+      .tabBlock {
+        height: 127px;
+      }
+    </style>
+
 
 </head>
 
@@ -148,42 +154,57 @@
     <!-- Примеры из Практики Tab Pane -->
     <div class="tab-pane fade" id="examples" role="tabpanel" aria-labelledby="examples-tab">
       <img class="opportunityImg" src="img/examplestab.png">
-      <div class="d-flex justify-content-between gap-4 px-5">
-        <div class="tabBlocks d-flex flex-column gap-4 col">
-            <button class="tabBlock active" data-bs-toggle="pill" data-bs-target="#tab1">Первый пример</button>
-            <button class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab2">Второй пример</button>
-            <button class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab3">Третий пример</button>
-            <button class="tabBlock" data-bs-toggle="pill" data-bs-target="#tab4">Четвертый пример</button>
+      <div class="redLine mb-4" style="position: absolute; top: 110%; right: 0%;">
+        <svg width="320" height="4" viewBox="0 0 320 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 2H677" stroke="#DD5C24" stroke-width="4" />
+        </svg>
+      </div>
+      <div class="d-flex justify-content-between gap-4 px-5" style="margin-bottom: 80px;">
+        <div class="tabBlocks d-flex flex-column gap-4 col-5">
+            <button class="tabBlock active">Первый пример</button>
+            <button class="tabBlock">Второй пример</button>
+            <button class="tabBlock">Третий пример</button>
+            <button class="tabBlock">Четвертый пример</button>
         </div>
-        <div class="tabBlockContentBlock col">
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="tab1">
-                    <div class="tabBlockContent">
-                        <div class="tabBlockContentTitle mb-4">Первый</div>
-                        <p class="tabBlockContentDescription">...</p>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="tab2">
-                    <div class="tabBlockContent">
-                        <div class="tabBlockContentTitle mb-4">Второй</div>
-                        <p class="tabBlockContentDescription">...</p>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="tab3">
-                    <div class="tabBlockContent">
-                        <div class="tabBlockContentTitle mb-4">Третий</div>
-                        <p class="tabBlockContentDescription">...</p>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="tab4">
-                    <div class="tabBlockContent">
-                        <div class="tabBlockContentTitle mb-4">Четвертый</div>
-                        <p class="tabBlockContentDescription">...</p>
-                    </div>
-                </div>
-            </div>
+        <div class="tabBlockContentBlock col-7 pe-5">
+          <div class="tabBlockContent active">
+            <div class="tabBlockContentTitle mb-4">Первый</div>
+            <p class="tabBlockContentDescription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius quam quisque id diam vel quam elementum pulvinar etiam. Gravida arcu ac tortor dignissim convallis aenean et tortor.    
+            </p>
+            <p class="tabBlockContentDescription">
+              Egestas fringilla phasellus faucibus scelerisque eleifend. Maecenas accumsan lacus vel facilisis volutpat est. Tortor vitae purus faucibus ornare suspendisse sed. Egestas egestas fringilla phasellus faucibus. Elementum nisi quis eleifend quam adipiscing vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi.
+            </p>
+          </div>
+          <div class="tabBlockContent">
+            <div class="tabBlockContentTitle mb-4">Второй</div>
+            <p class="tabBlockContentDescription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius quam quisque id diam vel quam elementum pulvinar etiam. Gravida arcu ac tortor dignissim convallis aenean et tortor.    
+            </p>
+            <p class="tabBlockContentDescription">
+              Egestas fringilla phasellus faucibus scelerisque eleifend. Maecenas accumsan lacus vel facilisis volutpat est. Tortor vitae purus faucibus ornare suspendisse sed. Egestas egestas fringilla phasellus faucibus. Elementum nisi quis eleifend quam adipiscing vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi.
+            </p>
+          </div>
+          <div class="tabBlockContent">
+            <div class="tabBlockContentTitle mb-4">Третий</div>
+            <p class="tabBlockContentDescription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius quam quisque id diam vel quam elementum pulvinar etiam. Gravida arcu ac tortor dignissim convallis aenean et tortor.    
+            </p>
+            <p class="tabBlockContentDescription">
+              Egestas fringilla phasellus faucibus scelerisque eleifend. Maecenas accumsan lacus vel facilisis volutpat est. Tortor vitae purus faucibus ornare suspendisse sed. Egestas egestas fringilla phasellus faucibus. Elementum nisi quis eleifend quam adipiscing vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi.
+            </p>
+          </div>
+          <div class="tabBlockContent">
+            <div class="tabBlockContentTitle mb-4">Четвертый</div>
+            <p class="tabBlockContentDescription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius quam quisque id diam vel quam elementum pulvinar etiam. Gravida arcu ac tortor dignissim convallis aenean et tortor.    
+            </p>
+            <p class="tabBlockContentDescription">
+              Egestas fringilla phasellus faucibus scelerisque eleifend. Maecenas accumsan lacus vel facilisis volutpat est. Tortor vitae purus faucibus ornare suspendisse sed. Egestas egestas fringilla phasellus faucibus. Elementum nisi quis eleifend quam adipiscing vitae. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi.
+            </p>
+          </div>
         </div>
-    </div>
+      </div>
     
     </div>
     
@@ -309,6 +330,27 @@
     })
 })
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.tabBlock');
+      const contents = document.querySelectorAll('.tabBlockContent');
+
+      tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => {
+              // Remove active class from all tabs
+              tabs.forEach(t => t.classList.remove('active'));
+              // Add active class to the clicked tab
+              tab.classList.add('active');
+
+              // Remove active class from all content
+              contents.forEach(content => content.classList.remove('active'));
+              // Add active class to the corresponding content
+              contents[index].classList.add('active');
+          });
+      });
+  });
+</script>
 
 
   <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">

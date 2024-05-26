@@ -2072,6 +2072,9 @@ input:checked + .slider.small:before {
   color: #2e2e2e;
 }
 
+.tabBlock {
+  cursor: pointer;
+}
 
 .tabBlockContent {
   display: none;
