@@ -2132,6 +2132,11 @@ input:checked + .slider.small:before {
   opacity: 0.75;
 }
 
+.guideSlide {
+    width: 100vw;
+    height: 100vh;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
