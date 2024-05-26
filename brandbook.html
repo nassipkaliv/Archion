@@ -10,9 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="libs/owlcarousel/scss/owl.carousel.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <script src="libs/owlcarousel/js/owl.carousel.js"></script>
     <script src="libs/owlcarousel/js/owl.autoplay.js"></script>
@@ -25,6 +26,51 @@
       .tabBlock {
         height: 127px;
       }
+
+      
+
+      .swiper-container {
+            width: 390px;
+            height: 540px; /* Adjust height to fit 4 slides */
+            overflow: hidden; /* Ensure only 4 slides are visible */
+        }
+
+        .swiper-slide {
+          width: 360px;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: #000;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            position: absolute;
+            z-index: 10;
+        }
+
+        .swiper-button-next {
+          right: 0;
+          top: 50%;
+          left: -2%;
+        }
+
+        .swiper-button-prev {
+          right: 0;
+          top: 60%;
+          left: -2%;
+        }
+
+        .swiper-button-next img, .swiper-button-prev img {
+            width: 11px;
+        }
+
+        .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+          content: none;
+        }
+
+        .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+          content: none;
+        }
     </style>
 
 
@@ -148,8 +194,119 @@
       </div>
     </div>
     <!-- Наши преимущества Tab Pane -->
-    <div class="tab-pane fade" id="opportunity" role="tabpanel" aria-labelledby="opportunity-tab">
+    <div class="tab-pane fade" id="opportunity" role="tabpanel" aria-labelledby="opportunity-tab" style="overflow-y: hidden;">
       <img class="opportunityImg" src="img/opportunity.png">
+      <div class="redLine mb-4" style="position: absolute; top: 110%; right: 0%;">
+        <svg width="320" height="4" viewBox="0 0 320 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 2H677" stroke="#DD5C24" stroke-width="4" />
+        </svg>
+      </div>
+      <div class="d-flex justify-content-between gap-4 px-5 ps-2" style="margin-bottom: 80px;">
+        <div class="tabBlocks swiper-container d-flex flex-column gap-4 col-5">
+          <div class="swiper-wrapper" style="margin-left: 20px;">
+              <div class="swiper-slide tabBlock active me-4">Профессионализм и опыт</div>
+              <div class="swiper-slide tabBlock me-4">Индивидуальный подход</div>
+              <div class="swiper-slide tabBlock me-4">Качество и надежность</div>
+              <div class="swiper-slide tabBlock me-4">Соблюдение сроков</div>
+              <div class="swiper-slide tabBlock me-4">Комплексное обслуживание</div>
+              <div class="swiper-slide tabBlock me-4">Рекомендации от клиентов</div>
+              <div class="swiper-slide tabBlock me-4">Соблюдение норм</div>
+              <div class="swiper-slide tabBlock me-4">Уникальные решения</div>
+              <div class="swiper-slide tabBlock me-4">Красота</div>
+              <div class="swiper-slide tabBlock me-4">Удобства для вас</div>
+              <div class="swiper-slide tabBlock me-4">Экспертное мнение</div>
+              <div class="swiper-slide tabBlock me-4">Учет ваших пожеланий</div>
+              <div class="swiper-slide tabBlock me-4">Большой опыт</div>
+              <div class="swiper-slide tabBlock me-4">Высокая эффективность</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-prev">
+            <img src="images/catalog_new_hmkmos/arrow_filter_down.png" alt="Prev">
+          </div>
+          <div class="swiper-button-next">
+            <img src="images/catalog_new_hmkmos/arrow_filter_upp.png" alt="Next">
+          </div>
+      </div>
+        <div class="tabBlockContentBlock col-7 pe-5">
+          <div class="tabBlockContent active" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Профессионализм и опыт</div>
+            <p class="tabBlockContentDescription">
+              Мы команда высококвалифицированных специалистов в области строительства, которые обладают многолетним опытом. Мы знаем все нюансы и техники работы, чтобы успешно реализовывать различные проекты. Наше строительное исполнение отвечает самым высоким стандартам качества.
+            </p>
+
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Индивидуальный подход</div>
+            <p class="tabBlockContentDescription">
+              Мы придаем большое значение общению с нашими клиентами и пониманию их потребностей. Помогать воплощать ваши идеи в реальность - наша главная цель. Мы готовы адаптироваться под ваши предпочтения и обеспечить наилучшее удовлетворение ваших требований.
+            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Качество и надежность</div>
+            <p class="tabBlockContentDescription">
+              Мы стремимся к достижению долгосрочных и успешных отношений с нашими клиентами. Поэтому мы предлагаем только высококачественные строительные материалы и работаем с надежными поставщиками. Вы можете быть уверены, что ваш проект будет выполнен с максимальной точностью и надежностью.
+            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Соблюдение сроков</div>
+            <p class="tabBlockContentDescription">
+              Одной из наших главных преимуществ является строгое соблюдение сроков выполнения работ. Мы ценим ваше время и обязуемся завершить проект в оговоренные сроки. Мы уделяем внимание деталям и планируем нашу работу таким образом, чтобы сократить возможные задержки
+            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Комплексное обслуживание</div>
+            <p class="tabBlockContentDescription">
+              Наша компания предлагает полный спектр услуг от проектирования до последней фазы строительства. Мы можем реализовать проекты различной сложности, будь то строительство коттеджа или реконструкция коммерческого здания. Вы можете полностью положиться на нашу экспертизу, чтобы реализовать свои строительные потребности.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Рекомендации от клиентов</div>
+            <p class="tabBlockContentDescription">
+              Наши клиенты - наши лучшие сторонники. Мы гордимся тем, что имеем множество положительных отзывов от клиентов, которые оценивают нашу профессиональность, ответственность и качество работы. Нам доверяют, и мы делаем всё возможное, чтобы оправдать это доверие.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Соблюдение норм</div>
+            <p class="tabBlockContentDescription">
+              Мы придерживаемся высших стандартов качества и безопасности в каждом проекте, который мы реализуем. Наша компания строго следует нормам и регуляциям, чтобы обеспечить безопасность наших работников, клиентов и окружающей среды.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Уникальные решения</div>
+            <p class="tabBlockContentDescription">
+              Мы понимаем, что каждый проект уникален, и требует индивидуального подхода. Наша команда профессионалов способна разрабатывать креативные и инновационные решения, которые отвечают потребностям и целям каждого проекта. Независимо от сложности задачи, мы находим путь к уникальному и успешному завершению. Красота в деталях.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Красота</div>
+            <p class="tabBlockContentDescription">
+              Мы стремимся к совершенству в каждой детали наших проектов. Наша команда дизайнеров и архитекторов работает с большой преданностью, чтобы создать пространства, которые не только функциональны, но и визуально впечатляют. Мы понимаем, что эстетика играет важную роль, и гордимся тем, как мы придаем красоту каждому проекту.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Удобства для вас</div>
+            <p class="tabBlockContentDescription">
+              Мы понимаем, что время и комфорт важны. Поэтому мы стремимся к максимальному удобству на всех этапах сотрудничества. Наша команда всегда готова ответить на ваши вопросы, предоставить информацию о ходе работ и обеспечить бесперебойное взаимодействие, чтобы вы могли следить за процессом без лишних хлопот.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Экспертное мнение</div>
+            <p class="tabBlockContentDescription">
+              Мы гордимся нашей командой опытных экспертов, которые всегда готовы принести свой профессиональный взгляд на любой проект. Независимо от его масштаба, наши специалисты обладают глубокими знаниями и умениями, чтобы предоставить вам лучшие рекомендации и решения.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Учет ваших пожеланий</div>
+            <p class="tabBlockContentDescription">
+              Ваше мнение имеет огромное значение для нас. Мы всегда готовы выслушать ваши пожелания и требования, чтобы наша работа отражала именно ваше видение. Мы стремимся к партнерскому отношению с нашими клиентами, где ваши идеи становятся отправной точкой для нашей работы.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Большой опыт</div>
+            <p class="tabBlockContentDescription">
+              С годами работы в индустрии, мы накопили обширный опыт, который позволяет нам эффективно решать даже самые сложные задачи. Независимо от того, насколько амбициозен ваш проект, мы готовы применить наш опыт, чтобы достичь выдающихся результатов.            </p>
+          </div>
+          <div class="tabBlockContent" style="height: 540px;">
+            <div class="tabBlockContentTitle mb-4">Высокая эффективность</div>
+            <p class="tabBlockContentDescription">
+              Мы ценим ваше время и ресурсы. Поэтому наша компания известна своей эффективностью в выполнении проектов. Мы стремимся сократить сроки и обеспечить высокое качество работ, чтобы вы могли воспользоваться готовым результатом как можно скорее.            </p>
+          </div>
+        </div>
+      </div>
+    
     </div>
     <!-- Примеры из Практики Tab Pane -->
     <div class="tab-pane fade" id="examples" role="tabpanel" aria-labelledby="examples-tab">
@@ -352,6 +509,21 @@
   });
 </script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+      const swiper = new Swiper('.swiper-container', {
+          direction: 'vertical',
+          slidesPerView: 4,
+          spaceBetween: 10,
+          loop: true,
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+      });
+  });
+</script>
+
 
   <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
@@ -426,6 +598,8 @@
 <!-- Bootstrap 5 JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="js/main.js"></script>
     
     
