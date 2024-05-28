@@ -10,6 +10,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+      url('../fonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 * {
   margin: 0;
@@ -2135,6 +2145,31 @@ input:checked + .slider.small:before {
 .guideSlide {
     width: 100vw;
     height: 100vh;
+}
+
+.firstText {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  color: #fff;
+}
+
+.secondText {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 89%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.yearText {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  color: #fff;
 }
 
 @media (max-width: 1651px) {
