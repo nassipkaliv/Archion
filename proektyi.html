@@ -290,26 +290,20 @@
 						
 <!----------------------------PROJECTS FILTER START------------------------------------!>
 	<div class="collapse col-12 col-sm-6 col-xl-5 position-absolute filter_nav" id="collapseFilter" style="z-index:1000;">
-		<div class="card card-body" id="myCard">
+		<div class="card card-body" id="myCard" style="padding: 2rem 1rem">
 			<form method="post">
-				<div class="col-12 text-end">
+				<div class="text-end">
 					<button type="button" class="close btn-close" aria-label="Close" onclick="closeDiv();">					</button>
 				</div>
-				<div class="col-6 mx-auto">
-				</div>
-				<label for="customRange2" class="text-start form-label color_gray_text font_famil_catalog">
+				<div class="text-start color_gray_text font_famil_catalog" style="font-size:20px">
 					Площадь дома
-				</label>
-				<div id="slider"></div>
-				<div class="d-flex justify-content-between">
-					<span>
-						0
-					</span>
-					<span>
-						2500+
-					</span>
 				</div>
-				<div class="d-flex pt-3">
+				<div id="slider" class="mt-3"></div>
+				<div class="d-flex justify-content-between">
+                <span id="slider-min">0</span>
+                <span id="slider-max">2500+</span>
+            </div>
+				<div class="d-flex pt-3" style="font-size: 1.25rem">
 					<div class="col-5 px-0 text-start">
 						<span>
 							Ручной ввод:
@@ -400,18 +394,18 @@
 					</button>
 				</div>
 				<div class="pt-3 text-center text-sm-end">
-					<a class="btn px-0 toggler pt-3" id="btn-show-more-param" onClick="action();" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+					<a class="btn px-0 toggler" id="btn-show-more-param" onClick="action();" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
 					<span class="params_hov border_bott_params par">
 					Больше параметров
 					</span>
-					<img src="/images/catalog_new_hmkmos/arrow-down.png" style="width: 7%;">
+					<img src="/images/catalog_new_hmkmos/arrow-upp.png" style="width: 7%;">
 					</a>
 					<div class="collapse" id="collapseExample">
 						<div class="card myCard card-body border-0 px-2">
 							<div>
 								<div class="row mx-0 pt-3 justify-content-between">
 									<div class="col-5 px-0 text-start">
-										<span>
+										<span style="font-size: 1.25rem">
 											Габариты дома
 										</span>
 									</div>
@@ -633,7 +627,7 @@
 					<span class="params_hov params_hov border_bott_params par">
 					Скрыть параметры
 					</span>
-					<img src="/images/catalog_new_hmkmos/arrow-upp.png" style="width: 7%;"/>
+					<img src="images/catalog_new_hmkmos/arrow-upp.png" style="width: 7%;"/>
 					</a>
 				</div>
 				<div class="d-sm-flex pt-3">
@@ -642,7 +636,7 @@
 						<a href="proektyi.html#" class="d-flex justify-content-center justify-content-sm-start params_hov position-relative">
 						<div class="d-flex w-75 button_podbor" style="border-bottom: 1px solid #000;">
                             <div>
-                                <span class="px-0 py-1 color_black_text_catalog pod">Подобрать</span>
+                                <span class="px-0 py-1 color_black_text_catalog pod" style="font-size: 1.25rem; text-transform: uppercase;">Подобрать</span>
                             </div>
                             <div class="position-absolute pt-1 button_podbor_two" style=" padding-left: 137px;">
                                 <div class="px-3 py-3 position-relative button_podbor_square" style="border: 1px solid var(--gold, #A78B73);">
@@ -656,7 +650,7 @@
 					</button>
 					<!-- </div> -->
 					<div class="col-12 col-sm-6 pt-4 pt-sm-0 px-3 text-center text-sm-end">
-						<button type="reset">
+						<button type="reset" style="background: transparent;">
 							Сбросить фильтры
 						</button>
 						<!-- <a href="#" class="params_hov color_black_text_catalog border_bott_params par ">
@@ -1922,7 +1916,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+						</div>
 						<div class="item px-0 px-sm-2  1">
 				<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
 					<div>
@@ -1947,7 +1941,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+						</div>
 						<div class="item px-0 px-sm-2  2">
 				<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
 					<div>
@@ -1972,10 +1966,10 @@
 						</div>
 					</div>
 				</div>
-			</div>
+						</div>
 						<div class="item px-0 px-sm-2  3">
-				<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
-					<div>
+						<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+						<div>
 						<a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
 						</a>
 					</div>
@@ -1997,7 +1991,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+						</div>
 			
 		</div>
 </div>
@@ -4802,6 +4796,12 @@ arItem.forEach(el => {
 
 </div>
 
+<script>
+	function closeDiv() {
+			var collapseElement = document.getElementById("collapseFilter");
+			collapseElement.classList.remove("show");
+	}
+	</script>
 <!--
 <link href="../styles.css?2" rel="stylesheet">
 -->
@@ -4901,18 +4901,34 @@ $('.pagination').pagination({
 	</script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var slider = document.getElementById('slider');
-      noUiSlider.create(slider, {
-        start: [0, 2500],
-        connect: true,
-        range: {
-          'min': 0,
-          'max': 3000
-        }
-      });
-    });
-  </script>
+	document.addEventListener('DOMContentLoaded', function () {
+			var slider = document.getElementById('slider');
+			var minValue = document.getElementById('slider-min');
+			var maxValue = document.getElementById('slider-max');
+			
+			noUiSlider.create(slider, {
+					start: [0, 2500],
+					connect: true,
+					range: {
+							'min': 0,
+							'max': 3000
+					}
+			});
+	
+			slider.noUiSlider.on('update', function (values, handle) {
+					if (handle === 0) {
+							minValue.textContent = Math.round(values[0]);
+					} else {
+							maxValue.textContent = Math.round(values[1]);
+					}
+			});
+	});
+	
+	function closeDiv() {
+			var collapseElement = document.getElementById("collapseFilter");
+			collapseElement.classList.remove("show");
+	}
+	</script>
 
 
 <script>
