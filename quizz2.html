@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Проекты домов | Купить готовые архитектурные проекты домов: фото, цены, каталог</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta name="format-detection" content="telephone=no">
+    <link href="reset.css@2.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/../proects.css?2">
+    
+    <link rel="stylesheet" href="templates/new_hmkmos.css">
+    <link rel="stylesheet" href="style/progressive-image.min.css">
+    <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
+    <link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="library/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="style/filtr-new.css@2.css">
+    <link rel="stylesheet" href="style/new_footer.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/respond.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="templates/catalog_banner.css">
+    <link rel="stylesheet" href="portfolio/css/catalog.css">
+    
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="jquery.formstyler.min.js@2"></script>  
+    <script src="script/filtr-new.js@2" ></script>
+    <link href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
+    <script src="library/slick-1.8.1/slick/slick.min.js"></script>
+    
+    <style>
+      .slick-list.draggable {
+        width: 350px;
+      }
+    </style>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="templates/navbarn.css">
+    
+    </head>
+<body style="background: url(img/quizzbg2.png); background-size: cover; overflow-y: hidden;">
+  <div class="quizz desktop mt-0" style="background: none;" id="firstForm">
+    <div class="quizz-form">
+      <div class="quizz-title">Есть ли у вас готовый проект?</div>
+      <div class="quizz-progressbar my-4">
+        <svg width="152" height="4" viewBox="0 0 152 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#969696" />
+        </svg>
+      </div>
+      <div class="form">
+        <div class="row">
+          <div class="col">
+            <div class="form-check">
+              <input class="form-check-input radio" type="radio" name="option" id="yesOption"  value="yes">
+              <label class="form-check-label radio" for="yesOption">Да</label>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+            <div class="form-check">
+              <input class="form-check-input radio" type="radio" name="option" id="noOption" value="no">
+              <label class="form-check-label radio" for="noOption">Нет</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-btn">
+        <a href="#" class="button_type1" id="proceedBtn">
+          <p class="form-btn-label">Далее</p>
+          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="quizz desktop" id="secondForm" style="display: none;">
+    <img class="quizz-close" src="img/quizzclose.png" alt="close">
+
+    <div class="quizz-form">
+      <div class="quizz-title">Какой у Вас бюджет?</div>
+      <div class="quizz-progressbar my-4">
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>          
+        <svg width="152" height="4" viewBox="0 0 152 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#969696" />
+        </svg>
+      </div>
+      <div class="form">
+        <div class="form-checks">
+          <div class="form-check mr-4">
+            <input class="form-check-input radio" type="radio" name="option" id="option" value="3-5">
+            <label class="form-check-label radio" for="option1">От 3 до 5 млн.рублей</label>
+          </div>
+          <div class="form-check mr-4" style="margin-left: 10px;">
+            <input class="form-check-input radio" type="radio" name="option" id="option" value="10-20">
+            <label class="form-check-label radio" for="option2">От 10 до 20 млн.рублей</label>
+          </div>
+        </div>
+        <div class="form-checks">
+          <div class="form-check mr-4">
+            <input class="form-check-input radio" type="radio" name="option" id="option" value="5-10">
+            <label class="form-check-label radio" for="option3">От 5 до 10 млн.рублей</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input radio" type="radio" name="option" id="option" value="20+">
+            <label class="form-check-label radio" for="option4">Более 20 млн.рублей</label>
+          </div>
+        </div>
+      </div>
+      <a href="#" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px;color: #828282; text-decoration: underline !important;">
+        Пропустить
+      </a>
+      <div class="form-btn">
+        <a href="#" class="button_type1" id="proceed2Btn">
+          <p class="form-btn-label">Далее</p>
+          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="quizz desktop" id="noForm" style="display: none;">
+    <img class="quizz-close" src="img/quizzclose.png" alt="close">
+    <div class="quizz-form">
+      <div class="quizz-title">Проект</div>
+      <div class="quizz-progressbar my-4">
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>
+        <svg width="152" height="4" viewBox="0 0 152 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#969696" />
+        </svg>
+      </div>
+      <div class="form mb-4">
+        <div class="mb-5">
+          <label for="formFile" class="addFile">
+            <svg width="36" height="16" viewBox="0 0 36 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M35.7071 8.70711C36.0976 8.31658 36.0976 7.68342 35.7071 7.29289L29.3431 0.928932C28.9526 0.538408 28.3195 0.538408 27.9289 0.928932C27.5384 1.31946 27.5384 1.95262 27.9289 2.34315L33.5858 8L27.9289 13.6569C27.5384 14.0474 27.5384 14.6805 27.9289 15.0711C28.3195 15.4616 28.9526 15.4616 29.3431 15.0711L35.7071 8.70711ZM0 9H35V7H0V9Z" fill="#A78B73" />
+            </svg>
+            Добавить файл проекта
+          </label>
+          <input class="form-control d-none" type="file" id="formFile">
+        </div>
+      </div>
+
+      <div class="form-btn">
+        <a href="#" class="button_type1" id="proceedBtn">
+          <p class="form-btn-label">Далее</p>
+          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="quizz desktop" id="thirdForm" style="display: none;">
+    <img class="quizz-close" src="img/quizzclose.png" alt="close">
+
+    <div class="quizz-form">
+      <div class="quizz-title">Сколько этажей Вы хотите построить?</div>
+      <div class="quizz-progressbar my-4">
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>   
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>         
+        <svg width="152" height="4" viewBox="0 0 152 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#969696" />
+        </svg>
+      </div>
+      <div class="form">
+        <section class="c-home">
+					<div class="c-home_body pt-md-0 justify-content-start">
+						<div class="c-home_col-2">
+							<input type="checkbox" name="x3" value="1" id="mansard">
+							<input type="checkbox" name="proect_et_3" id="floor-3" value="3">
+							<input type="checkbox" name="proect_et_2" id="floor-2" value="2">
+							<input type="checkbox" name="proect_et_1" id="floor-1" value="1">
+							<input type="checkbox" name="x2" value="1" id="gr-floor">
+							<div class="c-home_house-bg">
+								<div class="house-bg_item house-bg_roof"></div>
+								<div class="house-bg_item house-bg_mansard"></div>
+								<div class="house-bg_item house-bg_floor-3"></div>
+								<div class="house-bg_item house-bg_floor-2"></div>
+								<div class="house-bg_item house-bg_floor-1"></div>
+								<div class="house-bg_item house-bg_gr-floor"></div>
+							</div>
+							<div class="c-home_house">
+								<div class="mansard-wrap">
+									<label class="mansard" for="mansard">
+										Мансарда
+									</label>
+								</div>
+								<label class="floor-filter floor-3" for="floor-3">
+									3 этаж
+								</label>
+								<label class="floor-filter floor-2" for="floor-2">
+									2 этаж
+								</label>
+								<label class="floor-filter floor-1" for="floor-1">
+									1 этаж
+								</label>
+								<label class="gr-floor" for="gr-floor">
+									Цокольный этаж
+								</label>
+							</div>
+							<div class="c-home_bottom my_c_bottom">
+							</div>
+						</div>
+					</div>
+				</section>
+      </div>
+      <a href="#" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px;color: #828282; text-decoration: underline !important;">
+        Пропустить
+      </a>
+      <div class="form-btn">
+        <a href="#" class="button_type1" id="proceed3Btn">
+          <p class="form-btn-label">Далее</p>
+          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="quizz desktop" id="fourthForm" style="display: none;">
+    <img class="quizz-close" src="img/quizzclose.png" alt="close">
+
+    <div class="quizz-form">
+      <div class="quizz-title">Что еще необходимо в доме?</div>
+      <div class="quizz-progressbar my-4">
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>  
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg> 
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>         
+        <svg width="152" height="4" viewBox="0 0 152 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#969696" />
+        </svg>
+      </div>
+      <div class="form mb-4">
+        <div class="formGap">
+          <div class="firstCol d-flex flex-column gap-5">
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="3-5">
+              <label class="form-check-label radio check" for="option1">Сауна</label>
+            </div>
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="10-20">
+              <label class="form-check-label radio check" for="option2">Гараж</label>
+            </div>
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="3-5">
+              <label class="form-check-label radio check" for="option1">Бассейн</label>
+            </div>
+          </div>
+          <div class="secondCol d-flex flex-column gap-5">
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="3-5">
+              <label class="form-check-label radio check" for="option1">Терраса</label>
+            </div>
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="10-20">
+              <label class="form-check-label radio check" for="option2">Балкон</label>
+            </div>
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="3-5">
+              <label class="form-check-label radio check" for="option1">Второй свет</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px;color: #828282; text-decoration: underline !important;">
+        Пропустить
+      </a>
+      <div class="form-btn">
+        <a href="#" class="button_type1" id="proceed4Btn">
+          <p class="form-btn-label">Далее</p>
+          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="quizz desktop" id="fifthForm" style="display: none;">
+    <img class="quizz-close" src="img/quizzclose.png" alt="close">
+
+    <div class="quizz-form">
+      <div class="quizz-title">Укажите площадь дома</div>
+      <div class="quizz-progressbar my-4">
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>  
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg> 
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>  
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>        
+        <svg width="152" height="4" viewBox="0 0 152 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#969696" />
+        </svg>
+      </div>
+      
+      <div class="form my-5">
+        <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+          Площадь дома
+        </div>
+        <div id="slider"></div>
+        <div class="d-flex justify-content-between">
+          <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+            0
+          </div>
+          <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+            2500+
+          </div>
+        </div>
+        <div class="d-flex justify-content-between mt-5 ruchnoi">
+          <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+            Ручной ввод
+          </div>
+          <div class="d-flex gap-3">
+            <div class="d-flex">
+              <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+                от
+              </div>
+              <input type="number" class="ruchnoiInput">
+            </div>
+            <div class="d-flex">
+              <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+                до
+              </div>
+              <input type="number" class="ruchnoiInput">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px;color: #828282; text-decoration: underline !important;">
+        Пропустить
+      </a>
+      <div class="form-btn">
+        <a href="#" class="button_type1" id="proceed5Btn">
+          <p class="form-btn-label">Далее</p>
+          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="quizz desktop" id="sixthForm" style="display: none;">
+    <img class="quizz-close" src="img/quizzclose.png" alt="close">
+
+    <div class="quizz-form">
+      <div class="quizz-title">Выберите понравившиеся проект?</div>
+      <div class="quizz-progressbar my-4">
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>  
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg> 
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>   
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>      
+        <svg width="152" height="4" viewBox="0 0 152 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#969696" />
+        </svg>
+      </div>
+      
+      <div class="form">
+        <div class="d-none d-md-block">
+          <div class="container-fluid">
+            <section class="b-section b-section_catalog">
+              <div class="owl-carousel px-0 slide-two position-relative">
+                <div class="item px-0 px-sm-2  0">
+                <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+              <div>
+                <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+                </a>
+              </div>
+              <div class="py-2 px-4">
+                <div class="py-2 row">
+                  <div class="col-12 px-1">
+                    <span class="font-size-24px-styles articles_text">
+                      Акционные
+                    </span>
+                  </div>	
+                </div>
+                <div  class="py-2 d-flex">
+                  <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                    <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                      Подробнее
+                    </span>		
+                    <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                  </a>							
+                </div>
+              </div>
+            </div>
+          </div>
+                <div class="item px-0 px-sm-2  1">
+            <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+              <div>
+                <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+                </a>
+              </div>
+              <div class="py-2 px-4">
+                <div class="py-2 row">
+                  <div class="col-12 px-1">
+                    <span class="font-size-24px-styles articles_text">
+                      Купольные дома
+                    </span>
+                  </div>	
+                </div>
+                <div  class="py-2 d-flex">
+                  <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                    <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                      Подробнее
+                    </span>		
+                    <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                  </a>							
+                </div>
+              </div>
+            </div>
+          </div>
+                <div class="item px-0 px-sm-2  2">
+            <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+              <div>
+                <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+                </a>
+              </div>
+              <div class="py-2 px-4">
+                <div class="py-2 row">
+                  <div class="col-12 px-1">
+                    <span class="font-size-24px-styles articles_text">
+                      Элитные дома
+                    </span>
+                  </div>	
+                </div>
+                <div  class="py-2 d-flex">
+                  <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                    <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                      Подробнее
+                    </span>		
+                    <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+                <div class="item px-0 px-sm-2  3">
+            <div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
+              <div>
+                <a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+                </a>
+              </div>
+              <div class="py-2 px-4">
+                <div class="py-2 row">
+                  <div class="col-12 px-1">
+                    <span class="font-size-24px-styles articles_text">
+                      Дома в стиле барн
+                    </span>
+                  </div>	
+                </div>
+                <div  class="py-2 d-flex">
+                  <a href="projects/proekt_m-407.html" class="butt_bord color_gray_button d-flex justify-content-between">
+                    <span class="font-size-20px-style me-2" style="font-family:Montserrat">
+                      Подробнее
+                    </span>		
+                    <img style="height: 8px;width: 32px;" class="mt-3" src="images/catalog_new_hmkmos/arrow_right_sliders.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+              </div>
+            </section>
+          
+          </div>
+          <script>
+            $(function() {
+                $(".slide-two").owlCarousel({
+                    loop:true, //Зацикливаем слайдер
+                    nav:true, 
+                navText: ["<div><div class='px-2' aria-label='Previous'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_left_sliders.png'></div>","<div class='px-2' aria-label='Next'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_right_sliders.png'></div></div>"],
+                    autoplay:false, //Автозапуск слайдера
+                    smartSpeed:2000, //Время движения слайда
+                responsiveBaseElement: 'body',
+                responsiveClass:true,
+                    autoplayTimeout:4000, //Время смены слайда
+                responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:2
+                        },
+                        992:{
+                            items:3
+                        }
+                    }
+                });
+              
+            
+            });
+            
+              </script>	
+        </div>
+      </div>
+
+
+
+      <a href="#" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: 20px;color: #828282; text-decoration: underline !important;">
+        Пропустить
+      </a>
+      <div class="form-btn">
+        <a href="#" class="button_type1" id="proceed6Btn">
+          <p class="form-btn-label">Далее</p>
+          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="quizz desktop" id="seventhForm" style="display: none;">
+    <img class="quizz-close" src="img/quizzclose.png" alt="close">
+
+    <div class="quizz-form">
+      <div class="quizz-title">Укажите, куда выслать смету</div>
+      <div class="quizz-progressbar my-4">
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>  
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg> 
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>   
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>   
+        <svg width="24" height="4" viewBox="0 0 24 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#D8D8D8"/>
+        </svg>     
+        <svg width="152" height="4" viewBox="0 0 152 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="4" rx="2" fill="#969696" />
+        </svg>
+      </div>
+      
+      <div class="form mb-4">
+        <div class="formGap">
+          <div class="firstCol d-flex flex-column gap-5">
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="3-5">
+              <label class="form-check-label radio check" for="option1">WhatsApp</label>
+            </div>
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="10-20">
+              <label class="form-check-label radio check" for="option2">Telegram</label>
+            </div>
+          </div>
+          <div class="secondCol d-flex flex-column gap-5">
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="3-5">
+              <label class="form-check-label radio check" for="option1">SMS</label>
+            </div>
+            <div class="form-check mr-4">
+              <input class="form-check-input radio check" type="checkbox" name="option" id="option" value="10-20">
+              <label class="form-check-label radio check" for="option2">E-mail</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group d-flex flex-column mt-5">
+          <label for="uname" style="font-family: 'Montserrat', sans-serif; font-weight: 400;font-size: 20px;line-height: 120%;color: #14010c;" >ФИО</label>
+          <input class="back_transpar border-0 kontak_text  mt-2" placeholder="Иванов Иван Иванович" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important; font-size: 20px;" type="text" id="uname" name="name">
+        </div>
+        <div class="form-group d-flex flex-column mt-4">
+          <label for="uname" style="font-family: 'Montserrat', sans-serif; font-weight: 400;font-size: 20px;line-height: 120%;color: #14010c;" >Телефон</label>
+          <input class="back_transpar border-0 kontak_text  mt-2" placeholder="+7 (999) 123-45-67" style="border-bottom: 1px solid #343536 !important; font-family: 'Montserrat' !important; font-size: 20px;" type="text" id="uname" name="name">
+        </div>
+      </div>
+
+
+      <div class="form-btn">
+        <a href="#" class="button_type1" id="sendBtn">
+          <p class="form-btn-label">Отправить</p>
+          <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+              <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+              <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var slider = document.getElementById('slider');
+      noUiSlider.create(slider, {
+        start: [0, 2500],
+        connect: true,
+        range: {
+          'min': 0,
+          'max': 3000
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#proceedBtn").click(function(event) {
+        event.preventDefault();
+        if ($("#yesOption").prop("checked")) {
+          $("#firstForm").hide(); 
+          $("#secondForm").show();
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#proceedBtn").click(function(event) {
+        event.preventDefault();
+        if ($("#noOption").prop("checked")) {
+          $("#firstForm").hide(); 
+          $("#noForm").show();
+        }
+      });
+    });
+
+    $(document).ready(function() {
+      $("#proceed2Btn").click(function(event) {
+        event.preventDefault();
+          $("#secondForm").hide(); 
+          $("#thirdForm").show();
+      });
+    });
+
+    $(document).ready(function() {
+      $("#proceed3Btn").click(function(event) {
+        event.preventDefault();
+          $("#thirdForm").hide(); 
+          $("#fourthForm").show();
+      });
+    });
+
+    $(document).ready(function() {
+      $("#proceed4Btn").click(function(event) {
+        event.preventDefault();
+          $("#fourthForm").hide(); 
+          $("#fifthForm").show();
+      });
+    });
+
+    $(document).ready(function() {
+      $("#proceed5Btn").click(function(event) {
+        event.preventDefault();
+          $("#fifthForm").hide(); 
+          $("#sixthForm").show();
+      });
+    });
+
+    $(document).ready(function() {
+      $("#proceed6Btn").click(function(event) {
+        event.preventDefault();
+          $("#sixthForm").hide(); 
+          $("#seventhForm").show();
+      });
+    });
+  </script>
+
+<link href="style.css@2.css" rel="stylesheet">
+<link rel="stylesheet" href="library/ui/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+<link rel="stylesheet" href="portfolio/css/fontawesome-all.min.css">
+
+<script src="jquery.bxslider.min.js@2"></script>
+<script src="script/jquery.mb.browser.js@2"></script>
+<script src="script/jquery.cookie.js@2"></script>
+<script src="portfolio/js/jquery.validate.js"></script>
+<script src="script/index.js@2"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script> -->
+<script type="text/javascript" src="library/Pagination/dist/pagination.min.js"></script>
+<script src="owl/owl.carousel.min.js@2"></script>
+<script src="placeholder.js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="common.js"></script>
+<script src="script/progressive-image.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script type='text/javascript'>
+$('.pagination').pagination({
+    total: 2325,
+    current: 1, 
+    length: 6,
+    size: 0,
+    prev: '«',
+    next: '»',
+    click: function(options,$target) {
+        $.post("/bestprojects.php", {
+            page: options.current.toString(),
+            query: $("input[name=query]").val()
+        }, function(data) {
+            window.scrollTo(0, 0);
+            $(".block_proekts_img .best").html(data);
+        }, "json").fail(function(xhr, status, error) {
+        console.log(xhr);
+        console.log(status);
+        console.log(error);
+    });    }
+
+ });
+ 
+    var $range = $("#slider-range");
+    var $inputFrom = $("#proect_s0_min");
+    var $inputTo = $("#proect_s0_max");
+    var instance;
+    var min = 0;
+    var max = 2500;
+    var from = 0;
+    var to = 2500;
+    
+ $range.ionRangeSlider({
+    type: "double",
+    skin: "big",
+    grid: true,
+    min: min,
+    max: max,
+    from: from,
+    to: to,
+    step: 50,
+    postfix: " м<sup>2</sup>",
+    onChange: updateInputs
+ });
+ instance = $range.data("ionRangeSlider");
+ function updateInputs (data) {
+        from = data.from;
+        to = data.to;
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);
+        countfiltr();
+ }
+
+</script>
+
+<script>
+	// Функция для изменения src изображения
+	function toggleImage(event) {
+			var img = event.target;
+			if (img.tagName === 'IMG' && img.classList.contains('heartImage')) {
+					// Определяем текущий src и задаем новый src
+					var currentSrc = img.getAttribute('src');
+					var newSrc = currentSrc.includes("Vector (1).png") ? "/images/catalog_new_hmkmos/heart.png" : "/images/catalog_new_hmkmos/Vector (1).png";
+					// Меняем src
+					img.setAttribute('src', newSrc);
+			}
+	}
+	
+	// Привязываем обработчик к родительскому элементу или документу
+	document.addEventListener('click', function(event) {
+			if (event.target.closest('.heartBtn')) {
+					toggleImage(event);
+			}
+	});
+	</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var slider = document.getElementById('slider');
+      noUiSlider.create(slider, {
+        start: [0, 2500],
+        connect: true,
+        range: {
+          'min': 0,
+          'max': 3000
+        }
+      });
+    });
+  </script>
+
+
+<script>
+/*
+$(document).ready(function() {
+    // 250 characters are shown by default
+    var showChar = 161;
+    var dots = ".... ";
+    var moreText = "Подробнее";
+    var lessText = "Скрыть";
+
+    $('.show-text').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var cont = content.substr(0, showChar);
+            var restOfTheText = content.substr(showChar, content.length - showChar);
+
+            var html = cont + '<span class="dots">' + dots + '</span><span class="morecontent"><span>' + restOfTheText + '</span><a href="proektyi.html" style="font-weight: 400;" class="morelink butt_bord color_gray_button">' + moreText + '<img style="height:7px; width:36px;padding-left:8px;" src="images/catalog_new_hmkmos/arrow_right_filter.png"></a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+    $(".morelink").click(function() {
+        if($(this).hasClass("test")) {
+            $(this).removeClass("test");
+            $(this).html(moreText);
+        } else {
+            $(this).addClass("test");
+            $(this).html(lessText);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+*/
+</script>
+
+<script>
+$(function() {
+    $(".slide-prosmotrenny").owlCarousel({
+		dots:false,
+		loop:true, //Зацикливаем слайдер
+		nav:true, 
+		nav:true, 
+		navText: ["<div class='d-flex pt-3 justify-content-center'><div class='px-2' aria-label='Previous'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_left_sliders.png'></div>","<div class='px-2' aria-label='Next'><img style='width:42px;' src='images/catalog_new_hmkmos/arrow_right_sliders.png'></div></div>"],
+		autoplay:true, //Автозапуск слайдера
+		autoplayHoverPause:true, //Пауза при навидении мыши
+		smartSpeed:1000, //Время движения слайда
+		autoplayTimeout:2000, //Время смены слайда
+		responsiveBaseElement: 'body',
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			800:{
+				items:3
+			},
+			1000:{
+				items:4
+			}
+		}
+	
+    });
+	
+});
+
+
+</script>
+</body>
+</html>
