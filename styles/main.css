@@ -1436,7 +1436,7 @@ hr {
 }
 
 .nav-link.active {
-  padding-bottom: 10px !important;
+  padding-bottom: 7px !important;
   border-bottom: 4px solid #f1ebe6 !important;
   border: 0;
 }

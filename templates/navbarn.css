@@ -185,7 +185,7 @@ header {
 }
 
 .nav-item .nav-link {
-  padding: 12px 0;
+  padding: 0px 0;
   color: rgb(0, 0, 0);
 }
 
@@ -198,7 +198,7 @@ header {
 }
 
 .offcanvas-body .nav-item:first-of-type .nav-link {
-  padding-top: 24px;
+  padding-top: 2px;
   color: rgb(0, 0, 0) !important;
 }
 
@@ -215,6 +215,20 @@ header {
   font-size: 14px;
   flex-basis: 100%;
   text-align: center;
+}
+
+.nav-social-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: #969696;
+  margin-top: -15px;
+  transition: 0.3 all ease;
+}
+
+.nav-social-link:hover {
+  color: #ffcc66 !important;
 }
 
 .nav-item-wrapper {
@@ -234,7 +248,7 @@ header {
 .nav-item.social a {
   color: #343536;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
@@ -307,7 +321,7 @@ header {
 
 .navbar-nav {
   height: 100%;
-  font-size: 20px;
+  font-size: 19px;
 }
 
 
@@ -388,8 +402,8 @@ header {
   flex-direction: column;
   align-items: flex-start;
   border-bottom: 1px solid #000;
-  padding-bottom: 15px;
-  padding-top: 13px;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .nav-social li {
@@ -397,18 +411,17 @@ header {
 }
 
 .rotatedText {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-weight: 700;
-  font-size: 53px;
+  font-size: 40px;
   text-transform: uppercase;
   text-align: center;
   color: rgba(167, 139, 115, 0.1);
   transform: rotate(270deg);
   position: absolute;
-  left: -97px;
-  top: 38%;
+  left: -66px;
+  top: 32%;
 }
-
 
 .nav-link.active {
   cursor: pointer;
@@ -452,8 +465,9 @@ header {
 
 .navnar-arhion-logo {
   position: relative;
-  left: -18px;
-  top: -12px;
+  left: 5px;
+  top: -15px;
+  width: 300px;
 }
 
 .nav-link.nav-link--feedback {
