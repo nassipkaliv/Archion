@@ -10,6 +10,8 @@
 <title>Индивидуальное проектирование </title>
 
 <link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="form/css/form_project.css">
+
 <link rel="stylesheet" type="text/css" href="library/Pagination/dist/pagination.min.css">
 <link rel="stylesheet" href="style/progressive-image.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -273,7 +275,7 @@ body {
     </h2>
 </div>
 <div class="position-absolute buttonOrder" style="z-index: 1;top: 65%;right: 12%;">
-  <button id="btn-project-order" class="btn-circle-project btn-call-form-project" data-bs-toggle="modal" data-bs-target="#projectOrderModal">
+  <button id="btn-project-order" class="btn-circle-project btn-call-form-project  btn-call-form"  data-bs-toggle="modal" data-bs-target="#projectOrderModal">
       Заказать
       <hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25)); background: #343536;">
       Проект
@@ -285,12 +287,10 @@ body {
 
 <!-- Модальное окно -->
 <div class="modal fade" id="projectOrderModal" tabindex="-1" aria-labelledby="projectOrderModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 630px;min-width: 630px;">
     <div class="modal-content">
-      <div class="modal-header border-0">
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body border-0">
+      <div class="modal-body border-0" style="padding: 40px 32px; ">
+				<img src="../img/form-icon/icon-close.svg" class="close-form-krest" data-bs-dismiss="modal" aria-label="Close">
         <form id="project-order-form">
 					<h1 class="modal-title" id="projectOrderModalLabel">Заказать проект</h1>
 					<p class="modal-desc mt-3">Оставьте контакты и мы с вами свяжемся для обсуждения деталей проекта</p>
@@ -299,7 +299,7 @@ body {
 						<input class="w-100 mb-4" placeholder="+7 964 775-86-97" type="text" required>
 						<input class="w-100 mb-4" placeholder="pochta.86@gmail.com" type="email" required>
 					</div>
-          <div class="form-btn mt-2 mb-4">
+          <div class="form-btn mt-2">
 						<button class="button_type1" id="proceedBtn" type="submit" style="background: transparent;">
 							<p class="form-btn-label">Заказать</p>
 							<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -314,6 +314,8 @@ body {
     </div>
   </div>
 </div>
+
+
 
 
 <section class="block_container block_container--wide">

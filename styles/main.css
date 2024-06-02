@@ -1009,7 +1009,7 @@ hr {
 }
 .block_consult input {
   height: 2rem;
-  color: #969696;
+  color: #14010C;
   font-size: 1.25rem;
   line-height: 1.5rem;
   font-family: "Montserrat", sans-serif;
@@ -1017,6 +1017,10 @@ hr {
   border-bottom: 1px solid #343536;
   background: transparent;
   padding: 0;
+}
+
+.block_consult input::placeholder {
+  color: #969696;
 }
 
 .button_type1--min {
