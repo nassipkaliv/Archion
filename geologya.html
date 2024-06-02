@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
+    <link rel="stylesheet" href="form/css/form_project.css">
     <title>Геология</title>
     
     <link href="style.css" rel="stylesheet">
@@ -284,37 +285,34 @@
             </div>
         </section>
 
-        <!-- Модальное окно -->
-<div class="modal fade" id="projectOrderModal" tabindex="-1" aria-labelledby="projectOrderModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header border-0">
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body border-0">
-        <form id="project-order-form">
-					<h1 class="modal-title" id="projectOrderModalLabel">Заказать геологию</h1>
-					<p class="modal-desc mt-3">Оставьте контакты и мы с вами свяжемся для обсуждения деталей проекта</p>
-					<div class="block_consult p-0 align-items-center justify-content-center">
-						<input class="w-100 mb-4" placeholder="Иван" type="text" required>
-						<input class="w-100 mb-4" placeholder="+7 964 775-86-97" type="text" required>
-						<input class="w-100 mb-4" placeholder="pochta.86@gmail.com" type="email" required>
-					</div>
-          <div class="form-btn mt-2 mb-4">
-						<button class="button_type1" id="proceedBtn" type="submit" style="background: transparent;">
-							<p class="form-btn-label">Заказать</p>
-							<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
-									<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
-									<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
-							</svg>
-						</button>
-					</div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="modal fade" id="projectOrderModal" tabindex="-1" aria-labelledby="projectOrderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 630px;min-width: 630px;">
+                <div class="modal-content">
+                  <div class="modal-body border-0" style="padding: 40px 32px; ">
+                            <img src="../img/form-icon/icon-close.svg" class="close-form-krest" data-bs-dismiss="modal" aria-label="Close">
+                    <form id="project-order-form">
+                                <h1 class="modal-title" id="projectOrderModalLabel">Заказать геологию</h1>
+                                <p class="modal-desc mt-3">Оставьте контакты и мы с вами свяжемся для обсуждения деталей проекта</p>
+                                <div class="block_consult p-0 align-items-center justify-content-center">
+                                    <input class="w-100 mb-4" placeholder="Иван" type="text" required>
+                                    <input class="w-100 mb-4" placeholder="+7 964 775-86-97" type="text" required>
+                                    <input class="w-100 mb-4" placeholder="pochta.86@gmail.com" type="email" required>
+                                </div>
+                      <div class="form-btn mt-2">
+                                    <button class="button_type1" id="proceedBtn" type="submit" style="background: transparent;">
+                                        <p class="form-btn-label">Заказать</p>
+                                        <svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+                                                <path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+                                                <line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </div>
 
         <!-- Блок с статистикой ("Уверенность") -->
         <section class="block_container">
