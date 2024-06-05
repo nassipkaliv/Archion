@@ -46,10 +46,10 @@
 <body>
     <div class="page">
         <!-- Шапка основного типа -->
-        <header class="header  header--mobile-default topbar">
+        <header class="header header--white  header--mobile-default topbar">
           <div class="header__content">
               <a href="index.html">
-                <img class="logo only-pc" src="assets/icons/logo.svg" alt="">
+                <img class="logo only-pc" src="assets/icons/logo_white.svg" alt="">
               </a>
               <img class="logo only-mobile" src="assets/icons/logo.svg" alt="">
               <nav class="header__nav">
@@ -231,12 +231,27 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-7 col-md-12">
-                    <img class="img-fluid" src="img/malta2.png" alt="malta">
-                    <div class="slide_indicators project-card__indicators justify-content-center">
-                      <div class="slide_indicators__item active"></div>
-                      <div class="slide_indicators__item"></div>
-                      <div class="slide_indicators__item"></div>
-                      <div class="slide_indicators__item"></div>
+                    <div id="carouselIndicators_project1" class="carousel slide pb-2" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="img/malta2.png" class="w-100 d-block image_with_preload progressive">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/malta2.png" class="w-100 d-block image_with_preload progressive"> 
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/malta2.png" class="w-100 d-block image_with_preload progressive">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="img/arthouse.png" class="w-100 d-block image_with_preload progressive" >
+                          </div>
+                      </div>
+                      <div class="carousel-indicators" style="bottom: -30px;">
+                        <button type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselIndicators_project1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      </div>
                     </div>
                   </div>
                   <div class="col-lg-5 col-md-12 d-flex justify-content-center">
@@ -321,7 +336,7 @@
                           </svg>  
                         </div>
                       </div>
-                      <div class="cartButton mt-4 d-flex align-items-center justify-content-center" style="max-width: 264px;">
+                      <div class="cartButton mt-4 d-flex align-items-center justify-content-center" style="max-width: 264px; cursor: pointer;">
                         В корзину
                     </div>
                     </div>
