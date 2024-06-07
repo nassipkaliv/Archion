@@ -300,33 +300,27 @@
 					Площадь дома
 				</div>
 				<div id="slider" class="mt-3"></div>
-				<div class="d-flex justify-content-between">
-                <span id="slider-min">0</span>
-                <span id="slider-max">2500+</span>
-            </div>
-				<div class="d-flex pt-3" style="font-size: 1.25rem">
-					<div class="col-5 px-0 text-start">
-						<span>
-							Ручной ввод:
-						</span>
-					</div>
-					<div class="col-4 row">
-						<div class="px-0 col-7">
-							от
-						</div>
-						<div class="col-5 px-1">
-							<input class="border-0 w-100 my_input" style="border-bottom: 1px solid #BDBDBD !important;">
-						</div>
-					</div>
-					<div class="col-3 row">
-						<div class="px-0 col-7">
-							до
-						</div>
-						<div class="col-5 px-0">
-							<input class="border-0 w-100 my_input" style="border-bottom: 1px solid #BDBDBD !important;">
-						</div>
-					</div>
-				</div>
+  <div class="d-flex justify-content-between">
+    <span id="slider-min">0</span>
+    <span id="slider-max">2500+</span>
+  </div>
+  <div class="d-flex pt-3" style="font-size: 1.25rem">
+    <div class="col-5 px-0 text-start">
+      <span>Ручной ввод:</span>
+    </div>
+    <div class="col-4 row">
+      <div class="px-0 col-7">от</div>
+      <div class="col-5 px-1">
+        <input id="input-min" type="number" class="border-0 w-100 my_input" style="border-bottom: 1px solid #BDBDBD !important;">
+      </div>
+    </div>
+    <div class="col-3 row">
+      <div class="px-0 col-7">до</div>
+      <div class="col-5 px-0">
+        <input id="input-max" type="number" class="border-0 w-100 my_input" style="border-bottom: 1px solid #BDBDBD !important;">
+      </div>
+    </div>
+  </div>
 				<section class="c-home">
 					<div class="c-home_body pt-md-0">
 						<div class="c-home_col-2">
@@ -395,12 +389,7 @@
 					</button>
 				</div>
 				<div class="pt-3 text-center text-sm-end">
-					<a class="btn px-0 toggler" id="btn-show-more-param" onClick="action();" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-					<span class="params_hov border_bott_params par">
-					Больше параметров
-					</span>
-					<img src="/images/catalog_new_hmkmos/arrow-upp.png" style="width: 7%;">
-					</a>
+					
 					<div class="collapse" id="collapseExample">
 						<div class="card myCard card-body border-0 px-2">
 							<div>
@@ -623,16 +612,15 @@
 								</div>
 							</div>
 						</nav>
+											
+							<button type="reset" style="margin-top: 20px; margin-bottom: 20px; background: transparent;position: relative; left: -78%">
+								Сбросить фильтры
+							</button>
 					</div>
-					<a class="btn px-0 selectCount" id="selectCount" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-					<span class="params_hov params_hov border_bott_params par">
-					Скрыть параметры
-					</span>
-					<img src="images/catalog_new_hmkmos/arrow-upp.png" style="width: 7%;"/>
-					</a>
+					
 				</div>
-				<div class="d-sm-flex pt-3">
-					<!-- <div class="col-sm-6 col-12 px-3 text-center text-sm-start py-2"> -->
+				<div class="d-flex">
+					<!-- <div class="d-none col-sm-6 col-12 px-3 text-center text-sm-start py-2"> -->
 					<button type="submit" id="btn-send-form-catalog" class="col-sm-6 col-12 px-3 text-center text-sm-start py-2">
 						<a href="proektyi.html#" class="d-flex justify-content-center justify-content-sm-start params_hov position-relative">
 						<div class="d-flex w-75 button_podbor" style="border-bottom: 1px solid #000;">
@@ -649,15 +637,13 @@
 						</div>
 						</a>
 					</button>
+					<a class="btn px-0 toggler w-100" id="btn-show-more-param" onClick="action();" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<span class="params_hov border_bott_params par">
+						Больше параметров
+						</span>
+						<img src="/images/catalog_new_hmkmos/arrow-upp.png" style="width: 7%;">
+						</a>
 					<!-- </div> -->
-					<div class="col-12 col-sm-6 pt-4 pt-sm-0 px-3 text-center text-sm-end">
-						<button type="reset" style="background: transparent;">
-							Сбросить фильтры
-						</button>
-						<!-- <a href="#" class="params_hov color_black_text_catalog border_bott_params par ">
-						Сбросить фильтры
-						</a> -->
-					</div>
 						</div>
 			</form>
 		</div>
@@ -1477,7 +1463,20 @@
 
 
 
-
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		var toggleButton = document.getElementById('btn-show-more-param');
+		var collapseElement = document.getElementById('collapseExample');
+	
+		collapseElement.addEventListener('show.bs.collapse', function () {
+			toggleButton.querySelector('span').innerText = 'Скрыть параметры';
+		});
+	
+		collapseElement.addEventListener('hide.bs.collapse', function () {
+			toggleButton.querySelector('span').innerText = 'Больше параметров';
+		});
+	});
+	</script>
 
 
 <!--Кнопки "Больше параметров/Скрыть параметры"!-->
@@ -4977,32 +4976,39 @@ $('.pagination').pagination({
 
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
-			var slider = document.getElementById('slider');
-			var minValue = document.getElementById('slider-min');
-			var maxValue = document.getElementById('slider-max');
-			
-			noUiSlider.create(slider, {
-					start: [0, 2500],
-					connect: true,
-					range: {
-							'min': 0,
-							'max': 3000
-					}
-			});
+		var slider = document.getElementById('slider');
+		var minValue = document.getElementById('slider-min');
+		var maxValue = document.getElementById('slider-max');
+		var inputMin = document.getElementById('input-min');
+		var inputMax = document.getElementById('input-max');
 	
-			slider.noUiSlider.on('update', function (values, handle) {
-					if (handle === 0) {
-							minValue.textContent = Math.round(values[0]);
-					} else {
-							maxValue.textContent = Math.round(values[1]);
-					}
-			});
+		noUiSlider.create(slider, {
+			start: [0, 2500],
+			connect: true,
+			range: {
+				'min': 0,
+				'max': 3000
+			}
+		});
+	
+		slider.noUiSlider.on('update', function (values, handle) {
+			if (handle === 0) {
+				minValue.textContent = Math.round(values[0]);
+				inputMin.value = Math.round(values[0]);
+			} else {
+				maxValue.textContent = Math.round(values[1]);
+				inputMax.value = Math.round(values[1]);
+			}
+		});
+	
+		inputMin.addEventListener('change', function () {
+			slider.noUiSlider.set([this.value, null]);
+		});
+	
+		inputMax.addEventListener('change', function () {
+			slider.noUiSlider.set([null, this.value]);
+		});
 	});
-	
-	function closeDiv() {
-			var collapseElement = document.getElementById("collapseFilter");
-			collapseElement.classList.remove("show");
-	}
 	</script>
 
 
