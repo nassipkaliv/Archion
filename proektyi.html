@@ -11,6 +11,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <meta name="format-detection" content="telephone=no">
 <link href="reset.css@2.css" rel="stylesheet">
+<link rel="stylesheet" href="form/css/form_project.css">
 
 <link rel="stylesheet" href="/../proects.css?2">
 
@@ -1846,7 +1847,7 @@
 		</div>
 		<div class="row col-12 justify-content-end mb-5">
 			<div class="col-6">
-				<button class="back_transpar border-0 button_podbor d-none d-lg-flex px-0 width_but_make_change" style="border-bottom: 1px solid #000 !important;">
+				<button class="back_transpar border-0 button_podbor d-none d-lg-flex px-0 width_but_make_change" style="border-bottom: 1px solid #000 !important;" data-bs-toggle="modal" data-bs-target="#projectOrderModal">
 						<div class="pt-4">
 							<span class="px-0 py-1  pod block_add_change_text" style="font-weight: 400;">ВНЕСТИ ИЗМЕНЕНИЯ В ПРОЕКТ</span>
 						</div>
@@ -1883,6 +1884,81 @@
 		</div>
 </div> 	
 
+<!-- Модальное окно -->
+<div class="modal fade" id="projectOrderModal" tabindex="-1" aria-labelledby="projectOrderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 630px;min-width: 630px;">
+    <div class="modal-content">
+      <div class="modal-body border-0" style="padding: 40px 32px; ">
+				<img src="../img/form-icon/icon-close.svg" class="close-form-krest" data-bs-dismiss="modal" aria-label="Close">
+        <form id="project-order-form">
+					<h1 class="modal-title" id="projectOrderModalLabel">Внести изменения в проект zx76</h1>
+					<p class="modal-desc mt-3">Оставьте контакты для связи</p>
+					<div class="block_consult p-0 align-items-center justify-content-center">
+						<input class="w-100 mb-4" placeholder="Иван" type="text" required>
+						<input class="w-100 mb-4" placeholder="+7 964 775-86-97" type="text" required>
+						<input class="w-100 mb-4" placeholder="pochta.86@gmail.com" type="email" required>
+
+						<div class="d-flex flex-column align-items-center justify-content-center">
+							<p style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 16px; line-height: 175%; text-align: center; color: #343536;">Какие изменения хотите внести?</p>							
+						</div>
+						<div class="d-flex flex-column">
+							<a href="proektyi.html#" class="change_block d-flex align-items-center mb-3" style="color:#435061;">
+								<img src="images/catalog_new_hmkmos/galka1.png" style="width:28px;height:20px; margin-right: 5px;">
+								<span class="text_change_project text-start pt-1" style="font-weight: 400; font-size: 14px; line-height: 143%; color: #000;">
+									Изменение перегородок
+								</span>
+							</a>	
+							<a href="proektyi.html#" class="change_block d-flex align-items-center mb-3" style="color:#435061;">
+								<img src="images/catalog_new_hmkmos/bezgalka.png" style="width:19px;height:15px; margin-right: 14px;">
+								<span class="text_change_project text-start pt-1" style="font-weight: 400; font-size: 14px; line-height: 143%; color: #000;">
+									Изменение несущих стен
+								</span>
+							</a>
+							<a href="proektyi.html#" class="change_block d-flex align-items-center mb-3" style="color:#435061;">
+								<img src="images/catalog_new_hmkmos/galka1.png" style="width:28px;height:20px; margin-right: 5px;">
+								<span class="text_change_project text-start pt-1" style="font-weight: 400; font-size: 14px; line-height: 143%; color: #000;">
+									Изменение габаритов дома
+								</span>
+							</a>	
+							<a href="proektyi.html#" class="change_block d-flex align-items-center mb-3" style="color:#435061;">
+								<img src="images/catalog_new_hmkmos/bezgalka.png" style="width:19px;height:15px; margin-right: 14px;">
+								<span class="text_change_project text-start pt-1" style="font-weight: 400; font-size: 14px; line-height: 143%; color: #000;">
+									Изменения размеров окон и дверей
+								</span>
+							</a>
+							<a href="proektyi.html#" class="change_block d-flex align-items-center mb-3" style="color:#435061;">
+								<img src="images/catalog_new_hmkmos/galka1.png" style="width:28px;height:20px; margin-right: 5px;">
+								<span class="text_change_project text-start pt-1" style="font-weight: 400; font-size: 14px; line-height: 143%; color: #000;">
+									Изменение фасадного решения, материала отделки
+								</span>
+							</a>	
+							<a href="proektyi.html#" class="change_block d-flex align-items-center mb-3" style="color:#435061;">
+								<img src="images/catalog_new_hmkmos/bezgalka.png" style="width:19px;height:15px; margin-right: 14px;">
+								<span class="text_change_project text-start pt-1" style="font-weight: 400; font-size: 14px; line-height: 143%; color: #000;">
+									Адаптация под регион, геологию, геодезию
+								</span>
+							</a>
+						</div>
+						
+						<input class="w-100 mb-4" placeholder="Комментарий" type="text" required>
+
+					</div>
+          <div class="form-btn mt-2">
+						<button class="button_type1" id="proceedBtn" type="submit" style="background: transparent;">
+							<p class="form-btn-label" style="font-size: 16px !important; text-transform: none;">Внести изменения</p>
+							<svg width="268" height="40" viewBox="0 0 268 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect class="hoverRect" x="212.5" y="0.5" width="39" height="39" stroke="#A78B73"></rect>
+									<path d="M233 19.5H232.5V20.5H233V19.5ZM267.354 20.3536C267.549 20.1583 267.549 19.8417 267.354 19.6464L264.172 16.4645C263.976 16.2692 263.66 16.2692 263.464 16.4645C263.269 16.6597 263.269 16.9763 263.464 17.1716L266.293 20L263.464 22.8284C263.269 23.0237 263.269 23.3403 263.464 23.5355C263.66 23.7308 263.976 23.7308 264.172 23.5355L267.354 20.3536ZM233 20.5H267V19.5H233V20.5Z" fill="#343536"></path>
+									<line y1="32.5" x2="267" y2="32.5" stroke="#343536"></line>
+							</svg>
+						</button>
+					</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="pb-md-3 b-content">
 		<div class="pb-3 pb-md-5 pt-5 pt-md-5 text-start px-md-2">
 			<p class="block_title-above block_title-above--deep">  Все о строительстве домов</p>
@@ -1895,7 +1971,7 @@
 						<div class="item px-0 px-sm-2  0">
 						<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
 					<div>
-						<a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+						<a href="podkategorya.html" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
 						</a>
 					</div>
 					<div class="py-2 px-4">
@@ -1920,7 +1996,7 @@
 						<div class="item px-0 px-sm-2  1">
 				<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
 					<div>
-						<a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+						<a href="podkategorya.html" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
 						</a>
 					</div>
 					<div class="py-2 px-4">
@@ -1945,7 +2021,7 @@
 						<div class="item px-0 px-sm-2  2">
 				<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
 					<div>
-						<a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+						<a href="podkategorya.html" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
 						</a>
 					</div>
 					<div class="py-2 px-4">
@@ -1970,7 +2046,7 @@
 						<div class="item px-0 px-sm-2  3">
 						<div style="box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);">
 						<div>
-						<a href="proektyi.html#" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
+						<a href="podkategorya.html" style="background-image: url(images/proect_zx76.jpg);height: 240px;display: block;background-size: cover;">
 						</a>
 					</div>
 					<div class="py-2 px-4">
@@ -1992,7 +2068,6 @@
 					</div>
 				</div>
 						</div>
-			
 		</div>
 </div>
 	
@@ -3454,8 +3529,8 @@ $(function() {
 		verticalSwiping: true,
 		slidesToShow: 3,
 		autoplay: false,
-		nextArrow: '<div class="position-absolute" style="right: -77%;top: 30%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_upp.png" style="width: 11px;"></div></div></div>',
-		prevArrow: '<div class="position-absolute" style="right: -77%;top: 53%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_down.png" style="width: 11px;"></div></div></div>',
+		prevArrow: '<div class="position-absolute" style="right: -77%;top: 30%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_upp.png" style="width: 11px;"></div></div></div>',
+		nextArrow: '<div class="position-absolute" style="right: -77%;top: 53%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_down.png" style="width: 11px;"></div></div></div>',
 	});
 
 
@@ -3467,8 +3542,8 @@ $(function() {
 		verticalSwiping: true,
 		slidesToShow: 3,
 		autoplay: false,
-		nextArrow: '<div class="position-absolute" style="right: -77%;top: 30%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_upp.png" style="width: 11px;"></div></div></div>',
-		prevArrow: '<div class="position-absolute" style="right: -77%;top: 53%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_down.png" style="width: 11px;"></div></div></div>',
+		prevArrow: '<div class="position-absolute" style="right: -77%;top: 30%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_upp.png" style="width: 11px;"></div></div></div>',
+		nextArrow: '<div class="position-absolute" style="right: -77%;top: 53%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_down.png" style="width: 11px;"></div></div></div>',
 	});
 
 
@@ -3480,8 +3555,8 @@ $(function() {
 		verticalSwiping: true,
 		slidesToShow: 3,
 		autoplay: false,
-		nextArrow: '<div class="position-absolute" style="right: -77%;top: 30%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_upp.png" style="width: 11px;"></div></div></div>',
-		prevArrow: '<div class="position-absolute" style="right: -77%;top: 53%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_down.png" style="width: 11px;"></div></div></div>',
+		prevArrow: '<div class="position-absolute" style="right: -77%;top: 30%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_upp.png" style="width: 11px;"></div></div></div>',
+		nextArrow: '<div class="position-absolute" style="right: -77%;top: 53%;"><div><img src="images/catalog_new_hmkmos/arrow_filter_down.png" style="width: 11px;"></div></div></div>',
 	});
 
 
@@ -3509,7 +3584,7 @@ arItem.forEach(el => {
 </script>	
 <div class="b-content ">
 		<div class="container-fluid pt-0 pb-3">
-			<div class="pt-3 pt-md-5 pb-2 pb-md-4 text-start">
+			<div class=" pb-2 pb-md-4 text-start">
 				<p class="block_title-above block_title-above--deep">  все материалы</p>
 				<span class="style_heading_text ">
 					Адаптируем проект под любого материала
