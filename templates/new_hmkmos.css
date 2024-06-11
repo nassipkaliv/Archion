@@ -1075,7 +1075,7 @@ border-bottom: 2px solid #969696 !important;
 		font-size:48px
 	}
 	.height_block_uslugi{
-		height: 928px;
+		height: 790px;
 	}
 	
 	.description{
@@ -1188,7 +1188,7 @@ border-bottom: 2px solid #969696 !important;
 
 
 .title_blox-1{
-	animation: title_blox-1 7s ease-in-out forwards 2s;
+	animation: title_blox-1 7s ease-in-out forwards 3s;
 }
 @keyframes title_blox-1 {
 	0% {
