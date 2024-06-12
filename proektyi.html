@@ -291,7 +291,7 @@
 						
 <!----------------------------PROJECTS FILTER START------------------------------------!>
 	<div class="collapse col-12 col-sm-6 col-xl-5 position-absolute filter_nav" id="collapseFilter" style="z-index:1000;">
-		<div class="card card-body" id="myCard" style="padding: 2rem 1rem">
+		<div class="card card-body px-5" id="myCard" style="padding: 2rem 1rem;">
 			<form method="post">
 				<div class="text-end">
 					<img src="../img/form-icon/icon-close.svg" class="close-form-krest" aria-label="Close" onclick="closeDiv();">
@@ -304,7 +304,7 @@
     <span id="slider-min">0</span>
     <span id="slider-max">2500+</span>
   </div>
-  <div class="d-flex pt-3" style="font-size: 1.25rem">
+  <div class="d-flex pt-3" style="font-size: 20px !important;">
     <div class="col-5 px-0 text-start">
       <span>Ручной ввод:</span>
     </div>
@@ -393,21 +393,21 @@
 					<div class="collapse" id="collapseExample">
 						<div class="card myCard card-body border-0 px-2">
 							<div>
-								<div class="row mx-0 pt-3 justify-content-between">
+								<div class="row mx-0  pt-3 justify-content-between">
 									<div class="col-5 px-0 text-start">
-										<span style="font-size: 1.25rem">
-											Габариты дома
+										<span style="font-weight: 400; font-size: 20px; line-height: 140%; color: #646464;">
+											Размеры дома
 										</span>
 									</div>
-									<div class="col-7 d-flex">
-										<input class="border-0 w-100" style="border-bottom: 1px solid #BDBDBD !important;" name="proect_y" />
-										<span>
-											X
+									<div class="col-7 d-flex gap-4">
+										<span style="font-weight: 400; font-size: 20px; line-height: 140%; color: #646464;">
+											Ш
 										</span>
-										<input class="border-0 w-100" style="border-bottom: 1px solid #BDBDBD  !important;" name="proect_x" />
-										<span>
-											М
+										<input class="border-0 w-25" style="border-bottom: 1px solid #BDBDBD !important; font-weight: 400; font-size: 20px; line-height: 140%; color: #646464;" name="proect_y" />
+										<span style="font-weight: 400; font-size: 20px; line-height: 140%; color: #646464;">
+											Д
 										</span>
+										<input class="border-0 w-25" style="border-bottom: 1px solid #BDBDBD  !important; font-weight: 400; font-size: 20px; line-height: 140%; color: #646464;" name="proect_x" />
 									</div>
 								</div>
 							</div>
@@ -613,7 +613,7 @@
 							</div>
 						</nav>
 											
-							<button type="reset" style="margin-top: 20px; margin-bottom: 20px; background: transparent;position: relative; left: -78%">
+							<button type="reset" style="margin-top: 20px; margin-bottom: 20px; background: transparent;position: relative; left: -69%; font-weight: 400; font-size: 18px; color: #828282; text-decoration: underline;">
 								Сбросить фильтры
 							</button>
 					</div>
@@ -637,12 +637,10 @@
 						</div>
 						</a>
 					</button>
-					<a class="btn px-0 toggler w-100 pb-0 pt-3" id="btn-show-more-param" onClick="action();" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-						<span class="params_hov border_bott_params par">
-						Больше параметров
-						</span>
+					<a class="btn px-0 toggler w-100 pb-0 pt-3" id="btn-show-more-param" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<span class="params_hov border_bott_params par">Больше параметров</span>
 						<img src="/images/catalog_new_hmkmos/arrow-upp.png" style="width: 7%;">
-						</a>
+				</a>
 					<!-- </div> -->
 						</div>
 			</form>
@@ -1465,16 +1463,19 @@
 
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
-		var toggleButton = document.getElementById('btn-show-more-param');
-		var collapseElement = document.getElementById('collapseExample');
+			var toggleButton = document.getElementById('btn-show-more-param');
+			var collapseElement = document.getElementById('collapseExample');
+			var img = toggleButton.querySelector('img');
 	
-		collapseElement.addEventListener('show.bs.collapse', function () {
-			toggleButton.querySelector('span').innerText = 'Скрыть параметры';
-		});
+			collapseElement.addEventListener('show.bs.collapse', function () {
+					toggleButton.querySelector('span').innerText = 'Скрыть параметры';
+					img.src = '/images/catalog_new_hmkmos/arrow-down.png';
+			});
 	
-		collapseElement.addEventListener('hide.bs.collapse', function () {
-			toggleButton.querySelector('span').innerText = 'Больше параметров';
-		});
+			collapseElement.addEventListener('hide.bs.collapse', function () {
+					toggleButton.querySelector('span').innerText = 'Больше параметров';
+					img.src = '/images/catalog_new_hmkmos/arrow-upp.png';
+			});
 	});
 	</script>
 
