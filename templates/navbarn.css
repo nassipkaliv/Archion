@@ -321,7 +321,7 @@ header {
 
 .navbar-nav {
   height: 100%;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 
@@ -691,5 +691,12 @@ header {
 
   .nav-link--phone:after {
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .navbar-nav {
+    height: 100%;
+    font-size: 24px;
   }
 }
