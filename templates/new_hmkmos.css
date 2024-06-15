@@ -222,13 +222,27 @@ border-bottom: 2px solid #969696 !important;
 	}
 	.title_arhion{
 		font-size: 62px;
+		max-width: 330px;
+	}
+
+	.block_title {
+		font-size: 20px !important;
 	}
 }
 
-@media (min-width: 360px) and (max-width: 575px){
+@media (min-width: 300px) and (max-width: 575px){
+
+	.button_podbor_square_services  {
+		padding: 2rem !important;
+	}
+
+	.titlePosition {
+		top: 20% !important;
+	}
 
 
 	.title_arhion {
+		max-width: 330px;
     color: var(--gold, #A78B73);
     text-align: center;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
@@ -330,7 +344,7 @@ border-bottom: 2px solid #969696 !important;
 	font-size: 1.5rem;
 }
 .block_title {
-	font-size: 1.25rem;
+	font-size: 20px !important;
 	line-height: normal;
 }
 .block_title-above--deep {
@@ -723,8 +737,14 @@ border-bottom: 2px solid #969696 !important;
 }
 
 	.font_title_main{
-		font-size:40px
+		font-size: 30px !important;
 	}
+
+.image_with_preload {
+	height: 10rem !important;
+}
+
+
 
 
 	.list-group-item.services_text.active {
@@ -754,13 +774,26 @@ border-bottom: 2px solid #969696 !important;
 	.height_about_us{
 		height:724px;
 	}
+
+	.strelkaPosition {
+		top: 4px !important;
+		left: 12px !important;
+	}
+	
+	.b-content {
+    padding: 25px 15px 2rem;
+	}
+
+	
+
 	.square_block_services_pdl{
 		padding-left: 85%;
+		top: 55% !important;
 	}
 	.but_podrobnee_srvices{
 		color: var(--gray, #F7F7F9);
 	font-family: Montserrat;
-	font-size: 20px;
+	font-size: 18px !important;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 26px; 
