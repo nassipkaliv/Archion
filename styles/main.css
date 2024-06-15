@@ -2176,6 +2176,12 @@ input:checked + .slider.small:before {
   color: #fff;
 }
 
+@media (min-width: 1600px) {
+  .firstBanner {
+    max-height: 780px !important;
+  }
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
