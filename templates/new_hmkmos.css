@@ -268,7 +268,7 @@ border-bottom: 2px solid #969696 !important;
 	.text-slide {
 		right: 0%;
 		left: 40px;
-		top: 55%;
+		top: 55% !important;
 	}
 
 	.btn-circle-project {
@@ -352,7 +352,9 @@ border-bottom: 2px solid #969696 !important;
 	font-size: 34px !important;
 }
 
-
+.bannerPosition {
+	top: 30% !important;
+}
 
 .aboutusPosition {
 	flex-direction: column !important;
