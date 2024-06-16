@@ -2651,9 +2651,9 @@ input:checked + .slider.small:before {
 
   .logo-text {
     font-weight: 400;
-    font-size: 48px;
+    font-size: 48px !important;
     line-height: 100%;
-    margin-top: 0;
+    margin-top: 0 !important;
     margin-bottom: 20px;
   }
 
