@@ -2642,7 +2642,7 @@ input:checked + .slider.small:before {
   .aboutus {
     background: #f1ebe6;
     padding: 20px;
-    height: auto;
+    height: auto !important;
   }
 
   .logo-img {
