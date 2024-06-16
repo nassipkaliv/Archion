@@ -161,7 +161,7 @@ border-bottom: 2px solid #969696 !important;
 @media (max-width: 359px){
 	
 	.font_title_main{
-		font-size:40px
+		font-size: 20px
 	}
 	.height_block_uslugi{
 		height: 928px;
@@ -176,7 +176,7 @@ border-bottom: 2px solid #969696 !important;
 		height:724px;
 	}
 	.square_block_services_pdl{
-		padding-left: 85%;
+		padding-left: 90%;
 	}
 	.but_podrobnee_srvices{
 		color: var(--gray, #F7F7F9);
@@ -226,7 +226,7 @@ border-bottom: 2px solid #969696 !important;
 	}
 
 	.block_title {
-		font-size: 20px !important;
+		font-size: 22px !important;
 	}
 }
 
@@ -349,8 +349,10 @@ border-bottom: 2px solid #969696 !important;
 }
 .block_title-above--deep {
 	margin-bottom: -1.05rem;
-	font-size: 42px;
+	font-size: 34px;
 }
+
+
 
 .aboutusPosition {
 	flex-direction: column !important;
@@ -759,7 +761,7 @@ border-bottom: 2px solid #969696 !important;
 }
 
 	.font_title_main{
-		font-size: 30px !important;
+		font-size: 20px !important;
 	}
 
 .image_with_preload {
@@ -798,10 +800,15 @@ border-bottom: 2px solid #969696 !important;
 	}
 
 	.strelkaPosition {
-		top: 4px !important;
+		top: 8px !important;
 		left: 12px !important;
 	}
 	
+	.but_hover_square {
+		width: 100% !important;
+	}
+
+
 	.b-content {
     padding: 25px 15px 2rem;
 	}
@@ -2124,6 +2131,10 @@ border-bottom: 2px solid #969696 !important;
 	line-height: 48px; 
 	color: var(--gray, #F7F7F9);
 	text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25), -2px -2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.but_hover_square {
+	width: 75%;
 }
 
 .but_hover_square:hover .button_podbor_square_services{
