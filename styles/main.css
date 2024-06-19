@@ -71,7 +71,7 @@ li {
 }
 
 .block_container {
-  max-width: 1920px;
+  max-width: 100%;
   padding: 4rem 5rem;
   box-sizing: border-box;
   display: flex;
@@ -354,7 +354,7 @@ li {
   max-height: 19.875rem;
   position: relative;
   background: #A78B73;
-  max-width: 1920px;
+  max-width: 100%;
   margin: 0;
   display: flex;
   align-items: center;
@@ -743,7 +743,7 @@ hr {
 
 .block_gradient {
   padding-left: 5rem;
-  max-width: 1920px;
+  max-width: 100%;
   box-sizing: border-box;
   display: flex;
   margin: 0;
@@ -1388,7 +1388,6 @@ hr {
 .aboutus {
 	background: #f1ebe6;
 	padding: 50px 80px;
-	height: 770px !important;
 }
 
 .logo-text {
@@ -1440,7 +1439,7 @@ hr {
 }
 
 .nav-link.active {
-  padding-bottom: 7px !important;
+  padding-bottom: 14px !important;
   border-bottom: 4px solid #f1ebe6 !important;
   border: 0;
 }
@@ -2176,11 +2175,6 @@ input:checked + .slider.small:before {
   color: #fff;
 }
 
-@media (min-width: 1600px) {
-  .firstBanner {
-    max-height: 780px !important;
-  }
-}
 
 @media (max-width: 1651px) {
   html {
