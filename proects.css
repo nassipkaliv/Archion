@@ -17,14 +17,14 @@
     position: relative;
     margin-bottom: 30px;
     box-shadow: 0 -80px 80px -25px rgba(0, 0, 0, .8) inset, 0 2px 5px #999;
-    height: 20vw;
+    height: 23vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.75);
     /*background-position-y: top;*/
-    max-height: 500px;
+    max-height: none;
 }
 @media (min-width: 1024px) {
     .col-lg-6.col-md-6:hover {

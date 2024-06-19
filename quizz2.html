@@ -261,34 +261,34 @@
       <div class="quizz-title mb-5">Укажите площадь дома</div>
       
       <div class="form my-5">
-        <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+        <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
           Площадь дома
         </div>
         <div id="slider"></div>
         <div class="d-flex justify-content-between">
-          <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
-            0
+          <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+            <span id="slider-value-lower">0</span>
           </div>
-          <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
-            2500+
+          <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+            <span id="slider-value-upper">2500+</span>
           </div>
         </div>
-        <div class="d-flex justify-content-between mt-5 ruchnoi">
-          <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+        <div class="d-flex justify-content-between mt-5 ruchnoi pe-3">
+          <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
             Ручной ввод
           </div>
           <div class="d-flex gap-3">
             <div class="d-flex">
-              <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
                 от
               </div>
-              <input type="number" class="ruchnoiInput">
+              <input type="number" class="ruchnoiInput" id="input-lower" min="0" max="3000">
             </div>
             <div class="d-flex">
-              <div href="#" style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
+              <div style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px;color: #646464;">
                 до
               </div>
-              <input type="number" class="ruchnoiInput">
+              <input type="number" class="ruchnoiInput" id="input-upper" min="0" max="3000">
             </div>
           </div>
         </div>
@@ -467,6 +467,11 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var slider = document.getElementById('slider');
+      var inputLower = document.getElementById('input-lower');
+      var inputUpper = document.getElementById('input-upper');
+      var sliderValueLower = document.getElementById('slider-value-lower');
+      var sliderValueUpper = document.getElementById('slider-value-upper');
+  
       noUiSlider.create(slider, {
         start: [0, 2500],
         connect: true,
@@ -474,6 +479,25 @@
           'min': 0,
           'max': 3000
         }
+      });
+  
+      slider.noUiSlider.on('update', function (values, handle) {
+        var value = Math.round(values[handle]);
+        if (handle === 0) {
+          sliderValueLower.textContent = value;
+          inputLower.value = value;
+        } else {
+          sliderValueUpper.textContent = value;
+          inputUpper.value = value;
+        }
+      });
+  
+      inputLower.addEventListener('change', function () {
+        slider.noUiSlider.set([this.value, null]);
+      });
+  
+      inputUpper.addEventListener('change', function () {
+        slider.noUiSlider.set([null, this.value]);
       });
     });
   </script>

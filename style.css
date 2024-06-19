@@ -2049,9 +2049,12 @@ a {
 
 .ruchnoiInput {
   border-bottom: 1px solid #646464;
-  width: 40px;
+  width: 50px;
   background: transparent;
   margin-left: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  
 }
 
 .owl-nav {
