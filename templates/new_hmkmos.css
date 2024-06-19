@@ -1233,204 +1233,157 @@ border-bottom: 2px solid #969696 !important;
 
 /*Анимация 4 блока главной страницы*/
 
-.box-1 {
+.box {
   display: none;
 }
 
-.box-2 {
-  display: none;
+.title_blox-1, .title_blox-2, .title_blox-3, .title_blox-4 {
+  animation-iteration-count: infinite;
 }
 
-.box-3 {
-  display: none;
-}
-
-.box-4 {
-  display: none;
-}
-
-
-
-.title_blox-1{
-	animation: title_blox-1 7s ease-in-out forwards 3s;
+.title_blox-1 {
+  animation: title_blox-1 28s ease-in-out infinite 3s;
 }
 @keyframes title_blox-1 {
-	0% {
-		 color:white;
-	}
-	25%{
-		color:#a78b73d6;
-	}
-	50% {
-		 color:#A78B73;
-	}
-	100% {
-		 color:white;
-
-	}
+  0%, 25%, 100% {
+    color: white;
+  }
+  12.5% {
+    color: #A78B73;
+  }
 }
 
-.box-1.show{
-	animation: box-1 7s ease-in-out forwards;
-	color:white;
-	display:block;
+.box-1.show {
+  animation: box-1 7s ease-in-out 1 forwards;
+  color: white;
+  display: block;
 }
 @keyframes box-1 {
-	0% {
-		transform: translate(0, 0);
-		 opacity:0;
-}
-	50% {
-		transform: translate(50px, 0);
-		 opacity:1;
-	}
-	100% {
-		
-		 opacity:0;
-
-	}
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(50px, 0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-.title_blox-2{
-	animation: title_blox-2 10s ease-in-out forwards 10s;
+.title_blox-2 {
+  animation: title_blox-2 28s ease-in-out infinite 10s;
 }
 @keyframes title_blox-2 {
-	0% {
-		 color:white;
-	}
-	25%{
-		color:#a78b73d6;
-	}
-	50% {
-		 color:#A78B73;
-	}
-	100% {
-		 color:white;
-
-	}
+  0%, 25%, 100% {
+    color: white;
+  }
+  12.5% {
+    color: #A78B73;
+  }
 }
 
-.box-2.show{
-	animation: box-2 7s ease-in-out forwards;
-	color:white;
-	display:block;
+.box-2.show {
+  animation: box-2 7s ease-in-out 1 forwards;
+  color: white;
+  display: block;
 }
 @keyframes box-2 {
-	0% {
-		transform: translate(0, 0);
-		 opacity:0;
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(50px, 0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-	50% {
-		transform: translate(50px, 0);
-		 opacity:1;
-	}
-	100% {
-		
-		 opacity:0;
 
-	}
-}
-.title_blox-3{
-	animation: title_blox-3 10s ease-in-out forwards 17s;
+.title_blox-3 {
+  animation: title_blox-3 28s ease-in-out infinite 17s;
 }
 @keyframes title_blox-3 {
-	0% {
-		 color:white;
-	}
-	25%{
-		color:#a78b73d6;
-	}
-	50% {
-		 color:#A78B73;
-	}
-	100% {
-		 color:white;
-
-	}
+  0%, 25%, 100% {
+    color: white;
+  }
+  12.5% {
+    color: #A78B73;
+  }
 }
 
-.box-3.show{
-	animation: box-3 7s ease-in-out forwards;
-	color:white;
-	display:block;
+.box-3.show {
+  animation: box-3 7s ease-in-out 1 forwards;
+  color: white;
+  display: block;
 }
 @keyframes box-3 {
-	0% {
-		transform: translate(0, 0);
-		 opacity:0;
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(50px, 0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-	50% {
-		transform: translate(50px, 0);
-		 opacity:1;
-	}
-	100% {
-		
-		 opacity:0;
 
-	}
-}
-.title_blox-4{
-	animation: title_blox-4 10s ease-in-out forwards 23s;
+.title_blox-4 {
+  animation: title_blox-4 28s ease-in-out infinite 24s;
 }
 @keyframes title_blox-4 {
-	0% {
-		 color:white;
-	}
-	25%{
-		color:#a78b73d6;
-	}
-	50% {
-		 color:#A78B73;
-	}
-	100% {
-		 color:white;
-
-	}
+  0%, 25%, 100% {
+    color: white;
+  }
+  12.5% {
+    color: #A78B73;
+  }
 }
 
-.box-4.show{
-	animation: box-4 7s ease-in-out forwards;
-	color:white;
-	display:block;
+.box-4.show {
+  animation: box-4 7s ease-in-out 1 forwards;
+  color: white;
+  display: block;
 }
 @keyframes box-4 {
-	0% {
-		transform: translate(0, 0);
-		 opacity:0;
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(50px, 0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-	50% {
-		transform: translate(50px, 0);
-		 opacity:1;
-	}
-	100% {
-		
-		 opacity:0;
-
-	}
-}
-
 
 .box-text {
   background-image: url('data:image/svg+xml;utf8,<svg width="30" height="10" viewBox="0 0 30 10" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="10" rx="5" fill="%23A78B73"/></svg>');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 18px 30px;
-  padding-left: 40px; 
+  padding-left: 40px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 25px;
   color: #f7f7f9;
 }
 
-
-.text_block_about_us{
-	color: var(--text-dark, #2E2E2E);
-	font-family: Inter;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 33px;
+.text_block_about_us {
+  color: var(--text-dark, #2E2E2E);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
 }
-
 
 
 
