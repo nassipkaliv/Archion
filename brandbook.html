@@ -79,7 +79,9 @@
 <body  style="height: 100vh; background: #f1ebe6; position: relative; overflow-x: hidden;">
 
   <div class="brandSidebar">
-    <img style="max-width: 290px;" class="img-fluid brandSidebarLogo" src="img/brandlogo.png" alt="Brand Logo">
+    <a href="index.html">
+      <img style="max-width: 290px;" class="img-fluid brandSidebarLogo" src="img/brandlogo.png" alt="Brand Logo">
+    </a>
 
     <ul class="nav nav-pills flex-column mt-4 px-4">
       <li class="sidebar-item">
@@ -138,6 +140,15 @@
       </li>
       <li class="sidebar-item">
         <button style="background: transparent;" class="sidebar-link" data-bs-toggle="modal" data-bs-target="#contactModal">Контакты</button>
+        <div class="indicator-svg">
+          <svg width="58" height="13" viewBox="0 0 58 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.20942 6.5H53.7539" stroke="#DD5C24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M50.8382 1.2955L56.0427 6.49994L50.8382 11.7044" stroke="#DD5C24" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </div>
+      </li>
+      <li class="sidebar-item">
+        <button style="background: transparent;"  class="sidebar-link" onclick="window.location.href='index.html'">Выйти</button>
         <div class="indicator-svg">
           <svg width="58" height="13" viewBox="0 0 58 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.20942 6.5H53.7539" stroke="#DD5C24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -533,6 +544,11 @@
                 <button type="button" class="btn-close position-absolute" style="top: 10px; right: 10px;" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" style="background: url(img/brandbookbg.png); background-size: cover; height: 600px;">
+                <div class="position-absolute" style="top: 60%; left: 12%;">
+                  <div class="contactInfo mb-2">Большая якиманка 33/13 стр 2</div>
+                  <div class="contactInfo mb-2">info@Arhion.ru</div>
+                  <div class="contactInfo mb-2">+7 (495) 799-75-29</div>
+                </div>
                 <div class="introductionBlock" style="right: 2%; top: -10%;">
                   <div class="introductionBlockTitle" style="margin-top: 70px; font-weight: 700; font-size: 30px; line-height: 120%; color: #14010c; text-transform: none;">Нужна консультация?</div>
                   <p class="introductionBlockList mt-5">
