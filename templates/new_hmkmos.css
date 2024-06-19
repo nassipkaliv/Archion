@@ -241,6 +241,14 @@ border-bottom: 2px solid #969696 !important;
 
 @media (min-width: 300px) and (max-width: 575px){
 
+	.firstSEE {
+		height: 50vh !important;
+	}
+
+	.firstBanner {
+		height: 50vh !important;
+	}
+
 	.button_podbor_square_services  {
 		padding: 2rem !important;
 	}
