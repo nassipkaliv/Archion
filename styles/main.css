@@ -2240,7 +2240,7 @@ input:checked + .slider.small:before {
     font-size: 1.5rem;
   }
   .block_title {
-    font-size: 1.25rem;
+    font-size: 20px !important;
     line-height: normal;
   }
   .block_title-above--deep {

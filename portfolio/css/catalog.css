@@ -1154,10 +1154,6 @@
         padding-left: 0;
     }
 
-    #btn-project-order {
-        display: none;
-    }
-
     #btn-project-order-mobile {
         display: flex;
     }
