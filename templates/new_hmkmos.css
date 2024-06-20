@@ -259,10 +259,15 @@ border-bottom: 2px solid #969696 !important;
 
 	.button_podbor_square_services  {
 		padding: 2rem !important;
+		background: var(--gold, #A78B73);
 	}
 
 	.titlePosition {
 		top: 20% !important;
+	}
+
+	.header__icons a {
+		width: 24px !important;
 	}
 
 
@@ -388,7 +393,7 @@ border-bottom: 2px solid #969696 !important;
 }
 .block_title-above--deep {
 	margin-bottom: -1.05rem;
-	font-size: 34px !important;
+	font-size: 29px !important;
 }
 
 .bannerPosition {
@@ -806,7 +811,7 @@ border-bottom: 2px solid #969696 !important;
 	}
 
 .image_with_preload {
-	height: 10rem !important;
+	height: 13rem !important;
 }
 
 
@@ -2138,7 +2143,7 @@ border-bottom: 2px solid #969696 !important;
 
 .but_hover_square:hover .button_podbor_square_services{
 	background: var(--gold, #A78B73);
-    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.25) inset;
 	border: 1px solid black;
 	transition: 1s;
 	
