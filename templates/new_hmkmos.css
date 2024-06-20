@@ -80,6 +80,10 @@ border-bottom: 2px solid #969696 !important;
 	border-bottom: 2px solid #A78B73 !important;	
 }
 
+.list-group-item.services_text:hover {
+	font-size: 28px !important;
+}
+
 	.list-group {		
 		flex-direction: inherit !important;
 	}
@@ -241,12 +245,16 @@ border-bottom: 2px solid #969696 !important;
 
 @media (min-width: 300px) and (max-width: 575px){
 
+	.firstImages {
+		height: 40vh !important;
+	}
+
 	.firstSEE {
-		height: 50vh !important;
+		height: 40vh !important;
 	}
 
 	.firstBanner {
-		height: 50vh !important;
+		height: 40vh !important;
 	}
 
 	.button_podbor_square_services  {
@@ -257,6 +265,20 @@ border-bottom: 2px solid #969696 !important;
 		top: 20% !important;
 	}
 
+
+	.topbar {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	
+	}
+
+	.navnar-arhion-logo {
+		width: 250px !important;
+	}
+
+	.navbar-nav {
+		font-size: 18px !important;
+	}
 
 	.title_arhion {
 		max-width: 330px;
@@ -293,14 +315,14 @@ border-bottom: 2px solid #969696 !important;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400 !important;
-		font-size: 8px !important;
+		font-size: 12px !important;
 		line-height: 125% !important;
     border: 1px solid #A78B73;
     border-radius: 100%;
-    max-height: 60px !important;
-		max-width: 60px !important;
-		min-height: 60px !important;
-		min-width: 60px !important;
+    max-height: 100px !important;
+		max-width: 100px !important;
+		min-height: 100px !important;
+		min-width: 100px !important;
     position: relative;
     background-color: #fff;
 		padding-left: 2% !important;
@@ -308,12 +330,12 @@ border-bottom: 2px solid #969696 !important;
     transition: all ease-in-out .3s;
 }
 
-.btn-circle-project .static-line-project {
-	display: none !important;
+.btn-circle-project .animation-line-project {
+	width: 97px !important	;
 }
 
-.btn-circle-project .animation-line-project {
-	display: none !important;
+.btn-circle-project .static-line-project {
+	width: 97px !important;
 }
 
 .arrowImg {
@@ -881,6 +903,14 @@ border-bottom: 2px solid #969696 !important;
 	}
 	.title_arhion{
 		font-size: 62px;
+	}
+
+	.list-group-item.services_text:hover {
+		font-size: 24px !important;
+	}
+
+	.list-group-item.services_text.active {
+		font-size: 24px !important;
 	}
 }
 
@@ -1464,10 +1494,7 @@ border-bottom: 2px solid #969696 !important;
         color: #000 !important;
         font-size: 28px !important;
     }
-    
-    .list-group-item.services_text:hover {
-        font-size: 28px !important;
-    }
+  
 
 .description{
 	color: var(--gray, #F7F7F9);
