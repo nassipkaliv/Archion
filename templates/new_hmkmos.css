@@ -483,6 +483,37 @@ border-bottom: 2px solid #969696 !important;
 	z-index: -2;
 	margin-top: 2.5rem;
 }
+
+.style_heading_text {
+	font-size: 20px !important;
+}
+
+.gorizont {
+	margin-bottom: 0 !important;
+}
+
+.locationBigNumber {
+	font-weight: 700;
+	font-size: 90px;
+}
+
+.locationBigNumber.small {
+	font-weight: 700;
+	font-size: 50px;
+	right: 40px;
+	top: -20px;
+}
+
+
+.locationBigNumberText {
+	font-size: 20px;
+	left: 25%;
+}
+
+.locationBigNumberText.left {
+	left: 55px;
+}
+
 .block_gradient {
 	padding: 0 1rem;
 	height: 18.375rem;

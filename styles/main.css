@@ -1707,6 +1707,10 @@ hr {
   height: 400px;
 }
 
+.razdelCardBottom {
+  align-items: center;
+}
+
 .razdelCardTitle {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -2237,7 +2241,7 @@ input:checked + .slider.small:before {
     font-size: 1.875rem;
   }
   .block_title-above--mobile-mini {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   .block_title {
     font-size: 20px !important;
@@ -2670,5 +2674,38 @@ input:checked + .slider.small:before {
   }
   .page {
     overflow: hidden;
+  }
+
+  .razdelCard {
+    padding: 16px !important;
+    height: auto !important;
+  }
+
+  .razdelCardBottom {
+    flex-direction: column-reverse !important;
+    align-items: start !important;
+    gap: 15px !important;
+  }
+
+  .razdelPodrobnee {
+    left: 15% !important;
+    top: 71% !important;
+  }
+
+  .razdelCardTitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 186%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #343536;
+  }
+
+  .razdelCardList {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #343536;
   }
 }
