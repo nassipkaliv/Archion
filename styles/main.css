@@ -2683,7 +2683,7 @@ input:checked + .slider.small:before {
 
   .razdelCard {
     padding: 16px !important;
-    height: auto !important;
+    height: 550px !important;
   }
 
   .razdelCardBottom {
@@ -2744,4 +2744,50 @@ input:checked + .slider.small:before {
     width: 29px;
     height: 16px;
   }
+
+  .slider:before {
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: 1px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(11px);
+  }
+
+  .calculatorText::after {
+    background-size: 18px !important;
+  }
+
+  .calculatorText.small {
+    font-size: 14px !important;
+  }
+
+  .switch.small {
+    width: 29px;
+    height: 16px;
+  }
+
+  .slider.round.small {
+    border-radius: 34px;
+  }
+
+  .slider.round.small:before {
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    bottom: 1px;
+}
+  
+input:checked + .slider.small:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+.calulatorContainer {
+  margin-top: 15px;
+}
+
 }
