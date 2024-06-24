@@ -2248,6 +2248,21 @@ a {
 	.c-inner_fillial {
 		margin: 0px 0 10px 30px;
 	}
+
+  .only-mobile {
+    display: flex;
+  }
+
+  .intro-title {
+    font-size: 24px;
+    text-shadow: 2px 2px 7px 0 #000;
+  }
+
+  .intro {
+    height: 38vh;
+    position: relative;
+  }
+
 }
 .p-wrapper{background:white!important}
 

@@ -270,6 +270,10 @@ border-bottom: 2px solid #969696 !important;
 		width: 24px !important;
 	}
 
+	.header__icons a img {
+		width: 24px !important;
+	}
+
 
 	.topbar {
 		padding-left: 10px !important;

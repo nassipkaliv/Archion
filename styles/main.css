@@ -2814,4 +2814,23 @@ input:checked + .slider.small:before {
 
 }
 
+.listText {
+  font-size: 13px;
+}
+
+.listMark {
+  border-radius: 50%;
+  background: #000 !important;
+  width: 5px;
+  height: 5px;
+}
+
+.listItems {
+  padding-left: 10px;
+}
+
+.listItem {
+  gap: 15px !important;
+}
+
 }
