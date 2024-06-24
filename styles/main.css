@@ -2790,4 +2790,28 @@ input:checked + .slider.small:before {
   margin-top: 15px;
 }
 
+.timeText {
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 229% !important;
+  color: #343536;
+}
+
+.description-sections-building {
+  font-size: 14px !important;
+}
+
+.exampleCrossedPrice {
+  font-size: 12px;
+}
+
+.exampleRealPrice {
+  font-size: 14px;
+}
+
+.exampleUnderPrice {
+  font-size: 10px;
+
+}
+
 }
