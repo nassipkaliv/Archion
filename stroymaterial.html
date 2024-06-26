@@ -1909,14 +1909,17 @@ $(function() {
 	});
 </script>
 
-<section class="block_container d-flex justify-content-between position-relative" style="background: url('img/ready.png'); max-height: 490px; min-height: 450px;">
+<section class="block_container d-flex justify-content-between position-relative" style="background: url('img/ready.png'); max-height: 490px; min-height: 375px;">
 	<div class="stroyReadyContainer">
-		<h2 class="block_title mb-5" style="font-size: 44px !important;">У вас есть готовый проект?</h2>
-		<span class="style_heading_text" style="font-size: 24px; text-align: justify !important; font-family: 'Montserrat', sans-serif !important;">
+		<h2 class="block_title mb-5" style="font-size: 44px">У вас есть готовый проект?</h2>
+		<span class="style_heading_text only-pc" style="font-size: 24px; text-align: justify !important; font-family: 'Montserrat', sans-serif !important;">
 			Если у вас уже есть готовый проект, мы с радостью возьмёмся за его реализацию, составим подробную смету и воплотим в жизнь ваш уникальный проект.
 		</span>
+		<span class="style_heading_text only-mobile" style="font-size: 14px !important; text-align: justify !important; font-family: 'Montserrat', sans-serif !important; font-weight: 400;">
+			Мы готовы воплотить в жизнь вашу уникальную идею. Если у вас уже есть готовый проект, будь то чертежи, планы или даже наброски на бумаге, мы с радостью возьмемся за его реализацию
+		</span>
 	</div>
-	<div class="position-absolute buttonOrder" style="z-index: 1;top: 35%;right: 12%;">
+	<div class="position-absolute buttonOrder only-pc" style="z-index: 1;top: 35%;right: 12%;">
     <button id="btn-project-order" class="btn-circle-project btn-call-form-project border-0" data-bs-toggle="modal" data-bs-target="#projectOrderModal2">
         Получить
         <hr class="static-line-project" style="filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.25)) drop-shadow(-1px 1px 2px rgba(0, 0, 0, 0.25)); background-color: #121212;">
@@ -1925,6 +1928,14 @@ $(function() {
         <img class="position-absolute arrowImg" src="portfolio/img/block_stage_building/arrow-black.svg" style="right: 0%; width: 40px;height: 8px;top: 42%;left: 140%;">
     </button>
 </div>
+<a class="button_type2 only-mobile" href="brandbook.html">
+	<p>ПОЛУЧИТЬ <br> СМЕТУ</p>
+	<svg width="386" height="100" viewBox="0 0 386 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<line y1="49.5" x2="337" y2="49.5" stroke="#14010C"></line>
+		<circle class="hoverRect" cx="336" cy="50" r="49.5" stroke="#A78B73"></circle>
+		<path d="M241 36.5H240.5V37.5H241V36.5ZM276.354 37.3536C276.549 37.1583 276.549 36.8417 276.354 36.6464L273.172 33.4645C272.976 33.2692 272.66 33.2692 272.464 33.4645C272.269 33.6597 272.269 33.9763 272.464 34.1716L275.293 37L272.464 39.8284C272.269 40.0237 272.269 40.3403 272.464 40.5355C272.66 40.7308 272.976 40.7308 273.172 40.5355L276.354 37.3536ZM241 37.5H276V36.5H241V37.5Z" fill="#14010C"></path>
+	</svg>	
+</a>
 </section>
 
 
@@ -2043,18 +2054,18 @@ $(function() {
 			<p class="block_title-sub block_title-sub--margin25 only-pc">Продолжить вдохновляться - перейдите на страницу индивидуального проектирования, где вы сможете сделать каждую деталь вашего будущего дома выразительной, олицетворяющей вас. Откройте двери в мир творчества и возможностей.</p>
 			<p class="block_title-sub block_title-sub--margin25 only-mobile">Продолжить вдохновляться - перейдите на страницу индивидуального проектирования, где вы сможете сделать каждую деталь вашего будущего дома выразительной, олицетворяющей вас. Откройте двери в мир творчества и возможностей.</p>
 
-			<div class="block_gradient__mark">
+			<div class="block_gradient__mark only-pc">
 					<b>Скидка 100% на проект </b>
 					<p>*при заказе строительства</p>
 			</div>
 
 			<a data-bs-toggle="modal" data-bs-target="#projectOrderModal3" class="d-flex but_hover_square position-relative w-75 pt-4" style="border-bottom: 1px solid #14010C;">
-				<span class="pt-4 but_podrobnee_srvices mb-2" style="color: #14010C; font-size: 2.25rem;">
+				<span class="pt-4 but_podrobnee_srvices mb-lg-2" style="color: #14010C; font-size: 2.25rem;">
 					Воплотите свои мечты
 				</span>
 					<div class="position-absolute square_block_services_pdl" style="top: 10%;">
 						<div class="button_podbor_square_services  position-relative" style="border: 1px solid var(--gold, #A78B73);border-radius: 50%; padding: 5rem;">
-							<div class="position-absolute" style="top: 30px;left: 35px;z-index: 0;">
+							<div class="position-absolute strelkaPosition" style="top: 30px;left: 30px;z-index: 0;">
 								<img src="images/catalog_new_hmkmos/arrow_right_filter.png" style="width: 35px;height: 7px;">
 							</div>
 						</div>

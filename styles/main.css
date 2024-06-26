@@ -2833,4 +2833,9 @@ input:checked + .slider.small:before {
   gap: 15px !important;
 }
 
+.stroyReadyContainer {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
 }
