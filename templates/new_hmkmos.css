@@ -679,6 +679,7 @@ border-bottom: 2px solid #969696 !important;
 	padding: 3.75rem 0.9rem 5rem;
 	min-width: 18rem;
 	gap: 1rem;
+	height: 30rem
 }
 .block_steps_item__title {
 	font-size: 0.875rem;
