@@ -2184,6 +2184,9 @@ input:checked + .slider.small:before {
   color: #fff;
 }
 
+.editButtons {
+  flex-direction: column;
+}
 
 @media (max-width: 1651px) {
   html {
@@ -2836,6 +2839,30 @@ input:checked + .slider.small:before {
 .stroyReadyContainer {
   max-width: 100%;
   margin-top: 20px;
+}
+
+.editButtons {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartTitle {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cartText {
+  font-size: 10px;
+}
+
+.cartPrice {
+  font-size: 14px;
+}
+
+.labelText {
+  font-size: 10px;
+
 }
 
 }
