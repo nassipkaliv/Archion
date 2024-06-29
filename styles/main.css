@@ -2882,4 +2882,9 @@ input:checked + .slider.small:before {
   margin-top: 20px !important;
  }
 
+ .techTitle {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+ }
+
 }
