@@ -2865,4 +2865,21 @@ input:checked + .slider.small:before {
 
 }
 
+.year_selector {
+  padding: 12px !important;
+}
+
+.year_selector__container .nav-item .nav-link {
+  font-size: 10px ;
+ }
+ 
+ .year_selector__container {
+  gap: 0px !important;
+ }
+
+ .techno-statya {
+  padding: 16px 12px !important;
+  margin-top: 20px !important;
+ }
+
 }
