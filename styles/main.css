@@ -2188,6 +2188,42 @@ input:checked + .slider.small:before {
   flex-direction: column;
 }
 
+#floor-3:checked ~ .c-home_house .floor-3 {
+  opacity: 0.8;
+  background-color: transparent !important;
+    }
+
+    #floor-2:checked ~ .c-home_house .floor-2 {
+  opacity: 0.8;
+  background-color: transparent !important;
+    }
+
+    #gr-floor:checked ~ .c-home_house .gr-floor:hover {
+  background-color: transparent;
+}
+
+#mansard:checked ~ .c-home_house .mansard:hover {
+  background-color: transparent;
+}
+
+#mansard:checked ~ .c-home_house .mansard:hover::before, #mansard:checked ~ .c-home_house .mansard:hover::after {
+  background-color: transparent;
+}
+
+#floor-1:checked ~ .c-home_house .floor-1:hover {
+  background-color: transparent;
+}
+
+#mansard:checked ~ .c-home_house .mansard {
+  opacity: 0.8;
+  background-color: transparent;
+}
+
+#floor-1:checked ~ .c-home_house .floor-1 {
+  opacity: 0.8;
+  background-color: transparent;
+}
+
 @media (max-width: 1651px) {
   html {
     font-size: 13px;
