@@ -124,7 +124,7 @@
         <header class="header  header--mobile-default topbar">
             <div class="header__content">
                     <a href="index.html">
-                        <img class="logo only-pc" src="assets/icons/logo.svg" alt="">
+                        <img id="logo-pc" class="logo only-pc" src="assets/icons/logo.svg" alt="">
                     </a>
                     <img class="logo only-mobile" src="assets/icons/logo.svg" alt="">
                     <nav class="header__nav">
@@ -260,7 +260,19 @@
                 </div>
             </div>
         </header>
-    
+        
+        <script>
+            window.addEventListener('scroll', function() {
+            var logoPc = document.getElementById('logo-pc');
+        
+            if (window.scrollY > 50) { // Change 50 to the scroll position where you want the logo to change
+                logoPc.src = 'assets/icons/logo.svg';
+            } else {
+                logoPc.src = 'assets/icons/logo_white.svg';
+            }
+        });
+            </script>
+
     <script>
         $(document).ready(function () {
         $('#profilePopoverTrigger').popover({
